@@ -14,6 +14,8 @@ Once the process and the tool are stabilized and popularized, existing large IT 
 - Accurate and indisputable measure of work that will form the sole basis for determining the earnings of the crowd member. This eliminates errors and injustices done when humans appraise people. People can earn as much as they want, based solely on their true intellectual effort.
 - Intellectual property protection of the total work done by the other crowd members from each crowd member, as well as maximally reduced complexity of work will allow people to work from home, over the internet.
 - This model can be copied outside the software/IT industry and be applied in general to transform our job-based society to one where individuals have more freedom and opportunities to earn.
+- Customer will prefer this project execution model due to potentially faster time to completion, increased intellectual property security and probably also superior/impeccable code, documentation and design quality.
+- Though the tool is aimed at software development, it can be used for testing, maintenance and support as well.
 
 # How does it work?
 The tool and process significantly address issues related to software work measurement and intellectual property theft mitigation. They also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. 
@@ -21,3 +23,5 @@ The tool and process significantly address issues related to software work measu
 # How to use it?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
+3. To read the details of the process please visit the wiki of this project.
+4. The tool is a few files to download. There is no build process; simply open CollaboRate.html in your web browser, preferably FireFox.
