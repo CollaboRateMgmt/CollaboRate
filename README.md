@@ -14,13 +14,13 @@ Once the process and the tool are stabilized and popularized, existing large IT 
 - Accurate and indisputable measure of work that will form the sole basis for determining the earnings of the crowd member. This eliminates errors and injustices done when humans appraise people. People can earn as much as they want, based solely on their true intellectual effort.
 - Intellectual property protection of the total work done by the other crowd members from each crowd member, as well as maximally reduced complexity of work will allow people to work from home, over the internet.
 - This model can be copied outside the software/IT industry and be applied in general to transform our job-based society to one where individuals have more freedom and opportunities to earn.
-- Customer will prefer this project execution model due to potentially faster time to completion, increased intellectual property security and probably also superior/impeccable code, documentation and design quality.
+- Customer will prefer this project execution model due to potentially faster time to completion, increased intellectual property security, reduced financial risk and probably also superior/impeccable code, documentation and design quality.
 - Though the tool is aimed at software development, it can be used for testing, maintenance and support as well.
 
 # How does it work?
 The tool and process significantly address issues related to software work measurement and intellectual property theft mitigation. This allows organizations/project to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
 
-The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can.
+The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can. Though anyone can take up any work, a system of financial penalties exists so that crowd members cannot cause harm to the project. In general most people except the really unintelligent would find a vast earning potential despite this system of financial penalties in place.
 
 # How to use it?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
