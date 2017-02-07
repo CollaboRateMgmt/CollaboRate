@@ -24,4 +24,4 @@ The tool and process significantly address issues related to software work measu
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
 3. To read the details of the process please visit the wiki of this project.
-4. The tool is a few files to download. There is no build process; simply open CollaboRate.html in your web browser, preferably FireFox.
+4. To use the tool, just download a copy of this repository. There is no other install or build step needed. Simply open CollaboRate.html in your web browser, preferably FireFox and answer the questions/follow the instructions shown by the wizard.
