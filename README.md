@@ -18,7 +18,9 @@ Once the process and the tool are stabilized and popularized, existing large IT 
 - Though the tool is aimed at software development, it can be used for testing, maintenance and support as well.
 
 # How does it work?
-The tool and process significantly address issues related to software work measurement and intellectual property theft mitigation. They also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. 
+The tool and process significantly address issues related to software work measurement and intellectual property theft mitigation. This allows organizations/project to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
+
+The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can.
 
 # How to use it?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
