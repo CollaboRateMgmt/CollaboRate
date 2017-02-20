@@ -30,8 +30,6 @@ https://github.com/sohrabsaran/CollaboRate/wiki
 # How to use it?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
-3. To read the details of the process please visit the wiki of this project.
+3. To read the details of the process please visit the online documentation of this project at https://github.com/sohrabsaran/CollaboRate/wiki
 4. To use the tool, just download a copy of this repository. There is no other install or build step needed. Simply open CollaboRate.html in your web browser, preferably FireFox and answer the questions/follow the instructions shown by the wizard.
 
-For more information on the process to be followed while using this tool, please see the online documentation at:  
-https://github.com/sohrabsaran/CollaboRate/wiki
