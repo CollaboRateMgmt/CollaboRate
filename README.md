@@ -24,8 +24,14 @@ The tool and process significantly address issues related to software work measu
 
 The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can. Though anyone can take up any work, a system of financial penalties exists so that crowd members cannot cause harm to the project. In general most people except the really unintelligent would find a vast earning potential despite this system of financial penalties in place.
 
+For more information on how does the process and tool work, please see the online documentation at:  
+https://github.com/sohrabsaran/CollaboRate/wiki
+
 # How to use it?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
 3. To read the details of the process please visit the wiki of this project.
 4. To use the tool, just download a copy of this repository. There is no other install or build step needed. Simply open CollaboRate.html in your web browser, preferably FireFox and answer the questions/follow the instructions shown by the wizard.
+
+For more information on the process to be followed while using this tool, please see the online documentation at:  
+https://github.com/sohrabsaran/CollaboRate/wiki
