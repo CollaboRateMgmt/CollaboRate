@@ -7,7 +7,7 @@ This work is not intended to represent the views of any of the founder member's 
 MIT
 
 # What is CollaboRate?
-CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support, to a level where it becomes the most common way of working in the commercial IT industry. The system can trivially be used for open source development as well. It may be useful for any collaborative initiative beyond software development. It may be applied in general to overcome the limitations of the job-based enconomy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn. For more information please visit the project wiki page at:
+CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support, to a level where it becomes the most common way of working in the commercial IT industry. The system can trivially be used for open source development as well. It may be useful for any collaborative intellectual endeavor outside software development. It may be applied in general to overcome the limitations of the job-based enconomy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn. For more information please visit the project wiki page at:
 https://github.com/sohrabsaran/CollaboRate/wiki
 
 # Who's using it?
@@ -24,13 +24,6 @@ As of now the project is in the process of releasing the first version of the to
   - Faster time to completion
   - Reduced financial risk
   - Superior/impeccable code, documentation and design quality
-
-# Sounds too good to be true! How is it possible?
-The tool, process and philosophy definitively address issues related to 3 core limitations of the traditional job-based economy, in novel ways that we are not aware are known or used elsewhere:
-- intellectual work measurement, especially software work measurement
-- intellectual property security, especially when a project team consists of a large number of people
-- skill levels needed for work that is traditionally outsourced to a team of people
-Solving these limitations will allow organizations/projects to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
 
 # Where do I begin to learn?
 You are encouraged to start playing around with the tool and also simultaneously read up on the philosophy and process recommended to be followed while using the tool. Once the tool, process and philosophy are fully stabilized, understood and popularized, existing large IT organizations or a community of people working part-time can start experiments with the process and the tool, in order to validate its expected benefits.
