@@ -15,7 +15,7 @@ As of now the project is in the process of releasing the first version of the to
 # Features
  The tool, process and philosophy aim to provide the following features ([see the project wiki page for a more detailed overview of the features](https://github.com/sohrabsaran/CollaboRate/wiki#features)):
 - Define a universal, accurate and indisputable measure of intellectual work. This will form the sole basis for determining the earnings of the crowd member. People can earn as much (or as less) as they deserve, based solely on their true intellectual effort.
-- Increased security of the intellectual property of the project.
+- Maximize security of the intellectual property of the project.
 - Maximally reduced complexity of work. This in turn will allow more opportunties for people to make a living, contribute meaningfully and be financially successful.
 - Allow people to be simultaneously associated with multiple projects and organizations, without the risks of traditional freelancing.
 - The tool can be used for software testing, maintenance and support as well.
