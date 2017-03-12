@@ -14,7 +14,7 @@ https://github.com/sohrabsaran/CollaboRate/wiki
 As of now the project is in the process of releasing the first version of the tool, as well as the documentation for the process and philosophy needed to utilize the tool effectively.
 
 # Features
- The tool, process and philosophy aim to provide the following features ([see the project wiki page for a more detailed overview of the features](https://github.com/sohrabsaran/CollaboRate/wiki#features#features)):
+ The tool, process and philosophy aim to provide the following features ([see the project wiki page for a more detailed overview of the features](https://github.com/sohrabsaran/CollaboRate/wiki#features)):
 - Define a universal, accurate and indisputable measure of intellectual work. This will form the sole basis for determining the earnings of the crowd member. People can earn as much (or as less) as they deserve, based solely on their true intellectual effort.
 - Increased security of the intellectual property of the project.
 - Maximally reduced complexity of work. This in turn will allow more opportunties for people to make a living, contribute meaningfully and be financially successful.
