@@ -11,16 +11,16 @@ CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for
 https://github.com/sohrabsaran/CollaboRate/wiki
 
 # Features
- The tool, process and philosophy aim to provide the following features:
-- As far as practically possible, define a universal, accurate and indisputable measure of intellectual work. This will form the sole basis for determining the earnings of the crowd member. This eliminates errors and injustices done when humans appraise people. It will allow groups, organizations and economies to move past the inaccuracies of the traditional job-salary-increment-jobmarket system. People can earn as much (or as less) as they deserve, based solely on their true intellectual effort.
-- Increased security of the intellectual property of the project from each crowd member, especially when the crowd size per project is maximized.
-- Maximally reduced complexity of work. This in turn will allow more opportunties for people make a living, contribute meaningfully and be financially successful in a transparent, fair, logical and sustainable way.
-- The increased security and reduced complexity features mentioned above, will in turn allow people to work from home (over the internet). Therefore it can potentially allow people to be simultaneously associated with multiple projects and organizations, without the risks of traditional freelancing.
-- Though the tool is aimed at software development, it can be used for software testing, maintenance and support as well, through defined processes and philosophies.
+ The tool, process and philosophy aim to provide the following features (please see the project wiki page for a more detailed overview of the features):
+- Define a universal, accurate and indisputable measure of intellectual work. This will form the sole basis for determining the earnings of the crowd member. People can earn as much (or as less) as they deserve, based solely on their true intellectual effort.
+- Increased security of the intellectual property of the project.
+- Maximally reduced complexity of work. This in turn will allow more opportunties for people make a living, contribute meaningfully and be financially successful.
+- Allow people to be simultaneously associated with multiple projects and organizations, without the risks of traditional freelancing.
+- The tool can be used for software testing, maintenance and support as well.
 - Benefits for project customers:
-  - Faster time to completion especially when the crowd size per project is maximized.
-  - Reduced financial risk especially when the crowd size per project is maximized, through a set of defined processes that shares the financial risks and burdens with the crowd.
-  - Superior/impeccable code, documentation and design quality, through processes that effectively define technical role specializations and SPOCs (Single Point of Contacts) who are responsible for integration and review the work done by the crowd. The work done by the SPOCs can further be supported, reduced and eventually eliminated by indentified software tools, that can be created (or may already exist) as separate open source projects.
+  - Faster time to completion
+  - Reduced financial risk
+  - Superior/impeccable code, documentation and design quality
 
 # How does it work?
 The tool and process significantly address issues related to software work measurement and intellectual property theft mitigation. This allows organizations/project to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
