@@ -11,15 +11,15 @@ CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for
 https://github.com/sohrabsaran/CollaboRate/wiki
 
 # Features
- The process and the tool allow the following to be possible:
-- Accurate and indisputable measure of work. This will form the sole basis for determining the earnings of the crowd member. This eliminates errors and injustices done when humans appraise people. People can earn as much as they want, based solely on their true intellectual effort.
-- Increased security of the intellectual property of the project from each crowd member especially when the crowd size per project is maximized
-- Maximally reduced complexity of work will allow more opportuntie for people to contribute, make a living and be financially successful in a fair, logical and sustainable way
-- The increased security and reduced complexity features will in turn allow people to work from home, over the internet, and can potentially allow people to be simultaneously associated with multiple projects and organiation, without the risks of traditional freelancing
+ The tool, process and philosophy aim to provide the following features:
+- Define as universal, accurate and indisputable a measure of work as practically possible. This will form the sole basis for determining the earnings of the crowd member. This eliminates errors and injustices done when humans appraise people. People can earn as much as they want, based solely on their true intellectual effort.
+- Increased security of the intellectual property of the project from each crowd member especially when the crowd size per project is maximized.
+- Maximally reduced complexity of work. This in turn will allow more opportunties for people make a living, contribute meaningfully and be financially successful in a transparent, fair, logical and sustainable way.
+- The increased security and reduced complexity features mentioned above, will in turn allow people to work from home (over the internet). Therefore it can potentially allow people to be simultaneously associated with multiple projects and organizations, without the risks of traditional freelancing.
 - Though the tool is aimed at software development, it can be used for software testing, maintenance and support as well, through defined processes and philosophies.
 - Benefits for project customers:
-  - Faster time to completion especially when the crowd size per project is maximized
-  - Reduced financial risk especially when the crowd size per project is maximized, through a set of defined processes that shares the financial risks and burdens with the crowd
+  - Faster time to completion especially when the crowd size per project is maximized.
+  - Reduced financial risk especially when the crowd size per project is maximized, through a set of defined processes that shares the financial risks and burdens with the crowd.
   - Superior/impeccable code, documentation and design quality, through processes that effectively define technical role specializations and SPOCs (Single Point of Contacts) who are responsible for integration and review the work done by the crowd. The work done by the SPOCs can further be supported, reduced and eventually eliminated by indentified software tools, that can be created (or may already exist) as separate open source projects.
 
 # How does it work?
