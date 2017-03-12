@@ -22,11 +22,12 @@ https://github.com/sohrabsaran/CollaboRate/wiki
   - Reduced financial risk
   - Superior/impeccable code, documentation and design quality
 
-# Sounds too good to be true! How does it work?
-The tool, process and philosophy definitively address issues related to 2 core areas:
+# Sounds too good to be true! How does/will it work?
+The tool, process and philosophy definitively address issues related to 3 core limitations of the traditional job-based economy:
 - intellectual work measurement, especially software work measurement
-- intellectual property theft mitigation, especially when a project team consists of a large number of people
-This allows organizations/project to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
+- intellectual property security, especially when a project team consists of a large number of people
+- skill levels needed for work that is traditionally outsourced to a team of people
+Solving these limitations will allow organizations/projects to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
 
 The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can. Though anyone can take up any work, a system of financial penalties exists so that crowd members cannot cause harm to the project. In general most people except the really unintelligent would find a vast earning potential despite this system of financial penalties in place.
 
