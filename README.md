@@ -10,11 +10,11 @@ MIT
 CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support, to a level where it becomes the most common way of working in the commercial IT industry. The system can trivially be used for open source development as well. It may be useful for any collaborative initiative beyond software development. It may be applied in general to overcome the limitations of the job-based enconomy to one where individuals have more freedom and opportunities to earn. For more information please visit the project wiki page at:
 https://github.com/sohrabsaran/CollaboRate/wiki
 
-# Who is using it?
-As of now the project is in the process of releasing the first version of the tool and the documentation for the process and philosophy needed to utilize the tool effectively.
+# Who's using it?
+As of now the project is in the process of releasing the first version of the tool, as well as the documentation for the process and philosophy needed to utilize the tool effectively.
 
 # Features
- The tool, process and philosophy aim to provide the following features (please see the project wiki page for a more detailed overview of the features):
+ The tool, process and philosophy aim to provide the following features ([see the project wiki page for a more detailed overview of the features](https://github.com/sohrabsaran/CollaboRate/wiki#features#features)):
 - Define a universal, accurate and indisputable measure of intellectual work. This will form the sole basis for determining the earnings of the crowd member. People can earn as much (or as less) as they deserve, based solely on their true intellectual effort.
 - Increased security of the intellectual property of the project.
 - Maximally reduced complexity of work. This in turn will allow more opportunties for people to make a living, contribute meaningfully and be financially successful.
