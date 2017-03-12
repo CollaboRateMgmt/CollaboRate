@@ -25,18 +25,17 @@ As of now the project is in the process of releasing the first version of the to
   - Reduced financial risk
   - Superior/impeccable code, documentation and design quality
 
-# Sounds too good to be true! How will it work?
-The tool, process and philosophy definitively address issues related to 3 core limitations of the traditional job-based economy:
+# Sounds too good to be true! How is it possible?
+The tool, process and philosophy definitively address issues related to 3 core limitations of the traditional job-based economy, in novel ways that we are not aware are known or used elsewhere:
 - intellectual work measurement, especially software work measurement
 - intellectual property security, especially when a project team consists of a large number of people
 - skill levels needed for work that is traditionally outsourced to a team of people
 Solving these limitations will allow organizations/projects to not have to rely on traditional methods of appraising people and keeping an eye on them in an 'office' location.
 
-The tool and process also reduce task complexity and prior project/technical knowledge needed to participate in the project, to a minimum. This in turn allows for mass participation by a large number of people (the 'crowd') in the project. People are free to do as much or as little work as they can, when they can and where they can. Though anyone can take up any work, a system of financial penalties exists so that crowd members cannot cause harm to the project. In general most people except the really unintelligent would find a vast earning potential despite this system of financial penalties in place.
+# Where do I begin to learn?
+You are encouraged to start playing around with the tool and also simultaneously read up on the philosophy and process recommended to be followed while using the tool. Once the tool, process and philosophy are fully stabilized, understood and popularized, existing large IT organizations or a community of people working part-time can start experiments with the process and the tool, in order to validate its expected benefits.
 
-Once the process and the tool are stabilized and popularized, existing large IT organizations or a community of people working part-time can start experiments with the process and the tool, in order to validate its expected benefits.
-
-# How to use it?
+# How to use the tool?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
 3. To read the details of the process please visit the online documentation of this project at https://github.com/sohrabsaran/CollaboRate/wiki
