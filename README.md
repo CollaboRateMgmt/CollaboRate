@@ -1,15 +1,14 @@
 # CollaboRate - a tool and process for crowdsourcing for-profit, closed-source commercial software development
 
 # Disclaimer
-This work is not intended to represent the views of any of the founder member's past or present organizations. Neither is it expected to cause any significant financial loss.
+This work is not intended to represent the views of any of the founder member's past or present organizations. Neither is it intended to cause them any significant financial loss.
 
 # License Type
 MIT
 
 # What is CollaboRate?
-CollaboRate is a tool and a process to facilitate crowdsourcing of for-profit, closed-source software development to a level where it becomes the most common way of commercial software development. It holds the promise of allowing the maximum number of people possible, to simultaneously work on the same project. People can collaborate with each other in a for-profit, closed-source model that protects the intellectual property of the crowd as a whole. At the same time, it allows people to rate each other's contributions in an as-transparent-as-possible, accurate and indisputable way. Hence the name 'CollaboRate'.
-
-The system can trivially be used for open source development as well. Developers could earn via this tool and process, perhaps with models such as open-source bounty.
+CollaboRate is a tool and a process to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support, to a level where it becomes the most common way of working in the commercial IT industry. The system can trivially be used for open source development as well. Finally it may be useful for any collaborative initiative beyond software development. For more information please visit the project wiki page at:
+https://github.com/sohrabsaran/CollaboRate/wiki
 
 # How is it useful?
 Once the process and the tool are stabilized and popularized, existing large IT organizations or a community of people working part-time can start experiments with the process and the tool. The process and the tool allow the following to be possible:
