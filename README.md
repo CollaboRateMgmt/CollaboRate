@@ -1,4 +1,4 @@
-# CollaboRate - a tool and process for crowdsourcing for-profit, closed-source commercial Software Development
+# CollaboRate - a tool and process for crowdsourcing for-profit, closed-source commercial software development
 
 # Disclaimer
 This work is not intended to represent the views of any of the founder member's past or present organizations. Neither is it expected to cause any significant financial loss.
