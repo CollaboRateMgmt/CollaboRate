@@ -19,7 +19,7 @@ So the chance of project success increases.
 Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
 Due to fast completion time, the need for estimating the exact project end date reduces. We end the need for estimates from crowd members. 
 
-Finally, any crowd member is easily able to measure exactly what he/she or some other member has contributed to the project. The organization is also able to measure the project's 'intellectual effort size' accurately and charge the customer accordingly.  
+Finally, any crowd member can now measure each other's contributions exactly. The organization is also able to measure the project's 'intellectual effort size' accurately and charge the customer accordingly.  
 
 All this results in increased, inclusive and fair earning potential for the customer, organization and the crowd members alike.
 
