@@ -10,15 +10,15 @@ MIT
 CollaboRate is a set of philosophies, processes and a very simple software tool, that will radically transform the commercial IT industry and probably also other intellectual-property intensive industries. This project enables effective crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. This is the best project management model and technology known so far. It brings vast benefits to customers, organizations and employees alike. 
 
 Here crowdsourcing means having a very large number of people (the crowd) working on the same project.  
-So the time taken for project completion greatly reduced.
-So the need for estimation of project end date is greatly reduced.
+So the time taken for project completion is greatly reduced.
+So the need for estimation of the project end date is greatly reduced.
 In particular, the need for estimates to be provided by crowd members, is eliminated.
-Also, each person has to contribute very little to the project, which is very easy.  
+Also, each person has to contribute very little to the project, which is course, very easy to do.  
 So the chance of project success is greatly increased.  
-Last but not least, crowd members are able to easily able to measure what they and others have contributed to the project, in an almost indisputable way.
-All this results in greatly increased and inclusive earning potential for crowd members, who are mostly ordinary IT workers such as you and I!
+Last but not least, any crowd member is easily able to measure exactly what he/she or some other member has contributed to the project.
+All this results in greatly increased, inclusive and fair earning potential for crowd members, who are mostly ordinary IT workers such as you and I!
 
-The process and tool systematically solve the problems seen when we have a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more transparency, freedom and opportunities than ever before.
+The process and tool systematically solve the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more transparency, freedom and opportunities than ever before.
 
 The system can trivially be used for open source development as well. Developers could earn via this model, perhaps in conjunction with other open source business models such as open-source bounty.
 
@@ -27,8 +27,8 @@ It may be useful for any collaborative intellectual endeavor outside software de
 # How it works
 
 This project comprehensively addresses 5 pain areas of the traditional intellectual-property-based and job-based economy, in novel ways that (as far as we are aware) are not known or used elsewhere:
-1. It defines a general-purpose, highly accurate and transparent measure of intellectual effort, that is very important to ensure fairness and trust amongst all the project members and the customer. This is used in place of estimations as the measure by which to reward crowd members and size the project.
-2. It ensures that the risks of incorrect or incomplete work are reduced, by fairly and sustainably sharing the risk with the crowd.
+1. It defines a general-purpose, highly accurate and transparent measure of intellectual effort. This is very important to ensure fairness and trust amongst all the project members andstakeholders. This is rightly used in place of estimations, as the measure by which to reward crowd members and size the project.
+2. It ensures that the risks of incorrect, delayed or incomplete work are reduced, by fairly and sustainably sharing the financial risks with the crowd.
 3. It ensures that technical, codebase and requirements knowledge needed to participate in the project are negligible, thus allowing more inclusive participation by the crowd and in turn reducing the project's complexity risk.
 4. It defines a way for a large number of people to smoothly participate in the same project, with minimal efforts needed from the project governing body.  
 5. It ensures superior intellectual property security, that in an apparent paradox, actually increases with crowd size!
