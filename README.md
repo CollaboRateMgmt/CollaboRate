@@ -16,7 +16,8 @@ When this happens, the time taken for project completion reduces.
 Also, each person has to contribute very little to the project. This is of course very easy to do.  
 So the chance of project success increases.  
 
-Due to fast completion time, the need for estimating the exact project end date reduces. We end the need for estimates from crowd members. Such estimations from the individual contributors are an overhead and a speculative activity, leading to friction and exploitation.  
+Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
+Due to fast completion time, the need for estimating the exact project end date reduces. We end the need for estimates from crowd members. 
 
 Finally, any crowd member is easily able to measure exactly what he/she or some other member has contributed to the project. The organization is also able to measure the project's 'intellectual effort size' accurately and charge the customer accordingly.  
 
