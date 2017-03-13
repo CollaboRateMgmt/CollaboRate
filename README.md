@@ -25,7 +25,7 @@ As of now the project is in the process of releasing the first version of the to
   - Superior/impeccable code, documentation and design quality
 
 # Getting started
-You are encouraged to start playing around with the tool.  Also simultaneously read up on the philosophy and process recommended to be followed while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
+First please read the philosophy and process recommended to be followed while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
 
 # How to use the tool?
 1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting. Though the tool attempts to provide instructions about the process to follow, it is probably better to go through the documentation first (that covers the philosophy and the overall process). This will help to better understand where and why the tool is used in the overall recommended process.
