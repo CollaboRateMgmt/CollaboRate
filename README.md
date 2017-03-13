@@ -24,7 +24,7 @@ As of now the project is in the process of releasing the first version of the to
   - Reduced financial risk
   - Superior/impeccable code, documentation and design quality
 
-# Where do I begin to learn?
+# Getting started
 You are encouraged to start playing around with the tool.  Also simultaneously read up on the philosophy and process recommended to be followed while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
 
 # How to use the tool?
