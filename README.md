@@ -16,7 +16,7 @@ The need for estimates to be provided by crowd members, is eliminated.
 Also, each person has to contribute very little to the project, which is course, very easy to do.  
 Due to fast execution time, no dependency on specific people in the crowd, and easy work for all the crowd members, the chance of project success is greatly increased.  
 Last but not least, any crowd member is easily able to measure exactly what he/she or some other member has contributed to the project.
-All this results in greatly increased, inclusive and fair earning potential for crowd members, who mak up the bulk of the people involved in any project.
+All this results in greatly increased, inclusive and fair earning potential for crowd members, who make up the bulk of the people involved in any project.
 
 The process and tool systematically solve the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and employees alike. The most exciting benefits would be for the common IT employees (technical staff), who will be considered as the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
