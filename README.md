@@ -1,7 +1,7 @@
 # CollaboRate - a crowdsourcing philosophy, process and software tool to revolutionize the commercial IT Industry
 
 # Disclaimer
-This work is not intended to represent the views of any of the founder member's past or present organizations. Neither is it intended to cause them any significant financial loss.
+This work is not intended to represent the views of any of the author's past or present organizations. Neither is it intended to cause them any significant financial loss.
 
 # License Type
 MIT
@@ -16,7 +16,7 @@ So the chance of project success is greatly increased.
 Last but not least, crowd members are able to easily able to measure what they and others have contributed to the project, in an almost indisputable way.
 All this results in greatly increased and inclusive earning potential for crowd members, who are mostly ordinary IT workers such as you and I!
 
-The process and tool systematically solve the challenges seen when we have a very large number of people working on the same project. So it will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more transparency, freedom and opportunities than ever before.
+The process and tool systematically solve the problems seen when we have a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more transparency, freedom and opportunities than ever before.
 
 The system can trivially be used for open source development as well. Developers could earn via this model, perhaps in conjunction with other open source business models such as open-source bounty.
 
