@@ -1,4 +1,4 @@
-# CollaboRate - a tool, process and philosophy for crowdsourcing for-profit, closed-source commercial software development
+# CollaboRate - a philosophy, process and software tool to revolutionize the IT Industry
 
 # Disclaimer
 This work is not intended to represent the views of any of the founder member's past or present organizations. Neither is it intended to cause them any significant financial loss.
@@ -7,8 +7,20 @@ This work is not intended to represent the views of any of the founder member's 
 MIT
 
 # What is CollaboRate?
-CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. It will become the most common way of working in the commercial IT industry due to benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more freedom and opportunities than ever before.  
-The system can trivially be used for open source development as well. It may be useful for any collaborative intellectual endeavor outside software development. It may be applied in general to overcome the limitations of the job-based enconomy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn. 
+CollaboRate is a set of philosophies, processes and a very simple software tool, that will revolutionize the commercial IT industry and probably also other intellectual-property intensive industries. It facilitates crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. 
+
+Here crowdsourcing means having a very large number of people (the crowd) working on the same project.  
+So the time taken for project completion is greatly reduced.  
+Also, each person has to contribute very little to the project, which is very easy.  
+So the chance of project success is greatly increased.  
+Last but not least, crowd members are able to easily able to measure what they and others have contributed to the project, in an almost indisputable way.
+All this results in greatly increased and inclusive earning potential for crowd members, who are mostly ordinary IT workers such as you and I!
+
+The process and tool systematically solve the challenges seen when we have a very large number of people working on the same project. So it will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more transparency, freedom and opportunities than ever before.
+
+The system can trivially be used for open source development as well. Developers could earn via this model, perhaps in conjunction with other open source business models such as open-source bounty.
+
+It may be useful for any collaborative intellectual endeavor outside software development.  It may be applied in general to overcome the limitations of the job-based economy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Who's using it?
 As of now the project is in the process of releasing the first version of the tool, as well as the documentation for the process and philosophy needed to utilize the tool effectively.
