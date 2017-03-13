@@ -1,7 +1,7 @@
 # CollaboRate - a crowdsourcing process and software tool that will transform the commercial IT Industry
 
 # Disclaimer
-This work is not intended to represent the views of any of the author's past or present organizations. Neither is it intended to cause them loss.
+This work does not represent the views of any of the author's past or present organizations. Neither is it intended to cause them loss.
 
 # License Type
 MIT
