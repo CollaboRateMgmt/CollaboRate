@@ -1,4 +1,4 @@
-# CollaboRate - a crowdsourcing philosophy, process and software tool to revolutionize the commercial IT Industry
+# CollaboRate - a crowdsourcing philosophy, process and software tool that will change the commercial IT Industry
 
 # Disclaimer
 This work is not intended to represent the views of any of the author's past or present organizations. Neither is it intended to cause them any significant financial loss.
