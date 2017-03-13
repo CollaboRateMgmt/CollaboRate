@@ -7,7 +7,8 @@ This work is not intended to represent the views of any of the founder member's 
 MIT
 
 # What is CollaboRate?
-CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support, to a level where it becomes the most common way of working in the commercial IT industry. The system can trivially be used for open source development as well. It may be useful for any collaborative intellectual endeavor outside software development. It may be applied in general to overcome the limitations of the job-based enconomy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn. 
+CollaboRate is a tool, process and philosophy to facilitate crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. It will become the most common way of working in the commercial IT industry due to benefits that it will provide customers, organizations and IT workers alike. The most interesting benefits would be for IT workers who will enjoy more freedom and opportunities than ever before.  
+The system can trivially be used for open source development as well. It may be useful for any collaborative intellectual endeavor outside software development. It may be applied in general to overcome the limitations of the job-based enconomy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn. 
 
 # Who's using it?
 As of now the project is in the process of releasing the first version of the tool, as well as the documentation for the process and philosophy needed to utilize the tool effectively.
