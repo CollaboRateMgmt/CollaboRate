@@ -12,12 +12,12 @@ CollaboRate is a process and a very simple software tool. It will radically tran
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
 
-When this happens, the time taken for project completion is greatly reduced.
-So the need for estimation of the project end date is greatly reduced. The need for estimates to be provided by crowd members, is eliminated.  
+When this happens, the time taken for project completion is reduced.
+So the need for estimation of the project end date is reduced. The need for estimates to be provided by crowd members, is eliminated.  
 Also, each person has to contribute very little to the project, which is course, very easy to do.  
-Due to fast execution time, no dependency on specific people in the crowd, and easy work for all the crowd members, the chance of project success is greatly increased.  
+Due to fast execution time, no dependency on specific people in the crowd, and easy work for all the crowd members, the chance of project success is increased.  
 Last but not least, any crowd member is easily able to measure exactly what he/she or some other member has contributed to the project. The organization is also able to measure the project's 'intellectual effort size' accurately and charge the customer accordingly.
-All this results in greatly increased, inclusive and fair earning potential for the customer, organization and the crowd members alike.
+All this results in increased, inclusive and fair earning potential for the customer, organization and the crowd members alike.
 
 The process and tool systematically solve the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and employees alike. The most exciting benefits would be for the common IT employees (technical staff), who will be considered as the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
