@@ -7,7 +7,7 @@ This work is not intended to represent the views of any of the author's past or 
 MIT
 
 # What is CollaboRate?
-CollaboRate is a set of philosophies, processes and a very simple software tool, that will revolutionize the commercial IT industry and probably also other intellectual-property intensive industries. It facilitates crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. 
+CollaboRate is a set of philosophies, processes and a very simple software tool, that will radically transform the commercial IT industry and probably also other intellectual-property intensive industries. It facilitates crowdsourcing of for-profit, closed-source software development, testing, maintenance and support. 
 
 Here crowdsourcing means having a very large number of people (the crowd) working on the same project.  
 So the time taken for project completion greatly reduced.
