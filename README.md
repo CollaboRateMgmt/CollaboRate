@@ -27,8 +27,8 @@ As of now the project is in the process of releasing the first version of the to
 # Where do I begin to learn?
 You are encouraged to start playing around with the tool.  Also simultaneously read up on the philosophy and process recommended to be followed while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
 
-# What is the basic technical usage of the tool?
-1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting.
+# How to use the tool?
+1. This software is intended to be used along with a conventional issue tracking system and a few individuals who are entrusted with project governance and architecting. Though the tool attempts to provide instructions about the process to follow, it is probably better to go through the documentation first (the covers the philosophy and the overall process) and understand where and why the tool is used in the overall recommended process.
 2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do easiest possible software work in an indisputably measurable way.
 3. To use the tool, just [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step needed. Simply open CollaboRate.html in your web browser, preferably FireFox and answer the questions/follow the instructions shown by the wizard.
 
