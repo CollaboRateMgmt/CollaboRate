@@ -24,7 +24,7 @@ Due to the new process, crowd members can measure each others' contributions exa
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
 
-The process and tool systematically solve the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry, due to the benefits that it will provide customers, organizations and employees alike. The most exciting benefits would be for the common IT employees (technical staff), who will be considered as the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
+The process and tool solve the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
 The system can trivially be used for open source development as well. Developers could earn via this model, perhaps in conjunction with other open source business models such as open-source bounty.
 
