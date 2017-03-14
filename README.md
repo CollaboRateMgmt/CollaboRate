@@ -7,7 +7,7 @@ This work does not represent the views of any of the author's past or present or
 MIT
 
 # Purpose
-CollaboRate is a process and a very simple software tool. It will transform the commercial IT industry! Also, it may transform other intellectual-property intensive industries. CollaboRate enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will bring vast benefits to customers, organizations and employees alike. It will boost global economic and technology progress. 
+CollaboRate is a process and a very simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will bring vast benefits to customers, organizations and employees alike. It will boost global economic and technology progress. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
