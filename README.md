@@ -26,7 +26,7 @@ customer, organization and the crowd.
 
 The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-This process may be used for open source development as well. Open Source collaborators could work together better with this process. They may even wish to earn via this process. This process can be used with other open source business models such as open-source bounty.
+You may use this process for open source development as well. Open Source collaborators could work together better with this process. They may even wish to earn via this process. This process can be used with other open source business models such as open-source bounty.
 
 It may be useful for any collaborative intellectual endeavor outside software development.  It may be applied in general to overcome the limitations of the desk-job-based economy, to give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
