@@ -32,7 +32,7 @@ It may be useful for any collaborative project outside IT, that involves only de
 
 # How it works (an overview)
 
-The process comprehensively addresses 5 pain areas of the traditional intellectual-property-based and job-based economy, in novel ways:  
+The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 1. It defines a general-purpose, highly accurate and transparent measure of intellectual effort. This is very important to ensure fairness and trust amongst all the project members and stakeholders. This is rightly used in place of estimations, as the measure by which to reward crowd members and charge the customer. The CollaboRate tool is used to ensure that intellectual effort is always contributed in an accurately measurable way.  
 2. For the customer, it ensures that the risks of incorrect or incomplete work are reduced. It does so by fairly sharing the financial risks with the erring crowd members. For the capabilities of most people, there would be high earning potential and a low chance of getting penalized for incorrect or incomplete work. So most people will agree to the risk sharing process.  
 3. It ensures that technical, codebase and requirements knowledge needed to participate in the project are negligible, and that the work per crowd member is very small and therefore very easy. The CollaboRate tool facilitates performing the small work. This allows more inclusive participation by the crowd, and in turn reduces project risk.  
