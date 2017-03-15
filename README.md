@@ -35,8 +35,8 @@ It may be useful for any collaborative project outside IT, that involves only de
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 1. It defines a general-purpose, accurate and transparent measure of intellectual effort. This is very important for fairness and trust among all. You use it instead of estimates, as the measure by which to reward crowd members and charge the customer. The CollaboRate tool helps to make intellectual effort measurable.  
 2. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the risk sharing process.  
-3. It ensures that technical, codebase and requirements knowledge needed to participate in the project are negligible, and that the work per crowd member is very small and therefore very easy. The CollaboRate tool facilitates performing the small work. This allows more inclusive participation by the crowd, and in turn reduces project risk.  
-4. It defines a way for a large number of people to smoothly participate in the same project, with minimal efforts needed from the project governing body. The CollaboRate tool facilitates the division of project work such that the project can utilize the maximum number of crowd members.  
+3. The process allows people to work with no technical, codebase and requirements knowledge. It also ensures that the work  per crowd member is very small and thus very easy. The CollaboRate  tool facilitates performing the small work. This allows more inclusive participation and reduces project risk.    
+4. The process and tool divide the project work such that you can use the most number of  crowd members.  Efforts needed from the  project governing body are very small.    
 5. It ensures superior intellectual property security, that paradoxically increases with crowd size!  
 
 #Detailed benefits for employees and their organizations
