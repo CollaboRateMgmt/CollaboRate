@@ -58,7 +58,7 @@ As of now the project is releasing its first version.
 First please read the philosophy and process to follow while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
 
 # How to use the tool?
-In addition to the above-mentioned documentation, here is an overview: 
+Besides the above-mentioned documentation, here is an overview: 
 1. You must use this software along with a conventional  issue/bug tracking system. You must also form a team of a few trustworthy people. You will call these people SPOCs (Single Point Of Contacts). They will perform customer  interaction and crowd interaction. Some of these SPOCs will ensure codebase modularity and reuse of libraries.  
 2. The tool is a 'wizard'. It guides a member of the crowd to do the smallest  possible  intellectual/software work. This is of course easy for the crowd member to do.  
 3. To use the tool, [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the  wizard.
