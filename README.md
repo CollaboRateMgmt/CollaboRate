@@ -40,9 +40,8 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 5. It ensures superior intellectual property security. Security increases with crowd size!  
 
 #Detailed benefits for employees and their organizations
-- Variable wage-based income accurately proportional to contributions of the employee. 
-  - No need for subjective appraisals done by humans, eliminating a huge source of workplace conflict and injustice
-  - Crowd members will earn fairly based on their contributions
+- Variable income in accurate proportion to contributions of the employee.   
+- No need for subjective appraisals done by humans. This ends a huge source of workplace conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office and keep an eye on them. So employees can work from home.
   - Employees can work for multiple projects and organizations at the same time with security concerns from any organization.
