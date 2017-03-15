@@ -44,7 +44,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 - No need for subjective appraisals done by humans. This ends a huge source of workplace conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office and keep an eye on them. So employees can work from home.
-  - Employees can work for multiple projects and organizations at the same time with security concerns from any organization.
+  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # Detailed benefits for customers
   - Faster time to completion
@@ -52,12 +52,13 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
   - Superior/impeccable code, documentation and design quality
 
 # Who's using it?
-As of now the project is in the process of releasing the first version of the tool, as well as the documentation for the process and philosophy needed to utilize the tool effectively.
+As of now the project is releasing its first version.
 
 # Getting started
-First please read the philosophy and process recommended to be followed while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
+First please read the philosophy and process to follow while using the tool. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
 
 # How to use the tool?
-1. This software is intended to be used along with a conventional issue/bug tracking system, and by forming a team of a few individuals who are entrusted with project governance, architecting, customer interaction and crowd interaction. Though the tool attempts to provide instructions about the process to follow, it is probably better to go through the documentation first (that covers the philosophy and the overall process). This will help to better understand where and why the tool is used in the overall recommended process.
-2. The tool is a 'wizard' i.e. it is a very simple piece of software that guides a member of the crowd to do the smallest (easiest) possible intellectual/software work.
-3. To use the tool, just [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step needed. Simply open CollaboRate.html in your web browser, preferably FireFox and answer the questions/follow the instructions shown by the wizard.
+1.  Please go  through the documentation first. This will explain the process and where and why to use the  tool.  
+2. You must use this software along with a conventional  issue/bug tracking system. You must also form a team of a few trustworthy people. You will call these people SPOCs (Single Point Of Contacts). They will perform customer  interaction and crowd interaction. Some of these SPOCs will ensure codebase modularity and reuse of libraries.  
+3. The tool is a 'wizard'. It guides a member of the crowd to do the smallest  possible  intellectual/software work. This is of course easy for the crowd member to do.  
+4. To use the tool, [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the  wizard.
