@@ -37,7 +37,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 2. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the risk sharing process.  
 3. The process allows people to work with no technical, codebase and requirements knowledge. It also ensures that the work  per crowd member is very small and thus very easy. The CollaboRate  tool facilitates performing the small work. This allows more inclusive participation and reduces project risk.    
 4. The process and tool divide the project work such that you can use the most number of  crowd members.  Efforts needed from the  project governing body are very small.    
-5. It ensures superior intellectual property security, that paradoxically increases with crowd size!  
+5. It ensures superior intellectual property security. Security increases with crowd size!  
 
 #Detailed benefits for employees and their organizations
 - Variable wage-based income accurately proportional to contributions of the employee. 
