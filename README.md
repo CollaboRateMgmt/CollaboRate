@@ -82,6 +82,6 @@ This process and tool allows the most number of people possible, to work on the 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
-- Though my idea for a collaboration tool dates back to 20004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer.
+- Though my idea for a collaboration tool dates back to 2004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer.
 - Wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
 - An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks. This increased my confidence in the feasibility of such an idea.
