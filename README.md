@@ -30,8 +30,19 @@ You may use this process for open source development as well. Open Source collab
 
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
-# How it works
+# Detailed benefits for employees and their organizations
+- Variable income in accurate proportion to contributions of the employee.   
+- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
+- Since project security and complexity are no longer issues:
+  - No need to call employees to an office and keep an eye on them. So employees can work from home.
+  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
+# Detailed benefits for customers
+  - Faster time to completion
+  - Reduced financial risk
+  - Superior/impeccable code, documentation and design quality
+
+# How it works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 1. The process is better than others because it exploits the principle that 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) made up of one or more SPOCs ((Single Point of Contact)s) solves the resulting issue 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible, including [work breakdown review]. The governing body does activities that are best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
 2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project.  
@@ -54,25 +65,22 @@ Crowdsourcing vendors will define a mechanism to resolve suspicions raised by cr
      - sufficient analytical capabilities 
      - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
 
-5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are enlightened to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.       
-
-# Detailed benefits for employees and their organizations
-- Variable income in accurate proportion to contributions of the employee.   
-- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
-- Since project security and complexity are no longer issues:
-  - No need to call employees to an office and keep an eye on them. So employees can work from home.
-  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
-
-# Detailed benefits for customers
-  - Faster time to completion
-  - Reduced financial risk
-  - Superior/impeccable code, documentation and design quality
+5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are warned to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
 # Who's using it?
 As of now the project is releasing its first version.
 
-# Getting started
-First read the process to follow while using the tool. Go through all the links in this document.
-
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
+
+
+# Why the name 'CollaboRate' ?
+This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each others' contributions. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
+
+# Contributing
+We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. Finally we need to add more automation. Volunteers may contact me at sohrabsaran@gmail.com.
+
+# Acknowledgements
+- Though my idea for a collaboration tool dates back to 20004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer.
+- Wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
+- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks.
