@@ -39,9 +39,9 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 4. The process and tool divide the project work such that you can use the most number of  crowd members.  Efforts needed from the  project governing body are very small.    
 5. It ensures superior intellectual property security. Security increases with crowd size!  
 
-#Detailed benefits for employees and their organizations
+# Detailed benefits for employees and their organizations
 - Variable income in accurate proportion to contributions of the employee.   
-- No need for subjective appraisals done by humans. This ends a huge source of workplace conflict and injustice.  
+- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office and keep an eye on them. So employees can work from home.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
