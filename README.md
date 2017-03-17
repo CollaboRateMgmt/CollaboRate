@@ -49,7 +49,7 @@ Crowdsourcing vendors will define a mechanism to resolve suspicions raised by cr
    - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They also decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or it could be part of a software library that can and should be reused. This limited analysis and recollection from memory, is left to the knowledgeable SPOCs.  
    - Since work is done as micro-tasks, the work per crowd member is as small and easy as possible.  
    
- The process expects only the following skills from the crowd members:  
+The process expects only the following skills from the crowd members:  
    - sufficient knowledge of business English
    - sufficient analytical capabilities 
    - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
