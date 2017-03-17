@@ -1,4 +1,4 @@
-# CollaboRate - a crowdsourcing process and software tool.
+# CollaboRate - a crowdsourcing process and software tool
 
 # Disclaimer
 This work does not represent the views of any of the author's past or present organizations. Neither is it intended to cause them loss.
