@@ -30,13 +30,16 @@ You may use this process for open source development as well. Open Source collab
 
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
-# How it works (an overview)
+# How it works
 
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
-1. It defines a general-purpose, accurate and transparent measure of intellectual effort. This is very important for fairness and trust among all. You use it instead of estimates, as the measure by which to reward crowd members and charge the customer. The CollaboRate tool helps to make intellectual effort measurable.  
-2. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the risk sharing process.  
-3. The process allows people to work with no technical, codebase and requirements knowledge. It also ensures that the work  per crowd member is very small and thus very easy. The CollaboRate  tool facilitates performing the small work. This allows more inclusive participation and reduces project risk.    
-4. The process and tool divide the project work such that you can use the most number of  crowd members.  Efforts needed from the  project governing body are very small.    
+1. The process is better than others because it exploits the principle that 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A project governing body made up of one or more SPOCS (Single Point of Contacts) is needed to solve the resulting issue that 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible.  
+The governing body does [activities that are best done by trusted single point of contacts](Activities that are to be done by the governing body).  
+The governing body forms the core part of the organization or 'crowdsourcing vendor'.
+2. It defines a general-purpose, accurate and transparent measure of intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks completed as the measure by which to reward crowd members and charge the customer. Individual crowd members do not need to provide estimates. The CollaboRate tool helps to perform the microtask.  
+A micro-task is defined as breaking a textual problem statement that does not exceed (say) 300 words of standard business English, into 2 independent problem statements. By 'independent' we mean that child problem statements do not need to refer to each other or the parent problem statement. A simple copy-paste feature eases creation of child problem statements. The too will later provide more advanced features to validate the child problem statements.  
+3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](Risk Sharing Process).  
+4. The process allows people to work with no technical, codebase and requirements knowledge. It also ensures that the work per crowd member is very small and thus very easy. The CollaboRate  tool facilitates performing the small work. This allows more inclusive participation and reduces project risk.    
 5. It ensures superior intellectual property security. Security increases with crowd size!  
 
 # Detailed benefits for employees and their organizations
