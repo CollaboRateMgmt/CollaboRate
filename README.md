@@ -39,9 +39,9 @@ The project requirements form problem statements. A problem statement is less th
 The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
 Microtasks are managed via any conventional bug tracking system.  
 To promote trust in the crowdsourcing vendor, the vendor must share with the crowd members the following:
-  - the names and contact details of the crowd members
-  - the number of microtasks done by each member 
-  - the total number of microtasks in the project  
+   - the names and contact details of the crowd members
+   - the number of microtasks done by each member 
+   - the total number of microtasks in the project  
 Crowdsourcing vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
