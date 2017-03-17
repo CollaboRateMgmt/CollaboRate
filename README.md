@@ -16,6 +16,8 @@ When this happens, the time taken for project completion reduces.
 Also, each person has to contribute very little to the project. This is of course very easy to do.  
 So the chance of project success increases.  
 
+More people can effectively participate in important projects than ever before. No one should be concerned if an important project gets over quickly and the profits to develop it have to be shared among many, because there is enough work to be done in the world. Neither does this process mandate royalty to the crowd members, for the work done using this process.
+
 Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
 Due to fast completion time, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. 
 
@@ -31,6 +33,7 @@ You may use this process for open source development as well. Open Source collab
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Detailed benefits for employees and their organizations
+- Priority projects can be completed in record timeframes by huge crowds of people. Never miss a customer deadline again!
 - Variable income in accurate proportion to contributions of the employee.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
@@ -68,12 +71,19 @@ To promote trust in the crowdsourcing vendor, the vendor must share with the cro
 
 5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are warned to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
+# Challenges foreseen in adopting this process
+- Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable for a while. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
+  - speed up work that is important to the world
+  - increase employment opportunities for the masses
+  - ensure that work is fairly measured    
+- People must try to visualize that given this process and a long enough trial period, a large enough team that has no shortage of work will be faster and more productive than the old way of working.
+- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn a software technology in-depth should use this process for earning only. For learning software technologies, they can work on open source projects that do not use this process, or they can study the source code of open source projects.
+
 # Who's using it?
 As of now the project is releasing its first version.
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
-
 
 # Why the name 'CollaboRate' ?
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each others' contributions. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
