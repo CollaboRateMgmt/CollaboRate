@@ -33,23 +33,31 @@ It may be useful for any collaborative project outside IT, that involves only de
 # How it works
 
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
-1. The process is better than others because it exploits the principle that 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) made up of one or more SPOCs ((Single Point of Contact)s) solves the resulting issue 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible. The governing body does activities that are best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
-2. It defines a general-purpose, accurate and transparent measure of intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project. 
+1. The process is better than others because it exploits the principle that 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) made up of one or more SPOCs ((Single Point of Contact)s) solves the resulting issue 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible, including [work breakdown review]. The governing body does activities that are best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
+2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project.  
+
 The project requirements form problem statements. A problem statement is less than (say) 300 words of standard business English. A micro-task is defined as breaking down a problem statement into 2 independent problem statements. By 'independent' we mean that child problem statements do not need to refer to each other or the parent problem statement.  
-The CollaboRate tool helps to perform the microtask. A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
+The CollaboRate tool helps to perform the microtask (work breakdown)). A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
+Microtasks are managed via any conventional bug tracking system.
+
 To promote trust in the crowdsourcing vendor, the vendor must share with the crowd members the following:
-- the names and contact details of the crowd members
-- the number of microtasks done by each member 
-- the total number of microtasks in the project 
+    - the names and contact details of the crowd members
+    - the number of microtasks done by each member 
+    - the total number of microtasks in the project 
+    
 Crowdsouring vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Risk-Sharing-Process).  
-4. The process expects only the following skills from the crowd members:  
-- sufficient knowledge of business English
-- sufficient analytical capabilities 
-- an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement   
-It does not need the crowd member to know the entire project requirement because each problem statement to be broken down, is supposed to be independent as mentioned above. It also does not need the crowd member to know the codebase or even programming. Crowd members submit pseudo-code generated by the CollaboRate tool. The SPOCs
-It also ensures that the work per crowd member is very small and thus very easy. The CollaboRate  tool facilitates performing the small work. This allows more inclusive participation and reduces project risk.    
-5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs   
+4. The following allows for more inclusive participation and reduces project risk:  
+    - It does not need the crowd member to know the entire project requirement. Th isis because each problem statement to be broken down, is supposed to be independent as mentioned above. 
+    - It does not need the crowd member to know the codebase or even programming. Crowd members submit pseudo-code generated by the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They also decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or it could be part of a software library that can and should be reused. This limited analysis and recollection from memory, is left to the knowledgeable SPOCs.  
+    - Since work is done as micro-tasks, the work per crowd member is as small and easy as possible.  
+
+ The process expects only the following skills from the crowd members:  
+    - sufficient knowledge of business English
+    - sufficient analytical capabilities 
+    - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
+
+5. It ensures superior intellectual property security. Security increases with crowd size! The security process is explained [here].     
 
 # Detailed benefits for employees and their organizations
 - Variable income in accurate proportion to contributions of the employee.   
@@ -67,10 +75,7 @@ It also ensures that the work per crowd member is very small and thus very easy.
 As of now the project is releasing its first version.
 
 # Getting started
-First read the process to follow while using the tool. Understand the principles behind each part of the process. The documentation is available [here](https://github.com/sohrabsaran/CollaboRate/wiki).
+First read the process to follow while using the tool. Go through all the links in this document.
 
 # How to use the tool?
-Besides the above-mentioned documentation, here is an overview of the process and the tool: 
-1. You must use this software along with a conventional  issue/bug tracking system. You must also form a team of a few trustworthy people. You will call these people SPOCs (Single Point Of Contacts). They will perform customer  interaction and crowd interaction. Some of these SPOCs will ensure codebase modularity and reuse of libraries.  
-2. The tool is a 'wizard'. It guides a member of the crowd to do the smallest  possible  intellectual/software work. This is of course easy for the crowd member to do.  
-3. To use the tool, [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the  wizard.
+[Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
