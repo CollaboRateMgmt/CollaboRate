@@ -37,7 +37,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project.  
 
 The project requirements form problem statements. A problem statement is less than (say) 300 words of standard business English. A micro-task is defined as breaking down a problem statement into 2 independent problem statements. By 'independent' we mean that child problem statements do not need to refer to each other or the parent problem statement.  
-The CollaboRate tool helps to perform the microtask (work breakdown)). A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
+The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
 Microtasks are managed via any conventional bug tracking system.
 
 To promote trust in the crowdsourcing vendor, the vendor must share with the crowd members the following:
@@ -45,7 +45,7 @@ To promote trust in the crowdsourcing vendor, the vendor must share with the cro
     - the number of microtasks done by each member 
     - the total number of microtasks in the project 
     
-Crowdsouring vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
+Crowdsourcing vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
     - The crowd member does not need to know the entire project requirement. As mentioned above, each problem statement to be broken down, is supposed to be independent - you do not need to look up any other documentation to understand it. 
@@ -57,7 +57,7 @@ Crowdsouring vendors will define a mechanism to resolve suspicions raised by cro
     - sufficient analytical capabilities 
     - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
 
-5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. Crowd members are enlightened to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.       
+5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are enlightened to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.       
 
 # Detailed benefits for employees and their organizations
 - Variable income in accurate proportion to contributions of the employee.   
