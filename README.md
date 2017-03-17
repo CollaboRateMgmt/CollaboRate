@@ -42,7 +42,7 @@ It may be useful for any collaborative project outside IT, that involves only de
   - Reduced financial risk
   - Superior/impeccable code, documentation and design quality
 
-# How it works
+# The Process, and how it works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 1. The process is better than others because it exploits the principle that 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) made up of one or more SPOCs ((Single Point of Contact)s) solves the resulting issue 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities that are best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
 2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project.  
@@ -82,6 +82,6 @@ This process and tool allows the most number of people possible, to work on the 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
-- Though my idea for a collaboration tool dates back to 2004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer.
+- Though I had various ideas for collaboration tools starting from around 2004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer. Any colleagues who discussed and participated in experiments cannot be acknowledged (see disclaimer) but are welcome to contribute to this project now that it is hosted on Github.
 - Wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
 - An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks. This increased my confidence in the feasibility of such an idea.
