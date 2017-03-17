@@ -53,7 +53,8 @@ To promote trust in the crowdsourcing vendor, the vendor must share with the cro
    - the names and contact details of the crowd members
    - the number of microtasks done by each member 
    - the total number of microtasks in the project  
-Crowdsourcing vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
+   
+   Crowdsourcing vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
    - The crowd member does not need to know the entire project requirement. As mentioned above, each problem statement to be broken down, is supposed to be independent - you do not need to look up any other documentation to understand it. 
@@ -78,9 +79,9 @@ As of now the project is releasing its first version.
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each others' contributions. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
 # Contributing
-We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. Finally we need to add more automation. Volunteers may contact me at sohrabsaran@gmail.com.
+We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
 - Though my idea for a collaboration tool dates back to 20004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer.
 - Wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
-- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks.
+- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks. This increased my confidence in the feasibility of such an idea.
