@@ -45,14 +45,13 @@ To promote trust in the crowdsourcing vendor, the vendor must share with the cro
 Crowdsourcing vendors will define a mechanism to resolve suspicions raised by crowd members over the number of microtasks done by any particular crowd member. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
-  - The crowd member does not need to know the entire project requirement. As mentioned above, each problem statement to be broken down, is supposed to be independent - you do not need to look up any other documentation to understand it. 
-  - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They also decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or it could be part of a software library that can and should be reused. This limited analysis and recollection from memory, is left to the knowledgeable SPOCs.  
-  - Since work is done as micro-tasks, the work per crowd member is as small and easy as possible.  
-
+   - The crowd member does not need to know the entire project requirement. As mentioned above, each problem statement to be broken down, is supposed to be independent - you do not need to look up any other documentation to understand it. 
+   - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They also decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or it could be part of a software library that can and should be reused. This limited analysis and recollection from memory, is left to the knowledgeable SPOCs.  
+   - Since work is done as micro-tasks, the work per crowd member is as small and easy as possible.  
  The process expects only the following skills from the crowd members:  
-  - sufficient knowledge of business English
-  - sufficient analytical capabilities 
-  - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
+   - sufficient knowledge of business English
+   - sufficient analytical capabilities 
+   - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
 
 5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are enlightened to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.       
 
