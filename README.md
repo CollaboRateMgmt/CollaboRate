@@ -4,7 +4,7 @@
 This work does not represent the views of any of the author's past or present organizations. Neither is it intended to cause them loss.
 
 # License Type
-MIT
+MIT.
 
 # Purpose
 CollaboRate is a process and a very simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will bring vast benefits to customers, organizations and employees alike. It will boost global economic and technology progress. 
@@ -53,12 +53,11 @@ The project requirements form problem statements. A problem statement is less th
 The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. We will soon provide more advanced features to check the child problem statements.
 Requirement problem statements break down into 'logic problem' statements. The Collaborate tool helps to break down logic problem statements. To do this, it asks the user a couple of simple questions. When you break down logic problems, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
 You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
-The vendor must promote transparency. The vendor must share with the crowd members the following:  
-   - the names and contact details of the crowd members
-   - the number of microtasks done by each member 
-   - the total number of microtasks in the project  
    
-   Crowdsourcing vendors will define a way to resolve suspicions raised by crowd members. Vendors need to balance information disclosure with intellectual property security. Let us say that crowd member X suspects that crowd member Y has been favored with inflated number of microtasks. Vendors can provide X with limited information about the summary of the problem statements broken down by Y. Or, vendors can provide full information to an investigative third party.   
+   The reward for crowd members is based purely on the number of microtasks done multiplied by a publicly known amount of money per microtask. However *in case* rewards are based on royalty, the trust factor becomes important:
+   - The vendor must provide transparency on the total number of microtasks and who did how many.
+   - Crowd members might suspect that fake microtasks exist to change royalty percentages. Crowdsourcing vendors must define a way to resolve this suspicion. Vendors need to balance information disclosure with intellectual property security. Vendors can provide limited information about the summary of the problem statements. Or, vendors can provide full information to an investigative third party. At present we descope detailed process specifications for this scenario.   
+    
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
    - The crowd member does not need to know the entire project  requirement. As mentioned above, each problem statement to must be independent. You do not need to look up any  other documentation to understand it.
