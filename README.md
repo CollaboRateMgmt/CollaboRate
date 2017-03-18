@@ -28,7 +28,7 @@ So, we get increased, inclusive and fair earning potential for all:
 customer, organization and the crowd.
 
 Estimations from individual contributors are overheads and speculation. They lead to friction and exploitation.  
-Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. Rough estimates of time and project size are the responsbility of the customer of the IT service company. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. The customer of the IT service company does rough estimates of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
