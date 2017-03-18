@@ -53,7 +53,7 @@ It may be useful for any collaborative project outside IT, that involves only de
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 1. **Sharing work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities best done by 
 ed single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
-2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You reward workers based on number of  microtasks, multiplied by money per microtask. You charge the customer based on the number of microtasks in the project.  
+2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You reward workers based on number of  microtasks, multiplied by a publicly declared sum of money per microtask. You charge the customer based on the number of microtasks in the project.  
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
    
@@ -64,10 +64,6 @@ ed single point of contacts. The governing body forms the core part of the organ
    Requirement problem statements break down into 'logic problem' statements. The Collaborate tool helps to break down logic problem statements. To do this, it asks the user a couple of simple questions. When you break down logic problems, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
    You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
-   
-   The reward for crowd members is based purely on the number of microtasks done multiplied by a publicly known amount of money per microtask. However *in case* rewards are based on royalty, issues of trust may arise:  
-   - The vendor must provide transparency on the total number of microtasks and who did how many.
-   - Crowd members might suspect that fake microtasks exist to change royalty percentages. Crowdsourcing vendors must define a way to resolve this suspicion. Vendors need to balance information disclosure with intellectual property security. Vendors can provide limited information about the summary of the problem statements. Or, vendors can provide full information to an investigative third party. At present we descope detailed process specifications for this scenario.   
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. **Reduced risk of technology and project knowledge.** The following reduces project risk. This in turn allows earning opportunities for even the less capable:  
@@ -83,8 +79,14 @@ ed single point of contacts. The governing body forms the core part of the organ
 
 5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
+   For increased security, the SPOCs may themselves do work breakdown to a particular level. The problem statements that remain to be broken down will not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
+
+   As specified earlier, as a crowdsourcing vendor you reward crowd members based on number of microtasks done. However in case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
+   - You must provide transparency on the total number of microtasks and who did how many.
+   - Crowd members might suspect that fake microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information about the summary of the problem statements. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
+
 # Challenges foreseen in adopting this process
-- The process is radical. We need to convince people and organizations to try it out. The results of actual trials and commercial success stories are key to convince more people to adopt the process.
+- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. The results of actual trials and commercial success stories are key to convince more people to adopt the process.
 - Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable for a while. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
   - speed up work that is important to the world
   - increase employment opportunities for the masses
