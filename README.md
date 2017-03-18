@@ -58,7 +58,7 @@ The vendor must promote transparency. The vendor must share with the crowd membe
    - the number of microtasks done by each member 
    - the total number of microtasks in the project  
    
-   Crowdsourcing vendors will define a way to resolve suspicions raised by crowd members. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
+   Crowdsourcing vendors will define a way to resolve suspicions raised by crowd members. Vendors need to balance information disclosure with intellectual property security. Let us say that crowd member X suspects that crowd member Y has been favored with inflated number of microtasks. Vendors can provide X with limited information about the summary of the problem statements broken down by Y. Or, vendors can provide full information to an investigative third party.   
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
    - The crowd member does not need to know the entire project  requirement. As mentioned above, each problem statement to must be independent. You do not need to look up any  other documentation to understand it.
