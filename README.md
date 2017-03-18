@@ -16,7 +16,7 @@ When this happens, the time taken for project completion reduces.
 Also, each person has to contribute very little to the project. This is of course very easy to do.  
 So the chance of project success increases.  
 
-More people can participate in important projects than ever before. No one should be concerned if an important project gets over  and the profits to develop it have to be shared among many. Because, there is enough work in the world. Neither does this process mandate royalty to the crowd members for the work they do.
+More people can take part in important projects than ever before. Do not worry if an important project gets over soon and you need to share the reward for the work done among many. Because, there is enough work in the world. Neither does this process mandate royalty to the crowd members for the work they do.
 
 Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
 Due to fast completion time, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. 
@@ -33,7 +33,7 @@ You may use this process for open source development as well. Open Source collab
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Detailed benefits for employees and their organizations
-- Priority projects can be completed in record timeframes by huge crowds of people. Never miss a customer deadline again!
+- Complete priority projects in record timeframes using huge crowds of people. Never miss a customer deadline again!
 - Variable income in accurate proportion to contributions of the employee.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
@@ -47,8 +47,8 @@ It may be useful for any collaborative project outside IT, that involves only de
 
 # The Process, and how it works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
-1. The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) made up of one or more SPOCs ((Single Point of Contact)s) solves the resulting issue 'too many cooks spoil the broth'. However efforts needed from the project governing body are very small. The crowd does the maximum work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities that are best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
-2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort - the microtask. Work measurement is very important for fairness and trust among all. You use the number of microtasks multiplied by a monetary value per microtask, to reward crowd members. You charge the customer based on the number of microtasks in the project.  
+1. The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities best done by trusted single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
+2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You reward workers based on number of  microtasks, multiplied by money per microtask. You charge the customer based on the number of microtasks in the project.  
 The project requirements form problem statements. A problem statement is less than (say) 300 words of standard business English. A micro-task is defined as breaking down a problem statement into 2 independent problem statements. By 'independent' we mean that child problem statements do not need to refer to each other or the parent problem statement.  
 The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. The tool will later provide more advanced features to validate the child problem statements.  
 Microtasks are managed via any conventional bug tracking system.  
