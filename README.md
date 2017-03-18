@@ -1,7 +1,7 @@
 # CollaboRate - a crowdsourcing process and software tool
 
 # Disclaimer
-This work does not represent the views of the author's past and present organizations.  
+This work does not represent views of the author's past and present organizations.  
 Neither is it intended to cause them loss.
 
 # License Type
