@@ -8,7 +8,7 @@ Neither is it intended to cause them loss.
 MIT.
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will bring vast benefits to customers of IT service companies, organizations and employees alike. In summary, it will boost global economic and technology progress. 
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT service companies, organizations and employees alike. In summary, it will boost global economic and technology progress. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
@@ -21,14 +21,14 @@ More people can take part in important projects than ever before.
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project.  
 Because, there is enough work in the world. 
 
-This process specifies that crowd members should be rewarded accurately for the intellectual work they do. We mean to reward  for just intellectual effort. Yet you may choose to have *additional* royalty-based rewards for the crowd members.
+This process specifies you reward crowd members for their intellectual work. We mean to reward for intellectual effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
 
 In the new process, you measure intellectual contributions exactly. You also measure the project's exact 'intellectual effort size'. The customer pays based on this size. 
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
 
-Estimations from individual contributors are overheads and speculation. They just lead to friction and exploitation.  
-Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. Rough estimates of time and project size are the responsbility of the customer. A part of the organization that we call the 'crowdsourcing vendor' can also share estimation responsibility. The customer needs to check that the estimated size of the project does not exceed the budget.  
+Estimations from individual contributors are overheads and speculation. They lead to friction and exploitation.  
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. Rough estimates of time and project size are the responsbility of the customer of the IT service company. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
