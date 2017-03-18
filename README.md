@@ -80,7 +80,7 @@ To promote trust in the crowdsourcing vendor, the vendor must share with the cro
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn a software technology in-depth should use this process for earning only. For learning software technologies, they can work on open source projects that do not use this process, or they can study the source code of open source projects.
 
 # Who's using it?
-As of now the project is releasing its first version.
+As of now the project has just released its first version.
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
