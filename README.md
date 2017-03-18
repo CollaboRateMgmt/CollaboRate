@@ -51,7 +51,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 2. It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You reward workers based on number of  microtasks, multiplied by money per microtask. You charge the customer based on the number of microtasks in the project.  
 The project requirements form problem statements. A problem statement is less than (say) 300 words of standard business English. We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
 The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. We will soon provide more advanced features to check the child  problem statements.  
-You manage microtasks via any conventional bug tracking system. There are several available - Trac, Redmine, Bugzilla etc.  
+You manage microtasks via any conventional bug tracking system. There are several available - Trac, Redmine, Bugzilla etc. As you may know, you can use such systems to manage requirements (problem statements) as well.  
 The vendor must promote transparency. The vendor must share with the crowd members the following:  
    - the names and contact details of the crowd members
    - the number of microtasks done by each member 
@@ -60,16 +60,17 @@ The vendor must promote transparency. The vendor must share with the crowd membe
    Crowdsourcing vendors will define a way to resolve suspicions raised by crowd members. Limited information about the summary of the problem statements broken down by the crowd member suspected of being favored, can be be provided to suspiscious crowd member, or an investigating third party in an automated or manual way.  
 3. The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. The following allows for more inclusive participation and reduces project risk:  
-   - The crowd member does not need to know the entire project requirement. As mentioned above, each problem statement to be broken down, is supposed to be independent - you do not need to look up any other documentation to understand it. 
-   - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They also decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or it could be part of a software library that can and should be reused. This limited analysis and recollection from memory, is left to the knowledgeable SPOCs.  
-   - Since work is done as micro-tasks, the work per crowd member is as small and easy as possible.  
+   - The crowd member does not need to know the entire project  requirement. As mentioned above, each problem statement to must be independent. You do not need to look up any  other documentation to understand it.
+   - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs handle this limited analysis and recollection from memory. 
+   - Since the crowd works one microtask at a time, the work per crowd member is as small and easy as possible.  
    
    The process expects only the following skills from the crowd members:  
-     - sufficient knowledge of business English
-     - sufficient analytical capabilities 
-     - an ability to surf the Net and understand to the needed level, domain concepts referenced in the problem statement
+     - Enough knowledge of business English
+     - Enough analytical capabilities 
+     - Able to use the Internet to search for information
+     - Willing to learn domain concepts referenced in the problem statement. You only need to learn to the extent needed to break down the problem into two sub-problems.
 
-5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A task assignment once assigned to a crowd member cannot be refused, otherwise the financial penalties for an incomplete task apply. Crowd members are warned to keep details of the tasks that they have worked on only to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
+5. It ensures superior intellectual property security. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
 # Challenges foreseen in adopting this process
 - Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable for a while. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
