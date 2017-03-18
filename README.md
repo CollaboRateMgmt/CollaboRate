@@ -1,14 +1,14 @@
 # CollaboRate - a crowdsourcing process and software tool
 
 # Disclaimer
-This work does not represent the views of any of the author's past or present organizations.  
+This work does not represent the views of the author's past and present organizations.  
 Neither is it intended to cause them loss.
 
 # License Type
 MIT.
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will bring vast benefits to customers, organizations and employees alike. It will boost global economic and technology progress. 
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will bring vast benefits to customers of IT service companies, organizations and employees alike. In summary, it will boost global economic and technology progress. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
@@ -21,15 +21,14 @@ More people can take part in important projects than ever before.
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project.  
 Because, there is enough work in the world. 
 
-This process specifies that crowd members should be rewarded accurately for the intellectual work they do. We mean reward only for intellectual effort and not based on royalty. You may choose to have additional royalty-based rewards for the crowd members.
+This process specifies that crowd members should be rewarded accurately for the intellectual work they do. We mean to reward  for just intellectual effort. Yet you may choose to have *additional* royalty-based rewards for the crowd members.
 
-Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
-Due to fast completion time, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. 
-
-Due to the new process, crowd members can measure each others' contributions exactly. The organization is also able to measure the project's exact 'intellectual effort size'. The customer pays based on this size.  
-
+In the new process, you measure intellectual contributions exactly. You also measure the project's exact 'intellectual effort size'. The customer pays based on this size. 
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
+
+Estimations from individual contributors are overheads and speculation. They just lead to friction and exploitation.  
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. Rough estimates of time and project size are the responsbility of the customer. A part of the organization that we call the 'crowdsourcing vendor' can also share estimation responsibility. The customer needs to check that the estimated size of the project does not exceed the budget.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
@@ -42,7 +41,7 @@ It may be useful for any collaborative project outside IT, that involves only de
 - Variable income in accurate proportion to contributions of the employee.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
-  - No need to call employees to an office and keep an eye on them. So employees can work from home.
+  - No need to call employees to an office to keep an eye on them. Employees can work from home!
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # Detailed benefits for customers
