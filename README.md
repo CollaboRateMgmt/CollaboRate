@@ -54,12 +54,18 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 1. **Sharing work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities best done by 
 ed single point of contacts. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You reward workers based on number of  microtasks, multiplied by money per microtask. You charge the customer based on the number of microtasks in the project.  
-You write down the project requirements. These are problem statements. A problem statement is less than (say) 300 words of standard business English. We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
-The CollaboRate tool helps to perform the microtask (work breakdown). A simple copy-paste feature eases creation of child problem statements. We will soon provide more advanced features to check the child problem statements.
-Requirement problem statements break down into 'logic problem' statements. The Collaborate tool helps to break down logic problem statements. To do this, it asks the user a couple of simple questions. When you break down logic problems, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
-You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
+
+   We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
    
-   The reward for crowd members is based purely on the number of microtasks done multiplied by a publicly known amount of money per microtask. However *in case* rewards are based on royalty, the trust factor becomes important:
+   Written project requirements are problem statements. A problem statement is less than (say) 300 words of standard business English.  
+   
+   The CollaboRate tool helps to perform the microtask (work breakdown of problem statements). A simple copy-paste feature eases creation of child problem statements. We will soon provide more advanced features to check the child problem statements.   
+
+   Requirement problem statements break down into 'logic problem' statements. The Collaborate tool helps to break down logic problem statements. To do this, it asks the user a couple of simple questions. When you break down logic problems, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
+   
+   You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
+   
+   The reward for crowd members is based purely on the number of microtasks done multiplied by a publicly known amount of money per microtask. However *in case* rewards are based on royalty, issues of trust may arise:  
    - The vendor must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake microtasks exist to change royalty percentages. Crowdsourcing vendors must define a way to resolve this suspicion. Vendors need to balance information disclosure with intellectual property security. Vendors can provide limited information about the summary of the problem statements. Or, vendors can provide full information to an investigative third party. At present we descope detailed process specifications for this scenario.   
     
