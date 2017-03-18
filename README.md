@@ -16,7 +16,7 @@ When this happens, the time taken for project completion reduces.
 Also, each person has to contribute very little to the project. This is of course very easy to do.  
 So the chance of project success increases.  
 
-More people can effectively participate in important projects than ever before. No one should be concerned if an important project gets over quickly and the profits to develop it have to be shared among many, because there is enough work to be done in the world. Neither does this process mandate royalty to the crowd members, for the work done using this process.
+More people can participate in important projects than ever before. No one should be concerned if an important project gets over  and the profits to develop it have to be shared among many. Because, there is enough work in the world. Neither does this process mandate royalty to the crowd members for the work they do.
 
 Estimations from the individual contributors are an overhead and a speculative activity. They lead to friction and exploitation.  
 Due to fast completion time, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. 
