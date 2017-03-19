@@ -73,7 +73,7 @@ Lets have a closer look at each solution.
    
    The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple copy-paste feature eases creation of child tasks. We will soon provide more advanced features to check child tasks.   
 
-   Requirement tasks eventually break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
+   The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
@@ -91,9 +91,9 @@ Lets have a closer look at each solution.
 
 5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. Not a single crowd member can see all the tasks, pseudocode and code. So you get superior intellectual property security.   
 
-   What if you want to keep the project's goal a secret? For this, do work breakdown to a particular level. Ensure that the crowdsourced tasks do not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
+   What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
-   As specified earlier, as a crowdsourcing vendor you reward crowd members based on number of microtasks done. However in case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
+   In case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
    - You must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
@@ -121,6 +121,6 @@ We need to understand, debate, test and stabilize the process and tool. We also 
 # Acknowledgements
 - I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Any colleagues in the organization who discussed and participated in experiments cannot be acknowledged (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
 - The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
-- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks. This increased my confidence in the feasibility of such an idea.
-- I thank all the people who made the wonderful open tools on which this project is based and hosted. 
+- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring software microtasks. This increased my confidence in the feasibility of such an idea.
+- I thank all the people who made the wonderful open tools on which this project is based and hosted - JQuery, Github, the Hemingway Editor and all the underlying internet technologies and tools. 
 - Last but not least, I thank my family for their constant support.
