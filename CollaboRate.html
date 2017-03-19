@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
-		CollaboRate v1.0 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
+		CollaboRate v1.1 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
 	</title>
 	<style>
 		* {font-family: Sans-Serif;}
@@ -21,7 +21,7 @@
 		{
 			display:none;/*hide divs by default*/
 			padding-left: 5px;/*so that nested divs can be visualized*/
-		}
+		}		
 	</style>
 	<!--
 	<script
@@ -30,8 +30,7 @@
 		crossorigin="anonymous">
 	</script>
 	--->
-	<script src="jquery-3.1.1.slim.min.js"></script>
-	
+	<script src="jquery-3.1.1.slim.min.js"></script>	
 	<script>
 //BEGIN src="https://raw.githubusercontent.com/spencertipping/jquery.fix.clone/master/jquery.fix.clone.js">
 		// Textarea and select clone() bug workaround | Spencer Tipping
@@ -393,7 +392,10 @@ function appendVisibleElementClone(parentEleId,childEleId)
 		$("#"+childEleId).hide();
 	}
 }
-	</script>
+
+//At startup, ensure that all buttons are of type 'button'.
+$(function(){ $( ":button" ).prop("type", "button") })
+</script>
 </head>
 <body>
 <H2 id="pageheading">
@@ -406,24 +408,29 @@ function appendVisibleElementClone(parentEleId,childEleId)
 <br>
 This tool will guide you to break down the task assigned to you in the issue tracking system.<br>
 <br>
-<b>Task Summary (paste the task's summary into the textbox below) </b><pre><!--(the phrase 'create function' in summary could be taken as a keyword for some workflow/validations)--> 
-</pre><input id="taskSummary" size="120" type=text><!--style="background:#eeeeee"--><pre> 
+<b>Task Summary</b> <button onclick="alert(el('taskSummary').placeholder)">?</button><br><!--(the phrase 'create function' in summary could be taken as a keyword for some workflow/validations)--> 
+</pre><input id="taskSummary" size="120" type="text" placeholder="Copy the task summary from the task tracking system and paste it here."><!--style="background:#eeeeee"--><pre> 
 
-</PRE><b>Task Description (paste the task's description into the textarea below) </b><pre> 
-</pre><textarea rows="5" cols="120" id="taskDesc">
+</PRE><b>Task Description</b> <button onclick="alert(el('taskDesc').placeholder)">?</button> <br>
+<textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description from the task tracking system and paste it here.">
 </textarea><!--style="background:#eeeeee;"--><br>
-Note: the task description must be enough to clearly and completely describe the task, without needing to refer to any other task or diagram.<br> 
-Otherwise, bring this to the notice of the task creator, preferably via a comment against that task.<br>
+Note: Before you break down this task, check that its description is clear and complete. It must not refer to any other task or diagram.<br> 
+Otherwise, bring this to the notice of the task creator via a comment against that task.<br>
 <br>
 <b style="color:red">Note that you do not need to fully solve this task!</b> <button type="button" 
 onclick="alert(($('#divForExplanationForWhyYouDoNotNeedToFullySolveThisTask')[0]).innerText)">?</button>
 <br>
 <div id="divForExplanationForWhyYouDoNotNeedToFullySolveThisTask">
-Your microtask is just to break down this task into 2 subtasks.<br> 
-Exception: the task to solve is to create a function, and it is found that the function just needs to call a readymade function with constant values as parameters.<br>
-Other crowd members if available, will preferably break down these 2 subtasks (and so on).<br> 
-Additionally, once your breakdown is reviewed, you will need to create the 2 subtasks in the issue tracker, and then act as the reviewer for the break down of these subtasks.<br>
-Instead of fully solving this task, you can break down other tasks assigned to you.
+As per the CollaboRate process, you do not need to fully solve an assigned task.<br>
+Your microtask is just to break down this task into 2 parts.<br> 
+Both parts usually yield subtasks. <br>
+Sometimes the task assigned is so small that it may yield 1 subtask or even no subtask.<br>
+Other crowd members will break down the subtasks you create.<br> 
+Additionally, once your breakdown is reviewed:<br>
+1. You must create the subtasks in the issue tracker.<br>
+2. You must act as the reviewer for the break down of these subtasks.<br>
+<br>
+To do more work, you break down other tasks.
 </div>
 <br>
 <!--
@@ -444,8 +451,9 @@ Instead of fully solving this task, you can break down other tasks assigned to y
 
 <div id="divfortaskthatspecifiescreationofafunction" class="classfordivfordoesthistaskspecifyfnoption" 
 style="background:#ffe066">
-(Question applicable for projects where task visibility is unrestricted e.g. experimental or open-source projects, answer 'yes' if not applicable):<br>
-<b> Has go-ahead for creation of this function been given in the form of comments in the issue tracker, by BOTH programming language/third-party code-reuse SPOC, and also by the code reuse SPOC?</b><select 
+(Question applicable for projects where task visibility is unrestricted e.g. experimental or open-source projects. Answer 'yes' if not applicable):<br>
+<b> Has go-ahead to crowdsource this task been given by BOTH programming language/third-party code-reuse SPOC, and also by the code reuse SPOC?</b> 
+(contact the SPOCs if you are not sure how go-aheads are mentioned) <select 
 onchange = "showDivForCurrentlySelectedOption(this,'classfordivforhasfngoaheadbeengiven')"
 <!--onchange2="if(this.value=='no'){console.log('You need to get approval before breaking down this task.');}else{;$('#divtoshowforcreationofapprovedfn').show();}"-->
 >
@@ -454,7 +462,7 @@ onchange = "showDivForCurrentlySelectedOption(this,'classfordivforhasfngoaheadbe
 <option value="needtogetapprovalmsgdiv">No</option>
 </select><br><br>
 
-<div id="needtogetapprovalmsgdiv" class="classfordivforhasfngoaheadbeengiven">
+<div id="needtogetapprovalmsgdiv" class="classfordivforhasfngoaheadbeengiven" style="background:#ff4d4d">
 You need to get approval before breaking down this task.
 </div>
 
@@ -462,8 +470,8 @@ You need to get approval before breaking down this task.
 <b>What is the best way to break down this function?</b>  
 <select id="taskSplitTypeDropdown" onchange="optionChanged_howBigSpecific(this,'bigtaskoption');">
 	<option>&nbsp;</option>	
-	<option value="nonObviousReqAndElaboratedNewFn">Break it down into a non-obvious requirement/usecase, and a new task for this new function but with more details.</option>
-	<option value="needsSubFns">Calls 1-2 other functions.</option>
+	<option value="nonObviousReqAndElaboratedNewFn">Break it down into a non-obvious requirement, and a new task for this function, but with more details.</option>
+	<option value="needsSubFns">Call other functions.</option>
 	<option value="unnecessaryJustNeedsToReturnConstant">This task is unnecessary. This function just needs to return a constant!</option>
 </select><br><br>
 
@@ -475,7 +483,7 @@ $(function(){appendVisibleElementClone("unnecessaryJustNeedsToReturnConstant", "
 
 <div class="bigtaskoption" id="nonObviousReqAndElaboratedNewFn">
 <div style="display:block !important;background:#ffeeee;" id="nonObviousReqOrUseCase">
-<b>Enter the details for the non-obvious requirement/use case</b><br><br>
+<b>Enter the details for the non-obvious requirement</b><br><br>
 <script>
 $(function(){appendVisibleElementClone("nonObviousReqOrUseCase", "summAndDesc")})
 </script>
@@ -800,9 +808,9 @@ params:
 		</script>
 	</div>
 	<div id="divforvaluetoreturnifcondfnreturnstrue" style="display:block;background:#e6ccff">
-		<b>Function to call and whose value will be returned, in case the condition function returns 'true'</b><br>
+		<b>Value to return, in case the condition function returns 'true'</b><br>
 		<script>
-		$(function(){appendVisibleElementClone("divforvaluetoreturnifcondfnreturnstrue", "newfndetails")})
+		$(function(){appendVisibleElementClone("divforvaluetoreturnifcondfnreturnstrue", "returnconstantornewfn")})
 		</script>		
 	</div>
 </div>
