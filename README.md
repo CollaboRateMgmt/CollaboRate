@@ -69,17 +69,17 @@ Lets have a closer look at each solution.
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other. We also refer refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
-   Written project requirements are problem statements. A problem statement is less than (say) 300 words of standard business English.  
+   Written project requirements are tasks. A task is less than (say) 300 words of standard business English.  
    
-   The CollaboRate tool helps to perform the microtask (work breakdown of problem statements). A simple copy-paste feature eases creation of child problem statements. We will soon provide more advanced features to check the child problem statements.   
+   The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple copy-paste feature eases creation of child tasks. We will soon provide more advanced features to check child tasks.   
 
-   Requirement problem statements break down into 'logic problem' statements. The Collaborate tool helps to break down logic problem statements. To do this, it asks the user a couple of simple questions. When you break down logic problems, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
+   Requirement tasks eventually break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
+   You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
-   - The crowd member does not need to know the entire project scope. As mentioned above, each problem statement must be independent. You do not need to look up any  other documentation to understand it.
+   - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent. You do not need to look up any  other documentation to understand it.
    - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized intellectual work. 
    - Since the crowd works one microtask at a time, the work per crowd member is as small and easy as possible.  
    
@@ -87,23 +87,23 @@ Lets have a closer look at each solution.
      - Enough knowledge of business English
      - Enough analytical capabilities 
      - Able to use the Internet to search for information
-     - Willing to learn domain concepts referenced in the problem statement. You only need to learn to the extent needed to break down the problem into two sub-problems.
+     - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
+5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not publicly visible. Tasks will be visible only to the task creator, the task assignee and the SPOCs. Since the project is split into a very large number of tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
-   For increased security, the SPOCs may themselves do work breakdown to a particular level. The problem statements that remain to be broken down will not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
+   For increased security, the SPOCs may themselves do work breakdown to a particular level. The tasks that remain to be broken down will not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
 
    As specified earlier, as a crowdsourcing vendor you reward crowd members based on number of microtasks done. However in case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
    - You must provide transparency on the total number of microtasks and who did how many.
-   - Crowd members might suspect that fake microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information about the summary of the problem statements. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
+   - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
-# Challenges foreseen in adopting this process
+# Challenges foreseen in process adoption
 - The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. The results of actual trials and commercial success stories are key to convince more people to adopt the process.
-- Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable for a while. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
-  - speed up work that is important to the world
+- Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
+  - share and speed up work that is important to the world. After a point, the work *will* proceed faster with more people
   - increase employment opportunities for the masses
-  - ensure that work is fairly measured    
-- People must try to visualize that given this process and a long enough trial period, a large enough team that has no shortage of work will be faster and more productive than the old way of working.
+  - ensure that work is fairly measured.    
+- We need to convince people that given this process and a long enough trial period, a large enough team that has no shortage of work will be faster and more productive than the old way of working. People need to invest enough time and money in appropriate trials accordingly. They also need to be prepared for learnings from the trials. Based on these learnings, we will enhanceme the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn a software technology in-depth should use this process for earning only. For learning software technologies, they can work on open source projects that do not use this process, or they can study the source code of open source projects.
 
 # Who's using it?
@@ -119,6 +119,6 @@ This process and tool allows the most number of people possible, to work on the 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
-- Though I had various ideas for collaboration tools starting from around 2004, I was introduced last year to the term 'Crowdsourcing' and attempts to commercialize it, by my present employer. Any colleagues who discussed and participated in experiments cannot be acknowledged (see disclaimer) but are welcome to contribute to this project now that it is hosted on Github.
-- Wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
+- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I was introduced to the term 'Crowdsourcing' and attempts to commercialize it. Any colleagues in the organization who discussed and participated in experiments cannot be acknowledged (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
+- The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
 - An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring the feasibility of software microtasks. This increased my confidence in the feasibility of such an idea.
