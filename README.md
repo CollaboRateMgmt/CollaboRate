@@ -63,9 +63,9 @@ Lets have a closer look at each solution.
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
    You pay workers X times the number of  microtasks. X is the money per microtask that you pay. X is visible to the public.  
    
-   Similarly, the customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
+   The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
    
-   Market forces may fix X and Y. Even government laws may restrict their values to lie within a pre-defined range.
+   Market forces may fix X and Y. In future, government laws may even restrict their values to lie within a pre-defined range.
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
    
