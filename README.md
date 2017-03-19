@@ -67,7 +67,7 @@ Lets have a closer look at each solution.
    
    Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
 
-   We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
+   We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other. We also refer refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
    Written project requirements are problem statements. A problem statement is less than (say) 300 words of standard business English.  
    
@@ -89,7 +89,7 @@ Lets have a closer look at each solution.
      - Able to use the Internet to search for information
      - Willing to learn domain concepts referenced in the problem statement. You only need to learn to the extent needed to break down the problem into two sub-problems.
 
-5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. The task tracking system will be configured so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
+5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that only the needed crowd members can see a particular task. Since the project is split into a very large number of micro-tasks and each crowd member sees only a tiny part of the design/pseudo-code, you get intellectual property security.   
 
    For increased security, the SPOCs may themselves do work breakdown to a particular level. The problem statements that remain to be broken down will not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
 
