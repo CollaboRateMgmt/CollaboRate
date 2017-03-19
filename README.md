@@ -104,7 +104,8 @@ Lets have a closer look at each solution.
   - increase employment opportunities for the masses
   - ensure fairness and transparency in work
 - We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
-- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use this Collaborate only for earning. To learning, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
+- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects.  
+   Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
 As of now the project has just released its first version.
