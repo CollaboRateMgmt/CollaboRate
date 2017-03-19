@@ -108,7 +108,10 @@ Lets have a closer look at each solution.
    Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
-As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me at sohrabsaran@gmail.com. I will share news of your initiative. 
+As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me at sohrabsaran@gmail.com. I will share news of your initiative.  
+
+   The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
+   
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
