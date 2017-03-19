@@ -75,7 +75,7 @@ Lets have a closer look at each solution.
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   Each microtask is the same size for all practical purposes. With each breakdown, tasks reduce in terms of the number of requirements they contain. But the size of their text remains the same. In order to keep the child tasks independent from each other, requirement elaboration is needed. At the level of 'logic tasks', the business requirement is small but the design effort is more. This process may enhance the definition of microtask size later. At present we believe that you will find non-weighted microtasks fair enough. 
+   Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. This process may enhance the definition of microtask size later. At present you will find non-weighted microtasks fair enough. 
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
