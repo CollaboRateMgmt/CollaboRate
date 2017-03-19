@@ -91,7 +91,7 @@ Lets have a closer look at each solution.
 
 5. **Superior intellectual property security.** Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. Not a single crowd member can see all the tasks, pseudocode and code. So you get superior intellectual property security.   
 
-   For increased security, the SPOCs may themselves do work breakdown to a particular level. The tasks that remain to be broken down will not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
+   What if you want to keep the project's goal a secret? For this, do work breakdown to a particular level. Ensure that the crowdsourced tasks do not give the crowd an understanding of the original requirement. But the crowd may like to work on projects that have open and noble goals.  
 
    As specified earlier, as a crowdsourcing vendor you reward crowd members based on number of microtasks done. However in case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
    - You must provide transparency on the total number of microtasks and who did how many.
