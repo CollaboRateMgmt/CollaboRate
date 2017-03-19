@@ -27,8 +27,8 @@ In the new process, you measure intellectual contributions exactly. You also mea
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
 
-Estimations from individual contributors are overheads and speculation. They lead to friction and exploitation.  
-Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. The customer of the IT service company does rough estimates of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
+Estimates from individual contributors are overheads and speculation. They lead to friction and exploitation.  
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. The customer of the IT service company does rough estimation of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
@@ -37,7 +37,7 @@ You may use this process for open source development as well. Open Source collab
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Detailed benefits for employees and their organizations
-- Complete priority projects in record timeframes using huge crowds of people. Never miss a customer deadline again!
+- Complete priority projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Variable income in accurate proportion to contributions of the employee.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
@@ -65,7 +65,7 @@ Lets have a closer look at each solution.
    
    The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
    
-   Market forces may fix X and Y. In future, government laws may even restrict their values to lie within a pre-defined range.
+   Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
    
