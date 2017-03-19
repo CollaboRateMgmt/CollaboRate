@@ -108,7 +108,7 @@ Lets have a closer look at each solution.
    Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
-As of now the project has just released its first version.
+As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me at sohrabsaran@gmail.com. I will share news of your initiative. 
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
@@ -120,8 +120,15 @@ This process and tool allows the most number of people possible, to work on the 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
-- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Any colleagues in the organization who discussed and participated in experiments cannot be acknowledged (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
+- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. I cannot acknowledge them (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
 - The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
-- An internet search showed me that at least 2 organizations (University of California Irvine and Microsoft Research) are exploring software microtasks. This increased my confidence in the feasibility of such an idea.
-- I thank all the people who made the wonderful open tools on which this project is based and hosted - JQuery, Github, the Hemingway Editor and all the underlying internet technologies and tools. 
+- Internet search showed me that at least 2 organizations explored software microtasks. These are:
+    - The University of California,, Irvine
+    - Microsoft Research  
+   This increased my confidence in the feasibility of such an idea.
+- I thank all the people who made the wonderful open tools on which I base and host this project: 
+    - JQuery
+    - Github 
+    - Hemingway Editor 
+    - all the underlying internet technologies and tools used in this project
 - Last but not least, I thank my family for their constant support.
