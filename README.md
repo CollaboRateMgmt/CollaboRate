@@ -122,10 +122,10 @@ We need to understand, debate, test and stabilize the process and tool. We also 
 # Acknowledgements
 - I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. I cannot acknowledge them (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
 - The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
-- Internet search showed me that at least 2 organizations explored software microtasks. These are:
-    - The University of California,, Irvine
+- Internet search showed me that at least 2 organizations explored software microtasks. This increased my confidence in the feasibility of such an idea. These organizations are:
+    - The University of California, Irvine
     - Microsoft Research  
-   This increased my confidence in the feasibility of such an idea.
+
 - I thank all the people who made the wonderful open tools on which I base and host this project: 
     - JQuery
     - Github 
