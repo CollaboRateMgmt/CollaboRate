@@ -93,16 +93,16 @@ Lets have a closer look at each solution.
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
-   In case of *extra* rewards based on royalty, issues of trust may arise. These must be resolved as follows:  
+   In case of *extra* rewards based on royalty, issues of trust may arise. You must resolve them as follows:  
    - You must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
 # Challenges foreseen in process adoption
-- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. The results of actual trials and commercial success stories are key to convince more people to adopt the process.
-- Developers who are used to writing hundreds of lines of code per day, may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
+- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it.
+- Developers write hundreds of lines of code per day. They may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
   - share and speed up work that is important to the world. After a point, the work *will* proceed faster with more people
   - increase employment opportunities for the masses
-  - ensure that work is fairly measured.    
+  - ensure fairness and transparency in work
 - We need to convince people that given this process and a long enough trial period, a large enough team that has no shortage of work will be faster and more productive than the old way of working. People need to invest enough time and money in appropriate trials accordingly. They also need to be prepared for learnings from the trials. Based on these learnings, we will enhanceme the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn a software technology in-depth should use this process for earning only. For learning software technologies, they can work on open source projects that do not use this process, or they can study the source code of open source projects.
 
