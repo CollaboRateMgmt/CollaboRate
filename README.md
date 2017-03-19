@@ -99,12 +99,12 @@ Lets have a closer look at each solution.
 
 # Challenges foreseen in process adoption
 - The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it.
-- Developers write hundreds of lines of code per day. They may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. However they need to keep in mind that it is a worthwhile temporary sacrifice in order to:
+- Developers write hundreds of lines of code per day. They may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. But they must keep in mind that it is a worthwhile temporary sacrifice to:
   - share and speed up work that is important to the world. After a point, the work *will* proceed faster with more people
   - increase employment opportunities for the masses
   - ensure fairness and transparency in work
-- We need to convince people that given this process and a long enough trial period, a large enough team that has no shortage of work will be faster and more productive than the old way of working. People need to invest enough time and money in appropriate trials accordingly. They also need to be prepared for learnings from the trials. Based on these learnings, we will enhanceme the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
-- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn a software technology in-depth should use this process for earning only. For learning software technologies, they can work on open source projects that do not use this process, or they can study the source code of open source projects.
+- We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
+- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use this Collaborate only for earning. To learning, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
 As of now the project has just released its first version.
