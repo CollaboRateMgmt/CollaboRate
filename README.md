@@ -54,7 +54,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 - Share work among many
 - Fair financials
 - Fair risk sharing
-- Reduced risk of technology and project knowledge
+- End the risk and barrier of technical and project knowledge
 - Superior intellectual property security
 
 Lets have a closer look at each solution.
@@ -78,7 +78,7 @@ Lets have a closer look at each solution.
    You manage microtasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage requirements (problem statements) as well.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
-4. **Reduced risk of technology and project knowledge.** The following reduces project risk. This in turn allows earning opportunities for even the less capable:  
+4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
    - The crowd member does not need to know the entire project scope. As mentioned above, each problem statement must be independent. You do not need to look up any  other documentation to understand it.
    - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized intellectual work. 
    - Since the crowd works one microtask at a time, the work per crowd member is as small and easy as possible.  
