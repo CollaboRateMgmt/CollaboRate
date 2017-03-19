@@ -21,9 +21,9 @@ More people can take part in important projects than ever before.
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project.  
 Because, there is enough work in the world. 
 
-This process specifies you reward crowd members for their intellectual work. We mean to reward for intellectual effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
+This process specifies you reward crowd members for their mental work. We mean to reward for mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
 
-In the new process, you measure intellectual contributions exactly. You also measure the project's exact 'intellectual effort size'. The customer pays based on this size. 
+In the new process, you measure mental contributions exactly. You also measure the project's exact 'mental effort size'. The customer pays based on this size. 
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
 
@@ -60,7 +60,7 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 Lets have a closer look at each solution.
 
 1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
-2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
+2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
    You pay workers X times the number of  microtasks. X is the money per microtask that you pay. X is visible to the public.  
    
    The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
@@ -75,12 +75,14 @@ Lets have a closer look at each solution.
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
+   Each microtask is the same size for all practical purposes. With each breakdown, tasks reduce in terms of the number of requirements they contain. But the size of their text remains the same. In order to keep the child tasks independent from each other, requirement elaboration is needed. At the level of 'logic tasks', the business requirement is small but the design effort is more. This process may enhance the definition of microtask size later. At present we believe that you will find non-weighted microtasks fair enough. 
+   
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent. You do not need to look up any  other documentation to understand it.
-   - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized intellectual work. 
+   - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work. 
    - Since the crowd works one microtask at a time, the work per crowd member is as small and easy as possible.  
    
    The process expects only the following skills from the crowd members:  
