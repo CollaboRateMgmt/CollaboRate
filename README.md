@@ -51,8 +51,21 @@ It may be useful for any collaborative project outside IT, that involves only de
 
 # The Process, and how it works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
-1. **Sharing work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
-2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all. You pay workers the number of  microtasks times X. X is the money per microtask that you pay. It is visible to the public. The customer pays the number of microtasks in the project times Y. Market forces may fix X and Y. Even government laws may restrict their values to lie within a pre-defined range.
+- Share work among many
+- Fair financials
+- Fair risk sharing
+- Reduced risk of technology and project knowledge
+- Superior intellectual property security
+
+Lets have a closer look at each solution.
+
+1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
+2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible intellectual effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
+   You pay workers X times the number of  microtasks. X is the money per microtask that you pay. X is visible to the public.  
+   
+   Similarly, the customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
+   
+   Market forces may fix X and Y. Even government laws may restrict their values to lie within a pre-defined range.
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other.  
    
