@@ -67,7 +67,7 @@ Let's have a closer look at each solution.
    
    Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
 
-   We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other. We also refer refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
+   We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other. We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
    Written project requirements are tasks. A task is less than (say) 300 words of standard business English.  
    
