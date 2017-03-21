@@ -39,9 +39,9 @@ Due to fast completion, the need for estimating the exact project end date reduc
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-You may use this process for open source development as well. Open Source collaborators could work together better with this process. As mentioned earlier, more people can take part than ever before, in projects that are important to the world. Open source projects are all very important to the world. We hope that duplicate effort among open source projects is minimal.
+You may use this process for open source development as well. Open Source collaborators could work together better with this process. As we said earlier, now a huge number of people can work at the same time, on a project that is important to the world.  Open source projects are all very important to the world. 
 
-Open source business models can use this process. People can do unique work that is important to the world, and earn at the same time. We feel that the [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty) is the best open source business model. Soon, we will specify how to use CollaboRate with this model.
+Open source business models can use this process. Also, we hope that duplicate effort among open source projects is minimal. So people can do unique work that is important to the world, and earn at the same time. We feel that the [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty) is the best open source business model. Soon, we will specify how to use CollaboRate with this model.
 
 # Detailed Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
