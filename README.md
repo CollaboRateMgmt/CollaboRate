@@ -74,7 +74,7 @@ Let's have a closer look at each solution.
 
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
-   You pay workers X times the number of  microtasks. X is the money per microtask that you pay. X is visible to the public.  
+   You pay workers X times the number of  microtasks that they do. X is the money per microtask that you pay. X is visible to the public.  
    
    The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
    
@@ -86,7 +86,9 @@ Let's have a closer look at each solution.
    
    Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters).  
    
-   The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple copy-paste feature eases creation of child tasks. We will soon provide more advanced features to check child tasks.   
+   The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple optional copy-paste feature eases creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
+   
+    We will soon provide more advanced features to check child tasks and help with their creation. This may involve sentence analysis, display of common and uncommon strings between the 2 child tasks, display of missing strings etc.   
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
@@ -99,7 +101,7 @@ Let's have a closer look at each solution.
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. Work can easily be completed in the given timeframe. Crowd members must pay a penalty that is in proportion to the amount of change they need to make to the text of the child task in order to correct or complete it. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
-   - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained. You do not need to look up any  other documentation to understand it.
+   - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained. You do not need to look up any other documentation to understand it from the project requirement or design perspective.
    -The crowd member does not need to know the codebase. The SPOCs decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work. 
    - The crowd member does even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. As we refine the questions and options presented by the tool, they may not even realize that they are creating pseudocode. The SPOCs convert the pseudo-code to the actual lines of code. 
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible.  
@@ -121,7 +123,7 @@ Let's have a closer look at each solution.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
 # Known limitations
-- What if an initial problem statement is more than 2000 characters? The customer or SPOCs will have to themselves do initial task breakdown. They can then crowdsource descendant tasks.
+- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks.
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
@@ -137,7 +139,7 @@ We try to keep this document as clear and complete as possible. Yet you might ha
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects.  
    Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 - Do not worry about skill loss:
-  - Software development training must not use CollaboRate. Even now, education systems provide a lot of knowledge that we may never use.  
+  - Software development training must not use CollaboRate. Even now, education systems provide a lot of knowledge that we may never use. Perhaps this is done to preserve the knowledge of mankind.  
   - There always will be a demand for technical SPOCs. We can rotate the technical SPOC responsibility. 
   - We will automate the tasks done by technical SPOCs. We will soon make this automation open source. We can preserve this open source. The world will not lose it. Then skills needed by technical SPOCs will be unnecessary. The need for technical SPOCs will end.
 
