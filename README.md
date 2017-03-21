@@ -88,8 +88,8 @@ Let's have a closer look at each solution.
    - Since the crowd works one microtask at a time, the work per crowd member is as small and easy as possible.  
    
    The process expects only the following skills from the crowd members:  
-     - Enough knowledge of business English
-     - Enough analytical capabilities 
+     - Read and write business English
+     - Analytical capabilities 
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
