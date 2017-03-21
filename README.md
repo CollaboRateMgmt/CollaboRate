@@ -24,7 +24,7 @@ More people can take part in important projects than ever before.
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project.  
 Because, there is enough work in the world. 
 
-This process specifies that you reward crowd members for their mental work. We mean to reward for mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
+This process specifies that you reward crowd members for their mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
 
 In the new process, you measure mental contributions exactly. You also measure the project's exact 'mental effort size'. The customer pays based on this size. 
 So, we get increased, inclusive and fair earning potential for all:  
