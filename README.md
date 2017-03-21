@@ -121,8 +121,10 @@ We try to keep this document as clear and complete as possible. Yet you might ha
   - Speed up the project. After a point, the work *will* proceed faster with more people.
 - We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
-- Do not worry about skill loss. Software development will be taught to people as-is. The tasks done by SPOCs can be automated. We will soon make this automation open source. Then knowledge and skills of programming language syntax, code modularization, performance optimization and library reuse will be unnecessary.  
-
+- Do not worry about skill loss. 
+  - Software development training must not use CollaboRate. Knowledge will be retained. 
+  - There always will be a demand for SPOCs. We can rotate the SPOC responsibility. 
+  - The tasks done by SPOCs can be automated. We will soon make this automation open source. We can preserve this open source from being lost to the world. Then skills of programming language syntax, code modularization, performance optimization and library reuse will be unnecessary.  
 
 # Who's using it?
 As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me. I will share news of your initiative.  
