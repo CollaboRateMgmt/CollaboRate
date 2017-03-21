@@ -79,8 +79,10 @@ Let's have a closer look at each solution.
    The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
    
    Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
+   
+   We define a microtask as follows:  
 
-   We define a microtask as follows: **It is the mental work done when a person breaks down an independent problem statement, into two.** By 'independent' we mean that the child problem statements refer neither to the parent nor to each other. In other words, a problem statement must be 'self-contained'. It must contain all the information needed to clearly and completely describe the problem. Of course, it need not contain publicly available information that is general knowledge to the problem's industry area (domain).
+   **A microtask is the mental work done when a person breaks down an independent problem statement. The work breakdown usually yields two independent problem statements. Or the problem statement is so small that it can be solved by a single sentence that has a slight logical complexity.** By 'independent' we mean that the child problem statements refer neither to the parent nor to each other. In other words, a problem statement must be 'self-contained'. It must contain all the information needed to clearly and completely describe the problem. Of course, it need not contain publicly available information that is general knowledge to the problem's industry area (domain).
    
    We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
