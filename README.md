@@ -7,7 +7,7 @@ This work does not represent views of the author's past and present organization
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT service companies, organizations and employees alike. In summary, it will boost global economic and technology progress. 
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
@@ -20,23 +20,23 @@ More people can take part in important projects than ever before.
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project.  
 Because, there is enough work in the world. 
 
-This process specifies you reward crowd members for their mental work. We mean to reward for mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
+This process specifies that you reward crowd members for their mental work. We mean to reward for mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members.
 
 In the new process, you measure mental contributions exactly. You also measure the project's exact 'mental effort size'. The customer pays based on this size. 
 So, we get increased, inclusive and fair earning potential for all:  
 customer, organization and the crowd.
 
 Estimates from individual contributors are overheads and speculation. They lead to friction and exploitation.  
-Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, we end the need for estimates from crowd members. The customer of the IT service company does rough estimation of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. You must check that the estimated size of the project does not exceed its budget.  
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, crowd members need not provide estimates. The customer of the IT service company does rough estimation of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. The estimated size of the project must not exceed its budget.  
 
-The process solves the problems seen with a very large number of people working on the same project. It will become the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
+The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-You may use this process for open source development as well. Open Source collaborators could work together better with this process. They may even wish to earn via this process. You can use this process with other open source business models. The open-source bounty model is one such promising business model.
+You may use this process for open source development as well. Open Source collaborators could work together better with this process. Open source business models can use this process. The open-source bounty model is one such promising business model.  
 
-It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of the desk-job-based economy. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Detailed benefits for employees and their organizations
-- Complete priority projects in record time using huge crowds of people. Never miss a customer deadline again!
+- Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Variable income in accurate proportion to contributions of the employee.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
@@ -58,7 +58,8 @@ The process solves 5 pain areas of desk-job industries especially IT, in novel w
 
 Let's have a closer look at each solution.
 
-1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.
+1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) consists of one or more SPOCs ((Single Point of Contact)s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
    You pay workers X times the number of  microtasks. X is the money per microtask that you pay. X is visible to the public.  
    
@@ -74,7 +75,9 @@ Let's have a closer look at each solution.
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. This process may enhance the definition of microtask size later. At present you will find non-weighted microtasks fair enough. 
+   Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. 
+   
+   This process may enhance the definition of microtask size later. Based on feedback, tasks with more text may be given more financial weight. At present you will find non-weighted microtasks fair enough. 
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
