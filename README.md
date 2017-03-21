@@ -80,7 +80,7 @@ Let's have a closer look at each solution.
    
    Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
 
-   **We define a microtask as the breakdown of a independent problem statement, into 2 independent ones.** By 'independent' we mean that the child problem statements refer neither to the parent nor to each other. In other words, a problem statement must be 'self-contained'. It must contain all the information needed to clearly and completely describe the problem. Of course, it need not contain publicly available information that is general knowledge to the problem's industry area (domain).
+   We define a microtask as follows: **It is the mental work done when a person breaks down an independent problem statement, into two.** By 'independent' we mean that the child problem statements refer neither to the parent nor to each other. In other words, a problem statement must be 'self-contained'. It must contain all the information needed to clearly and completely describe the problem. Of course, it need not contain publicly available information that is general knowledge to the problem's industry area (domain).
    
    We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
