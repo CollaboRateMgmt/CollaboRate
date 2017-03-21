@@ -11,7 +11,7 @@ It is under discussion with my present organization.
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. 
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
@@ -35,9 +35,7 @@ Due to fast completion, the need for estimating the exact project end date reduc
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-You may use this process for open source development as well. Open Source collaborators could work together better with this process. Open source business models can use this process. The open-source bounty model is one such promising business model.  
-
-It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+You may use this process for open source development as well. Open Source collaborators could work together better with this process. Open source business models can use this process. The open-source bounty model is one such promising business model.
 
 # Detailed Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
@@ -75,7 +73,7 @@ Let's have a closer look at each solution.
 
    We define a microtask as the breakdown of a problem statement into 2 independent ones. By 'independent' we mean that the child problems refer neither to the parent nor to each other. We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
-   Written project requirements are tasks. A task is less than (say) 300 words of standard business English.  
+   Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters).  
    
    The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple copy-paste feature eases creation of child tasks. We will soon provide more advanced features to check child tasks.   
 
@@ -83,7 +81,7 @@ Let's have a closer look at each solution.
    
    Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. 
    
-   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. 
+   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. More financial weight for tasks with more text may cause crowd members to inflate the text of the child tasks.
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
@@ -107,6 +105,9 @@ Let's have a closer look at each solution.
    In case of *extra* rewards based on royalty, issues of trust may arise. You must resolve them as follows:  
    - You must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
+
+# Known limitations
+- What if an initial problem statement is more than the specified limit (2000 characters)? The customer or SPOCs will have to themselves do initial task breakdown. The descendant tasks that are small enough may then be crowdsourced.
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
