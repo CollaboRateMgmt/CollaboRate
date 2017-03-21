@@ -41,7 +41,9 @@ The process solves the problems seen with a very large number of people working 
 
 You may use this process for open source development as well. Open Source collaborators could work together better with this process. As we said earlier, now a huge number of people can work at the same time, on a project that is important to the world.  Open source projects are all very important to the world. 
 
-Open source business models can use this process. Also, we hope that duplicate effort among open source projects is minimal. So people can do unique work that is important to the world, and earn at the same time. We feel that the [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty) is the best open source business model. Soon, we will specify how to use CollaboRate with this model.
+Open source business models can use this process. Also, we hope that duplicate effort among open source projects is minimal. So people can do unique work that is important to the world, and earn at the same time.  
+
+The [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty) is the best open source business model. It allows significant rewards to be crowdsourced from an unlimited number of requestors, for enhancing or fixing open source software.  Soon, we will specify how to use CollaboRate with this model. We may also fund the development of CollaboRate with this model!
 
 # Detailed Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
