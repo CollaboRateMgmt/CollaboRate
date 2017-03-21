@@ -81,7 +81,7 @@ Let's have a closer look at each solution.
    
    Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. 
    
-   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. More financial weight for tasks with more text may cause crowd members to inflate the text of the child tasks.
+   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. More pay for tasks with more text, may cause crowd members to inflate the text of the child tasks.
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
@@ -107,21 +107,22 @@ Let's have a closer look at each solution.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
 # Known limitations
-- What if an initial problem statement is more than the specified limit (2000 characters)? The customer or SPOCs will have to themselves do initial task breakdown. The descendant tasks that are small enough may then be crowdsourced.
+- What if an initial problem statement is more than 2000 characters? The customer or SPOCs will have to themselves do initial task breakdown. They can then crowdsource descendant tasks.
 
 # Questions?
-We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
 
 # Challenges foreseen in process adoption
 - The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it.
-- Developers write hundreds of lines of code per day. They may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. But they must keep in mind that it is a worthwhile temporary sacrifice to:
-  - share and speed up work that is important to the world. After a point, the work *will* proceed faster with more people
-  - increase employment opportunities for the masses
-  - ensure fairness and transparency in work
+- Developers write hundreds of lines of code per day. They may find the process overhead unbearable. But they must keep in mind that it is a worthwhile trade-off to:
+  - Ensure fairness and transparency in work.
+  - Maximize use of people for fast economic progress. 
+  - Allow people to contribute to work that is important to the world. 
+  - Speed up the project. After a point, the work *will* proceed faster with more people.
 - We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
-- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. 
-- Do not worry about skill loss. The tasks done by SPOCs can be automated. This automation will eventually be open source. This shows that knowledge and skills of programming language syntax, code modularization, performance optimization and library reuse can be viewed as unnecessary in the not-too-distant future.
-   Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
+- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
+- Do not worry about skill loss. The tasks done by SPOCs can be automated. This automation will eventually be open source. This shows that knowledge and skills of programming language syntax, code modularization, performance optimization and library reuse can be viewed as unnecessary in the not-too-distant future.  
+
 
 # Who's using it?
 As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me. I will share news of your initiative.  
