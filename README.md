@@ -41,17 +41,18 @@ It may be useful for any collaborative project outside IT, that involves only de
 
 # Detailed benefits for employees and their organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
-- Variable income in accurate proportion to contributions of the employee.   
+- Fair and accurate income for employees and the organization.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
   - Reduce office cost. Or, eliminate it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
-# Detailed benefits for customers
+# Detailed benefits for customers of IT services
   - Faster time to completion
   - Reduced financial risk
-  - Superior/impeccable code, documentation and design quality
+  - Fair and accurate project cost
+  - Superior code, documentation and design quality
 
 # The Process, and how it works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
@@ -132,11 +133,10 @@ As of now the project has released its first version. I am discussing this proje
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each others' contributions. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
 # Contributing
-We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
+We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
-# Acknowledgements
-(Author's acknowledgements)  
-- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. I cannot acknowledge them (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
+# Author's Acknowledgements
+- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. At present, their proactive acknowledgement is not allowed (see disclaimer). But they are welcome to contribute to this project as general members of the public. They must use their personal email IDs for Github logins etc.
 - The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
 - Internet search showed me that at least 2 organizations explored software microtasks. This increased my confidence in the feasibility of such an idea. These organizations are:
     - The University of California, Irvine
@@ -148,3 +148,8 @@ We need to understand, debate, test and stabilize the process and tool. We also 
     - Hemingway Editor 
     - all the underlying internet technologies and tools used in this project
 - Last but not least, I thank my family for their constant support.
+
+# Additional Acknowledgements  
+[Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
+- contributed ideas, text or code to this project
+- agreed to make their names and contact details public 
