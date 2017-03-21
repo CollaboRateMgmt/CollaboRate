@@ -1,7 +1,11 @@
 # CollaboRate - a crowdsourcing process and software tool
 
+# Contact details
+sohrabsaran@gmail.com (author)
+
 # Disclaimer
-This work does not represent views of the author's past and present organizations.  
+This work does not represent views of my past and present organizations.  
+It is now under discussion with my present organization. It will be tested and refined before acceptance.  
 
 # License Type
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
@@ -41,6 +45,7 @@ It may be useful for any collaborative project outside IT, that involves only de
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
+  - Reduce office cost. Or, eliminate it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # Detailed benefits for customers
@@ -101,6 +106,9 @@ Let's have a closer look at each solution.
    - You must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
+# Questions?
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
+
 # Challenges foreseen in process adoption
 - The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it.
 - Developers write hundreds of lines of code per day. They may find the process overhead unbearable before they come up to speed with the tool. The tool may always remain an overhead. But they must keep in mind that it is a worthwhile temporary sacrifice to:
@@ -112,7 +120,7 @@ Let's have a closer look at each solution.
    Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
-As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me at sohrabsaran@gmail.com. I will share news of your initiative.  
+As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me. I will share news of your initiative.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
    
@@ -127,6 +135,7 @@ This process and tool allows the most number of people possible, to work on the 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact me at sohrabsaran@gmail.com.
 
 # Acknowledgements
+(Author's acknowledgements)  
 - I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. I cannot acknowledge them (see disclaimer). But they are welcome to contribute to this project as an independent one hosted on Github.
 - The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
 - Internet search showed me that at least 2 organizations explored software microtasks. This increased my confidence in the feasibility of such an idea. These organizations are:
