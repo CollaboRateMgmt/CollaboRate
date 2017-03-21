@@ -82,7 +82,13 @@ Let's have a closer look at each solution.
    
    We define a microtask as follows:  
 
-   **A microtask is the mental work done when a person breaks down an independent problem statement. The work breakdown usually yields two independent problem statements. Or the problem statement is so small that it can be solved by a single sentence that has a slight logical complexity.** By 'independent' we mean that the child problem statements refer neither to the parent nor to each other. In other words, a problem statement must be 'self-contained'. It must contain all the information needed to clearly and completely describe the problem. Of course, it need not contain publicly available information that is general knowledge to the problem's industry area (domain).
+   **A microtask is the mental work done to break down an independent problem statement. The work breakdown usually yields two independent problem statements. Sometimes, the problem statement is very small. It cannot break down into 2. You must solve it by a single sentence that has a slight logical complexity.** 
+   
+   'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete. 
+   
+   A problem statement need not contain certain information if:
+   - It is public
+   - It is general knowledge to the problem's industry area (domain).
    
    We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
