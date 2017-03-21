@@ -2,10 +2,9 @@
 
 # Disclaimer
 This work does not represent views of the author's past and present organizations.  
-Neither is it intended to cause them loss.
 
 # License Type
-MIT.
+[MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
 CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT service companies, organizations and employees alike. In summary, it will boost global economic and technology progress. 
