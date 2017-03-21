@@ -45,7 +45,7 @@ It may be useful for any collaborative project outside IT, that involves only de
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Since project security and complexity are no longer issues:
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
-  - Reduce office cost. Or, eliminate it altogether.
+  - Reduce office cost. Or, end it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # Detailed benefits for customers of IT services
@@ -83,7 +83,7 @@ Let's have a closer look at each solution.
    
    Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. 
    
-   This process may enhance the definition of microtask size later. Based on feedback, tasks with more text may be given more financial weight. At present you will find non-weighted microtasks fair enough. 
+   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. 
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
