@@ -1,6 +1,6 @@
 # CollaboRate - a crowdsourcing process and software tool
 
-# Contact details
+# Project Contact Details
 sohrabsaran@gmail.com (author)
 
 # Disclaimer
@@ -39,7 +39,7 @@ You may use this process for open source development as well. Open Source collab
 
 It may be useful for any collaborative project outside IT, that involves only desk work. You may apply it to overcome the  general limitations of desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
-# Detailed benefits for employees and their organizations
+# Detailed Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Fair and accurate income for employees and the organization.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
@@ -48,13 +48,13 @@ It may be useful for any collaborative project outside IT, that involves only de
   - Reduce office cost. Or, end it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
-# Detailed benefits for customers of IT services
+# Detailed Benefits for Customers of IT Services
   - Faster time to completion
   - Reduced financial risk
   - Fair and accurate project cost
   - Superior code, documentation and design quality
 
-# The Process, and how it works
+# The Process, and How it Works
 The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
 - Share work among many
 - Fair financials
@@ -88,6 +88,7 @@ Let's have a closer look at each solution.
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
+
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent. You do not need to look up any  other documentation to understand it.
    - The crowd member does not need to know the codebase. The crowd member does not even have to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. The SPOCs convert the pseudo-code to the actual lines of code. They  decide whether the function described by the crowd member is a new or existing function. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work. 
@@ -117,7 +118,8 @@ We try to keep this document as clear and complete as possible. Yet you might ha
   - increase employment opportunities for the masses
   - ensure fairness and transparency in work
 - We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
-- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects.  
+- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. 
+- Do not worry about skill loss. The tasks done by SPOCs can be automated. This automation will eventually be open source. This shows that knowledge and skills of programming language syntax, code modularization, performance optimization and library reuse can be viewed as unnecessary in the not-too-distant future.
    Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 
 # Who's using it?
