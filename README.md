@@ -92,11 +92,15 @@ Let's have a closer look at each solution.
    
    We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
-   Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters).  
+   Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters). We recommend the use of existing open source tools to check spellings, grammar and style.     
    
    The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple optional copy-paste feature eases creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
    
-    We will soon provide more advanced features to check child tasks and help with their creation. This may involve sentence analysis, display of common and uncommon strings between the 2 child tasks, display of missing strings etc.   
+   We will soon provide more advanced features to help with work breakdown, such as:
+    - show 'missing context' errors
+    - show strings that are common between the 2 child tasks
+    - show strings that are exclusive to one of the 2 child tasks
+    - show strings that are present in the parent task but are not present in either child task 
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
