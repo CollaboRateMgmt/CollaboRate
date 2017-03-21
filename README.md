@@ -135,21 +135,7 @@ This process and tool allows the most number of people possible, to work on the 
 # Contributing
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
-# Author's Acknowledgements
-- I had various ideas for collaboration tools starting from around 2004. Last year as a part of my job, I came across the term 'Crowdsourcing' and attempts to commercialize it. Some colleagues in the organization discussed and participated in related experiments. At present, their proactive acknowledgement is not allowed (see disclaimer). But they are welcome to contribute to this project as general members of the public. They must use their personal email IDs for Github logins etc.
-- The wikipedia article on Crowdsourcing introduced me to the term 'microtask'.
-- Internet search showed me that at least 2 organizations explored software microtasks. This increased my confidence in the feasibility of such an idea. These organizations are:
-    - The University of California, Irvine
-    - Microsoft Research  
-
-- I thank all the people who made the wonderful open tools on which I base and host this project: 
-    - JQuery
-    - Github 
-    - Hemingway Editor 
-    - all the underlying internet technologies and tools used in this project
-- Last but not least, I thank my family for their constant support.
-
-# Additional Acknowledgements  
+# Acknowledgements  
 [Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
 - contributed ideas, text or code to this project
 - agreed to make their names and contact details public 
