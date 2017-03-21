@@ -123,11 +123,11 @@ We try to keep this document as clear and complete as possible. Yet you might ha
 - The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects. Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
 - Do not worry about skill loss. 
   - Software development training must not use CollaboRate. Even now, education systems provide a lot of knowledge that we may never use.  
-  - There always will be a demand for SPOCs. We can rotate the SPOC responsibility. 
-  - The tasks done by SPOCs can be automated. We will soon make this automation open source. We can preserve this open source from being lost to the world. Then skills of programming language syntax, code modularization, performance optimization and library reuse will be unnecessary.  
+  - There always will be a demand for technical SPOCs. We can rotate the technical SPOC responsibility. 
+  - We will automate the tasks done by technical SPOCs. We will soon make this automation open source. We can preserve this open source. The world will not lose it. Then skills needed by technical SPOCs will be unnecessary. The need for technical SPOCs will end.
 
 # Who's using it?
-As of now the project has released its first version. I am discussing this project with various people. If you plan to try this tool, please contact me. I will share news of your initiative.  
+As of now, no one that we are aware of. The initial release of the process and tool was made on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
    
