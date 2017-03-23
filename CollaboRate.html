@@ -5,6 +5,11 @@
 	<title>
 		CollaboRate v1.1 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
 	</title>
+	<!-- 
+	Project website: https://github.com/sohrabsaran/CollaboRate	
+	Copyright Sohrab Saran (sohrabsaran@gmail.com) and additional contributors listed at https://github.com/sohrabsaran/CollaboRate/wiki/Contributors
+	License type: MIT	
+	-->
 	<style>
 		* {font-family: Sans-Serif;}
 		pre 
@@ -292,77 +297,6 @@ function showNextSteps()
 	window.scrollTo(0,$('#nextStepsCaption').offset().top);	
 }
 
-function showNextSteps_old2()
-{
-	var nodeToClone = $('#contentToPasteAsIssueTrackerComment')[0];
-	
-	var clonedNode = $(nodeToClone).clone(true);
-	
-	var m = {};
-	document.body.appendChild(clonedNode[0]);
-	//cloneNode[0].style.backgroundColor = "red";
-	//cloneNode[0].style.paddingLeft = "50px";
-		
-	$(clonedNode).find(":input").each(function()//unfortunately all selects are considered as not visible.. so have to 
-												//cycle through both visible and invisible inputs
-	{
-		var inputEle = this;			
-		if(inputEle.tagName=="SELECT" )
-		{	
-			//console.log("Ok, now handling "+inputEle.outerHTML);
-			if(!($(inputEle).is(":hidden")))
-			{
-				//console.log("This dropdown is not hidden, so getting its text...");					
-				//console.log("selectedIndex="+inputEle.selectedIndex+", total number of options = "+inputEle.options.length); 
-				var txt  = "<pre>"+inputEle.options[inputEle.selectedIndex].text+"</pre>";
-				//console.log("The text for this dropdown will be '"+txt+"'");
-				$(inputEle).after(txt);
-			}				
-			else
-			{
-				//console.log("This dropdown is hidden, so skipping it...");
-			}
-		}
-		else if
-		(
-			(inputEle.tagName == "INPUT" && inputEle.type == "text")
-			||
-			(inputEle.tagName == "TEXTAREA")
-		)
-		{				
-			//console.log("Found text '"+inputEle.value+"' in textbox or textarea...")
-			$(inputEle).after("<pre>"+inputEle.value+"</pre>");
-		}
-	});
-
-	//we are not interested in buttons text!
-	$(clonedNode).find("button").each(function(){this.innerHTML = "";});
-	
-	//for some strange reason, scripts are considered as visible by jquery!
-	$(clonedNode).find("script").each(function(){this.innerHTML = "";});
-	
-	//for some strange reason, all select options are considered as visible by jquery!
-	$(clonedNode).find("select").each(function(){this.innerHTML = "";});
-	
-	var t = $(clonedNode).children(":visible");
-	t = t.filter(function() 
-	{
-		var element = $(this);
-		if(element.is(":hidden")) 
-		{
-			element.remove();
-			return false;
-		}
-		return true;
-	});
-	t = t.text();	
-	$(clonedNode).remove();
-	//t = nodeToClone.textContent;//gets the visible and invisible text content
-	($("#textForIssueTrackerComment")[0]).value = t;
-	$("#divForNextSteps").show();
-	window.scrollTo(0,document.body.scrollHeight);
-}
-
 function isValidEleId(id)
 {
 	return (document.getElementById(id ) != null)
@@ -393,8 +327,68 @@ function appendVisibleElementClone(parentEleId,childEleId)
 	}
 }
 
+function setupDisplayOfNumOfCharsTypedAndCharLimit(container)
+{
+	//console.log("In setupDisplayOfNumOfCharsTypedAndCharLimit(container)...")
+    var eles = null;
+    //assert(document.forms.length==1);
+    //eles = $(document.forms[0].elements);
+	eles = $(":input");
+	//console.log("eles.length=" + eles.length)
+    /**/if(container != null)
+    {
+        eles = eles.filter(function(index,ele)
+        {
+            return $.contains(container,ele);
+        });
+    }/**/
+	//console.log("Now eles.length=" + eles.length)
+    eles.each(function()
+    {
+		//console.log("hmmm")
+        var ele = this;
+        if(ele.maxLength == null || ele.maxLength <= 0 || ele.maxLength == 2147483647){return;}
+		//console.log("Applying remaining char count display to '"+ele.outerHTML+"'...")
+        ele.style.display ="inline";
+        $(ele).focusin(showNumOfCharsTypedAndCharLimit);
+        $(ele).focusout(hideNumOfCharsTypedAndCharLimit);
+    });
+}
+
+function showNumOfCharsTypedAndCharLimit()
+{
+    //console.log("showNumOfCharsTypedAndCharLimit(): Entry....");
+    var textEle = this;
+    var textEleIdOrName = textEle.id//getEleIdOrName(textEle);
+    var spanId = "SpanIdForNumOfCharsTypedAndCharLimitFor"+textEleIdOrName;
+    $(textEle).after("<span id=\""+spanId+"\" style=\"display:inline !important;white-space:nowrap;font-size:smaller;\"></span>");
+    $(textEle).keyup(function(){
+        //console.log("showNumOfCharsTypedAndCharLimit(): keyup handler....");
+        $("#"+spanId)[0].innerText = textEle.value.length + "/"+textEle.maxLength+" chars";
+        //console.log("Updated the innerText variable for span with id '"+spanId+"' to '"+$("#"+spanId)[0].innerText+"'");
+    });
+    $(textEle).keyup();
+}
+
+function hideNumOfCharsTypedAndCharLimit()
+{
+    var textEle = this;
+    //console.log("hideNumOfCharsTypedAndCharLimit(): Entry....");
+    var textEleIdOrName = textEle.id//getEleIdOrName(textEle);
+    var spanId = "SpanIdForNumOfCharsTypedAndCharLimitFor"+textEleIdOrName;
+    $("#"+spanId).remove();
+}
+
+
+
 //At startup, ensure that all buttons are of type 'button'.
-$(function(){ $( ":button" ).prop("type", "button") })
+$(function()
+{
+ $(":button" ).prop("type", "button"); 
+ $("textarea").prop("maxlength","2000")
+ $(':text').prop("maxlength", "150")
+ setupDisplayOfNumOfCharsTypedAndCharLimit() 
+})
 </script>
 </head>
 <body>
@@ -409,7 +403,8 @@ $(function(){ $( ":button" ).prop("type", "button") })
 This tool will guide you to break down the task assigned to you in the issue tracking system.<br>
 <br>
 <b>Task Summary</b> <button onclick="alert(el('taskSummary').placeholder)">?</button><br><!--(the phrase 'create function' in summary could be taken as a keyword for some workflow/validations)--> 
-</pre><input id="taskSummary" size="120" type="text" placeholder="Copy the task summary from the task tracking system and paste it here."><!--style="background:#eeeeee"--><pre> 
+</pre><input id="taskSummary" size="120" type="text" 
+placeholder="Copy the task summary from the task tracking system and paste it here."><!--style="background:#eeeeee"--><pre> 
 
 </PRE><b>Task Description</b> <button onclick="alert(el('taskDesc').placeholder)">?</button> <br>
 <textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description from the task tracking system and paste it here.">
