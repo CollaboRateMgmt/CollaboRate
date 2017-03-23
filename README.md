@@ -156,7 +156,7 @@ We try to keep this document as clear and complete as possible. Yet you might ha
   - We will automate the tasks done by technical SPOCs. We will soon make this automation open source. We can preserve this open source. The world will not lose it. Then skills needed by technical SPOCs will be unnecessary. The need for technical SPOCs will end.
 
 # Who's using it?
-As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative.  
+As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can find each other using this forum. They can then conduct trials if not actual projects.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
    
