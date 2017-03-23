@@ -379,16 +379,6 @@ function hideNumOfCharsTypedAndCharLimit()
     $("#"+spanId).remove();
 }
 
-
-
-//At startup, ensure that all buttons are of type 'button'.
-$(function()
-{
- $(":button" ).prop("type", "button"); 
- $("textarea").prop("maxlength","2000")
- $(':text').prop("maxlength", "150")
- setupDisplayOfNumOfCharsTypedAndCharLimit() 
-})
 </script>
 </head>
 <body>
@@ -1006,5 +996,16 @@ In case of any mistakes, you have to correct the summary and description of the 
 
 </pre>
 </div>
+<script>
+
+//At startup, ensure that all buttons are of type 'button'.
+$(function()
+{
+ $(":button" ).prop("type", "button"); 
+ $("textarea").prop("maxlength","2000")
+ $(':text').prop("maxlength", "150")
+ setupDisplayOfNumOfCharsTypedAndCharLimit() 
+})
+</script>
 </body>
 </html>
