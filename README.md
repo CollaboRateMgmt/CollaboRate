@@ -141,7 +141,7 @@ Let's have a closer look at each solution.
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
 
 # Challenges foreseen in process adoption
-- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it.
+- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it. The best way forward appears to be finding a customer. We can then create a startup organization that will act as the crowdsourcing vendor.
 - Developers write hundreds of lines of code per day. They may find the process overhead unbearable. But they must keep in mind that it is a worthwhile trade-off to:
   - Ensure fairness and transparency for their fellow workers, if not for themselves.
   - Maximize the use of human minds for fast economic progress. This is after all, 'Artificial AI'!
@@ -156,7 +156,7 @@ We try to keep this document as clear and complete as possible. Yet you might ha
   - We will automate the tasks done by technical SPOCs. We will soon make this automation open source. We can preserve this open source. The world will not lose it. Then skills needed by technical SPOCs will be unnecessary. The need for technical SPOCs will end.
 
 # Who's using it?
-As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can find each other using this forum. They can then conduct trials if not actual projects.  
+As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
    
