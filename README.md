@@ -5,7 +5,7 @@ sohrabsaran@gmail.com (project creator)
 
 # Project Creator's Disclaimer
 This work does not represent views of my past and present organizations.  
-It is under discussion with my present organization.  
+It is under discussion with my present organization.    
 
 # License Type
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
