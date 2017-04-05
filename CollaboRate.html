@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
-		CollaboRate v1.2 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
+		CollaboRate v1.3 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
 	</title>
 	<!-- 
 	Project website: https://github.com/sohrabsaran/CollaboRate	
@@ -211,31 +211,22 @@ function getTextOfNode(n)
 	return t;
 }
 
-function showNextSteps_old()
+var dbg_getTextToReplyWith_uniquectr 
+
+function getTextToReplyWith()
 {
-	//console.log("here");
-	($("#textForIssueTrackerComment")[0]).value = $('#contentToPasteAsIssueTrackerComment').children(":visible").text();//getTextOfNode($('#contentToPasteAsIssueTrackerComment')[0]);
-	//console.log("done!")
-	$("#divForNextSteps").show();	
-	window.scrollTo(0,$('#nextStepsCaption').offset().top);	
+	var ele = $('#divThatCreatesTheTextToReplyWith')[0];
+	dbg_getTextToReplyWith_uniquectr = 0
+	return getTextToReplyWithFrom(ele,0)
 }
 
-var dbg_getTextToPaste_uniquectr 
-
-function getTextToPaste()
-{
-	var ele = $('#contentToPasteAsIssueTrackerComment')[0];
-	dbg_getTextToPaste_uniquectr = 0
-	return getTextToPasteFrom(ele,0)
-}
-
-function getTextToPasteFrom(ele,indentationLevel)
+function getTextToReplyWithFrom(ele,indentationLevel)
 {
 	var dbg = false	
 	if(dbg)
 	{
-		dbg_getTextToPaste_uniquectr++
-		var dbgmyid = dbg_getTextToPaste_uniquectr
+		dbg_getTextToReplyWith_uniquectr++
+		var dbgmyid = dbg_getTextToReplyWith_uniquectr
 	}
 	//console.log("ele.outerHTML = "+ele.outerHTML)
 	//console.log("ele.innerText = "+ele.innerText)
@@ -272,13 +263,13 @@ function getTextToPasteFrom(ele,indentationLevel)
 		if(dbg)
 		{			
 			s+=indent+"dbgmyid="+dbgmyid+", ele at idx "+ctr+":\n"
-			s+=getTextToPasteFrom(this,indentationLevel+1)
+			s+=getTextToReplyWithFrom(this,indentationLevel+1)
 			s+="\n"+indent+"dbgmyid="+dbgmyid+", end ele at idx "+ctr+"\n";
 			ctr++
 		}
 		else
 		{
-			s+=getTextToPasteFrom(this,indentationLevel+1);
+			s+=getTextToReplyWithFrom(this,indentationLevel+1);
 		}
 	});
 	if(dbg)
@@ -292,7 +283,7 @@ function getTextToPasteFrom(ele,indentationLevel)
 
 function showNextSteps()
 {
-	($("#textForIssueTrackerComment")[0]).value = getTextToPaste()
+	($("#textToReplyWith")[0]).value = getTextToReplyWith()
 	$("#divForNextSteps").show();	
 	window.scrollTo(0,$('#nextStepsCaption').offset().top);	
 }
@@ -390,17 +381,17 @@ function hideNumOfCharsTypedAndCharLimit()
 <div style="text-align:center;display:block !important;"><small>Mostly tested with Mozilla FireFox</small></div>
 <a href=# onclick="window.open('https://github.com/sohrabsaran/CollaboRate');return false");">Help</a><br>
 <br>
-This tool will guide you to break down the task assigned to you in the issue tracking system.<br>
+This tool will guide you to break down the task sent to you via email.<br>
 <br>
 <b>Task Summary</b> <button onclick="alert(el('taskSummary').placeholder)">?</button><br><!--(the phrase 'create function' in summary could be taken as a keyword for some workflow/validations)--> 
 </pre><input id="taskSummary" size="120" type="text" 
-placeholder="Copy the task summary from the task tracking system and paste it here."><!--style="background:#eeeeee"--><pre> 
+placeholder="Copy the task summary from the email and paste it here."><!--style="background:#eeeeee"--><pre> 
 
 </PRE><b>Task Description</b> <button onclick="alert(el('taskDesc').placeholder)">?</button> <br>
-<textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description from the task tracking system and paste it here.">
+<textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description from the email and paste it here.">
 </textarea><!--style="background:#eeeeee;"--><br>
 Note: Before you break down this task, check that its description is clear and complete. It must not refer to any other task or diagram.<br> 
-Otherwise, bring this to the notice of the task creator via a comment against that task.<br>
+Otherwise, bring this to the notice of the task creator and ensure that you receive a clear and complete task description.<br>
 <br>
 <b style="color:red">Note that you do not need to fully solve this task!</b> <button type="button" 
 onclick="alert(($('#divForExplanationForWhyYouDoNotNeedToFullySolveThisTask')[0]).innerText)">?</button>
@@ -411,22 +402,15 @@ Your microtask is just to break down this task into 2 parts.<br>
 Both parts usually yield subtasks. <br>
 Sometimes the task assigned is so small that it may yield 1 subtask or even no subtask.<br>
 Other crowd members will break down the subtasks you create.<br> 
-Additionally, once your breakdown is reviewed:<br>
-1. You must create the subtasks in the issue tracker.<br>
-2. You must act as the reviewer for the break down of these subtasks.<br>
+Additionally, once your breakdown is reviewed, you must act as the reviewer for the break down of these subtasks.<br>
 <br>
 To do more work, you break down other tasks.
 </div>
 <br>
-<!--
-<b>Task Created by </b> <input id="createdBy" size="60" type=text style="background:#eeeeee" value="(Crowd Member Email ID got from issue tracker)"><pre>(this person will act as reviewer for your microtask) 
-
-</pre>
--->
 
 <!--Though it is hoped that this tool will be used by non-programmers as well, basic understanding of programming concepts is useful.<br>-->
 
-<div id="contentToPasteAsIssueTrackerComment" style="display:block;background:#eeeeff;">
+<div id="divThatCreatesTheTextToReplyWith" style="display:block;background:#eeeeff;">
 <b>Does this task specify the creation of a function (a sequence of steps)?</b> <select 
 	id="isThisAFnDropdown" onchange="showDivForCurrentlySelectedOption(this, 'classfordivfordoesthistaskspecifyfnoption');">
 <option>&nbsp;</option>
@@ -961,11 +945,11 @@ The function will be broken into 2 parts by a crowd member as a part of another 
 <div id="returnConstant" style="background:#dddddd">
 Enter value of the constant <input><br>
 Enter the reason for choosing this constant, any other possible values it might change to etc.<br>
-<textarea id="subtaskdesc" rows="5" cols="120"></textarea><br>
+<textarea id="reasonForChoosingConst" rows="5" cols="120"></textarea><br>
 </div>
 
-<!-- TESTING: This comment should not show up in the text to paste as a comment into the issue tracking system -->
-</div><!-- contentToPasteAsIssueTrackerComment -->
+<!-- TESTING: This comment should not show up in the text to reply with -->
+</div><!-- divThatCreatesTheTextToReplyWith -->
 <br>
 <button id="btnToshowNextSteps" style="display:none;" 
 onclick="showNextSteps();">Next...</button>
@@ -973,14 +957,14 @@ onclick="showNextSteps();">Next...</button>
 <br>
 <b id="nextStepsCaption">Next steps</b><br><br> 
 
-1. Mail the text in the textarea below to the task creator for review.<br> 
+1.  Reply to all, keeping the subject of the mail the same. Mail the text in the textarea below.<br> 
 If you have edited the input fields after clicking the 'Next'button, ensure that you click the 'Next' button again:<br>
-<textarea id="textForIssueTrackerComment" rows="10" cols="120" style="background:#eeffee;"></textarea><br><br>
+<textarea id="textToReplyWith" rows="10" cols="120" style="background:#eeffee;"></textarea><br><br>
 <pre>
-2. Once it is reviewed and agreed on:
-	a) Paste the reviewed text as a comment into the corresponding issue in the issue trackng system.
-	b) If applicable, inform the code reuse SPOC identified for this project, to review and integrate the pseudo-code that you created for this task.
-	c) Create new tasks in the issue tracking system based on the sub-requirements or new functions that were identified during the breakdown of this task.
+2. Once the task creator has reviewed and agreed on the task breakdown:	
+	a) The code reuse SPOC identified for this project, will review and integrate the pseudo-code that you created for this task.
+	c) If you broke this task into subtasks that need to be further crowdsourced, a SPOC will create new tasks in the crowdsourcing vendor's task tracker. 
+	This SPOC will then send emails to crowd members who have requested work, to break down these subtasks. 
 
 3. Once other members of the crowd start work on further breaking down these new tasks, you must act as the reviewer for these 2 breakdowns.
 
