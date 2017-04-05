@@ -61,7 +61,7 @@ The [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty)
   - Superior code, documentation and design quality
 
 # The Process, and How it Works
-The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT, in novel ways:  
+The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
 - Share work among many
 - Fair financials
 - Fair risk sharing
@@ -140,10 +140,10 @@ Initial task breakdown will likely involve:
 - requirement validation.
 - conversion of tabular information to sentences.
 - conversion of images and diagrams to sentences.
-- Breaking large text into smaller independent texts. This will usually involve repeated pasting of 'context' sentences before the sentence or sentences that you are making independent.  
+- Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent.  
 
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
-The remaining activities can be automated. Again we consider the creation of such automation tools as out of scope.
+We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
