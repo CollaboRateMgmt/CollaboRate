@@ -61,7 +61,7 @@ The [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty)
   - Superior code, documentation and design quality
 
 # The Process, and How it Works
-The process solves 5 pain areas of desk-job industries especially IT, in novel ways:  
+The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT, in novel ways:  
 - Share work among many
 - Fair financials
 - Fair risk sharing
@@ -82,7 +82,8 @@ Let's have a closer look at each solution.
    
    We define a microtask as follows:  
 
-   **A microtask is the mental work done to break down an independent problem statement. The work breakdown usually yields two independent problem statements. Sometimes, the problem statement is very small. It cannot break down into 2. You must solve it by a single sentence that has a slight logical complexity.** 
+   **A microtask is the mental work done to break down an independent problem statement. The work breakdown usually yields two independent problem statements.**      
+   **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The mental work done to create this line is also a microtask.** 
    
    'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete. 
    
@@ -118,9 +119,7 @@ Let's have a closer look at each solution.
    - The crowd member does even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. We will soon refine the questions and options presented by the tool. Crowd members may not even realize that they are creating pseudocode. The SPOCs convert the pseudo-code to the actual lines of code. 
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible.  
    
-    So, you may say: "This is crazy. Exactly what skills, do members of the crowd need to have? How can people earn without any skills?"     
- 
-    The process expects only the following skills from the crowd members:  
+    We do expect the following skills from the crowd members:  
      - Read and write business English
      - Analytical capabilities 
      - Able to use the Internet to search for information
@@ -135,7 +134,16 @@ Let's have a closer look at each solution.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
 # Known limitations
-- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks.
+- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks. 
+
+Initial task breakdown will likely involve:
+- requirement validation.
+- conversion of tabular information to sentences.
+- conversion of images and diagrams to sentences.
+- Breaking large text into smaller independent texts. This will usually involve repeated pasting of 'context' sentences before the sentence or sentences that you are making independent.  
+
+Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
+The remaining activities can be automated. Again we consider the creation of such automation tools as out of scope.
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
