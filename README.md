@@ -13,6 +13,9 @@ It is under discussion with my present organization.
 # Purpose
 CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
+The following diagram attempts to summarize the idea, its advantages and its risks:
+![Summary Infographic](CollaboRate.png?raw=true)
+
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Having a very large number of people (the crowd) working on the same project at the same time".  
 
