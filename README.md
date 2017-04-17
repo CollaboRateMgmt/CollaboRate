@@ -95,17 +95,23 @@ Let's have a closer look at each solution.
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   Each microtask is the same size for all practical purposes. With each breakdown, you reduce the number of requirements per task. But the size of the task text remains similar. To keep the child tasks independent from each other, they need elaboration. At the level of 'logic tasks', the text is small but the design effort is more. 
+   Each microtask takes almost the same mental effort. Why? With each breakdown, you reduce the number of requirements per task. But the size of the task text may not be halved. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
    
-   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. More pay for tasks with more text, may cause crowd members to inflate the text of the child tasks.
+   At the level of 'logic tasks' the text does become significant smaller, as it no longer needs elaboration. But the design effort will be the maximum because the CollaboRate tool asks you more questions. 
+   
+   In summary the 'logic tasks' and 'requirement tasks' take approximately the same mental effort.
+   
+   This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. In some cases, more pay for tasks with more text, may motivate crowd members to inflate the text of the child tasks.
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
+   
+   Crowd members email the crowd management SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the review. After review, the assiged crowd member will mail the output of the CollaboRate tool to the crowd management SPOC.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change need to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
-   - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.
-   -The crowd member does not need to know the codebase. The SPOCs decide whether the function described by the crowd member is new. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work. 
+   - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
+   - The crowd member does not need to know the codebase. The SPOCs decide whether the function described by the crowd member is new. An existing function could be part of the codebase under development. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work. 
    - The crowd member does even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. We will soon refine the questions and options presented by the tool. Crowd members may not even realize that they are creating pseudocode. The SPOCs convert the pseudo-code to the actual lines of code. 
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible.  
    
@@ -115,13 +121,11 @@ Let's have a closer look at each solution.
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-5. **Superior intellectual property security.** This solution applies to commercial (closed-source) software development. Security increases with crowd size! The SPOCs will not share the codebase with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get superior intellectual property security.   
+5. **Superior intellectual property security.** This solution applies to commercial (closed-source) software development. Security increases with crowd size! The SPOCs will share neither the codebase nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get superior intellectual property security.   
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
-   In case of *extra* rewards based on royalty, issues of trust may arise. You must resolve them as follows:  
-   - You must provide transparency on the total number of microtasks and who did how many.
-   - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
+In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
 
 # Software Testing, Maintenance and Customer Support
 
@@ -139,12 +143,9 @@ Initial task breakdown will likely involve:
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
 We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
 
-
-# Questions?
-We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
-
-# Challenges foreseen in process adoption
-- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it. The best way forward appears to be finding a customer. We can then create a startup organization that will act as the crowdsourcing vendor.
+# Adoption Challenges
+- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it. 
+- The best way forward appears to be finding a customer. A website may need to be created for this purpose. We may then need to create a model startup organization that will act as the crowdsourcing vendor. This may be needed to reduce the disruption that may be caused to a conventional IT services company.
 - Developers write hundreds of lines of code per day. They may find the process overhead unbearable. But they must keep in mind that it is a worthwhile trade-off to:
   - Ensure fairness and transparency for their fellow workers, if not for themselves.
   - Maximize the use of human minds for fast economic progress. This is after all, 'Artificial AI'!
@@ -184,3 +185,6 @@ sohrabsaran@gmail.com (project creator)
 # Project Creator's Disclaimer
 This work does not represent views of my past and present organizations.  
 It is under discussion with my present organization.
+
+# Questions?
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
