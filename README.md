@@ -1,4 +1,5 @@
-# CollaboRate - a crowdsourcing process and software tool
+# CollaboRate - a Crowdsourcing Process and Software Tool
+
 
 # License Type
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
