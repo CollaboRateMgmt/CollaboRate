@@ -29,17 +29,14 @@ So, we get increased, inclusive and fair earning potential for all:
 customer, organization and the crowd.
 
 Estimates from individual contributors are overheads and speculation. They lead to overhead, friction, stress, overwork and exploitation.  
-Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, crowd members need not provide estimates. The customer of the IT service company does rough estimation of time and project size. We define a core part of the organization as the 'crowdsourcing vendor'. This group can also share estimation responsibility. 
+Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, crowd members need not provide estimates. The customer of the IT service company does rough estimation of time and project size. We define a core part of the IT service company as the 'crowdsourcing vendor'. This group guides the customer to perform the estimation. 
 
   The estimated size of the project must not exceed its budget. That is the only reason that remains for estimates. Estimates are no longer needed for project duration and costing. 
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-You may use this process for open source development as well. Open Source collaborators could work together better with this process. As we said earlier, now a huge number of people can work at the same time, on a project that is important to the world.  Open source projects are all very important to the world. 
+[You may use this process for open source projects as well.](https://github.com/sohrabsaran/CollaboRate/wiki/Using-ColloboRate-for-Open-Source-Projects) 
 
-Open source business models can use this process. Also, we hope that duplicate effort among open source projects is minimal. So people can do unique work that is important to the world, and earn at the same time.  
-
-The [open-source bounty model](https://en.wikipedia.org/wiki/Open-source_bounty) is the best open source business model. It allows crowdfunding of significant rewards from an unlimited number of requestors. The requests are to fix or enhance open source software. Soon, we will specify how to use CollaboRate with this model. We may also fund the development of CollaboRate with this model!
 
 # Detailed Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
