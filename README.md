@@ -35,7 +35,7 @@ Due to fast completion, the need for estimating the exact project end date reduc
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
 
-[You may use this process for open source projects as well.](https://github.com/sohrabsaran/CollaboRate/wiki/Using-ColloboRate-for-Open-Source-Projects) 
+[You may use this process for open source projects as well.](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) 
 
 
 # Detailed Benefits for Employees and their Organizations
@@ -91,11 +91,7 @@ Let's have a closer look at each solution.
    
    The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple optional copy-paste feature eases creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
    
-   We will soon provide more advanced features to help with work breakdown, such as:
-    - show 'missing context' errors
-    - show strings that are common between the 2 child tasks
-    - show strings that are exclusive to one of the 2 child tasks
-    - show strings that are present in the parent task but are not present in either child task 
+   We will soon provide (advanced features)[https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance] to help with work breakdown. 
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The Collaborate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
