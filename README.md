@@ -144,27 +144,10 @@ Initial task breakdown will likely involve:
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
 We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
 
-# Adoption Challenges
-- The process is radical, even disruptive. We need to convince customers, organizations and people to try it out. Trial results and commercial success stories will further convince people to adopt it. 
-- The best way forward appears to be finding a customer. A website may need to be created for this purpose. We may then need to create a model startup organization that will act as the crowdsourcing vendor. This may be needed to reduce the disruption that may be caused to a conventional IT services company.
-- Developers write hundreds of lines of code per day. They may find the process overhead unbearable. But they must keep in mind that it is a worthwhile trade-off to:
-  - Ensure fairness and transparency for their fellow workers, if not for themselves.
-  - Maximize the use of human minds for fast economic progress. This is after all, 'Artificial AI'!
-  - Allow the masses to contribute to work that is important to the world. 
-  - Speed up the project. After a point, the work *will* proceed faster with more people.
-- We need to convince people to give a long enough trial period, a large enough team and enough work. Then we can prove that the CollaboRate process is better than the old way of working. So, people need to invest enough time and money in appropriate trials. They also need to expect learning from the trials. Based on the learning, we will enhance the CollaboRate process. People should not give up due to setbacks encountered. The core principle behind the process is sound.
-- The process abstracts out technology and even simplifies algorithm thinking. People who want to learn software in-depth should use Collaborate only to earn. To learn, they can work on open source projects that do not use this process. Or they can study the source code of open source projects.  
-   Yet using CollaboRate may teach people about structured thinking. It may encourage them to write very simple code. Such code would have only a couple of lines of code per function. It would also have excellent documentation.
-- Do not worry about skill loss:
-  - Software development training must not use CollaboRate. Even now, education systems provide a lot of knowledge that we may never use. One reason why may be to preserve the knowledge of mankind.  
-  - There always will be a demand for technical SPOCs. We can rotate the technical SPOC responsibility. 
-  - We will automate the tasks done by technical SPOCs. We will soon make this automation open source. We can preserve this open source. The world will not lose it. Then skills needed by technical SPOCs will be unnecessary. The need for technical SPOCs will end.
-
 # Who's using it?
-As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
+As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
 
-   The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
-   
+   The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.   
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
