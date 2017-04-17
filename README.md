@@ -91,7 +91,7 @@ Let's have a closer look at each solution.
    
    The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple optional copy-paste feature eases creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
    
-   We will soon provide (advanced features)[https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance] to help with work breakdown. 
+   We will soon provide [advanced features](https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance) to help with work breakdown. 
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The CollaboRate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
