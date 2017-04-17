@@ -1,17 +1,10 @@
 # CollaboRate - a crowdsourcing process and software tool
 
-# Project Contact Details
-sohrabsaran@gmail.com (project creator)
-
-# Project Creator's Disclaimer
-This work does not represent views of my past and present organizations.  
-It is under discussion with my present organization.    
-
 # License Type
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, [testing, maintenance and support](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development). It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 The following diagram attempts to summarize the idea, its advantages and its risks:
 ![Summary Infographic](CollaboRate.png?raw=true)
@@ -137,6 +130,10 @@ Let's have a closer look at each solution.
    - You must provide transparency on the total number of microtasks and who did how many.
    - Crowd members might suspect that fake tasks/microtasks exist to change royalty percentages. You must define a way to resolve this suspicion. You need to balance information disclosure with intellectual property security. You can provide limited information such as tasks summaries. Or, you can provide full information to an investigative third party. We will later provide detailed solutions for this scenario.   
 
+# Software Testing, Maintenance and Customer Support
+
+We have not yet specified the detailed CollaboRate process for Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. You can then derive your own process for these types of projects. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for more details.
+
 # Known limitations
 - What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks. 
 
@@ -148,6 +145,7 @@ Initial task breakdown will likely involve:
 
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
 We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
+
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
@@ -186,3 +184,10 @@ We need to understand, debate, test and stabilize the process and tool. We also 
 [Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
 - contributed ideas, text or code to this project
 - agreed to make their names and contact details public 
+
+# Project Contact Details
+sohrabsaran@gmail.com (project creator)
+
+# Project Creator's Disclaimer
+This work does not represent views of my past and present organizations.  
+It is under discussion with my present organization.
