@@ -145,7 +145,10 @@ Requirements validation is very difficult to crowdsource. At present it is out o
 We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
 
 # Who's using it?
-As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
+
+   As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. Some concerns we heard, are not directly related to commercial or technical viability. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). 
+
+   If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.   
 
