@@ -35,7 +35,7 @@ The following diagram attempts to visualize the CollaboRate process. Also, it su
 # Detailed Purpose
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
-"Facilitate a very large number of people (the crowd), to work on the same project at the same time".  
+"Enable a very large number of people (the crowd), to work on the same project at the same time".  
 
 When this happens, the time taken for project completion reduces.  
 
