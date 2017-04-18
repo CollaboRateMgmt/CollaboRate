@@ -53,7 +53,7 @@ In the new process, you measure mental contributions exactly. You also measure t
 
 So, we get increased, inclusive and fair earning potential for all:  customer, organization and the crowd.
 
-Estimates from individual contributors are overheads and speculation. They lead to overhead, friction, stress, overwork and exploitation.  
+Estimates from individual contributors are overheads and speculation. They frequently cause overwork and exploitation.  
 Due to fast completion, the need for estimating the exact project end date reduces. As per the new process, crowd members need not provide estimates. The customer of the IT service company does rough estimation of time and project size. We define a core part of the IT service company as the 'crowdsourcing vendor'. This group guides the customer in estimation. 
 
   The estimated size of the project must not exceed its budget. That's all estimates are needed for. They are no longer needed for project duration and costing.  
