@@ -9,9 +9,9 @@ CollaboRate is a process and a simple software tool. It will transform the comme
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information. 
 
 # Benefits for Customers of IT Services
-  - Faster time to completion
   - Reduced financial risk
   - Fair and accurate project cost
+  - Faster time to completion
   - Superior code, documentation and design quality
 
 # Benefits for Employees and their Organizations
