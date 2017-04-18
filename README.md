@@ -26,9 +26,9 @@ The idea is to devise a process and technology to meet the following goals:
   - Onus of estimation of the maximum project size rests with the customer. They estimate to ensure that the project is within their budget. It is NOT used to fix the project price. The crowdsourcing vendor acts as a guide to the estimation process. 
 - Address security concerns with crowdsourcing, to a maximum.  
 
-While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to better understand the specified process and tool, and find areas for their improvement. 
+While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to better understand the specified process and tool. It may also help you find areas for their improvement. 
 
-The following diagram attempts to visualize the CollaboRate process, and summarize its advantages and its risks. The rest of this document contains information needed to fully understand the diagram.
+The following diagram attempts to visualize the CollaboRate process. Also, it summarizes its advantages and its risks. The rest of this document contains information needed to fully understand the diagram.
 
 ![Summary Infographic](CollaboRate.png?raw=true)
 
