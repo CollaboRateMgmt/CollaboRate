@@ -8,7 +8,7 @@
 CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Overview for those familiar with Crowdsourcing Concepts
-For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#Detailed Purpose).
+For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#detailed-purpose).
 Devise a process and technology to meet the following goals:  
 - Increase number of people per project to a maximum. This will reduce the project execution time to a minimum.
 - Increase chance of success of unit work assigned per person to a maximum, as follows:
