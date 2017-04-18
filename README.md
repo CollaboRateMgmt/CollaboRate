@@ -159,9 +159,11 @@ We can automate the remaining activities. The creation of such automation tools 
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
 # Acknowledgements  
-[Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
+[Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people other than the project creator, who:
 - contributed ideas, text or code to this project
 - agreed to make their names and contact details public 
+
+Also some people may be acknowledged in the issue tracking system for bugs reported or enhancements suggested.
 
 # Project Contact Details
 sohrabsaran@gmail.com (project creator)
