@@ -121,7 +121,7 @@ Let's have a closer look at each solution.
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The CollaboRate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   Each microtask takes almost the same mental effort. Why? With each breakdown, you reduce the number of requirements per task. But the size of the task text may not be halved. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
+   Each microtask takes almost the same mental effort. Why? With each breakdown, you reduce the number of requirements per task. But the mental effort needed to split the child task remains almost the same. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
    
    At the level of 'logic tasks' the text does become much smaller, as it no longer needs elaboration. But the design effort will be the maximum, because the CollaboRate tool asks you more questions. 
    
