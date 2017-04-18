@@ -22,7 +22,7 @@ The idea is to devise a process and technology to meet the following goals:
     - Share financial risks with the crowd to a maximum. 
   - Determine the size of the project (work done) with maximum accuracy. Customer pays as per this size. For this:
     - Define a measure of mental work, that has maximum accuracy.
-  - Onus of estimation of the maximum project size (total amount of mental work done by the crowd to complete the project) rests with the customer. Estimation is mainly needed to ensure that the project is within the budget of the customer. It is NOT used for determing the cost of the project. The crowdsourcing vendor acts as a guide to the estimation process. 
+  - Onus of estimation of the maximum project size (total amount of mental work done by the crowd to complete the project) rests with the customer. They estimate to ensure that the project is within their budget. It is NOT used to fix the project price. The crowdsourcing vendor acts as a guide to the estimation process. 
 - Address security concerns with crowdsourcing, to a maximum.
 - Do not crowdsource work that is hard to measure, or that needs a significant amount of knowledge, coordination or trust to execute. These kind of tasks are to be performed by the crowdsourcing vendor. They need to be automated as soon as possible.
 
