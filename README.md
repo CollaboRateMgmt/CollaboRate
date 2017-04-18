@@ -24,7 +24,7 @@ The idea is to devise a process and technology to meet the following goals:
     - Define a measure of mental work, that has maximum accuracy.
   - Onus of estimation of the maximum project size (total amount of mental work done by the crowd to complete the project) rests with the customer. Estimation is mainly needed to ensure that the project is within the budget of the customer. It is NOT used for determing the cost of the project. The crowdsourcing vendor acts as a guide to the estimation process. 
 - Address security concerns with crowdsourcing, to a maximum.
-- Do not crowdsource work that needs knowledge, coordination or trust. This function is retained with the crowdsourcing vendor. It is to be automated as soon as possible.
+- Do not crowdsource work that is hard to measure, or that needs a significant amount of knowledge, coordination or trust to execute. These kind of tasks are to be performed by the crowdsourcing vendor. They need to be automated as soon as possible.
 
 While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to better understand the specified process and tool, and find areas for their improvement. 
 
