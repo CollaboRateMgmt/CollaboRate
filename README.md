@@ -19,12 +19,12 @@ You may use this process for open source projects as well. See [this page](https
 - Fair and accurate income for employees and the organization.   
 - No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
 - Crowd members need only an internet connection, a web browser and an email account. No need for development environment. 
-- Since project security, complexity, and development environment are no longer issues:
+- Project security, complexity, and development environment are no longer issues:
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
   - Reduce office cost. Or, end it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
-# Overview for those familiar with Crowdsourcing Concepts
+# A Quick Overview for those familiar with Crowdsourcing Concepts
 For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#detailed-purpose).
 The idea is to devise a process and technology to meet the following goals:  
 - Increase number of people per project to a maximum. This will reduce the project execution time to a minimum.
