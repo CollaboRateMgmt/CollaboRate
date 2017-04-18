@@ -15,6 +15,7 @@ The idea is to devise a process and technology to meet the following goals:
   - Decrease size of unit work per person, to a minimum.
   - Decrease knowledge needed to do a unit piece of work, to a minimum.
   - Crowdsource work that can meet the above rules, to a maximum.
+  - Do not crowdsource work that is hard to measure. Also, do not crowdsource work that needs a significant amount of knowledge, coordination or trust to execute. The crowdsourcing vendor must do these tasks. The vendor should automate them as far as possible.
 - Have fair financials and fair assignment of risks, to the maximum. Do this as follows:
   - Measure and reward people's contributions with maximum accuracy.
   - Measure and penalize people's bugs with maximum accuracy.
@@ -23,8 +24,7 @@ The idea is to devise a process and technology to meet the following goals:
   - Determine the actual size of the completed project with maximum accuracy. Customer pays as per this size. For this:
     - Define a measure of mental work, that has maximum accuracy.
   - Onus of estimation of the maximum project size rests with the customer. They estimate to ensure that the project is within their budget. It is NOT used to fix the project price. The crowdsourcing vendor acts as a guide to the estimation process. 
-- Address security concerns with crowdsourcing, to a maximum.
-- Do not crowdsource work that is hard to measure. Also, do not crowdsource work that needs a significant amount of knowledge, coordination or trust to execute. The crowdsourcing vendor must do these tasks. The vendor should automate them as far as possible.
+- Address security concerns with crowdsourcing, to a maximum.  
 
 While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to better understand the specified process and tool, and find areas for their improvement. 
 
