@@ -5,7 +5,7 @@
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT organizations and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services, IT service companies and employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 # Overview for those familiar with Crowdsourcing Concepts
 For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#Detailed Purpose).
