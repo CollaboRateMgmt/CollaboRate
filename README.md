@@ -15,7 +15,7 @@ The idea is to devise a process and technology to meet the following goals:
   - Decrease size of unit work per person, to a minimum.
   - Decrease knowledge needed to do a unit piece of work, to a minimum.
   - Crowdsource work that can meet the above rules, to a maximum.
-  - Do not crowdsource work that is hard to measure. Also, do not crowdsource work that needs a significant amount of knowledge, coordination or trust to execute. The crowdsourcing vendor must do these tasks. The vendor should automate them as far as possible.
+  - Do not crowdsource work that is hard to measure. Also, do not crowdsource work that needs much knowledge, coordination or trust. The crowdsourcing vendor must do these tasks. The vendor should automate them as far as possible.
 - Have fair financials and fair assignment of risks, to the maximum. Do this as follows:
   - Measure and reward people's contributions with maximum accuracy.
   - Measure and penalize people's bugs with maximum accuracy.
