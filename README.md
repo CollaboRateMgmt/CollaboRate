@@ -122,7 +122,7 @@ Let's have a closer look at each solution.
    
    Each microtask takes almost the same mental effort. Why? With each breakdown, you reduce the number of requirements per task. But the size of the task text may not be halved. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
    
-   At the level of 'logic tasks' the text does become significant smaller, as it no longer needs elaboration. But the design effort will be the maximum because the CollaboRate tool asks you more questions. 
+   At the level of 'logic tasks' the text does become much smaller, as it no longer needs elaboration. But the design effort will be the maximum, because the CollaboRate tool asks you more questions. 
    
    In summary the 'logic tasks' and 'requirement tasks' take approximately the same mental effort.
    
