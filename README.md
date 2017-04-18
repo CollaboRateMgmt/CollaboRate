@@ -9,7 +9,7 @@ CollaboRate is a process and a simple software tool. It will transform the comme
 
 # Overview for those familiar with Crowdsourcing Concepts
 For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#detailed-purpose).
-Devise a process and technology to meet the following goals:  
+The idea is to devise a process and technology to meet the following goals:  
 - Increase number of people per project to a maximum. This will reduce the project execution time to a minimum.
 - Increase chance of success of unit work assigned per person to a maximum, as follows:
   - Decrease size of unit work per person to a minimum.
@@ -26,10 +26,10 @@ Devise a process and technology to meet the following goals:
 
 While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to appreciate the specified process and tool, and find areas for their improvement. 
 
-# Detailed Purpose
-
-The following diagram attempts to summarize the idea, its advantages and its risks:
+The following diagram attempts to summarize the CollaboRate process, its advantages and its risks:
 ![Summary Infographic](CollaboRate.png?raw=true)
+
+# Detailed Purpose
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Facilitate a very large number of people (the crowd), to work on the same project at the same time".  
