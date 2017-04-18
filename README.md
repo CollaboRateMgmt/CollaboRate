@@ -1,6 +1,5 @@
 # CollaboRate - a Crowdsourcing Process and Software Tool
 
-
 # License Type
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
@@ -8,6 +7,22 @@
 CollaboRate is a process and a simple software tool. It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information. 
+
+# Benefits for Customers of IT Services
+  - Faster time to completion
+  - Reduced financial risk
+  - Fair and accurate project cost
+  - Superior code, documentation and design quality
+
+# Benefits for Employees and their Organizations
+- Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
+- Fair and accurate income for employees and the organization.   
+- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
+- Crowd members need only an internet connection, a web browser and an email account. No need for development environment. 
+- Since project security, complexity, and development environment are no longer issues:
+  - No need to call employees to an office to keep an eye on them. Employees can work from home!
+  - Reduce office cost. Or, end it altogether.
+  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # Overview for those familiar with Crowdsourcing Concepts
 For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#detailed-purpose).
@@ -62,23 +77,6 @@ Due to fast completion, the need for estimating the exact project end date reduc
   The estimated size of the project must not exceed its budget. That's all we use estimates for. They are no longer needed for project duration and costing.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
-
-
-# Detailed Benefits for Employees and their Organizations
-- Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
-- Fair and accurate income for employees and the organization.   
-- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
-- Crowd members need only an internet connection, a web browser and an email account. No need for development environment. 
-- Since project security, complexity, and development environment are no longer issues:
-  - No need to call employees to an office to keep an eye on them. Employees can work from home!
-  - Reduce office cost. Or, end it altogether.
-  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
-
-# Detailed Benefits for Customers of IT Services
-  - Faster time to completion
-  - Reduced financial risk
-  - Fair and accurate project cost
-  - Superior code, documentation and design quality
 
 # The Process, and how it Works
 The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
@@ -199,7 +197,7 @@ This work does not represent views of my past and present organizations.
 It is under discussion with my present organization.
 
 # Why the name 'CollaboRate'?
-This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each other's contributions. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
+This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each other's contributions, especially if the project's task tracker is accessible to all the people. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
