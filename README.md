@@ -131,7 +131,7 @@ Let's have a closer look at each solution.
    
    You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
-   Crowd members email the crowd management SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the review. After review, the assigned crowd member will mail the output of the CollaboRate tool to the crowd management SPOC.  
+   Crowd members email the crowd management SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the output of the CollaboRate tool to the crowd management SPOC.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change need to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
@@ -179,7 +179,7 @@ We can automate the remaining activities. The creation of such automation tools 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.   
 
 # How to use the tool?
-[Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. I recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
+[Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
 
 # Contributing
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
