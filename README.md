@@ -181,6 +181,8 @@ We can automate the remaining activities. The creation of such automation tools 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
 
+Unless your corporate proxy server blocks this page, you can also access the tool online from [this link](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). But please note that as of now, this link has not been tested.
+
 # Contributing
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
