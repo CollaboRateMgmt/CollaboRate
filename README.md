@@ -102,7 +102,7 @@ Let's have a closer look at each solution.
    
    We define a microtask as follows:  
 
-   **A microtask is the mental work done to break down an independent problem statement. The work breakdown usually yields two independent problem statements.**      
+   **A microtask is the mental work done to break down an independent problem statement. The work breakdown yields two independent problem statements. **      
    **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The mental work done to create this line is also a microtask.** 
    
    'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete. 
