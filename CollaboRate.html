@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
-		CollaboRate v1.3 - Micro-Work Binary Breakdown Structure (MWBBS) Tool for Crowdsourced IT
+		CollaboRate v1.3 - Work Binary Breakdown Structure (WBBS) Tool for Crowdsourced IT
 	</title>
 	<!-- 
 	Project website: https://github.com/sohrabsaran/CollaboRate	
 	Copyright Sohrab Saran (sohrabsaran@gmail.com) and additional contributors listed at https://github.com/sohrabsaran/CollaboRate/wiki/Contributors
 	License type: MIT	
 	-->
+	<link rel="stylesheet" type="text/css" href="3rdPartyLibs/css/jquery-ui_1.12.0.css">
 	<style>
 		* {font-family: Sans-Serif;}
 		pre 
@@ -23,11 +24,32 @@
 		}
 
 		div
-		{
-			display:none;/*hide divs by default*/
+		{			
 			padding-left: 5px;/*so that nested divs can be visualized*/
-		}		
+		}
+		
+		input[type=text]
+		{
+			width:100%;
+			max-width:875px;
+		}
+		
+		/*for blocking input until the server responds*/
+		.divThatBlocksInput 
+		{
+			position: fixed;
+			z-index: 999;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.5;
+			color: white;
+			text-align:center;
+		}
 	</style>
+	
 	<!--
 	<script
 		src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -35,58 +57,407 @@
 		crossorigin="anonymous">
 	</script>
 	--->
-	<script src="jquery-3.1.1.slim.min.js"></script>	
+	<script src="3rdPartyLibs/js/jquery-3.2.1.min.js"></script>
+	<!--<script src="3rdPartyLibs/js/jquery-ui.min.1.12.0.js"></script>-->	
+	<script src="3rdPartyLibs/js/jquery-ui.min.1.12.0.js"></script>
+	<script src="3rdPartyLibs/js/jquery.fix.clone.js"></script>
 	<script>
-//BEGIN src="https://raw.githubusercontent.com/spencertipping/jquery.fix.clone/master/jquery.fix.clone.js">
-		// Textarea and select clone() bug workaround | Spencer Tipping
-// Licensed under the terms of the MIT source code license
+	
+var pageDisabledCtr = 0;
+var dbgEnableDisablePage = false;
 
-// Motivation.
-// jQuery's clone() method works in most cases, but it fails to copy the value of textareas and select elements. This patch replaces jQuery's clone() method with a wrapper that fills in the
-// values after the fact.
+//Disable the entire page with opacity of 50%.
+//Preferable to call disablePageAndSleep because some browsers such as chrome do not 
+//immediately update the UI? TODO: prepare the code to be async
+function disablePage(reasonForDisablingThePage)
+{	
+	assert(pageDisabledCtr >= 0);
+	//alert("In disablePage()...");
+	pageDisabledCtr++;
+	if(dbgEnableDisablePage){console.log("Disabling the page to "+reasonForDisablingThePage+", now pageDisabledCtr has increased to "+pageDisabledCtr+"...");}
+	if(pageDisabledCtr == 1)
+	{
+		$("body").prepend("<div class='divThatBlocksInput'>Please wait...</div>");
+	}
+}
 
-// An interesting error case submitted by Piotr Przybyl: If two <select> options had the same value, the clone() method would select the wrong one in the cloned box. The fix, suggested by Piotr
-// and implemented here, is to use the selectedIndex property on the <select> box itself rather than relying on jQuery's value-based val().
+//Remove the divThatBlocksInput which further enables the page for the user.
+function enablePage(reason)
+{
+	assert(pageDisabledCtr > 0);
+	pageDisabledCtr--;
+	if(dbgEnableDisablePage){console.log("Enabling page: reason: "+reason+" is complete, now pageDisabledCtr has reduced to "+pageDisabledCtr+"...");}
+	if(pageDisabledCtr == 0){$(".divThatBlocksInput").remove();}
+	//alert("re-enabled the page!");
+}
+	
+function custom_alert(output_msg, title_msg, fnToCallOnClose)
+{
+    if (!title_msg){title_msg = '';}
+	
+	title_msg = capitalizeFirstLetter(title_msg);
 
-(function (original) {
-  jQuery.fn.clone = function () {
-    var result           = original.apply(this, arguments),
-        my_textareas     = this.find('textarea').add(this.filter('textarea')),
-        result_textareas = result.find('textarea').add(result.filter('textarea')),
-        my_selects       = this.find('select').add(this.filter('select')),
-        result_selects   = result.find('select').add(result.filter('select'));
+    if (!output_msg)
+	{
+        output_msg = '(No Message to Display!)';
+	}
+	output_msg=output_msg.replaceAll("\r\n","\n").replaceAll("\n","<BR>");
 
-    for (var i = 0, l = my_textareas.length; i < l; ++i) $(result_textareas[i]).val($(my_textareas[i]).val());
-    for (var i = 0, l = my_selects.length;   i < l; ++i) {
-      for (var j = 0, m = my_selects[i].options.length; j < m; ++j) {
-        if (my_selects[i].options[j].selected === true) {
-          result_selects[i].options[j].selected = true;
-        }
-      }
-    }
-    return result;
-  };
-}) (jQuery.fn.clone);
+	var emptyDiv = $("<div style=\"background:white;overflow:auto;\"></div>");
+    emptyDiv.html(output_msg);
+	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	h  = h * 70/100;
+	emptyDiv.dialog({
+        "title": title_msg,
+        "resizable": true,
+        "modal": true,
+		"width": "70%",
+		/** /height:h,/ **/
+        "buttons": {
+            "Ok": function()
+            {
+                $( this ).dialog( "close" );
+            }
+        },
+		"close": function(){if(fnToCallOnClose != null){fnToCallOnClose();}emptyDiv.remove();}
+    });	
+	if(emptyDiv[0].offsetHeight > h)
+	{
+		emptyDiv[0].style.height = parseInt(h,10)+"px";		
+	}
+}
 
-// Generated by SDoc 
-//END src="https://raw.githubusercontent.com/spencertipping/jquery.fix.clone/master/jquery.fix.clone.js">
+function capitalizeFirstLetter(s) 
+{
+	if(s == "" || s == null){return s;}
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+//lcsset begin
+var lcssetcache, uniquestr, uniquectr
+
+function lcsset(a,b)
+{
+	//p("sdfsdf")
+	lcssetcache = {}	
+	inituniquestr(a,b)
+	return lcsset2(a,b)
+}
+
+function inituniquestr(a,b)
+{
+	uniquectr = 0
+	inituniquestr2(a)
+	inituniquestr2(b)
+	//p("uniquestr='"+uniquestr+"'")
+}
+
+function inituniquestr2(a)
+{
+	while(1)
+	{
+		uniquestr = "" + uniquectr
+		if(a.indexOf(uniquestr) == -1){break}
+		uniquectr++
+	}
+}
+
+function lcsset2(a, b)
+{
+	var r = lcsset2_1(a, b)
+	//p("lcsset2(): a='"+a+"', b='"+b+"', r="+JSON.stringify(r))
+	return r
+}
+
+function lcsset2_1(a, b)
+{	
+	var k = a + uniquestr + b
+	if(k in lcssetcache){return lcssetcache[k]}
+	var r = lcsset3(a,b)
+	lcssetcache[k] = r
+	return r
+}
+
+function lcsset3(a, b)
+{
+	//var dbg = (a=="c" && b == "cd")
+	if(a.length == 0 || b.length == 0){return [""]}
+	if(a.charAt(0) == b.charAt(0))
+	{	
+		if(a.length == 1 && b.length == 1)
+		{
+			return [a]
+		}
+		var firstChr = a.charAt(0)		
+		var r2 = []
+		var r = lcsset2(a.substring(1),b.substring(1))
+		assert(r.length > 0)
+		r.forEach(function(s){r2.push(firstChr+s)})				
+		return r2
+	}
+	var r1 = lcsset2(a,b.substring(1))
+	assert(r1.length > 0)
+	var r2 = lcsset2(a.substring(1),b)
+	assert(r2.length > 0)
+	if(r1[0].length == 0){return r2}
+	if(r2[0].length == 0){return r1}
+	if(r1[0].length == r2[0].length)
+	{
+		r2.forEach(function(r2ele){if(r1.indexOf(r2ele) == -1){r1.push(r2ele)}})	
+		return r1
+	}
+	if(r1[0].length > r2[0].length){return r1}	
+	return r2
+}
+//lcsset end
+
+//diff logic start
+var bestdiffs, bestnumofdiffs,bestdiffstartingpoint
+
+function diff(old,neww)
+{
+	bestdiffs=[]
+	var setoflcses = lcsset(old,neww)
+	//console.log("diff(): setoflcses.length="+setoflcses.length)
+	setoflcses.forEach(function(lcs){		
+		findandaccumbestdiffsfor(lcs,old,neww)})
+	assert(bestdiffs.length>0)
+	return bestdiffs[0]
+}
+
+function findandaccumbestdiffsfor(lcs, old, neww)
+{	
+	var r = findbestdiffsfor2(lcs, old, neww)
+	//console.log("findandaccumbestdiffsfor(): lcs='"+lcs+"',old='"+old+"',neww='"+neww+"',r="+JSON.stringify(r))
+	r.forEach(function(diff){updatebestdiffs(diff,bestdiffs)})
+	//console.log("findandaccumbestdiffsfor(): At exit, bestdiffs="+JSON.stringify(bestdiffs))
+}
+
+function updatebestdiffs(diff,bestdiffs)
+{
+	if(bestdiffs.length == 0 || isxbetterdiffthany(diff,bestdiffs[0]))
+	{
+		bestdiffs.push(diff)
+		return
+	}
+	if(isxasgoodadiffasy(diff,bestdiffs[0]))
+	{
+		bestdiffs.push(diff)
+	}
+}
+
+function isxasgoodadiffasy(diffx, diffy)
+{
+	if(diffx.length != diffy.length){return false}
+	if(diffx.length == 0){return true}
+	var firstdiffofx = diffx[0]
+	var firstdiffofy = diffy[0]
+	if(firstdiffofx.changetype != firstdiffofy.changetype){return false}
+	return (firstdiffofx.str.length == firstdiffofy.str.length)
+}
+
+function isxbetterdiffthany(diffx, diffy)
+{
+	if(diffx.length != diffy.length){return diffx.length < diffy.length}
+	if(diffx.length == 0){return false}
+	
+	var firstdiffofx = diffx[0]
+	var firstdiffofy = diffy[0]
+	if(firstdiffofx.changetype != firstdiffofy.changetype)
+	{
+		if(firstdiffofx.changetype == "same"){return true}
+		if(firstdiffofy.changetype == "same"){return false}		
+	}
+	return (firstdiffofx.str.length < firstdiffofy.str.length)
+}
+
+function findbestdiffsfor2(lcs, old, neww)
+{	
+	//console.log("findbestdiffsfor2(): Entry: lcs='"+lcs+"',old='"+old+"',neww='"+neww+"'...")
+	var r = findbestdiffsfor3(lcs, old, neww)
+	//console.log("findbestdiffsfor2(): lcs='"+lcs+"',old='"+old+"',neww='"+neww+"', r="+JSON.stringify(r))
+	return r
+}
+	
+function findbestdiffsfor3(lcs, old, neww)
+{
+	var dbg = false//(lcs==" saran" && old == "ajiv saran" && neww == "oz saran") || (lcs=="n" && old == "n" && neww == "n")
+	if(lcs.length == 0)
+	{		
+		var r = []		
+		if(old.length != 0)
+		{
+			r.push({str:old,changetype:"deleted"})
+		}
+		if(neww.length != 0)
+		{
+			r.push({str:neww,changetype:"added"})
+		}
+		return [r]
+	}
+	assert(old.length >= lcs.length)
+	assert(neww.length >= lcs.length)
+	var allpossibleoldprefixes  = allpossibleprefixesbeforelcs(old,lcs)	
+	if(dbg)
+	{
+		p("allpossibleoldprefixes='"+JSON.stringify(allpossibleoldprefixes)+"'")
+	}
+	var allpossiblenewprefixes  = allpossibleprefixesbeforelcs(neww,lcs)
+	if(dbg)
+	{
+		p("allpossiblenewprefixes='"+JSON.stringify(allpossiblenewprefixes)+"'")
+	}
+	var remaininglcs = lcs.substring(1)
+	var r = []
+	allpossibleoldprefixes.forEach(function(oldprefix)
+	{
+		if(dbg)
+		{
+			p("oldprefix='"+oldprefix+"'")
+		}
+		var remainingold = old.substring(oldprefix.length+1)
+		if(dbg)
+		{
+			p("remainingold='"+remainingold+"'")
+		}
+		allpossiblenewprefixes.forEach(function(newprefix)
+		{
+			if(dbg)
+			{
+				p("newprefix='"+newprefix+"'")
+			}
+			var remainingnew = neww.substring(newprefix.length+1)
+			if(dbg)
+			{
+				p("remainingnew='"+remainingnew+"'")
+			}			
+			var deletedchange = null
+			if(oldprefix!="")
+			{
+				deletedchange = {str:oldprefix,changetype:"deleted"}
+			}
+			var addedchange = null
+			if(newprefix!="")
+			{
+				addedchange = {str:newprefix,changetype:"added"}
+			}			
+			var bestremainingdiffs = findbestdiffsfor2(remaininglcs,remainingold,remainingnew)
+			if(dbg)
+			{
+				p("remaininglcs='"+remaininglcs+"',remainingold='"+remainingold+"',remainingnew='"+remainingnew+"'")
+				p("bestremainingdiffs="+JSON.stringify(bestremainingdiffs))
+			}
+			bestremainingdiffs.forEach(function(bestremainingdiff)
+			{
+				if(bestremainingdiff.length > 0 && bestremainingdiff[0].changetype=="same")
+				{
+					bestremainingdiff[0].str = lcs.substring(0,1) + bestremainingdiff[0].str
+				}
+				else
+				{
+					bestremainingdiff.unshift({str:lcs.substring(0,1),changetype:"same"})
+				}
+				if(addedchange != null){bestremainingdiff.unshift(addedchange)}
+				if(deletedchange != null){bestremainingdiff.unshift(deletedchange)}
+				if(dbg)
+				{
+					p("bestremainingdiff="+JSON.stringify(bestremainingdiff))
+				}
+				if(dbg)
+				{
+					p("Before updatebestdiffs(), bestremainingdiff=" + JSON.stringify(bestremainingdiff) + ", r=" + JSON.stringify(r))
+				}
+				updatebestdiffs(bestremainingdiff,r)
+				if(dbg)
+				{
+					p("After updatebestdiffs(), r="+JSON.stringify(r))
+				}
+			})			
+		})
+	})
+	return r
+}
+
+function allpossibleprefixesbeforelcs(s,lcs)
+{
+	var r = allpossibleprefixesbeforelcs2(s, lcs)
+	//console.log("allpossibleprefixesbeforelcs(): s='"+s+"', lcs='"+lcs+"', return value="+JSON.stringify(r))
+	return r
+}
+
+function allpossibleprefixesbeforelcs2(s,lcs)
+{
+	assert(lcs.length > 0)
+	assert(s.length >= lcs.length)
+	assert(containslcs(s,lcs))	
+	var lens = s.length
+	var r = []
+	var firstcharoflcs = lcs.substring(0,1)
+	for(var i=0;i<lens;i++)
+	{
+		i = s.indexOf(firstcharoflcs,i)
+		if(i==-1){return r}
+		var s2 = s.substring(0,i)
+		var remainings = s.substring(s2.length)
+		if(!containslcs(remainings,lcs))
+		{			
+			return r
+		}		
+		r.push(s2)
+	}
+	return r
+}
+
+function containslcs(s,lcs)
+{
+	while(1)
+	{
+		if(lcs==""){return true}
+		var lcsfirstchar = lcs.substring(0,1)
+		var i = s.indexOf(lcsfirstchar)
+		if(i==-1){return false}
+		lcs = lcs.substring(1)
+		s = s.substring(i+1)
+	}
+}
+//diff logic end
 
 //shortcut for document.getElementById or for ($("#"+eleid)[0]))
 function el(eleid){return document.getElementById(eleid)}
 
 //Shows the div for the currently selected option
-function showDivForCurrentlySelectedOption(drpdn, optionDivsClass)
+function showDivForCurrentlySelectedOption(drpdn)
 {
 	var dbg = false;
 	if(dbg)
 	{
 		console.log("showDivForCurrentlySelectedOption(): drpdn="+drpdn.outerHTML);
-		console.log("showDivForCurrentlySelectedOption(): drpdn="+drpdn.outerHTML);
-		console.log("showDivForCurrentlySelectedOption(): optionDivsClass='"+optionDivsClass+"'");
+		console.log("showDivForCurrentlySelectedOption(): drpdn="+drpdn.outerHTML);		
 		console.log("showDivForCurrentlySelectedOption(): drpdn.value (id of div to make visible) = '"+drpdn.value+"'");
+	}	
+	$(drpdn).find("option").each(function() {if(this.value!="")$("#"+this.value).hide()})
+	
+	if(drpdn.value.trim() != "")
+	{
+		//origAlert("drpdn.value='"+drpdn.value+"'")
+		$("#"+drpdn.value).show();
+		if($("#"+drpdn.value).find("select:visible").length == 0)
+		{		
+			showNextStepsButton()
+		}
+		else
+		{	
+			hideNextStepsButton()
+		}
 	}
-	$("."+optionDivsClass).hide();
-	if(drpdn.value != ""){$("#"+drpdn.value).show();}
+	else
+	{	
+		hideNextStepsButton()
+	}
+	if(drpdn.value == "needtogetapprovalmsgdiv")
+	{
+		hideNextStepsButton()
+	}
 	if(dbg)
 	{
 		console.log("showDivForCurrentlySelectedOption(): now check whether the element with id '"+drpdn.value+"' has been made visible.");
@@ -94,10 +465,14 @@ function showDivForCurrentlySelectedOption(drpdn, optionDivsClass)
 	}
 }
 
-function optionChanged_howBigSpecific(drpdn, optionDivsClass)
+function showNextStepsButton()
 {
-	showDivForCurrentlySelectedOption(drpdn, optionDivsClass);
-	if(drpdn.value != ""){$("#btnToshowNextSteps").show();}
+	$("#btnToShowNextSteps").show();
+}
+
+function hideNextStepsButton()
+{
+	$("#btnToShowNextSteps").hide();
 }
 
 var eleIdsDifferentiator = 0;
@@ -187,6 +562,7 @@ function getTextOfNode(n)
 {
 	//console.log("gettextofnode: entry");
 	if(!($(n).is(':visible'))){return ""}
+	if($(n).is(':hidden')){return ""}
 	if(n.tagName=="BUTTON"){return ""}
 	if(n.tagName=="SELECT")
 	{
@@ -233,7 +609,7 @@ function getTextToReplyWithFrom(ele,indentationLevel)
 	//console.log("ele.textContent = "+ele.textContent)
 	//return ele.innerText
 	//if(!($(ele).is(':visible'))){return ""}
-	if(ele.tagName=="DIV" && getComputedStyle(ele).getPropertyValue("display") == "none"){return ""}
+	if((ele.tagName=="DIV" || ele.tagName=="SPAN") && getComputedStyle(ele).getPropertyValue("display") == "none"){return ""}	
 	if(ele.tagName=="SCRIPT"){return ""}
 	if(ele.tagName=="BUTTON"){return ""}
 	if(ele.tagName=="BR"){return "\n"}
@@ -279,7 +655,16 @@ function getTextToReplyWithFrom(ele,indentationLevel)
 	return s;
 }
 
+function escapeRegExp(str) 
+{
+    return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
 
+String.prototype.replaceAll = function(search, replacement) 
+{
+    var target = this;
+    return target.replace(new RegExp(escapeRegExp(search), 'g'), replacement);
+}
 
 function showNextSteps()
 {
@@ -370,6 +755,161 @@ function hideNumOfCharsTypedAndCharLimit()
     $("#"+spanId).remove();
 }
 
+function imFamiliarToggled(checkbox)
+{
+	inCaseImFamiliarChecked(checkbox)
+	inCaseImFamiliarUnchecked(checkbox)
+}
+
+function reversedKeysAndValues(m)
+{
+	var r = {}
+	for(var k in m){r[m[k]]=k}
+	return r
+}
+
+
+var mapOfProgrammerTermsToNonProgrammerTerms = {
+"functions":"computer activities",
+"function":"computer activity",
+"Function":"Computer activity",
+"requirements":"tasks that mention more than one event",
+"requirement":"task that mentions more than one event",
+"simple use cases":"tasks that mention a single event",
+"simple use case":"task that mentions a single event",
+"returned":"output",
+" return ":" output ",
+"argument":"input",
+"String":"Text",
+"Map":"Set",
+"keys and values":"values accessible by unique names",
+"boolean":"'true' or 'false'",
+"calling":"running",
+"builtin":"readymade",
+"a string":"text",
+"element":"item",
+"array":"list",
+"session variable":"something that is remembered as long as the user is logged in",
+"variable":"something that can be quickly remembered",
+"database":"permanent memory",
+"Set value of":"Memorize",
+"Get value of":"Remember"
+}
+var mapOfNonProgrammerTermsToProgrammerTerms = reversedKeysAndValues(mapOfProgrammerTermsToNonProgrammerTerms)
+
+function inCaseImFamiliarChecked(checkbox)
+{
+	if(checkbox.checked)
+	{
+		return handleImFamiliarChecked()
+	}
+}
+
+function handleImFamiliarChecked()
+{
+	mapToUseForTerminologyChange = mapOfNonProgrammerTermsToProgrammerTerms
+	doTerminologyChange()
+}
+
+function inCaseImFamiliarUnchecked(checkbox)
+{
+	if(!(checkbox.checked))
+	{
+		return handleImFamiliarUnchecked()
+	}
+}
+
+var mapToUseForTerminologyChange
+function handleImFamiliarUnchecked()
+{
+	mapToUseForTerminologyChange = mapOfProgrammerTermsToNonProgrammerTerms
+	doTerminologyChange()
+}
+
+function doTerminologyChange()
+{
+	//console.log("doTerminologyChange(): entry")
+	var html = ($("#divThatCreatesTheTextToReplyWith")[0]).innerHTML	
+	var m = mapToUseForTerminologyChange
+	var div = $("#divThatCreatesTheTextToReplyWith")[0]
+	for(k in m)
+	{	
+		assert(html.replaceAll != null)
+		replaceAllOccurencesOfXWithYInHtmlEleZ(k, m[k], div)
+	}	
+	//console.log("doTerminologyChange(): exit")
+}
+
+function replaceAllOccurencesOfXWithYInHtmlEleZ(x,y,z)
+{
+	if(z.tagName == "SCRIPT"){return}
+	if(z.tagName == "INPUT" && (z.type == "hidden" || (z.type == "text" && z.readOnly)))
+	{
+		z.value = z.value.replaceAll(x,y)
+		//console.log("x='"+x+"',y='"+y+"',z.value="+z.value)
+	}
+	if(z.nodeType == 3)
+	{
+		z.nodeValue = z.nodeValue.replaceAll(x,y)
+	}
+	$(z).contents().each(function()
+	{
+		replaceAllOccurencesOfXWithYInHtmlEleZ(x,y,this)
+	})
+}
+
+
+function markAsWizardDropdown(drpdn)
+{
+	//Initially hide all options
+	$(drpdn).find("option").each(function() {if(this.value!="")$("#"+this.value).hide()})
+	
+	drpdn.onchange=function(){
+	showDivForCurrentlySelectedOption(drpdn);
+	window.scrollTo(0,document.body.scrollHeight);
+	($(":focus")[0]).scrollIntoView();
+	}
+}
+
+//arr = array-like od dropdown eles
+function markAsWizardDropdowns(arr)
+{
+	Array.from(arr).forEach(function(ele){markAsWizardDropdown(ele)})
+}
+
+function htmlfordiffwithparenttaskdesc(newdesctextarea)
+{	
+	var neww = newdesctextarea.value
+	var old = ($("#taskDesc")[0]).value
+	var d = diff(old,neww)
+	var s= "<div>"
+	d.forEach(function(change)
+	{		
+		if(change.changetype=="added")
+		{
+			s+="<pre style=\"background:#ddffdd\">"+change.str+"</pre>"
+		}
+		else if(change.changetype=="deleted")
+		{
+			s+="<pre style=\"background:#ffdddd;text-decoration:line-through\">"+change.str+"</pre>"
+		}
+		else
+		{
+			assert(change.changetype=="same")
+			s+="<pre>"+change.str+"</pre>"
+		}		
+	})
+	s += "</div>"
+	return s
+}
+
+function showdiff(textarea)
+{
+	custom_alert(htmlfordiffwithparenttaskdesc(textarea),"Comparison with parent task's description");
+}
+
+var origAlert = alert
+alert = custom_alert
 </script>
 </head>
 <body>
@@ -381,22 +921,22 @@ function hideNumOfCharsTypedAndCharLimit()
 <div style="text-align:center;display:block !important;"><small>Mostly tested with Mozilla FireFox</small></div>
 <a href=# onclick="window.open('https://github.com/sohrabsaran/CollaboRate#collaborate---a-crowdsourcing-process-and-software-tool');return false");">Help</a><br>
 <br>
-This tool will guide you to break down the task sent to you via email.<br>
+This tool will guide you to break down the task assigned to you.<br>
 <br>
 <b>Task Summary</b> <button onclick="alert(el('taskSummary').placeholder)">?</button><br><!--(the phrase 'create function' in summary could be taken as a keyword for some workflow/validations)--> 
 </pre><input id="taskSummary" size="120" type="text" 
-placeholder="Copy the task summary from the email and paste it here."><!--style="background:#eeeeee"--><pre> 
+placeholder="Copy the task summary and paste it here."><!--style="background:#eeeeee"--><pre> 
 
 </PRE><b>Task Description</b> <button onclick="alert(el('taskDesc').placeholder)">?</button> <br>
-<textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description from the email and paste it here.">
+<textarea rows="5" cols="120" id="taskDesc" placeholder="Copy the task description and paste it here.">
 </textarea><!--style="background:#eeeeee;"--><br>
-Note: Before you break down this task, check that its description is clear and complete. It must not refer to any other task or diagram.<br> 
+Note: Before you break down this task, check that its description is clear and complete. It must not refer to any other task.<br> 
 Otherwise, bring this to the notice of the task creator and ensure that you receive a clear and complete task description.<br>
 <br>
 <b style="color:red">Note that you do not need to fully solve this task!</b> <button type="button" 
 onclick="alert(($('#divForExplanationForWhyYouDoNotNeedToFullySolveThisTask')[0]).innerText)">?</button>
 <br>
-<div id="divForExplanationForWhyYouDoNotNeedToFullySolveThisTask">
+<div id="divForExplanationForWhyYouDoNotNeedToFullySolveThisTask" style="display:none !important">
 As per the CollaboRate process, you do not need to fully solve an assigned task.<br>
 Your microtask is just to break down this task into 2 parts.<br> 
 Both parts usually yield subtasks. <br>
@@ -404,26 +944,29 @@ Sometimes the task assigned is so small that it may yield 1 subtask or even no s
 Other crowd members will break down the subtasks you create.<br> 
 Additionally, once your breakdown is reviewed, you must act as the reviewer for the break down of these subtasks.<br>
 <br>
-To do more work, you break down other tasks.
+To do more work, you break down other tasks.<br><br>
+In this way we enable many people to work together, and can accurately measure the work done by each person.
 </div>
+<br>
+<input type="checkbox" onchange="imFamiliarToggled(this)">I'm familiar with software programming terms and concepts.
+<br>
 <br>
 
 <!--Though it is hoped that this tool will be used by non-programmers as well, basic understanding of programming concepts is useful.<br>-->
 
-<div id="divThatCreatesTheTextToReplyWith" style="display:block;background:#eeeeff;">
-<b>Does this task specify the creation of a function (a sequence of steps)?</b> <select 
-	id="isThisAFnDropdown" onchange="showDivForCurrentlySelectedOption(this, 'classfordivfordoesthistaskspecifyfnoption');">
+<div id="divThatCreatesTheTextToReplyWith" style="background:#eeeeff;">
+<b>Does this task specify the creation of a function?</b> 
+<select id="isThisAFnDropdown" class="wizardDropdown">
 <option>&nbsp;</option>
 <option value="divfortaskthatspecifiescreationofafunction">Yes</option>
 <option value="divfortaskthatdoesnotspecifycreationofafunction">No</option>
 </select><br><br>
 
-<div id="divfortaskthatspecifiescreationofafunction" class="classfordivfordoesthistaskspecifyfnoption" 
-style="background:#ffe066">
+<div id="divfortaskthatspecifiescreationofafunction" style="background:#ffe066;">
 (Question applicable for projects where task visibility is unrestricted e.g. experimental or open-source projects. Answer 'yes' if not applicable):<br>
-<b> Has go-ahead to crowdsource this task been given by BOTH programming language/third-party code-reuse SPOC, and also by the code reuse SPOC?</b> 
-(contact the SPOCs if you are not sure how go-aheads are mentioned) <select 
-onchange = "showDivForCurrentlySelectedOption(this,'classfordivforhasfngoaheadbeengiven')"
+<b> Have permissions to crowdsource this task been given by all the SPOCs (library reuse SPOC, project code reuse SPOC, programming language SPOC etc.) ? </b> 
+Contact the SPOCs if you are not sure how permissions are mentioned. 
+<select id="isPermissionToCrowdsourceGivenDropdown" class="wizardDropdown"
 <!--onchange2="if(this.value=='no'){console.log('You need to get approval before breaking down this task.');}else{;$('#divtoshowforcreationofapprovedfn').show();}"-->
 >
 <option>&nbsp;</option>
@@ -431,28 +974,28 @@ onchange = "showDivForCurrentlySelectedOption(this,'classfordivforhasfngoaheadbe
 <option value="needtogetapprovalmsgdiv">No</option>
 </select><br><br>
 
-<div id="needtogetapprovalmsgdiv" class="classfordivforhasfngoaheadbeengiven" style="background:#ff4d4d">
-You need to get approval before breaking down this task.
+<div id="needtogetapprovalmsgdiv" style="background:#ff4d4d">
+This task is not (yet) permitted to be crowdsourced. Contact the SPOCs for further discussion.
 </div>
 
-<div id="divtoshowforcreationofapprovedfn" class="classfordivforhasfngoaheadbeengiven" style="background:#eeeeff" >
+<div id="divtoshowforcreationofapprovedfn" style="background:#eeeeff;" >
 <b>What is the best way to break down this function?</b>  
-<select id="taskSplitTypeDropdown" onchange="optionChanged_howBigSpecific(this,'bigtaskoption');">
+<select id="fnSplitTypeDropdown" class="wizardDropdown">
 	<option>&nbsp;</option>	
-	<option value="nonObviousReqAndElaboratedNewFn">Break it down into a non-obvious requirement, and a new task for this function, but with more details.</option>
-	<option value="needsSubFns">Call other functions.</option>
+	<option value="nonObviousReqAndElaboratedNewFn">Break it down into a non-obvious task, and a new task for this function, but with more details.</option>
+	<option value="needsSubFns">Break it down into smaller functions.</option>
 	<option value="unnecessaryJustNeedsToReturnConstant">This task is unnecessary. This function just needs to return a constant!</option>
 </select><br><br>
 
-<div class="bigtaskoption" id="unnecessaryJustNeedsToReturnConstant">
+<div id="unnecessaryJustNeedsToReturnConstant">
 <script>
 $(function(){appendVisibleElementClone("unnecessaryJustNeedsToReturnConstant", "returnConstant")})
 </script>
 </div>
 
-<div class="bigtaskoption" id="nonObviousReqAndElaboratedNewFn">
+<div id="nonObviousReqAndElaboratedNewFn">
 <div style="display:block !important;background:#ffeeee;" id="nonObviousReqOrUseCase">
-<b>Enter the details for the non-obvious requirement</b><br><br>
+<b>Enter the details for the non-obvious task</b><br><br>
 <script>
 $(function(){appendVisibleElementClone("nonObviousReqOrUseCase", "summAndDesc")})
 </script>
@@ -466,22 +1009,22 @@ $(function(){appendVisibleElementClone("nonObviousReqAndElaboratedNewFn","newfnd
 </script>
 </div><!-- end div nonObviousReqAndElaboratedNewFn-->
 
-<div class="bigtaskoption" id="needsSubFns" style="background:#b3ffff">
-Basic code block that joins the 1-2 new functions:
-<select id="codeblockdropdown" onchange="showDivForCurrentlySelectedOption(this, 'classforcodeblockdiv')">
+<div id="needsSubFns" style="background:#b3ffff;">
+How are the 1-2 new functions joined together? 
+<select id="codeblockdropdown" class="wizardDropdown">
 <option>&nbsp;</option>
-<option value="divtoshowforfncallsequence">sequence - function1();return something; - Call function1. Then return something.</option>
-<option value="divtoshowforifsequence">if(function1()){return something}else{return false} - If function1 returns 'true' then return something, else return 'false'</option>
-<option value="divtoshowforloopsequence">while(function1()){function2()} - While function1 returns 'true', keep calling function2</option>
-<option value="divforcallingreadymadefn">return readymadefunction(something1,something2)</value>
+<option value="divtoshowforfncallsequence">Sequence of 2 functions. The return value of this function, is that of the second.</option>
+<option value="divtoshowforifsequence">If function1 returns 'true' then return the return value of function2, else return 'false'</option>
+<option value="divtoshowforloopsequence">While function1 returns 'true', keep calling function2</option>
+<option value="divforcallingbuiltinfn">As arguments to a 2-argument builtin function</value>
 </select><br><br>
 
-<div id="divforcallingreadymadefn" class="classforcodeblockdiv">
-Select the readymade function to call <select 
-id="readymadedropdown" onchange="showDivForCurrentlySelectedOption(this, 'classforreadymadefncalldiv')">
+<div id="divforcallingbuiltinfn">
+Select the builtin function to call 
+<select id="builtindropdown" class="wizardDropdown">
 <option>&nbsp;</option>
 
-<option value="divtogetuserinputfromscreen">Get user input from the screen as a string</option>
+<option value="divtogetuserinputfromscreen">Get data entered on a screen, as a string</option>
 <!-- 
 params:
 1. Something that returns the unique name of the screen of the input field
@@ -495,12 +1038,12 @@ params:
 2. something that returns attribute name/value of 0-based index
 -->
 
-<option value="divtogetsomethingpreviouslymemorized">Get something that was quickly memorized</option>
+<option value="divtogetsomethingpreviouslymemorized">Get value of variable</option>
 <!-- params: 
 	1. something that returns the variable name.
 -->
 
-<option value="divtogetsomethingpreviouslymemorizedforsession">Get something that was memorized for the web browser session</option>
+<option value="divtogetsomethingpreviouslymemorizedforsession">Get value of session variable</option>
 <!-- params: 
 	1. something that returns the variable name.
 -->
@@ -513,21 +1056,21 @@ The object to check is already stored in memory with name 'objectToFilter'
 So parameters are limited to <=2 for binary WBS
 -->
 
-<option value="divtoquicklymemorizesomething">Quickly memorize something for later reference in this simple use case</option>
+<option value="divtoquicklymemorizesomething">Set value of variable</option>
 <!-- store value in a per-thread global variable.  
 params (limited to <=2 for binary WBS): 
 1  name: something that returns the name by which to memorize the data
 2. value: something that returns the object or value to be memorized
 -->
 
-<option value="divtomemorizesomethingforthesession">Memorize something for the browser session</option>
+<option value="divtomemorizesomethingforthesession">Set value of session variable</option>
 <!-- store value in a session variable.  
 params (limited to <=2 for binary WBS): 
 1  name: something that returns the name by which to memorize the data
 2. value: something that returns the object or value to be memorized
 -->
 
-<option value="divtoinsnewobjindb">Insert new object in the database and return the unique id generated</option>
+<option value="divtoinsnewobjindb">Insert new object in database and return the unique id generated</option>
 <!-- 
 params:
 1. something that returns the object to insert 
@@ -535,10 +1078,10 @@ params:
 Returns: id of inserted row 
 -->
 
-<option value="divforupdatedb">Update existing objects in the database</option>
+<option value="divforupdatedb">Update existing objects in database</option>
 <!-- 
 params:
-1. function to read objects from the database
+1. function to read objects from database
 2. function to modify an object. The object is passed to the function via a memory variable named 'objectToUpdate'
 -->
 
@@ -549,7 +1092,7 @@ params:
 2. something to give the new value to assign to the property
 -->
 
-<option value="divformiscreadymadefn">Any other miscellaneous readymade function that should exist, having not more than 2 inputs</option>
+<option value="divformiscbuiltinfn">Any other miscellaneous builtin function that should exist, having not more than 2 inputs</option>
 <!--
 params:
 1. Something1
@@ -558,7 +1101,7 @@ params:
 
 </select><br><br>
 
-<div id="divtogetuserinputfromscreen" class="classforreadymadefncalldiv">
+<div id="divtogetuserinputfromscreen">
 <!-- 
 Get user input from the screen as a string
 params:
@@ -575,7 +1118,7 @@ params:
 </div>
 </div>
 
-<div id="divtogetattrofobjorelofarr" class="classforreadymadefncalldiv">
+<div id="divtogetattrofobjorelofarr">
 <!-- 
 Get attribute of object or element of array
 params:
@@ -592,7 +1135,7 @@ params:
 </div>
 </div>
 
-<div id="divtogetsomethingpreviouslymemorized"  class="classforreadymadefncalldiv">
+<div id="divtogetsomethingpreviouslymemorized">
 <!-- params: 
 	1. something that returns the variable name.
 -->
@@ -600,7 +1143,7 @@ params:
 <script>$(function(){appendVisibleElementClone("divtogetsomethingpreviouslymemorized", "returnconstantornewfn")})</script>
 </div>
 
-<div id="divtogetsomethingpreviouslymemorizedforsession" class="classforreadymadefncalldiv">
+<div id="divtogetsomethingpreviouslymemorizedforsession">
 <!-- params: 
 	1. something that returns the variable name.
 -->
@@ -608,7 +1151,7 @@ params:
 <script>$(function(){appendVisibleElementClone("divtogetsomethingpreviouslymemorizedforsession", "returnconstantornewfn")})</script>
 </div>
 
-<div id="divtoshowforreadfromdb" class="classforreadymadefncalldiv">
+<div id="divtoshowforreadfromdb">
 <!-- 
 Read object(s) from database
 params: 
@@ -623,12 +1166,12 @@ So parameters are limited to <=2 for binary WBS
 </div>
 <div style="display:block;background:#b3d9ff" id="divforfilterfn">
 <b>Filter function whose return type is 'true' or 'false' - if false, then the object to check gets filtered out.</b><br>
-Note: The object to check will already stored in memory by the readymade function, with name 'objectToFilter'<br>
+Note: The object to check will already stored in memory by the builtin function, with name 'objectToFilter'<br>
 <script>$(function(){appendVisibleElementClone("divforfilterfn", "newfndetails")})</script>
 </div>
 </div>
 
-<div id="divtoquicklymemorizesomething" class="classforreadymadefncalldiv">
+<div id="divtoquicklymemorizesomething">
 <!-- store value in a per-thread global variable.  
 params (limited to <=2 for binary WBS): 
 1  name: something that returns the name by which to memorize the data
@@ -644,7 +1187,7 @@ params (limited to <=2 for binary WBS):
 </div>
 </div>
 
-<div id="divtomemorizesomethingforthesession" class="classforreadymadefncalldiv">
+<div id="divtomemorizesomethingforthesession">
 <!-- store value in a per-thread global variable.  
 params (limited to <=2 for binary WBS): 
 1  name: something that returns the name by which to memorize the data
@@ -660,9 +1203,9 @@ params (limited to <=2 for binary WBS):
 </div>
 </div>
 
-<div id="divtoinsnewobjindb" class="classforreadymadefncalldiv">
+<div id="divtoinsnewobjindb">
 <!-- 
-Insert new object in the database and return the unique id generated
+Insert new object in database and return the unique id generated
 params:
 1. something that returns the object to insert 
 2. something that returns the name of the table in which to insert the object
@@ -678,15 +1221,15 @@ Returns: id of inserted row
 </div>
 </div>
 
-<div id="divforupdatedb" class="classforreadymadefncalldiv">
+<div id="divforupdatedb">
 <!-- 
-Update existing objects in the database
+Update existing objects in database
 params:
-1. function to read objects from the database
+1. function to read objects from database
 2. function to modify an object. The object is passed to the function via a memory variable named 'objectToUpdate'
 -->
 <div style="display:block;background:#cce6ff" id="divforfntoreadobjstoupdate">
-<b>Function to read objects from the database</b><br>
+<b>Function to read objects from database</b><br>
 <script>$(function(){appendVisibleElementClone("divforfntoreadobjstoupdate", "newfndetails")})</script>
 </div>
 <div style="display:block;background:#b3d9ff" id="divforfntoupdatedbobj">
@@ -695,7 +1238,7 @@ params:
 </div>
 </div>
 
-<div id="divtoupdatepropofpartofscreen" class="classforreadymadefncalldiv">
+<div id="divtoupdatepropofpartofscreen">
 <!--
 Update property of a part of the screen
 params:
@@ -712,32 +1255,33 @@ params:
 </div>
 </div>
 
-<div id="divformiscreadymadefn">
+<div id="divformiscbuiltinfn">
 <!--
-Any other miscellaneous readymade function that should exist, having not more than 2 inputs
+Any other miscellaneous builtin function that should exist, having not more than 2 inputs
 params:
 1. Something1
 2. Something2
 -->
-<div style="display:block;background:#ffb3d9" id="divforfnnameanddescofmiscreadymadefn">
-<script>$(function(){appendVisibleElementClone("divforfnnameanddescofmiscreadymadefn", "newfndetails")})</script>
+<div style="display:block;background:#ffb3d9" id="divforfnnameanddescofmiscbuiltinfn">
+<script>$(function(){appendVisibleElementClone("divforfnnameanddescofmiscbuiltinfn", "newfndetails")})</script>
 </div>
-<div style="display:block;background:#cce6ff" id="divforfirstparamofmiscreadymadefn">
+<div style="display:block;background:#cce6ff" id="divforfirstparamofmiscbuiltinfn">
 <b>First Parameter</b><br>
-<script>$(function(){appendVisibleElementClone("divforfirstparamofmiscreadymadefn", "returnconstantornewfn")})</script>
+<script>$(function(){appendVisibleElementClone("divforfirstparamofmiscbuiltinfn", "returnconstantornewfn")})</script>
 </div>
-<div style="display:block;background:#b3d9ff" id="divforsecondparamofmiscreadymadefn">
+<div style="display:block;background:#b3d9ff" id="divforsecondparamofmiscbuiltinfn">
 <b>Second Parameter (if applicable)</b><br>
-<script>$(function(){appendVisibleElementClone("divforsecondparamofmiscreadymadefn", "returnconstantornewfn")})</script>
+<script>$(function(){appendVisibleElementClone("divforsecondparamofmiscbuiltinfn", "returnconstantornewfn")})</script>
 </div>
 </div>
 
-</div><!-- end div divforcallingreadymadefn -->
+</div><!-- end div divforcallingbuiltinfn -->
 
 
-<div id="divtoshowforloopsequence" class="classforcodeblockdiv">
+<div id="divtoshowforloopsequence">
+Note: This function will not have any return value.<br>
 	<div id="divforloopconditionfn" style="display:block;background:#ffff80;">
-		<b>Loop Condition Function</b><br>
+		<b>Function 1</b><br>
 		<script>
 		$(function()
 		{
@@ -745,14 +1289,14 @@ params:
 			var idofclonedele = replacements["fnreturntype"];
 			//console.log("idofclonedele="+idofclonedele);
 			var fnReturnTypeTextbox = $("#"+idofclonedele)[0];
-			fnReturnTypeTextbox.value = "boolean (returns 'true' or 'false')";
+			fnReturnTypeTextbox.value = $("#termForBoolean")[0].value;;
 			fnReturnTypeTextbox.readOnly = true;
 			fnReturnTypeTextbox.style.backgroundColor = "#eeeeee";
 		});
 		</script>
 	</div>
 	<div id="divforfntocallrepeatedly" style="display:block;background:#ffff00">
-		<b>Function to call in the loop</b><br>
+		<b>Function 2</b><br>
 		<script>
 		$(function(){appendVisibleElementClone("divforfntocallrepeatedly", "newfndetails")})
 		</script>
@@ -760,24 +1304,25 @@ params:
 </div>
 
 
-<div id="divtoshowforifsequence" class="classforcodeblockdiv" >
+<div id="divtoshowforifsequence">
 	<div id="divforconditionfn" style="display:block;background:#f2e6ff">
-		<b>Condition Function</b><br>
+		<b>Function 1</b><br>
 		<script>
 		$(function()
 		{
 			appendVisibleElementClone("divforconditionfn", "newfndetails");
 			var idofclonedele = replacements["fnreturntype"];
-			//console.log("idofclonedele="+idofclonedele);
+			//console.log("divforconditionfn: idofclonedele="+idofclonedele);
 			var fnReturnTypeTextbox = $("#"+idofclonedele)[0];
-			fnReturnTypeTextbox.value = "boolean (returns 'true' or 'false')";
+			fnReturnTypeTextbox.value = $("#termForBoolean")[0].value;			
+			//console.log("divforconditionfn: fnReturnTypeTextbox.value ='"+fnReturnTypeTextbox.value+"'");			
 			fnReturnTypeTextbox.readOnly = true;
 			fnReturnTypeTextbox.style.backgroundColor = "#eeeeee";
 		});
 		</script>
 	</div>
 	<div id="divforvaluetoreturnifcondfnreturnstrue" style="display:block;background:#e6ccff">
-		<b>Value to return, in case the condition function returns 'true'</b><br>
+		<b>Value to return, in case function 1 returns 'true'</b><br>
 		<script>
 		$(function(){appendVisibleElementClone("divforvaluetoreturnifcondfnreturnstrue", "returnconstantornewfn")})
 		</script>		
@@ -786,7 +1331,7 @@ params:
 
 
 
-<div id="divtoshowforfncallsequence" class="classforcodeblockdiv">
+<div id="divtoshowforfncallsequence">
 	<div id="divforfirstfncallinthesequence" style="display:block;background:#99ccff">
 		<b>First function called in the sequence</b><br>
 		<script>
@@ -803,18 +1348,14 @@ params:
 		</script>
 	</div>
 	<div id="divforvaluetoreturn" style="display:block;background:#bbbbff;">
-		<b>Overall result of the sequence</b><br>
+		<b>Overall return value of the sequence</b><br>
 		<script>
-		$(function(){appendVisibleElementClone("divforvaluetoreturn", "returnconstantornewfn")})
+		$(function(){
+		//origAlert("Running component creation for overall result of the sequence")
+		appendVisibleElementClone("divforvaluetoreturn", "returnconstantornewfn")})
+		//origAlert("Ran component creation for overall result of the sequence")
 		</script>
 	</div>
-</div>
-
-<div id="divtoshowforreadfromdb" class="classforcodeblockdiv">
-<b>Read from db</b><br>
-Function that provides Table name (TODO)<br>
-Function that provides Column name (TODO)<br>
-Function that provides row id (TODO)<br>
 </div>
 
 </div><!--end of div needsSubFns -->
@@ -824,58 +1365,45 @@ Function that provides row id (TODO)<br>
 </div><!-- divfortaskthatspecifiescreationofafunction -->
 
 
-<div id="divfortaskthatdoesnotspecifycreationofafunction" class="classfordivfordoesthistaskspecifyfnoption" 
-style="background:#f0ddff">
-Is this task a requirement, or is it a 'simple use case'? <button type="button" 
+<div id="divfortaskthatdoesnotspecifycreationofafunction" style="background:#f0ddff;">
+Is this task a 'requirement', or is it a 'simple use case'? <button type="button" 
 onclick="alert($('#divForWhatIsASimpleUseCase')[0].innerText)">?</button> 
-<select id="taskSplitTypeDropdown" onchange="optionChanged_howBigSpecific(this,'bigtaskoption');">
+<select id="taskSplitTypeDropdown" class="wizardDropdown">
 	<option>&nbsp;</option>
 	<option value="needsSubRequirements">requirement</option>	
 	<option value="needsUseCase">simple use case</option>	
 </select><br><br>
-<div id="divForWhatIsASimpleUseCase">  
+<div id="divForWhatIsASimpleUseCase" style="display:none !important;">  
 A 'simple use case' starts with an 'event' like a user clicking a button, application starting etc.<br>
-Based on some condition, a sequence of steps are performed.<br>
+Based on some condition, a function is run.<br>
 Whereas, a 'requirement' can be broken down into sub-requirements and eventually, 'simple use cases'.
 </div>
 
-<div class="bigtaskoption" id="needsSubRequirements">
-<div id="firstSubrequirementDiv" style="display:block;background:#f0ddf0">
-First sub-requirement/use case<br> 
+<div id="needsSubRequirements">
+<div id="firstSubrequirementDiv" style="background:#f0ddf0">
+First subtask<br> 
 <script>
 $(function(){appendVisibleElementClone("firstSubrequirementDiv","summAndDesc")})
 </script>
 </div>
 <br><br>
 <div id="secondSubrequirementDiv" style="display:block;background:#e0ddf0">
-Second sub-requirement/use case<br>
+Second subtask<br>
 <script>
 $(function(){appendVisibleElementClone("secondSubrequirementDiv","summAndDesc")})
 </script>
 </div>
 </div><!-- needsSubRequirements -->
 
-<div class="bigtaskoption" id="needsUseCase">
+<div id="needsUseCase">
 <!--Object/UI element that raises the event (e.g. 'Application') (pseudo-code or imaginary names are ok!) <input type="text"><br>-->
 <!-- Commenting out the name to keep it simple, the event name will indicate!-->
-Name of event  (e.g. 'Application Start', 'Click on button X of screen Y') <input type="text"><br>
-<div id="divforconditiondetectionfn" style="display:block !important; background:#eeeeee;">
-<b>Use Case condition</b><br>
-<script>
-	$(function()
-	{
-		appendVisibleElementClone("divforconditiondetectionfn", "newfndetails");
-		var idofclonedele = replacements["fnreturntype"];
-		//console.log("idofclonedele="+idofclonedele);
-		var fnReturnTypeTextbox = $("#"+idofclonedele)[0];
-		fnReturnTypeTextbox.value = "boolean (will return 'true' or 'false')";
-		fnReturnTypeTextbox.readOnly = true;
-		fnReturnTypeTextbox.style.backgroundColor = "#eeeeee";
-	});
-</script>
-</div>
+Description of event  (e.g. 'Application Start', 'Click on button X of screen Y')<br>
+<input type="text"><br><br>
 <div id="divforexecutionfn" style="display:block !important; background:#ddddee;">
-<b>Use case action</b><br>
+<b>Function to run for this simple use case</b><br>
+Note: It is ok if this task is not the only one that is triggered by this event.<br>
+It is also ok if this task is run only under certain conditions.<br><br> 
 <script>
 $(function(){appendVisibleElementClone("divforexecutionfn","newfndetails")})
 </script>
@@ -884,47 +1412,44 @@ $(function(){appendVisibleElementClone("divforexecutionfn","newfndetails")})
 
 </div><!-- divfortaskthatdoesnotspecifycreationofafunction -->
 
+<div style="display:none"><!-- outer hidden div for all reusable template divs-->
 
-<div id="summAndDesc" class="classForDivForOptionForReqOrUseCase">
-	Summary<button 
-	onclick="copyFromTaskSummary($('#subtasksummary')[0]);"
-	>Paste parent task's summary as starting point</button><br> 
+<div id="summAndDesc">
+	Summary<button onclick="copyFromTaskSummary($('#subtasksummary')[0]);">Paste parent task's summary as starting point</button><br> 
 	<input id="subtasksummary" type="text" size="120"><br>
 	<br>
-	Description<button 
-	onclick="copyFromTaskDesc($('#subtaskdesc')[0]);"
-	>Paste parent task's description as starting point</button><br> 
-	<textarea id="subtaskdesc" rows="5" cols="120"></textarea><br>	
+	Description<button onclick="copyFromTaskDesc($('#subtaskdesc')[0]);">Paste parent task's description as starting point</button><br>
+	<textarea id="subtaskdesc" rows="5" cols="120"></textarea><br>
+	<button onclick="showdiff($('#subtaskdesc')[0])">Compare 
+	with parent task description</button><br>
 Note: This child task's summary and description must be enough to clearly and completely describe the task.<br> 
-There should be no need to refer to the parent task's details, sibling task's details, or any other task or diagram.<br>
+There should be no need to refer to the parent task's details, sibling task's details, or any other task.<br>
 Unwanted details that should be part of the other child task, must not be present in the summary and description of this child task.<br>
 </div><!-- end summAndDesc -->
 
-
 <div id="returnconstantornewfn"> 
-Does the value to be returned just need to be a constant? <select 
-id="optiontoreturnconstantorcallfn" onchange="showDivForCurrentlySelectedOption(this,'classForDivForReturnConstantOrNewFn')">
+Does the value to be returned just need to be a constant? 
+<select id="optiontoreturnconstantorcallfn" class="wizardDropdown">
 <option >&nbsp;</option>
 <option value="divToReturnConst">Yes</option>
 <option value="divToReturnValueOfAFncall">No</option>
 </select><br><br>
 
-<div id="divToReturnConst" class="classForDivForReturnConstantOrNewFn">
+<div id="divToReturnConst">
 <script>$(function(){appendVisibleElementClone("divToReturnConst", "returnConstant")})</script>
 </div>
 
-<div id="divToReturnValueOfAFncall" class="classForDivForReturnConstantOrNewFn" style="background:#9999ff">
+<div id="divToReturnValueOfAFncall" style="background:#9999ff;">
 <script>$(function(){appendVisibleElementClone("divToReturnValueOfAFncall", "newfndetails")})</script>
 </div>
 
 </div><!-- end of div returnconstantornewfn -->
 
-
-
 <div id="newfndetails"> 
-Describe the function (sequence of steps) to be called:<br>
-Name <input type=text size="30"><br> 
-Type of Data Returned (String, Number, Map of keys and values etc.) <input type=text size="30" id="fnreturntype"> <!--Description <input type=text size="90">--> <br> 
+Describe the function to be run:<br>
+<input type=text size="30"><br><br> 
+Type of data returned (String, Number, Map of keys and values etc.) <input type=text 
+style="size:30 !important" id="fnreturntype"> <!--Description <input type=text size="90">--> <br> 
 <!--File Name  </pre><input type=text size="30"><pre> --->
 <!-- Let us have user defined functions as parameterless otherwise difficult to maintain binary work breakdown!
 Parameter 1 <input type=text size="30"> Type <input type=text size="30"> Description <input type=text size="60"> <br> 
@@ -935,23 +1460,26 @@ Description  <br>
 <textarea rows="5" cols="120"></textarea><br>
 <br>
 Note the following:<br>
-1. The function description must be enough to clearly and completely describe the task, without needing to refer to any other task or diagram.<br>
+1. The function description must be enough to clearly and completely describe the task, without needing to refer to any other task.<br>
 2. You do not have to write code inside the description of the above function. Just clearly describe what the function does.<br> 
 The function will be broken into 2 parts by a crowd member as a part of another task. You will only need to review the break-down.<br>
 3. The SPOCs will decide whether you have described a new, existing or ready-made function. They will decide the actual line of code.<br><br>
 </div>
 
 
-<div id="returnConstant" style="background:#dddddd">
-Enter value of the constant <input><br>
-Enter the reason for choosing this constant, any other possible values it might change to etc.<br>
+<div id="returnConstant" style="background:#dddddd;">
+Value of the constant <input><br><br>
+Reason for choosing this value, and any other possible values it might change to<br>
 <textarea id="reasonForChoosingConst" rows="5" cols="120"></textarea><br>
 </div>
 
+</div><!--END outer hidden div for all reusable template divs-->
+
 <!-- TESTING: This comment should not show up in the text to reply with -->
+<input type="hidden" value="boolean" id="termForBoolean">
 </div><!-- divThatCreatesTheTextToReplyWith -->
 <br>
-<button id="btnToshowNextSteps" style="display:none;" 
+<button id="btnToShowNextSteps" style="display:none !important;" 
 onclick="showNextSteps();">Next...</button>
 <div id="divForNextSteps" style="display:none">
 <br>
@@ -977,21 +1505,43 @@ Do not reveal the details of any task assigned to you or created by you to anyon
 - the reviewee (in case you are the reviewer)
 - the designated crowd interaction SPOC of your project			   
 Violation of the above will lead to financial loss for yourself, the other crowd members, your customer and organization and may be a punishable legal offence.
+
 In case of any mistakes, you have to correct the summary and description of the tasks you created, and get it re-reviewed by your reviewer.
+In case of delay by reviewer to review your task or you to respond to the review comments, the latest work breakdown is considered.
+In case you do not complete the assigned task in time, a penalty may apply. The task will be given to the reviewer to solve.
 
 </pre>
 </div>
 <script>
-
-//At startup, ensure that all buttons are of type 'button'.
 $(function()
 {
- $(":button" ).prop("type", "button"); 
- $("textarea").prop("maxlength","2000")
- $("#textToReplyWith").prop("maxlength","10000")
- $(':text').prop("maxlength", "150")
- setupDisplayOfNumOfCharsTypedAndCharLimit() 
-})
+ disablePage("Initializing...")
+ setTimeout(init,0)
+}
+)
+
+function init()
+{
+ $(":button" ).prop("type", "button"); //At startup, ensure that all buttons are of type 'button'.
+ $("textarea").prop("maxlength","2000");
+ $("#textToReplyWith").prop("maxlength","10000");
+ $(':text').prop("maxlength", "150");
+ setupDisplayOfNumOfCharsTypedAndCharLimit(); 
+ //origAlert("Running markAsWizardDropdowns")
+ markAsWizardDropdowns($(".wizardDropdown")
+ /*[
+ "isThisAFnDropdown",
+ "isPermissionToCrowdsourceGivenDropdown",
+ "fnSplitTypeDropdown",
+ "taskSplitTypeDropdown",
+ "codeblockdropdown",
+ "builtindropdown",
+ "optiontoreturnconstantorcallfn"
+ ]*/);
+ //origAlert("Ran markAsWizardDropdowns")
+ handleImFamiliarUnchecked()
+ enablePage("Initializing...")
+}
 </script>
 </body>
 </html>
