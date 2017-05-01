@@ -67,9 +67,9 @@ More people can take part than ever before, in projects that are important to th
 
 Do not worry if an important project gets over soon. It is ok to have a project done by many, and so have tiny rewards per worker per project. Because, there is enough work in the world. 
 
-This process specifies that you reward crowd members for their actual mental effort. As an extra, you may choose to have royalty-based rewards for the crowd members. 
+This process specifies that you reward crowd members for their actual effort. As an extra, you may choose to have royalty-based rewards for the crowd members. 
 
-In the new process, you measure mental contributions exactly. You also measure the project's exact 'mental effort size'. The customer pays based on this size.  
+In the new process, you measure contributions exactly. You also measure the project's exact 'effort size'. The customer pays based on this size.  
 
 So, we get increased, inclusive and fair earning potential for all entities:  
 the customer, the IT service company and the crowd.
@@ -102,10 +102,10 @@ The process is the best because it exploits the principle 'many hands make light
    
    Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
-[Back to parent](#the-process-and-how-it-works2)
+<p>[Back to parent](#the-process-and-how-it-works2)</p>
 
 ## 2. **Fair financials.** 
-It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
+It defines a general-purpose and accurate measure of the smallest possible effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
    You pay workers X times the number of  microtasks that they do. X is the money per microtask that you pay. X is visible to the public.  
    
@@ -118,8 +118,8 @@ It defines a general-purpose and accurate measure of the smallest possible menta
    
    We define a microtask as follows:  
 
-   **A microtask is the mental work done to break down an independent problem statement. The work breakdown yields two independent problem statements.**      
-   **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The mental work done to create this line is also a microtask.** 
+   **A microtask is the work done to break down an independent problem statement. The work breakdown yields two independent problem statements.**      
+   **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The work done to create this line is also a microtask.** 
    
    'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete. 
    
@@ -137,11 +137,11 @@ It defines a general-purpose and accurate measure of the smallest possible menta
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The CollaboRate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
-   Each microtask takes almost the same mental effort. Why? With each breakdown, you reduce the number of requirements per task. But the mental effort needed to split the child task remains almost the same. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
+   Each microtask takes almost the same effort. Why? With each breakdown, you reduce the number of requirements per task. But the effort needed to split the child task remains almost the same. This is because, to keep the child tasks independent from each other, they need more analysis and elaboration.
    
    At the level of 'logic tasks' the text does become much smaller, as it no longer needs elaboration. But the design effort will be the maximum, because the CollaboRate tool asks you more questions. 
    
-   In summary the 'logic tasks' and 'requirement tasks' take approximately the same mental effort.
+   In summary the 'logic tasks' and 'requirement tasks' take approximately the same effort.
    
    This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. In some cases, more pay for tasks with more text, may motivate crowd members to inflate the text of the child tasks.
    
@@ -149,19 +149,19 @@ It defines a general-purpose and accurate measure of the smallest possible menta
    - A child task that is based on the first/next data part to be analyzed/processed
    - A child task that is based on the remaining data part to be analyzed/processed
    
-[Back to parent](#the-process-and-how-it-works2)
+<p>[Back to parent](#the-process-and-how-it-works2)</p>
     
 ## 3. **Fair risk sharing.** 
 The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
-[Back to parent](#the-process-and-how-it-works2)
+<p>[Back to parent](#the-process-and-how-it-works2)</p>
 
 ## 4. **End the risk and barrier of technical and project knowledge.** 
 We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
 
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
    - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. These questions and options can then be understood by non-programmers. Crowd members familiar with programming terms, can choose to have commonly used programming terms in the tool's interface. Regardless of the terms used, the SPOCs convert the pseudo-code to the actual lines of code.
-   - The crowd member does not need to know the project's code. Nor does the crowd member need to know the details of any software components it reuses. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'built-in' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this minor and specialized mental work.  
+   - The crowd member does not need to know the project's code. Nor does the crowd member need to know the details of any software components it reuses. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'built-in' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this minor and specialized work.  
    Note that the SPOC may map a task to an existing function in a software library. The SPOC may then also create a new task to calculate the values of parameters to pass to this function.
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible. But we expect the following skills from the crowd members:  
      - Read and write business English
@@ -169,7 +169,7 @@ We end the risk caused by the need for skilled workers and project knowledge. Th
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-[Back to parent](#the-process-and-how-it-works2)
+<p>[Back to parent](#the-process-and-how-it-works2)</p>
 
 ## 5. **Superior intellectual property security.**
 For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
@@ -178,7 +178,7 @@ For commercial (closed-source) software development, security increases with cro
 
 In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
 
-[Back to parent](#the-process-and-how-it-works2)
+<p>[Back to parent](#the-process-and-how-it-works2)</p>
 
 [Back To Contents](#contents)
 
