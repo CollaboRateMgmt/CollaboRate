@@ -161,11 +161,7 @@ We end the risk caused by the need for skilled workers and project knowledge. Th
    - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. These questions and options can then be understood by non-programmers. Crowd members familiar with programming terms, can choose to have commonly used programming terms in the tool's interface. Regardless of the terms used, the SPOCs convert the pseudo-code to the actual lines of code.
    - The crowd member does not need to know the project's code. Nor does the crowd member need to know the details of any software components it reuses. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'built-in' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this minor and specialized mental work.  
    Note that the SPOC may map a task to an existing function in a software library. The SPOC may then also create a new task to calculate the values of parameters to pass to this function.
- 
-   
-   - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible.  
-   
-    We do expect the following skills from the crowd members:  
+   - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible. But we expect the following skills from the crowd members:  
      - Read and write business English
      - Analytical capabilities 
      - Able to use the Internet to search for information
