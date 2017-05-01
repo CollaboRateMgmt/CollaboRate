@@ -4,7 +4,7 @@
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process, model and technology known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
@@ -25,7 +25,7 @@ You may use this process for open source projects as well. See [this page](https
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
-Those familiar with crowdsourcing concepts, may be impatient to understand exactly what is different about this crowdsourcing process. The idea in a nutshell can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
+Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process, that make it the best. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
 
 # Detailed Purpose
 
@@ -70,7 +70,7 @@ Let's have a closer look at each solution.
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
-   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. 
+   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
@@ -111,8 +111,12 @@ Let's have a closer look at each solution.
    In summary the 'logic tasks' and 'requirement tasks' take approximately the same mental effort.
    
    This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. In some cases, more pay for tasks with more text, may motivate crowd members to inflate the text of the child tasks.
+   
+   A task may refer to external data to be analyzed/processed. In this case, the task can be broken down into:
+   - A child task that is based on the first/next data part to be analyzed/processed
+   - A child task that is based on the remaining data part to be analyzed/processed
     
-3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change need to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
+3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
 
@@ -130,7 +134,7 @@ Let's have a closer look at each solution.
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-5. **Superior intellectual property security.** This solution applies to commercial (closed-source) software development. Security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get superior intellectual property security.   
+5. **Superior intellectual property security.** For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
@@ -138,7 +142,7 @@ In case of *extra* rewards based on royalty, a small security challenge arises. 
 
 # Software Testing, Maintenance and Customer Support
 
-We have not yet specified the detailed CollaboRate process for Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. You can then derive your own process for these types of projects. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for more details.
+The CollaboRate tool does not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for more details.
 
 # Known limitations
 - What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks. 
