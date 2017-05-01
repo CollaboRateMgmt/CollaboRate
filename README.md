@@ -83,7 +83,7 @@ The process solves the problems seen with a very large number of people working 
        
 [Back To Contents](#contents)
 
-<a name="the-process-and-how-it-works2">&nbsp;</a>
+<a id="the-process-and-how-it-works2">&nbsp;</a>
 
 # The Process, and how it Works
 The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
