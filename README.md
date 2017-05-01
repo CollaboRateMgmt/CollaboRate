@@ -9,7 +9,7 @@ CollaboRate is a process and a [simple software tool](https://sohrabsaran.github
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
 # Contents
- - [Benefits for Customers of IT Services](Benefits-for-Customers-of-IT-Services)
+ - [Benefits for Customers of IT Services](benefits-for-customers-of-it-services)
  - [Benefits for Employees and their Organizations](Benefits-for-Employees-and-their-Organizations)
  - [A Quick Overview for those familiar with Crowdsourcing Concepts](A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts)
  - [Detailed Purpose](Detailed-Purpose)
