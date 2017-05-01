@@ -85,11 +85,11 @@ The process solves the problems seen with a very large number of people working 
 
 # The Process, and how it Works
 The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
-- Share work among many
-- Fair financials
-- Fair risk sharing
-- End the risk and barrier of technical and project knowledge
-- Superior intellectual property security
+- [Share work among many](#1-share-work-among-many)
+- [Fair financials](#2-fair-financials)
+- [Fair risk sharing](#3-fair-risk-sharing)
+- [End the risk and barrier of technical and project knowledge](#4-end-the-risk-and-barrier-of-technical-and-project-knowledge)
+- [Superior intellectual property security](#5-superior-intellectual-property-security)
 
 Let's have a closer look at each solution.
 
@@ -100,7 +100,9 @@ The process is the best because it exploits the principle 'many hands make light
    
    Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
-2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
+[Back to parent](#the-process-and-how-it-works)
+
+## 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
    You pay workers X times the number of  microtasks that they do. X is the money per microtask that you pay. X is visible to the public.  
    
@@ -143,10 +145,14 @@ The process is the best because it exploits the principle 'many hands make light
    A task may refer to external data to be analyzed/processed. In this case, the task can be broken down into:
    - A child task that is based on the first/next data part to be analyzed/processed
    - A child task that is based on the remaining data part to be analyzed/processed
+   
+[Back to parent](#the-process-and-how-it-works)
     
-3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
+## 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
-4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
+[Back to parent](#the-process-and-how-it-works)
+
+## 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
 
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
    - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. These questions and options can then be understood by non-programmers. Crowd members familiar with programming terms, can choose to have commonly used programming terms in the tool's interface. Regardless of the terms used, the SPOCs convert the pseudo-code to the actual lines of code.
@@ -162,12 +168,16 @@ The process is the best because it exploits the principle 'many hands make light
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-5. **Superior intellectual property security.** For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
+[Back to parent](#the-process-and-how-it-works)
+
+## 5. **Superior intellectual property security.** For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
 In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
-       
+
+[Back to parent](#the-process-and-how-it-works)
+
 [Back To Contents](#contents)
 
 # Software Testing, Maintenance and Customer Support
