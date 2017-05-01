@@ -32,9 +32,13 @@ You may use this process for open source projects as well. See [this page](https
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
   - Reduce office cost. Or, end it altogether.
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
+       
+[Back To Contents](#contents)
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
 Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process, that make it the best. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
+       
+[Back To Contents](#contents)
 
 # Detailed Purpose
 
@@ -64,6 +68,8 @@ Due to fast completion, the need for estimating the exact project end date reduc
   The estimated size of the project must not exceed its budget. That's all we use estimates for. They are no longer needed for project duration and costing.  
 
 The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
+       
+[Back To Contents](#contents)
 
 # The Process, and how it Works
 The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
@@ -148,10 +154,14 @@ Let's have a closer look at each solution.
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
 In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
+       
+[Back To Contents](#contents)
 
 # Software Testing, Maintenance and Customer Support
 
 The CollaboRate tool does not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for more details.
+       
+[Back To Contents](#contents)
 
 # Known limitations
 - What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks. 
@@ -164,11 +174,15 @@ Initial task breakdown will likely involve:
 
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
 We can automate the remaining activities. The creation of such automation tools may be taken up later as a part of this project.  
+       
+[Back To Contents](#contents)
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
 
 You can also access the tool online from [this link](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). 
+       
+[Back To Contents](#contents)
 
 # Who's using it?
 
@@ -177,14 +191,20 @@ You can also access the tool online from [this link](https://sohrabsaran.github.
    If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
+       
+[Back To Contents](#contents)
 
 # Contributing
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
 At present the project creator is the sole contributor visible in Github for this project. As additional volunteers sign up, creator would probably remain the main reviewer for the process refinements and tool features. 
 
+[Back To Contents](#contents)
+
 # Roadmap
 A roadmap for the project is available [here](https://github.com/sohrabsaran/CollaboRate/wiki/Roadmap). 
+       
+[Back To Contents](#contents)
 
 # Acknowledgements  
 [Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
@@ -193,15 +213,25 @@ A roadmap for the project is available [here](https://github.com/sohrabsaran/Col
 
 Also some people may be acknowledged in the issue tracking system for bugs reported or enhancements suggested.
 
+[Back To Contents](#contents)
+
 # Project Contact Details
 sohrabsaran@gmail.com (project creator)
+       
+[Back To Contents](#contents)
 
 # Project Creator's Disclaimer
 This work does not represent views of my past and present organizations.  
 It is under discussion with my present organization.
+       
+[Back To Contents](#contents)
 
 # Why the name 'CollaboRate'?
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each other's contributions, especially if the project's task tracker is accessible to all the people. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
+[Back To Contents](#contents)
+
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
+       
+[Back To Contents](#contents)
