@@ -102,7 +102,7 @@ The process is the best because it exploits the principle 'many hands make light
    
    Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
-[Back to parent](#the-process-and-how-it-works)
+[Back to parent](#the-process-and-how-it-works2)
 
 ## 2. **Fair financials.** 
 It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
@@ -149,12 +149,12 @@ It defines a general-purpose and accurate measure of the smallest possible menta
    - A child task that is based on the first/next data part to be analyzed/processed
    - A child task that is based on the remaining data part to be analyzed/processed
    
-[Back to parent](#the-process-and-how-it-works)
+[Back to parent](#the-process-and-how-it-works2)
     
 ## 3. **Fair risk sharing.** 
 The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
-[Back to parent](#the-process-and-how-it-works)
+[Back to parent](#the-process-and-how-it-works2)
 
 ## 4. **End the risk and barrier of technical and project knowledge.** 
 We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
@@ -169,7 +169,7 @@ We end the risk caused by the need for skilled workers and project knowledge. Th
      - Able to use the Internet to search for information
      - Willing to learn 'domain stuff' mentioned in the task. You only need to learn to the extent needed to break down the task into two subtasks.
 
-[Back to parent](#the-process-and-how-it-works)
+[Back to parent](#the-process-and-how-it-works2)
 
 ## 5. **Superior intellectual property security.**
 For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
@@ -178,7 +178,7 @@ For commercial (closed-source) software development, security increases with cro
 
 In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
 
-[Back to parent](#the-process-and-how-it-works)
+[Back to parent](#the-process-and-how-it-works2)
 
 [Back To Contents](#contents)
 
