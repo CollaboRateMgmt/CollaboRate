@@ -90,7 +90,11 @@ The process solves 5 challenges in the crowdsourcing of desk-job industries espe
 
 Let's have a closer look at each solution.
 
-1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) is also defined. It consists of one or more SPOCs ((Single Point of Contact) s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities needing low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+1. **Share work among many.** The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) is also defined. It consists of one or more SPOCs ((Single Point of Contact) s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+
+   The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
+   
+   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. 
 
 2. **Fair financials.** It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
@@ -98,7 +102,10 @@ Let's have a closer look at each solution.
    
    The customer pays Y times the number of microtasks in the project. Y is the money per microtask that the customer pays.  
    
-   Market forces may fix X and Y based on competition between crowdsourcing vendors. In future, government laws may even restrict their values to a pre-defined range.
+   We predict that:
+   - Market forces will fix X and Y based on competition between crowdsourcing vendors. 
+   - Later, labor unions may regulate these values. 
+   - Finally, government laws will restrict their values to a pre-defined range.
    
    We define a microtask as follows:  
 
@@ -115,7 +122,7 @@ Let's have a closer look at each solution.
    
    Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters). We recommend the use of existing open source tools to check spellings, grammar and style.     
    
-   The CollaboRate tool helps to perform the microtask (work breakdown of a task). A simple optional copy-paste feature eases creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
+   The CollaboRate tool helps to perform the microtask (work breakdown of a task). Copy-paste and diff features ease creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
    
    We will soon provide [advanced features](https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance) to help with work breakdown. 
 
@@ -128,18 +135,17 @@ Let's have a closer look at each solution.
    In summary the 'logic tasks' and 'requirement tasks' take approximately the same mental effort.
    
    This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. In some cases, more pay for tasks with more text, may motivate crowd members to inflate the text of the child tasks.
-   
-   You manage tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
-   
-   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the output of the CollaboRate tool to the crowd interaction SPOC.  
     
 3. **Fair risk sharing.** The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change need to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
 4. **End the risk and barrier of technical and project knowledge.** We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
+
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
-   - The crowd member does not need to know the project code. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'ready-made' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this limited and specialized mental work.  
+   - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. These questions and options can then be understood by non-programmers. Crowd members familiar with programming terms, can choose to have commonly used programming terms in the tool's interface. Regardless of the terms used, the SPOCs convert the pseudo-code to the actual lines of code.
+   - The crowd member does not need to know the project's code. Nor does the crowd member need to know the details of any software components it reuses. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'built-in' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this minor and specialized mental work.  
    Note that the SPOC may map a task to an existing function in a software library. The SPOC may then also create a new task to calculate the values of parameters to pass to this function.
-   - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. We will soon refine the questions and options presented by the tool. These questions and options can then be understood by non-programmers. The SPOCs convert the pseudo-code to the actual lines of code. 
+ 
+   
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible.  
    
     We do expect the following skills from the crowd members:  
@@ -168,7 +174,7 @@ Initial task breakdown will likely involve:
 - Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent.  
 
 Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
-We can automate the remaining activities. The creation of such automation tools is out of the scope of this project.  
+We can automate the remaining activities. The creation of such automation tools may be taken up later as a part of this project.  
 
 # How to use the tool?
 [Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
