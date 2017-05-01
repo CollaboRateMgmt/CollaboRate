@@ -25,31 +25,7 @@ You may use this process for open source projects as well. See [this page](https
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
-For those familiar with crowdsourcing concepts, here is the idea in a nutshell. Else you may skip this paragraph and go to the [next section](#detailed-purpose).
-The idea is to devise a process and technology to meet the following goals:  
-- Increase number of people per project to a maximum. This will reduce the project execution time to a minimum.
-- Increase chance of success of unit work assigned per person to a maximum, as follows:
-  - Decrease size of unit work per person, to a minimum.
-  - Decrease knowledge needed to do a unit piece of work, to a minimum.
-  - Crowdsource work that can meet the above rules, to a maximum.
-  - Do not crowdsource work that is hard to measure. Also, do not crowdsource work that needs much knowledge, coordination or trust. The crowdsourcing vendor must do these tasks. The vendor should automate them as far as possible.
-- Have fair financials and fair assignment of risks, to the maximum. Do this as follows:
-  - Measure and reward people's contributions, with maximum accuracy.
-  - Measure and penalize people's bugs and delays, with maximum accuracy.
-  - Reduce the financial risk of project failure to a minimum. For this:  
-    - Share financial risks with the crowd to a maximum. 
-  - Determine the actual size of the completed project with maximum accuracy. Customer pays as per this size. For this:
-    - Define a measure of mental work, that has maximum accuracy.
-  - Onus of estimation of the maximum project size rests with the customer. They estimate to ensure that the project is within their budget. It is NOT used to fix the project price. The crowdsourcing vendor acts as a guide to the estimation process. 
-- Address security concerns with crowdsourcing closed-source projects, to a maximum. For this:
-  - Decrease exposure of codebase or project design, to a minimum.
-  - Penalize unit work seen but refused, with maximum accuracy.
-
-While reading the rest of the documentation, keep in mind that it may not be perfect. The process and tool are of course not perfect. Neither are they proven. There is ample room to contribute. When in doubt, please refer to the above goals. You may skip reading the rest of this document. Devise your own process and technology to meet these goals. Then come back and read the rest of this document. It may help you to better understand the specified process and tool. It may also help you find areas for their improvement. 
-
-The following diagram attempts to visualize the CollaboRate process. Also, it summarizes its advantages and its risks. The rest of this document contains information needed to fully understand the diagram.
-
-![Summary Infographic](CollaboRate.png?raw=true)
+Those familiar with crowdsourcing concepts, may be impatient to understand exactly what is different about this crowdsourcing process. The idea in a nutshell can be found [here]((https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
 
 # Detailed Purpose
 
