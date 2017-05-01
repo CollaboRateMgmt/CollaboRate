@@ -102,7 +102,7 @@ The process is the best because it exploits the principle 'many hands make light
    
    Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
-[Back to parent](#the-process-and-how-it-works2)
+[Back to parent](#the-process-and-how-it-works)
 
 ## 2. **Fair financials.** 
 It defines a general-purpose and accurate measure of the smallest possible mental effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
