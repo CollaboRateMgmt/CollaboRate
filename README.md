@@ -25,7 +25,7 @@ You may use this process for open source projects as well. See [this page](https
   - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
-Those familiar with crowdsourcing concepts, may be impatient to understand exactly what is different about this crowdsourcing process. The idea in a nutshell can be found [here]((https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
+Those familiar with crowdsourcing concepts, may be impatient to understand exactly what is different about this crowdsourcing process. The idea in a nutshell can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
 
 # Detailed Purpose
 
