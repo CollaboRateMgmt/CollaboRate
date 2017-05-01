@@ -14,6 +14,18 @@ You may use this process for open source projects as well. See [this page](https
  - [A Quick Overview for those familiar with Crowdsourcing Concepts](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
+ - [Software Testing, Maintenance and Customer Support](#software-testing-maintenance-and-customer-support)
+ - [Known limitations](#known-limitations)
+ - [How to use the tool?](#how-to-use-the-tool)
+ - [Who's using it?](#whos-using-it)
+ - [Contributing](#contributing)
+ - [Roadmap](#roadmap)
+ - [Acknowledgements](#acknowledgements)
+ - [Project Contact Details](#project-contact-details)
+ - [Project Creator's Disclaimer](#project-creators-disclaimer)
+ - [Why the name 'CollaboRate'?](#why-the-name-collaborate)
+ - [Questions?](#questions)
+
 
 # Benefits for Customers of IT Services
   - Reduced financial risk
