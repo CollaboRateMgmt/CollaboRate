@@ -4,7 +4,7 @@
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It will transform the commercial IT industry! It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
@@ -38,7 +38,7 @@ You may use this process for open source projects as well. See [this page](https
 # Benefits for Employees and their Organizations
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Fair and accurate income for employees and the organization.   
-- No need for subjective appraisals done by humans. This ends a huge source of overhead, stress, conflict and injustice.  
+- No need for subjective appraisals done by humans. Objectively measure your own performance and compare to others.  
 - Crowd members need only an internet connection, a web browser and an email account. No need for development environment. 
 - Project security, complexity, and development environment are no longer issues:
   - No need to call employees to an office to keep an eye on them. Employees can work from home!
@@ -48,7 +48,7 @@ You may use this process for open source projects as well. See [this page](https
 [Back To Contents](#contents)
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
-Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process, that make it the best. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
+Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
        
 [Back To Contents](#contents)
 
