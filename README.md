@@ -1,14 +1,26 @@
 # CollaboRate - a Crowdsourcing Process and Software Tool
 
 # License Type
+
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
 # Purpose
+
 CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
+# Role-based Process Specifications
+
+See the following links that will just specify the process without any attempt to explain it:
+- [If you are a customer of an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Customers-of-an-IT-Service-Company)
+- [If you are an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-IT-Service-Companies)
+- [If you are a crowd member](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Crowd-Members)
+
+To get into the 'whys and hows' of this process, continue to read the rest of this document.
+
 # Contents
+
  - [Benefits for Customers of IT Services](#benefits-for-customers-of-it-services)
  - [Benefits for Employees and their Organizations](#benefits-for-employees-and-their-organizations)
  - [A Quick Overview for those familiar with Crowdsourcing Concepts](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
@@ -97,11 +109,13 @@ Let's have a closer look at each solution.
 
 ## 1. **Share work among many.** 
 
-The process is the best because it exploits the principle 'many hands make light work'. The work done by the crowd is work breakdown. Work breakdown is a proven technique for project management. You can read more about it [here](https://en.wikipedia.org/wiki/Work_breakdown_structure). 
+The process is the best because it exploits the principle 'many hands make light work'. It also solves the resulting issue 'too many cooks spoil the broth'.
+
+All work done by the crowd, is work breakdown. Work breakdown is a proven technique for project management. You can read more about it [here](https://en.wikipedia.org/wiki/Work_breakdown_structure). 
 
    In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).   
 
-   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s).Yet, efforts needed from the project governing body are very small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
@@ -185,7 +199,7 @@ For commercial (closed-source) software development, security increases with cro
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
 
-In case of *extra* rewards based on royalty, a small security challenge arises. Please see [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
+In case of *extra* rewards based on royalty, a small security challenge arises. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
 
 [Back to parent](#the-process-and-how-it-works2)
 
@@ -222,7 +236,7 @@ For offline access, [download](https://github.com/sohrabsaran/CollaboRate/archiv
 
    As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. Many concerns we heard, are unrelated to commercial or technical viability. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). 
 
-   If you plan to try this tool, please contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
+   If you plan to try this tool, contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
 
    The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
        
@@ -266,6 +280,6 @@ This process and tool allows the most number of people possible, to work on the 
 [Back To Contents](#contents)
 
 # Questions?
-We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, please contact us at the email address given above.
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at the email address given above.
        
 [Back To Contents](#contents)
