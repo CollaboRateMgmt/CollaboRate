@@ -203,9 +203,9 @@ We can automate the remaining activities. The creation of such automation tools 
 [Back To Contents](#contents)
 
 # How to use the tool?
-[Download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
+The tool is available online from [this link](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). 
 
-You can also access the tool online from [this link](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). 
+For offline access, [download](https://github.com/sohrabsaran/CollaboRate/archive/master.zip) a copy of this repository. There is no other install or build step  needed. Open CollaboRate.html in your web browser. We recommend FireFox. Answer the questions and follow the instructions shown by the wizard.
        
 [Back To Contents](#contents)
 
