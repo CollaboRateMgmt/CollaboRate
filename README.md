@@ -96,7 +96,12 @@ The process solves 5 challenges in the crowdsourcing of desk-job industries espe
 Let's have a closer look at each solution.
 
 ## 1. **Share work among many.** 
-The process is the best because it exploits the principle 'many hands make light work'. The crowd themselves break down the project work, such that you can use the most number of crowd members.  A [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) is also defined. It consists of one or more SPOCs ((Single Point of Contact) s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The crowd does the most work possible, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process). The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+
+The process is the best because it exploits the principle 'many hands make light work'. The work done by the crowd is work breakdown. Work breakdown is a proven technique for project management. You can read more about it [here](https://en.wikipedia.org/wiki/Work_breakdown_structure). 
+
+   In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).   
+
+   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s). This arrangement solves the resulting issue 'too many cooks spoil the broth'. Yet, efforts needed from the project governing body are very small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
@@ -105,6 +110,7 @@ The process is the best because it exploits the principle 'many hands make light
 [Back to parent](#the-process-and-how-it-works2)
 
 ## 2. **Fair financials.** 
+
 It defines a general-purpose and accurate measure of the smallest possible effort. We call this the microtask. Work measurement is very important for fairness and trust among all.  
 
    You pay workers X times the number of  microtasks that they do. X is the money per microtask that you pay. X is visible to the public.  
@@ -152,11 +158,13 @@ It defines a general-purpose and accurate measure of the smallest possible effor
 [Back to parent](#the-process-and-how-it-works2)
     
 ## 3. **Fair risk sharing.** 
+
 The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
 [Back to parent](#the-process-and-how-it-works2)
 
 ## 4. **End the risk and barrier of technical and project knowledge.** 
+
 We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
 
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
@@ -172,6 +180,7 @@ We end the risk caused by the need for skilled workers and project knowledge. Th
 [Back to parent](#the-process-and-how-it-works2)
 
 ## 5. **Superior intellectual property security.**
+
 For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
 
    What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals.  
