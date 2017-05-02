@@ -41,7 +41,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 
 # Benefits for Customers of IT Services
   - Reduced financial risk
-  - Fair and accurate project cost
+  - Fair and accurate project cost, and tracking of the work done
   - Faster time to completion
   - Superior code, documentation and design quality
    
