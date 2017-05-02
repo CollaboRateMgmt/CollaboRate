@@ -48,7 +48,7 @@ You may use this process for open source projects as well. See [this page](https
 [Back To Contents](#contents)
 
 # A Quick Overview for those familiar with Crowdsourcing Concepts
-Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/overview-for-crowdsourcing).
+Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts).
        
 [Back To Contents](#contents)
 
