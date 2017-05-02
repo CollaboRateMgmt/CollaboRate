@@ -91,7 +91,7 @@ Due to fast completion, the need for estimating the exact project end date reduc
 
   The estimated size of the project must not exceed its budget. That's all we use estimates for. They are no longer needed for project duration and costing.  
 
-The process solves the problems seen with a very large number of people working on the same project. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
+The process solves the problems seen with a very large number of people working on the same project. At the same time, it solves the problem of how to accurately measure mental effort. It will be the most common way of working in the commercial IT industry. The most exciting benefits would be for the common IT employees (technical staff). They will become the crowd. They will enjoy more transparency, freedom and opportunities than ever before.
        
 [Back To Contents](#contents)
 
