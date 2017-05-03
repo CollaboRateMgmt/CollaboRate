@@ -44,6 +44,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
   - Fair and accurate project cost, and tracking of the work done
   - Faster time to completion
   - Superior code, documentation and design quality
+  - Best possible intellectual property protection 
    
 [Back To Contents](#contents)
 
