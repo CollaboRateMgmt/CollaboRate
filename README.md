@@ -12,7 +12,7 @@ You may use this process for open source projects as well. See [this page](https
 
 # Role-based Process Specifications
 
-See the following links that will just specify the process without any attempt to explain it:
+See the following links that will just specify the process without much attempt to explain it:
 - [If you are a customer of an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Customers-of-an-IT-Service-Company)
 - [If you are an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-IT-Service-Companies)
 - [If you are a crowd member](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Crowd-Members)
