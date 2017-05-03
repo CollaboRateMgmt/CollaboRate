@@ -6,11 +6,11 @@
 
 # Purpose
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables effective crowdsourcing of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables effective [crowdsourcing](https://en.m.wikipedia.org/wiki/Crowdsourcing) of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
-# Role-based Process Specifications
+# Process Specifications
 
 See the following links that will just specify the process without much attempt to explain it:
 - [If you are a customer of an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Customers-of-an-IT-Service-Company)
