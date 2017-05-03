@@ -22,7 +22,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 # Contents
 
  - [Benefits for Customers of IT Services](#benefits-for-customers-of-it-services)
- - [Benefits for Employees and their Organizations](#benefits-for-employees-and-their-organizations)
+ - [Benefits for IT Services Companies and their Employees](#benefits-for-it-services-companies-and-their-employees)
  - [A Quick Overview for those familiar with Crowdsourcing Concepts](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
@@ -48,7 +48,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
    
 [Back To Contents](#contents)
 
-# Benefits for Employees and their Organizations
+# Benefits for IT Services Companies and their Employees
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Fair and accurate income for employees and the organization.   
 - No need for subjective appraisals done by humans. Objectively measure your own performance and compare to others.  
