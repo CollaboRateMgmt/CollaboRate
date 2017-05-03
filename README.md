@@ -114,13 +114,13 @@ The process is the best because it exploits the principle 'many hands make light
 
 All work done by the crowd, is work breakdown. Work breakdown is a proven technique for project management. You can read more about it [here](https://en.wikipedia.org/wiki/Work_breakdown_structure). 
 
-   In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including [work breakdown review](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).   
+   In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including the breakdown for the regression test automation suite.
 
    For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s).Yet, efforts needed from the project governing body are very small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
-   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member, keeping in loop the crowd member who is to act as the reviewer. After review, the assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
+   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member. The assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
 [Back to parent](#the-process-and-how-it-works2)
 
