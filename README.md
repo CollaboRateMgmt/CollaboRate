@@ -13,9 +13,9 @@ You may use this process for open source projects as well. See [this page](https
 # Process Specifications
 
 See the following links that will just specify the process without much attempt to explain it:
-- [If you are a customer of an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Customers-of-an-IT-Service-Company)
-- [If you are an IT service company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-IT-Service-Companies)
-- [If you are a crowd member](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-Specification-for-Crowd-Members)
+- [If you are a customer of an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-Customers-of-an-IT-Services-Company)
+- [If you are an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-IT-Services-Companies)
+- [If you are a crowd member](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-Crowd-Members)
 
 To get into the 'whys and hows' of this process, continue to read the rest of this document.
 
