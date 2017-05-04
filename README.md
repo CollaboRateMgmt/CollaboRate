@@ -10,6 +10,25 @@ CollaboRate is a process and a [simple software tool](https://sohrabsaran.github
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
+# Work Crowdsourced (Development Projects)
+- detailed requirement validation (in case invalid requirements slip through to the crowd) 
+- design (break down of requirements into use cases, and then into pseudocode)
+- partial testing (of the work done by the other crowd members)
+- pseudo-code development
+- design and code documentation
+- test automation development 
+
+# Work not Crowdsourced (Development Projects)
+The following kind of work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust:  
+- requirement validation and breakdown to start the crowdsourcing process
+- testing of use case mapping to requirements
+- initial manual testing to determine correctness of the regression test automation
+- debugging
+- look and feel, UI design
+- pseudocode to code conversion
+- code modularization
+- opportunities for reusing third-party code
+
 # Process Specifications
 
 The following links specify the process, without much attempt to explain the reason behind the process:
