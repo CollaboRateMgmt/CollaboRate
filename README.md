@@ -4,13 +4,15 @@
 
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
-# Purpose
+# What is CollaboRate?
 
 CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables a substantial portion of commercial (closed-source) software project activity to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), more effectively than any other method.  It will benefit IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
 # Work Crowdsourced (Development Projects)
+
+As stated in the introduction, not everything is crowdsourced under the CollaboRate process. The following activities are crowdsourced, and are expected to account for a significant portion of the project work:
 - detailed requirement validation (in case invalid requirements slip through to the crowd) 
 - design (break down of requirements into use cases, and then into pseudocode)
 - partial testing (of the work done by the other crowd members)
@@ -19,7 +21,8 @@ You may use this process for open source projects as well. See [this page](https
 - test automation development 
 
 # Work not Crowdsourced (Development Projects)
-The following kind of work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust:  
+
+Some work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust. Or it may not be accurately measurable, and so it is diffcult to reward the crowd. However it is done in a very different and structured way as compared to usual. This provides additional benefits, such as work measurement, division of labor and allows some of the activities mentioned below, to come into focus for automation. Following type of work is not crowdsourced:
 - requirement validation and breakdown to start the crowdsourcing process
 - testing of use case mapping to requirements
 - initial manual testing to determine correctness of the regression test automation
