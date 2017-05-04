@@ -170,6 +170,10 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    - A child task that is based on the first/next data part to be analyzed/processed
    - A child task that is based on the remaining data part to be analyzed/processed
    
+   If you come across a task that cannot be broken down into 2 parts, let us know!
+   
+   The compensation for SPOCs is based on the number of microtasks each SPOC worked on.
+   
 [Back to parent](#the-process-and-how-it-works2)
     
 ## 3. **Fair risk sharing.** 
@@ -208,12 +212,12 @@ In case of *extra* rewards based on royalty, a small security challenge arises. 
 
 # Software Testing, Maintenance and Customer Support
 
-The CollaboRate tool does not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for more details.
+The questions and options presented by the CollaboRate tool, do not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for how to adapt the CollaboRate process and tool for these type of projects.
        
 [Back To Contents](#contents)
 
 # Known limitations
-- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource descendant tasks. 
+- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource these tasks as 'initial tasks' that will be within the specified character limit. 
 
 Initial task breakdown will likely involve:
 - Requirement validation.
@@ -221,7 +225,7 @@ Initial task breakdown will likely involve:
 - Conversion of images and diagrams to sentences.
 - Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent.  
 
-Requirements validation is very difficult to crowdsource. At present it is out of the scope of this project. 
+Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the intial tasks, is free of any mistakes. However the customer may not appreciate his invalid requirements being caught by the crowd, unless the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We advise the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
 We can automate the remaining activities. The creation of such automation tools may be taken up later as a part of this project.  
        
 [Back To Contents](#contents)
