@@ -23,7 +23,7 @@ The following kind of work is not crowdsourced under the CollaboRate process, be
 - requirement validation and breakdown to start the crowdsourcing process
 - testing of use case mapping to requirements
 - initial manual testing to determine correctness of the regression test automation
-- debugging
+- debugging and raising defects
 - look and feel, UI design
 - pseudocode to code conversion
 - code modularization
