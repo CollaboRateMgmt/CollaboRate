@@ -22,7 +22,7 @@ As stated in the introduction, not everything is crowdsourced under the CollaboR
 
 # Work not Crowdsourced (Development Projects)
 
-Some work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust. Or it may not be accurately measurable, and so it is diffcult to reward the crowd. However it is done in a very different and structured way as compared to usual. This provides additional benefits, such as work measurement, division of labor and allows some of the activities mentioned below, to come into focus for automation. Following type of work is not crowdsourced:
+Some work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust. Or it may not be accurately measurable, and so it is difficult to reward the crowd. However it is done in a very different and structured way as compared to usual. This provides additional benefits, such as work measurement and division of labor. It also allows some of the activities mentioned below, to come into focus for automation. Following type of work is not crowdsourced:
 - requirement validation and breakdown to start the crowdsourcing process
 - testing of use case mapping to requirements
 - initial manual testing to determine correctness of the regression test automation
