@@ -13,7 +13,7 @@ You may use this process for open source projects as well. See [this page](https
 # Process Specifications
 
 The following links specify the process, without much attempt to explain it:
-- [If you are a customer of an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-Customers-of-an-IT-Services-Company)
+- [If you are a customer of an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process---for-IT-Service-Companies)
 - [If you are an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-IT-Services-Companies)
 - [If you are a crowd member](https://github.com/sohrabsaran/CollaboRate/wiki/The-CollaboRate-Process-for-Crowd-Members)
 
