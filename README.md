@@ -6,7 +6,7 @@
 
 # Purpose
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables effective [crowdsourcing](https://en.m.wikipedia.org/wiki/Crowdsourcing) of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It enables partial but effective [crowdsourcing](https://en.m.wikipedia.org/wiki/Crowdsourcing) of commercial (closed-source) software development, testing, maintenance and support. It is the best project management process known so far. It will benefit customers of IT services. It will also benefit IT service companies and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
 You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
@@ -116,7 +116,7 @@ All work done by the crowd, is work breakdown. Work breakdown is a proven techni
 
    In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including the breakdown for the regression test automation suite.
 
-   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s).Yet, efforts needed from the project governing body are very small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'.  
+   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s).Yet, efforts needed from the project governing body are small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'. Because of the use of SPOCs for certain technical activies, the crowdsourcing done via the CollaboRate process, is partial. 
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
