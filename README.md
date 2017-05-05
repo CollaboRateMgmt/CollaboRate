@@ -26,7 +26,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 
  - [Benefits for Customers of IT Services](#benefits-for-customers-of-it-services)
  - [Benefits for IT Services Companies and their Employees](#benefits-for-it-services-companies-and-their-employees)
- - [What's the Secret?](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
+ - [The Recipe](#the-recipe)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
  - [Summary of Activities Currently Crowdsourced](#summary-of-activities-currently-crowdsourced)
@@ -56,18 +56,22 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 [Back To Contents](#contents)
 
 # Benefits for IT Services Companies and their Employees
-- Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
-- Fair and accurate income for employees and the organization.   
-- No need for subjective appraisals done by humans. Individual performance is now simple to measure.  
-- Employees that are the crowd, need only an internet connection, a web browser and an email account. They do not need a development environment. 
-- Project security, complexity, and development environment are no longer issues for most:
-  - No need to call most employees to an office to keep an eye on them. Most employees can work from home!
-  - Reduce office cost. Or, end it altogether.
-  - Employees that comprise the crowd, can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
+
+
+|Benefit|How is it achieved?|
+|-------|-------------------|
+|Complete projects in record time using huge crowds of people. Never miss a customer deadline again!|Deadlines are assumed to remain conventional, until industry expectations change due to widespread use of CollaboRate.|
+|Fair and accurate income for employees and the organization.|Work is given out and measured in tiny pieces called 'microtasks'. These microtasks are almost identical in size+complexity. Due to extremely fast project completion time, customer is charged based on actual work, rather than estimated work.|   
+|No need for subjective appraisals done by humans. Individual performance is now simple to measure.|Individual performance is measured by the number of microtasks done by the individual.|  
+|Employees that are the crowd, need only an internet connection, a web browser and an email account. They do not need a development environment.|As per the CollaboRate process, the crowd does not need to write or test code.| 
+|Project security, complexity are no longer issues for the crowd|The CollaboRate process specifies that for closed source projects, crowd members cannot access the task tracking system or code repository. The process ensures that crowd works on tiny pieces of work at a time, called microtasks. This ends complexity. |
+|No need to call the crowd to an office to keep an eye on them. Most employees can work from home!|Project security, complexity and development environment are no longer issues for the crowd.|
+|Reduce office cost. Or, end it altogether.|No need to call the crowd to an office to keep an eye on them.|
+|Employees that comprise the crowd, can work for many projects and organizations at the same time.| Organizations will not have security or productivity concerns. Employees can work from home.|
        
 [Back To Contents](#contents)
 
-# What's the Secret?
+# The Recipe
 Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas or design goals, behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts).
        
 [Back To Contents](#contents)
