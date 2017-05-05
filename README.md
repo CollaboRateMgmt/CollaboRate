@@ -7,7 +7,7 @@ CollaboRate is a process and a [simple software tool](https://sohrabsaran.github
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
 
-The other significant goal of CollaboRate is to measure work done by people, in a way that is automatic and accurate.
+Another related goal of CollaboRate is to measure work done by people, in a way that is automatic and accurate.
 
 The CollaboRate process will benefit IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
