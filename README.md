@@ -48,7 +48,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 |Benefit|How is it achieved?|
 |-------|-------------------|
 |Reduced financial risk|The financial risks of delayed or defective work are borne in fair proportion by the several workers (the crowd). They will easily understand and agree to this concept.|
-|Fair and accurate project cost, and tracking of the work done|Work is given out and measured in tiny pieces called 'microtasks'. These microtasks are are almost identical in size+complexity.|
+|Fair and accurate project cost, and tracking of the work done|Work is given out and measured in tiny pieces called 'microtasks'. These microtasks are almost identical in size+complexity.|
 |Faster time to completion|Bulk of the work is crowdsourced. Here we assume large crowd availability and enough incentive per microtask. These assumptions are safe and controllable.|
 |Superior code, documentation and design quality|Crowdsourced activities are based on clear, peer-reviewed documentation and step-by-step design.|
 |Best possible intellectual property protection for closed-source projects|None of the crowd members have access to the code or the task tracking system. They are repeatedly warned not to share details of the task worked on, with anyone else|
