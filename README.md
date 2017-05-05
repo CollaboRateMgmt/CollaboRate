@@ -122,7 +122,7 @@ All work done by the crowd, is work breakdown. Work breakdown is a proven techni
 
    In the CollaboRate process, the work or 'task' broken down by one crowd member, can be further broken down by another crowd member. So, the project can use the most number of crowd members. The work breakdown continues until individual 'lines of code' are reached. The crowd does the most work possible to be crowdsourced, including the breakdown for the regression test automation suite.
 
-   For coordination, task simplification and customer interaction, we need a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body). It consists of one or more SPOCs ((Single Point of Contact) s).Yet, efforts needed from the project governing body are small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'. Because of the use of SPOCs for certain technical activies, the crowdsourcing done via the CollaboRate process, is partial. 
+   Every project needs a [project governing body](https://github.com/sohrabsaran/CollaboRate/wiki/Project-Governing-Body) to oversee the work of the crowd. It consists of one or more individuals called SPOCs ((Single Point of Contact) s). Yet, efforts needed from the project governing body are small. The governing body does activities that need low effort but high coordination/knowledge/trust. The governing body forms the core part of the organization or 'crowdsourcing vendor'. Because of the use of SPOCs for certain technical activies, the crowdsourcing done via the CollaboRate process, is partial. The governing body takes care of customer interaction, financial operations, initial task creation, coordination, acceptance testing, use of third-party software and keeping the code modular.
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
@@ -158,11 +158,11 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    
    We also refer to problem statements as tasks. So, in the context of CollaboRate there is a difference between tasks and microtasks.
    
-   Written project requirements are tasks. A task is less than (say) 300 words of standard business English (2000 characters). We recommend the use of existing open source tools to check spellings, grammar and style.     
+   Written project requirements are tasks. A task is less than or equal to 2000 characters (around 300 words of standard business English). We recommend the use of existing open source tools to check spellings, grammar and style.     
    
-   The CollaboRate tool helps to perform the microtask (work breakdown of a task). Copy-paste and diff features ease creation of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
+   The CollaboRate tool helps to perform the microtask (work breakdown of a task). Copy-paste and diff features ease creation and self-review of child tasks. After all, a child task is the same as the parent task, but with some text removed, changed and elaborated. 
    
-   We will soon provide [advanced features](https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance) to help with work breakdown. 
+   We will soon provide [advanced features](https://github.com/sohrabsaran/CollaboRate/wiki/Advanced-Work-Breakdown-Guidance) for further help with work breakdown. 
 
    The breakdown process continues such that requirement tasks break down into 'logic tasks'. The CollaboRate tool helps to break down logic tasks. To do this, it asks the user a couple of simple questions. When you break down logic tasks, you also generate software program steps (pseudocode). So crowd members with no programming  background break down problems into code!  
    
@@ -190,13 +190,13 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    - Conversion of images and diagrams to sentences.
    - Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent (tool can be developed to speed up this procedure).  
 
-   Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the intial tasks, is free of any mistakes. However the customer may not appreciate his invalid requirements being caught by the crowd, unless the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We advise the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
+   Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the initial tasks, is free of any mistakes. However the customer may not appreciate their invalid requirements being caught by the crowd. Unless, the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We suggest the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
 
 [Back to parent](#the-process-and-how-it-works)
     
 ## 3. **Fair risk sharing.** 
 
-The process reduces the risks of incorrect or incomplete work for the customer. Harsh and unappealing though it may seem, it needs to do so, by sharing the financial risks with the erring crowd members via a penalty system. Do not be worried though. Most crowd members will still continue to earn well. We give ample time to do the microtask. Also, the CollaboRate tool allows you to view the changes made by you to the description of the parent task, when creating the descriptions for the child tasks.
+The process reduces the risks of incorrect or incomplete work for the customer. Harsh and unappealing though it may seem, it needs to do so, by sharing the financial risks with the erring crowd members via a penalty system. Do not be worried though. Most crowd members will still continue to earn well. We give 24 hours to do the microtask, whereas most people should be able to do the microtask in a couple of minutes. Also, the CollaboRate tool allows crowd members to self-review the descriptions they create for their child tasks, further reducing the chances of mistakes.
 
 In case of bugs, crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
 
@@ -207,7 +207,7 @@ In case of bugs, crowd members must pay a penalty that is in proportion to the a
 We end the risk caused by the need for skilled workers and project knowledge. This in turn allows mass participation. It provides earning opportunities for even the less capable. Here's how:  
 
    - The crowd member does not need to know the entire project scope. As mentioned above, each task must be independent and self-contained.  
-   - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. These questions and options can then be understood by non-programmers. Crowd members familiar with programming terms, can choose to have commonly used programming terms in the tool's interface. Regardless of the terms used, the SPOCs convert the pseudo-code to the actual lines of code.
+   - The crowd member does not even need to know programming! Crowd members submit pseudo-code under guidance of the CollaboRate tool. An option is present to change the terms used in the questions and options presented by the tool. So, programmers and non-programmers alike will find it comfortable to use the tool. Regardless of the terms used, the SPOCs will be able convert the pseudo-code to the actual lines of code.
    - The crowd member does not need to know the project's code. Nor does the crowd member need to know the details of any software components it reuses. The SPOCs decide whether the function described by the crowd member is new. An existing function may already be part of the project code. Or it could be a 'built-in' function that is part of the programming language. Or a reusable software library may already have it. The knowledgeable SPOCs do this minor and specialized work.  
    Note that the SPOC may map a task to an existing function in a software library. The SPOC may then also create a new task to calculate the values of parameters to pass to this function.
    - Since each crowd member works on one microtask at a time, the work per crowd member is as small and easy as possible. But we expect the following skills from the crowd members:  
