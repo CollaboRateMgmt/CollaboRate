@@ -33,15 +33,15 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [Software Testing, Maintenance and Customer Support](#software-testing-maintenance-and-customer-support)
  - [Known limitations](#known-limitations)
  - [How to use the tool?](#how-to-use-the-tool)
- - [Who's using it?](#whos-using-it)
+ - [Questions?](#questions)
+ - [Who's using it?](#whos-using-it) 
  - [Contributing](#contributing)
  - [Roadmap](#roadmap)
- - [Acknowledgements](#acknowledgements)
  - [Project Contact Details](#project-contact-details)
  - [Why the name 'CollaboRate'?](#why-the-name-collaborate)
- - [Questions?](#questions)
  - [License Type](#license-type)
  - [Project Creator's Disclaimer](#project-creators-disclaimer)
+ - [Acknowledgements](#acknowledgements)
 
 # Benefits for Customers of IT Services
   - Reduced financial risk
@@ -267,6 +267,11 @@ For offline access, [download](https://github.com/sohrabsaran/CollaboRate/archiv
        
 [Back To Contents](#contents)
 
+# Questions?
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at the email address given above.
+       
+[Back To Contents](#contents)
+
 # Who's using it?
 
    As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. Many concerns we heard, are unrelated to commercial or technical viability. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). 
@@ -289,15 +294,6 @@ A roadmap for the project is available [here](https://github.com/sohrabsaran/Col
        
 [Back To Contents](#contents)
 
-# Acknowledgements  
-[Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
-- contributed ideas, text or code to this project
-- agreed to make their names and contact details public 
-
-Also some people may be acknowledged in the issue tracking system for bugs reported or enhancements suggested.
-
-[Back To Contents](#contents)
-
 # Project Contact Details
 sohrabsaran@gmail.com (project creator)
        
@@ -306,11 +302,6 @@ sohrabsaran@gmail.com (project creator)
 # Why the name 'CollaboRate'?
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each other's contributions, especially if the project's task tracker is accessible to all the people. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
-[Back To Contents](#contents)
-
-# Questions?
-We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at the email address given above.
-       
 [Back To Contents](#contents)
 
 # License Type
@@ -323,4 +314,13 @@ We try to keep this document as clear and complete as possible. Yet you might ha
 This work does not represent views of my past and present organizations.  
 It is under discussion with my present organization.
        
+[Back To Contents](#contents)
+
+# Acknowledgements  
+[Here](https://github.com/sohrabsaran/CollaboRate/wiki/Contributors), we maintain a list of people who:
+- contributed ideas, text or code to this project
+- agreed to make their names and contact details public 
+
+Also some people may be acknowledged in the issue tracking system for bugs reported or enhancements suggested.
+
 [Back To Contents](#contents)
