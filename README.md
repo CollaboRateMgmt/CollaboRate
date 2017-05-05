@@ -15,7 +15,7 @@ This process will also be used in open source projects. It is especially useful 
 
 # Process Specifications
 
-The following links specify the process, without much attempt to explain the reason behind the process:
+The following links specify the process (or rather, the set of processes) as directly as possible:
 - [If you are a customer of an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-for-Customers-of-IT-Services-Companies)
 - [If you are an IT Services Company](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-for-IT-Services-Companies)
 - [If you are an IT Worker (Crowd Member)](https://github.com/sohrabsaran/CollaboRate/wiki/CollaboRate-Process-for-Crowd-Members)
