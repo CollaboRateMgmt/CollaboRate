@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many commercial (closed-source) software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). It does this more effectively than any other known crowdsourcing method. 
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many commercial (closed-source) software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). This results in a much faster project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
