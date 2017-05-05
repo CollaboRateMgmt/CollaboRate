@@ -73,12 +73,12 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 # Benefits for IT Services Companies and their Employees
 - Complete projects in record time using huge crowds of people. Never miss a customer deadline again!
 - Fair and accurate income for employees and the organization.   
-- No need for subjective appraisals done by humans. Objectively measure your own performance and compare to others.  
-- Crowd members need only an internet connection, a web browser and an email account. No need for development environment. 
-- Project security, complexity, and development environment are no longer issues:
-  - No need to call employees to an office to keep an eye on them. Employees can work from home!
+- No need for subjective appraisals done by humans. Individual performance is now simple to measure.  
+- Employees that are the crowd, need only an internet connection, a web browser and an email account. They do not need a development environment. 
+- Project security, complexity, and development environment are no longer issues for most:
+  - No need to call most employees to an office to keep an eye on them. Most employees can work from home!
   - Reduce office cost. Or, end it altogether.
-  - Employees can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
+  - Employees that comprise the crowd, can work for many projects and organizations at the same time. Organizations will not have security or productivity concerns.
        
 [Back To Contents](#contents)
 
