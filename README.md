@@ -1,9 +1,5 @@
 # CollaboRate - a Crowdsourcing Process and Software Tool
 
-# License Type
-
-[MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
-
 # What is CollaboRate?
 
 CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables a substantial portion of commercial (closed-source) software project activity to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). It does this more effectively than any other known crowdsourcing method. 
@@ -17,7 +13,7 @@ The CollaboRate process will benefit IT service companies, their customers and t
 
 This process will be used in open source projects as well, especially along with open source business models. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
-# Activities that are Crowdsourced
+# Activities Currently Crowdsourced
 
 As stated in the introduction, not everything is crowdsourced under the CollaboRate process. Yet the activities that are crowdsourced, are expected to account for a significant portion of the project work. These activities are as follows:
 - detailed requirement validation (in case invalid requirements slip through to the crowd) 
@@ -26,7 +22,7 @@ As stated in the introduction, not everything is crowdsourced under the CollaboR
 - partial testing (of the work done by the other crowd members)
 - test automation development
 
-# Activities that are not Crowdsourced 
+# Activities Currently not Crowdsourced 
 
 Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
@@ -41,6 +37,8 @@ The following activities are not crowdsourced under the CollaboRate process:
 - pseudocode to code conversion
 - code modularization
 - opportunities for reusing third-party code
+
+As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
 
 # Process Specifications
 
@@ -69,7 +67,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [Project Creator's Disclaimer](#project-creators-disclaimer)
  - [Why the name 'CollaboRate'?](#why-the-name-collaborate)
  - [Questions?](#questions)
-
+ - [License Type](#license-type)
 
 # Benefits for Customers of IT Services
   - Reduced financial risk
@@ -316,4 +314,10 @@ This process and tool allows the most number of people possible, to work on the 
 # Questions?
 We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at the email address given above.
        
+[Back To Contents](#contents)
+
+# License Type
+
+[MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
+
 [Back To Contents](#contents)
