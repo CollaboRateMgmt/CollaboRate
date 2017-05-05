@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), even in commercial (closed-source) projects. This results in a much faster project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), even in commercial (closed-source) projects. This results in extremely fast project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
@@ -44,11 +44,14 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [Acknowledgements](#acknowledgements)
 
 # Benefits for Customers of IT Services
-  - Reduced financial risk
-  - Fair and accurate project cost, and tracking of the work done
-  - Faster time to completion
-  - Superior code, documentation and design quality
-  - Best possible intellectual property protection
+
+|Benefit|How is it achieved?|
+|-------|-------------------|
+|Reduced financial risk|The financial risks of delayed or defective work are borne in fair proportion by the several workers (the crowd). They will easily understand and agree to this concept.|
+|Fair and accurate project cost, and tracking of the work done|Work is given out and measured in tiny pieces called 'microtasks'. These microtasks are are almost identical in size+complexity.|
+|Faster time to completion|Bulk of the work is crowdsourced. Here we assume large crowd availability and enough incentive per microtask. These assumptions are safe and controllable.|
+|Superior code, documentation and design quality|Crowdsourced activities are based on clear, peer-reviewed documentation and step-by-step design.|
+|Best possible intellectual property protection for closed-source projects|None of the crowd members have access to the code or the task tracking system. They are repeatedly warned not to share details of the task worked on, with anyone else|
    
 [Back To Contents](#contents)
 
