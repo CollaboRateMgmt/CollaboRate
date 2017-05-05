@@ -13,33 +13,6 @@ The CollaboRate process will benefit IT service companies, their customers and t
 
 This process will be used in open source projects as well, especially along with open source business models. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
-# Activities Currently Crowdsourced
-
-As stated in the introduction, not everything is crowdsourced under the CollaboRate process. Yet the activities that are crowdsourced, are expected to account for a significant portion of the project work. These activities are as follows:
-- detailed requirement validation (in case invalid requirements slip through to the crowd) 
-- design and code documentation
-- design and partial development (break down of requirements into use cases, and then into pseudocode)
-- partial testing (of the work done by the other crowd members)
-- test automation development
-
-# Activities Currently not Crowdsourced 
-
-Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
-
-But in the CollaboRate process, the non-crowdsourced activities done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
-
-The following activities are not crowdsourced under the CollaboRate process:
-- requirement validation and initial work breakdown needed to start the crowdsourcing process
-- validation that the use cases created by the crowd, cover the requirements
-- initial manual testing to determine correctness of the regression test automation
-- debugging and raising defects
-- look and feel, UI design
-- pseudocode to code conversion
-- code modularization
-- opportunities for reusing third-party code
-
-As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
-
 # Process Specifications
 
 The following links specify the process, without much attempt to explain the reason behind the process:
@@ -56,6 +29,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [A Quick Overview for those familiar with Crowdsourcing Concepts](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
+ - [Summary of Activities Currently Crowdsourced](#summary-of-activities-currently-crowdsourced)
  - [Software Testing, Maintenance and Customer Support](#software-testing-maintenance-and-customer-support)
  - [Known limitations](#known-limitations)
  - [How to use the tool?](#how-to-use-the-tool)
@@ -64,10 +38,10 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [Roadmap](#roadmap)
  - [Acknowledgements](#acknowledgements)
  - [Project Contact Details](#project-contact-details)
- - [Project Creator's Disclaimer](#project-creators-disclaimer)
  - [Why the name 'CollaboRate'?](#why-the-name-collaborate)
  - [Questions?](#questions)
  - [License Type](#license-type)
+ - [Project Creator's Disclaimer](#project-creators-disclaimer)
 
 # Benefits for Customers of IT Services
   - Reduced financial risk
@@ -201,6 +175,16 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    
    The compensation for SPOCs is based on the number of microtasks each SPOC worked on.
    
+   What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource these tasks as 'initial tasks' that will be within the specified character limit. 
+
+   Initial task breakdown will likely involve:
+   - Requirement validation.
+   - Conversion of tabular information to sentences (tool can be developed to automate this).
+   - Conversion of images and diagrams to sentences.
+   - Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent (tool can be developed to speed up this procedure).  
+
+   Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the intial tasks, is free of any mistakes. However the customer may not appreciate his invalid requirements being caught by the crowd, unless the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We advise the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
+
 [Back to parent](#the-process-and-how-it-works2)
     
 ## 3. **Fair risk sharing.** 
@@ -237,24 +221,43 @@ In case of *extra* rewards based on royalty, a small security challenge arises. 
 
 [Back To Contents](#contents)
 
+# Summary of Activities Currently Crowdsourced
+
+As stated in the introduction, not everything is crowdsourced under the CollaboRate process. Yet the activities that are crowdsourced, are expected to account for a significant portion of the project work. These activities are as follows:
+- detailed requirement validation (in case invalid requirements slip through to the crowd) 
+- design and code documentation
+- design and partial development (break down of requirements into use cases, and then into pseudocode)
+- partial testing (of the work done by the other crowd members)
+- test automation development
+
 # Software Testing, Maintenance and Customer Support
 
 The questions and options presented by the CollaboRate tool, do not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for how to adapt the CollaboRate process and tool for these type of projects.
+
+Note that for maintenance projects:
+- the skill levels needed by the crowd for maintenance projects are higher
+- the code to be maintained needs to be open to the crowd.
        
 [Back To Contents](#contents)
 
 # Known limitations
-- What if an initial problem statement is more than 2000 characters? In that case, the customer or SPOCs will have to themselves do the initial task breakdown. They can then crowdsource these tasks as 'initial tasks' that will be within the specified character limit. 
 
-Initial task breakdown will likely involve:
-- Requirement validation.
-- Conversion of tabular information to sentences.
-- Conversion of images and diagrams to sentences.
-- Breaking large text into smaller independent texts. Paste sentences that explain the terms used, before the sentence to make independent.  
+Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
-Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the intial tasks, is free of any mistakes. However the customer may not appreciate his invalid requirements being caught by the crowd, unless the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We advise the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
-We can automate the remaining activities. The creation of such automation tools may be taken up later as a part of this project.  
-       
+But in the CollaboRate process, the non-crowdsourced activities done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
+
+The following activities are not crowdsourced under the CollaboRate process:
+- requirement validation and initial work breakdown needed to start the crowdsourcing process
+- validation that the use cases created by the crowd, cover the requirements
+- initial manual testing to determine correctness of the regression test automation
+- debugging and raising defects
+- look and feel, UI design
+- pseudocode to code conversion
+- code modularization
+- opportunities for reusing third-party code
+
+As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
+
 [Back To Contents](#contents)
 
 # How to use the tool?
@@ -300,12 +303,6 @@ sohrabsaran@gmail.com (project creator)
        
 [Back To Contents](#contents)
 
-# Project Creator's Disclaimer
-This work does not represent views of my past and present organizations.  
-It is under discussion with my present organization.
-       
-[Back To Contents](#contents)
-
 # Why the name 'CollaboRate'?
 This process and tool allows the most number of people possible, to work on the same project at the same time. It allows people to work over the internet with each other. It does so by ending complexity and security concerns. So it maximizes the power of collaboration. It also allows people to *rate* (appraise) each other's contributions, especially if the project's task tracker is accessible to all the people. The rating is accurate, fair and transparent. Hence the name 'CollaboRate'.
 
@@ -320,4 +317,10 @@ We try to keep this document as clear and complete as possible. Yet you might ha
 
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
+[Back To Contents](#contents)
+
+# Project Creator's Disclaimer
+This work does not represent views of my past and present organizations.  
+It is under discussion with my present organization.
+       
 [Back To Contents](#contents)
