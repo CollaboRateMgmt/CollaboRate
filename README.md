@@ -43,7 +43,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [Project Creator's Disclaimer](#project-creators-disclaimer)
  - [Acknowledgements](#acknowledgements)
 
-# Benefits for Customers of IT Services
+# Benefits for Customers of IT Services  
 
 |Benefit|How is it achieved?|
 |-------|-------------------|
