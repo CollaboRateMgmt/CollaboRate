@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many commercial (closed-source) software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). This results in a much faster project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), even in commercial (closed-source) projects. This results in a much faster project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
@@ -11,7 +11,7 @@ The other significant goal of CollaboRate is to measure work done by people, in 
 
 The CollaboRate process will benefit IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
 
-This process will be used in open source projects as well, especially along with open source business models. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
+This process will also be used in open source projects. It is especially useful along with open source business models. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
 # Process Specifications
 
@@ -26,7 +26,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 
  - [Benefits for Customers of IT Services](#benefits-for-customers-of-it-services)
  - [Benefits for IT Services Companies and their Employees](#benefits-for-it-services-companies-and-their-employees)
- - [A Quick Overview for those familiar with Crowdsourcing Concepts](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
+ - [What's the Secret?](#a-quick-overview-for-those-familiar-with-crowdsourcing-concepts)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
  - [Summary of Activities Currently Crowdsourced](#summary-of-activities-currently-crowdsourced)
@@ -64,8 +64,8 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
        
 [Back To Contents](#contents)
 
-# A Quick Overview for those familiar with Crowdsourcing Concepts
-Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts).
+# What's the Secret?
+Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas or design goals, behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts).
        
 [Back To Contents](#contents)
 
@@ -244,8 +244,6 @@ Note that for maintenance projects whose source code is not already in XD (Extre
 
 Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
-But in the CollaboRate process, the non-crowdsourced activities done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
-
 The following activities are not crowdsourced under the CollaboRate process:
 - requirement validation and initial work breakdown needed to start the crowdsourcing process
 - validation that the use cases created by the crowd, cover the requirements
@@ -255,6 +253,8 @@ The following activities are not crowdsourced under the CollaboRate process:
 - pseudocode to code conversion
 - code modularization
 - opportunities for reusing third-party code
+
+But in the CollaboRate process, the non-crowdsourced activities are done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
 
 As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
 
@@ -273,13 +273,13 @@ We try to keep this document as clear and complete as possible. Yet you might ha
 [Back To Contents](#contents)
 
 # Contributing
-We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
-
+Volunteers may contact us at the [project contact email address](#project-contact-details).
 At present the project creator is the sole contributor visible in Github for this project. As additional volunteers sign up, creator would probably remain the main reviewer for the process refinements and tool features. 
 
 [Back To Contents](#contents)
 
 # Roadmap
+
 A roadmap for the project is available [here](https://github.com/sohrabsaran/CollaboRate/wiki/Roadmap). 
        
 [Back To Contents](#contents)
