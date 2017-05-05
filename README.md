@@ -6,25 +6,35 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables a substantial portion of commercial (closed-source) software project activity to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), more effectively than any other method.  It will benefit IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables a substantial portion of commercial (closed-source) software project activity to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). It does this more effectively than any other known crowdsourcing method. 
 
-You may use this process for open source projects as well. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
+In the context of CollaboRate, we define 'crowdsourcing' as follows:  
+"Enable a very large number of people (the crowd), to work on the same project at the same time".  
 
-# Work Crowdsourced
+The other significant goal of CollaboRate is to measure work done by people, in a way that is automatic and accurate.
 
-As stated in the introduction, not everything is crowdsourced under the CollaboRate process. The following activities are crowdsourced, and are expected to account for a significant portion of the project work:
+The CollaboRate process will benefit IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It will give rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+
+This process will be used in open source projects as well, especially along with open source business models. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
+
+# Activities that are Crowdsourced
+
+As stated in the introduction, not everything is crowdsourced under the CollaboRate process. Yet the activities that are crowdsourced, are expected to account for a significant portion of the project work. These activities are as follows:
 - detailed requirement validation (in case invalid requirements slip through to the crowd) 
-- design (break down of requirements into use cases, and then into pseudocode)
-- partial testing (of the work done by the other crowd members)
-- pseudo-code development
 - design and code documentation
+- design and partial development (break down of requirements into use cases, and then into pseudocode)
+- partial testing (of the work done by the other crowd members)
 - test automation development
 
-# Work not Crowdsourced 
+# Activities that are not Crowdsourced 
 
-Some work is not crowdsourced under the CollaboRate process, because it may need a lot of knowledge, coordination or trust. Or it may not be accurately measurable, and so it is difficult to reward the crowd. However it is done in a very different and structured way as compared to usual. This provides additional benefits, such as work measurement and division of labor. It also allows some of the activities mentioned below, to come into focus for automation. Following type of work is not crowdsourced:
-- requirement validation and breakdown to start the crowdsourcing process
-- testing of use case mapping to requirements
+Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
+
+But in the CollaboRate process, the non-crowdsourced activities done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
+
+The following activities are not crowdsourced under the CollaboRate process:
+- requirement validation and initial work breakdown needed to start the crowdsourcing process
+- validation that the use cases created by the crowd, cover the requirements
 - initial manual testing to determine correctness of the regression test automation
 - debugging and raising defects
 - look and feel, UI design
@@ -89,10 +99,7 @@ Those familiar with crowdsourcing concepts, may be impatient to know the basic i
 
 # Detailed Purpose
 
-In the context of CollaboRate, we define 'crowdsourcing' as follows:  
-"Enable a very large number of people (the crowd), to work on the same project at the same time".  
-
-When this happens, the time taken for project completion reduces.  
+When a very large number of people (the crowd), are able to work on the same project at the same time, the time taken for project completion reduces.  
 
 Also, each person has to contribute very little to the project. This is of course very easy to do.  
 
