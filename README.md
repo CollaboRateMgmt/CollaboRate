@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables a substantial portion of commercial (closed-source) software project activity to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). It does this more effectively than any other known crowdsourcing method. 
+CollaboRate is a process and a [simple software tool](https://sohrabsaran.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many commercial (closed-source) software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing). It does this more effectively than any other known crowdsourcing method. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
@@ -97,8 +97,6 @@ The process solves the problems seen with a very large number of people working 
        
 [Back To Contents](#contents)
 
-<p><a id="the-process-and-how-it-works2">&nbsp;</a></p>
-
 # The Process, and how it Works
 The process solves 5 challenges in the crowdsourcing of desk-job industries especially IT:  
 - [Share work among many](#1-share-work-among-many)
@@ -123,7 +121,7 @@ All work done by the crowd, is work breakdown. Work breakdown is a proven techni
    
    Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member. The assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
 
-[Back to parent](#the-process-and-how-it-works2)
+[Back to parent](#the-process-and-how-it-works)
 
 ## 2. **Fair financials.** 
 
@@ -185,13 +183,15 @@ It defines a general-purpose and accurate measure of the smallest possible effor
 
    Requirements validation can be crowdsourced to a certain extent. All the SPOCs need to do is to ensure that the work breakdown done by them to create the intial tasks, is free of any mistakes. However the customer may not appreciate his invalid requirements being caught by the crowd, unless the customer appreciates that the crowd has more eyes available to quickly validate the requirements. We advise the crowdsourcing vendor to validate the requirements with the customer as much as possible, before crowdsourcing them.
 
-[Back to parent](#the-process-and-how-it-works2)
+[Back to parent](#the-process-and-how-it-works)
     
 ## 3. **Fair risk sharing.** 
 
-The process reduces the risks of incorrect or  incomplete work for the customer. It does so by sharing the financial risks with the erring crowd members via a penalty system. Most people will still continue to earn well. We give ample time to do the microtask. Crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
+The process reduces the risks of incorrect or incomplete work for the customer. Harsh and unappealing though it may seem, it needs to do so, by sharing the financial risks with the erring crowd members via a penalty system. Do not be worried though. Most crowd members will still continue to earn well. We give ample time to do the microtask. Also, the CollaboRate tool allows you to view the changes made by you to the description of the parent task, when creating the descriptions for the child tasks.
 
-[Back to parent](#the-process-and-how-it-works2)
+In case of bugs, crowd members must pay a penalty that is in proportion to the amount of change needed to fix the task description. This is of course fair. So they will agree to the [risk sharing process](https://github.com/sohrabsaran/CollaboRate/wiki/Quality-Process-and-Risk-Sharing-Process).  
+
+[Back to parent](#the-process-and-how-it-works)
 
 ## 4. **End the risk and barrier of technical and project knowledge.** 
 
@@ -268,7 +268,7 @@ For offline access, [download](https://github.com/sohrabsaran/CollaboRate/archiv
 [Back To Contents](#contents)
 
 # Questions?
-We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at the email address given above.
+We try to keep this document as clear and complete as possible. Yet you might have questions. Based on discussions with various people, we have compiled a list of FAQs [here](https://github.com/sohrabsaran/CollaboRate/wiki/Frequently-Asked-Questions). If your question is still not answered, you may contact us at [this email address](#project-contact-details).
        
 [Back To Contents](#contents)
 
