@@ -141,10 +141,12 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    
    We define a microtask as follows:  
 
-   **A microtask is the work done to break down an independent problem statement. The work breakdown yields two independent problem statements.**      
+   **A microtask is the work done to break down an independent problem statement. The work breakdown yields two independent problem statements.**
    **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The work done to create this line is also a microtask.** 
    
-   'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete. 
+   We break down a problem statement into only 2 parts (and not more) because it is the smallest possible work that we can do on that problem statement. We term such a work breakdown as a 'binary work breakdown'.
+   
+   'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete.
    
    A problem statement need not contain certain information if:
    - It is public
