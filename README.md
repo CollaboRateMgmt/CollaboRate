@@ -31,15 +31,15 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
  - [The Process, and how it Works](#the-process-and-how-it-works)
  - [Summary of Activities Currently Crowdsourced](#summary-of-activities-currently-crowdsourced)
  - [Software Testing, Maintenance and Customer Support](#software-testing-maintenance-and-customer-support)
- - [Known limitations](#known-limitations)
+ - [Known Limitations](#known-limitations)
  - [How to use the tool?](#how-to-use-the-tool)
  - [Questions?](#questions)
- - [Who's using it?](#whos-using-it) 
  - [Contributing](#contributing)
  - [Roadmap](#roadmap)
  - [Project Contact Details](#project-contact-details)
  - [Why the name 'CollaboRate'?](#why-the-name-collaborate)
  - [License Type](#license-type)
+ - [Who's using it?](#whos-using-it) 
  - [Project Creator's Disclaimer](#project-creators-disclaimer)
  - [Acknowledgements](#acknowledgements)
 
@@ -48,7 +48,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
   - Fair and accurate project cost, and tracking of the work done
   - Faster time to completion
   - Superior code, documentation and design quality
-  - Best possible intellectual property protection 
+  - Best possible intellectual property protection
    
 [Back To Contents](#contents)
 
@@ -234,13 +234,13 @@ As stated in the introduction, not everything is crowdsourced under the CollaboR
 
 The questions and options presented by the CollaboRate tool, do not yet specifically support Software Testing, Maintenance and Customer Support projects. But we can consider these processes to be subsets of Software Development processes. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Mapping-Software-Testing,-Maintenance-and-Customer-Support-to-Software-Development) for how to adapt the CollaboRate process and tool for these type of projects.
 
-Note that for maintenance projects:
+Note that for maintenance projects whose source code is not already in XD (Extreme Documentation) format:
 - the skill levels needed by the crowd for maintenance projects are higher
 - the code to be maintained needs to be open to the crowd.
        
 [Back To Contents](#contents)
 
-# Known limitations
+# Known Limitations
 
 Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
@@ -272,16 +272,6 @@ We try to keep this document as clear and complete as possible. Yet you might ha
        
 [Back To Contents](#contents)
 
-# Who's using it?
-
-   As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. Many concerns we heard, are unrelated to commercial or technical viability. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). 
-
-   If you plan to try this tool, contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
-
-   The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
-       
-[Back To Contents](#contents)
-
 # Contributing
 We need to understand, debate, test and stabilize the process and tool. We also need experiments to confirm the process and tool. We need to add more automation to the defined process. We need to add more intelligence to the tool and allow it to plug into issue/defect tracking systems. Volunteers may contact us at the contact email address mentioned above.
 
@@ -308,6 +298,16 @@ This process and tool allows the most number of people possible, to work on the 
 
 [MIT](https://github.com/sohrabsaran/CollaboRate/blob/master/LICENSE)
 
+[Back To Contents](#contents)
+
+# Who's using it?
+
+   As of now, no one that we are aware of. We made the initial release of the process and tool on 17-Mar-17. We are discussing this project with various people. Many concerns we heard, are unrelated to commercial or technical viability. See also [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Adoption-Challenges). 
+
+   If you plan to try this tool, contact us. We will share news of your initiative. A discussion forum has also been created at http://collaborateprocessandtool.freeforums.org. Crowd members, crowdsourcing vendors and their customers can connect using this forum. They can then conduct trials if not actual projects.  
+
+   The CollaboRate project will manage itself using its own process and tool. You will be able to refer to the Issue Tracking System of GitHub as an example of how to use this process and tool.
+       
 [Back To Contents](#contents)
 
 # Project Creator's Disclaimer
