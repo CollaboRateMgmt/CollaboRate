@@ -158,6 +158,8 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    
    'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete.
    
+   To ensure least lines of code of the generated pseudocode, and least duplication of effort, problem statements must be broken down such that the child problem statements differ from each other via logic, rather than just different data being passed to the same logic. 
+   
    A problem statement need not contain certain information if:
    - It is public
    - It is general knowledge to the problem's industry area (domain).
@@ -180,9 +182,9 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    
    This process may enhance the definition of microtask size later. Based on feedback, we may specify more financial weight for tasks with more text. Yet non-weighted microtasks are simple and fair enough for immediate use. In some cases, more pay for tasks with more text, may motivate crowd members to inflate the text of the child tasks.
    
-   A task may refer to external data to be analyzed/processed. In this case, the task can be broken down into:
-   - A child task that is based on the first/next data part to be analyzed/processed
-   - A child task that is based on the remaining data part to be analyzed/processed
+   A task that has no programming logic part left, may refer to data to be searched for in an external location (not in the text of the task). In this case, the task can be broken down into:
+   - A leaf child task that is based on the first/next match of the manual search
+   - A child task that is based on the remaining external location(s) to be searched
    
    If you come across a task that cannot be broken down into 2 parts, but needs to be directly broken down into more than 2 parts, let us know!
    
