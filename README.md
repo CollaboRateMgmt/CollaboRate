@@ -126,7 +126,9 @@ All work done by the crowd, is work breakdown. Work breakdown is a proven techni
 
    The governing body manages tasks via any conventional bug tracking system. There are several available: Trac, Redmine, Bugzilla and so on. As you may know, you can use such systems to manage tasks as well.  
    
-   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member. The assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. For open source projects, the crowd can directly interact with the task tracking system.
+   Crowd members email the crowd interaction SPOC asking for work. The text of the task to be broken down is then emailed to the crowd member. The assigned crowd member will mail the breakdown of the task, to the crowd interaction SPOC. The crowd interaction SPOC will update the task tracking system on behalf of the crowd member. 
+   
+   For open source projects, the crowd can directly interact with the task tracking system. For closed source projects, the work done by the crowd interaction SPOC can easily be automated. The crowd could interact with a website rather than via email. This web application can then update the database of the defect tracking system. Creation of this web app may be taken into the scope of the CollaboRate project in the near future, and defined as one of its main goals.
 
 [Back to parent](#the-process-and-how-it-works)
 
