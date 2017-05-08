@@ -110,7 +110,7 @@ The process solves 5 challenges in the crowdsourcing of desk-job industries espe
 - [Fair financials](#2-fair-financials)
 - [Fair risk sharing](#3-fair-risk-sharing)
 - [End the risk and barrier of technical and project knowledge](#4-end-the-risk-and-barrier-of-technical-and-project-knowledge)
-- [Superior intellectual property security](#5-superior-intellectual-property-security)
+- [Best intellectual property security](#5-best-intellectual-property-security)
 
 Let's have a closer look at each solution.
 
@@ -149,8 +149,9 @@ It defines a general-purpose and accurate measure of the smallest possible effor
 
    **A microtask is the work done to break down an independent problem statement. The work breakdown yields two independent problem statements.**
    **Sometimes, the problem statement is very small. It cannot break down into 2. Its solution is a single line of pseudocode. The work done to create this line is also a microtask.** 
-   
-   We break down a problem statement into only 2 parts (and not more) because it is the smallest possible work that we can do on that problem statement. We term such a work breakdown as a 'binary work breakdown'.
+
+<a id="binaryworkbreakdown">&nbsp;</a>
+   We break down a problem statement into a maximum of 2 parts (and not more) because it is the smallest possible work that we can do on that problem statement. We term such a work breakdown as a 'binary work breakdown'.
    
    'Independent' problem statements refer neither to their parent nor to their sibling. In other words, a problem statement must be 'self-contained'. It description must be clear and complete.
    
@@ -180,7 +181,7 @@ It defines a general-purpose and accurate measure of the smallest possible effor
    - A child task that is based on the first/next data part to be analyzed/processed
    - A child task that is based on the remaining data part to be analyzed/processed
    
-   If you come across a task that cannot be broken down into 2 parts, let us know!
+   If you come across a task that cannot be broken down into 2 parts, but needs to be directly broken down into more than 2 parts, let us know!
    
    The compensation for SPOCs is based on the number of microtasks each SPOC worked on.
    
@@ -220,13 +221,15 @@ We end the risk caused by the need for skilled workers and project knowledge. Th
 
 [Back to parent](#the-process-and-how-it-works2)
 
-## 5. **Superior intellectual property security.**
+## 5. **Best intellectual property security.**
 
-For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. You configure the task tracking system so that tasks are not public. Tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
+For commercial (closed-source) software development, security increases with crowd size! The SPOCs will share neither the project code nor the task tracking system with the crowd members. A crowd member once assigned a task cannot refuse it. Otherwise, the financial penalties for an incomplete task apply. The tool's instructions warn crowd members to keep task details to themselves. Ensure that tasks will be visible only to the task creator, the task assignee and the SPOCs. No crowd member can see all the tasks, pseudocode and code. So you get the best intellectual property security.   
 
-   What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals. In case the project goal is kept confidential for business reasons, the crowdsourcing vendor must provide an assurance that to the best of their knowledge and belief, the project has good (noble, ethical) goals. The crowdsourcing vendor must also provide an assurance to reveal the nature of the project by a particular date.
+   What if you want to keep the project's goal a secret? For this, do work breakdown yourself to a particular level. Ensure that crowdsourced tasks do not give an understanding of the project goal. But the crowd may like to work on projects that have open and noble goals. 
+   
+   The project goal may be kept confidential for business competition reasons. In this case, the crowdsourcing vendor must provide an assurance that to the best of their knowledge and belief, the project has good (noble, ethical) goals. The crowdsourcing vendor must also provide an assurance to reveal the nature of the project by a particular date.
 
-In case of *extra* rewards based on royalty, a small security challenge arises. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
+   In case of *extra* rewards based on royalty, a small security challenge arises. See [this page](https://github.com/sohrabsaran/CollaboRate/wiki/Security-v-s-Transparency-in-case-of-Royalty-Incentives-for-Closed-Source-Software-Development) for more details.
 
 [Back to parent](#the-process-and-how-it-works2)
 
@@ -265,7 +268,7 @@ The following activities are not crowdsourced under the CollaboRate process:
 - code modularization
 - opportunities for reusing third-party code
 
-But in the CollaboRate process, the non-crowdsourced activities are done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also provides incentive to automate these activities. 
+Yet in the CollaboRate process, the non-crowdsourced activities are done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also makes it easy to find ways to automate these activities. 
 
 As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
 
