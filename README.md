@@ -26,7 +26,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 
  - [Benefits for Customers of IT Services](#benefits-for-customers-of-it-services)
  - [Benefits for IT Services Companies and their Employees](#benefits-for-it-services-companies-and-their-employees)
- - [The Recipe](#the-recipe)
+ - [The Recipe](https://github.com/sohrabsaran/CollaboRate/wiki/Recipe-for-The-CollaboRate-Process)
  - [Detailed Purpose](#detailed-purpose)
  - [The Process, and how it Works](#the-process-and-how-it-works)
  - [Summary of Activities Currently Crowdsourced](#summary-of-activities-currently-crowdsourced)
@@ -75,7 +75,7 @@ To get into the 'whys and hows' of this process, continue to read the rest of th
 [Back To Contents](#contents)
 
 # The Recipe
-Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas or design goals, behind this crowdsourcing process. These ideas can be found [here](https://github.com/sohrabsaran/CollaboRate/wiki/A-Quick-Overview-for-those-familiar-with-Crowdsourcing-Concepts).
+Those familiar with crowdsourcing concepts, may be impatient to know the basic ideas or design goals, behind this crowdsourcing process. These ideas can be found [here](Recipe-for-The-CollaboRate-Process).
        
 [Back To Contents](#contents)
 
