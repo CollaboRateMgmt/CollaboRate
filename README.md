@@ -246,10 +246,10 @@ For commercial (closed-source) software development, security increases with cro
 
 As stated in the introduction, not everything is crowdsourced under the CollaboRate process. Yet the activities that are crowdsourced, are expected to account for a significant portion of the project work. These activities are as follows:
 - detailed requirement validation (in case invalid requirements slip through to the crowd) 
-- design and code documentation
+- design documentation, pseudocode documentation
 - design and partial development (break down of requirements into use cases, and then into pseudocode)
-- partial testing (of the work done by the other crowd members)
-- test automation development
+- partial review/code review (validation of tasks created by the other crowd members)
+- partial testing (test automation development)
 
 # Software Testing, Maintenance and Customer Support
 
@@ -266,18 +266,21 @@ Note that for maintenance projects whose source code is not already in XD (Extre
 Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
 The following activities are not crowdsourced under the CollaboRate process:
-- requirement validation and initial work breakdown needed to start the crowdsourcing process
+- requirements conversion to text
+- initial work breakdown needed to start the crowdsourcing process
+- design sanity review of work breakdown
 - validation that the use cases created by the crowd, cover the requirements
-- initial manual testing to determine correctness of the regression test automation
-- debugging and raising defects
+- one-time manual testing to determine correctness of the regression test automation
+- debugging, unless [debugfunding](https://github.com/sohrabsaran/CollaboRate/wiki/Debugfunding) concept is used
+- raising defects, or in some cases, approving defects raised by the crowd
 - look and feel, UI design
 - pseudocode to code conversion
-- code modularization
-- opportunities for reusing third-party code
+- keep the codebase as small as possible, by code reuse
+- find opportunities to reuse third-party code
 
-Yet in the CollaboRate process, the non-crowdsourced activities are done in a very different way. This provides additional benefits, such as work measurement and division of labor. It also makes it easy to find ways to automate these activities. 
+Yet in the CollaboRate process, non-crowdsourced activities are done in a different way. This provides additional benefits, such as work measurement and division of labor. It also makes it easy to find ways to automate these activities. 
 
-As this project progresses, we expect to devise further processes and/or develop further tools, to address the above-mentioned activities, such that they are either crowdsourced or automated to a large extent.
+As this project progresses, we will devise further processes and/or develop further tools, to address the above-mentioned activities. We will crowdsource or automate these activities to a large extent. Much of the further automation may depend on tools that perform analysis on the work breakdown and also on the codebase, to provide validation warnings and even auto-corrections.
 
 [Back To Contents](#contents)
 
