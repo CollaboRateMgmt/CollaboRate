@@ -1,4 +1,31 @@
-<style>/* Style the tab */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+		CollaboRate Web Application for Crowdsourced IT
+	</title>
+	<!-- 
+	Project website: https://github.com/CollaboRateMgmt/CollaboRate	
+	Copyright Sohrab Saran (sohrabsaran@gmail.com) and additional contributors listed at https://github.com/CollaboRateMgmt/CollaboRate/wiki/Contributors
+	License type: MIT	
+	-->
+	<link rel="stylesheet" type="text/css" href="3rdPartyLibs/css/jquery-ui_1.12.0.css">
+<style>
+
+* {font-family: Sans-Serif;}
+
+pre 
+{
+	display:inline;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* Style the tab */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -27,78 +54,239 @@ div.tab button.active {
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent 
+{
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
+
+input, textarea
+{
+	margin: 5px;
+}
+
 </style>
+	<script src="3rdPartyLibs/js/jquery-3.2.1.min.js"></script>	
+	<script src="3rdPartyLibs/js/jquery-ui.min.1.12.0.js"></script>
+	<script src="3rdPartyLibs/js/jquery.fix.clone.js"></script>
+	<script src="CollaboRate.js"></script>
 <script>
- function openCity(evt, cityName) {
+
+function signIn()
+{
+	$("#contentToShowBeforeSignIn").hide()
+	$("#contentToShowAfterSignIn").show()
+	incaseSubtabsArePresentThenActivateFirstSubtab($("#contentToShowAfterSignIn")[0])
+}
+
+function signOut()
+{
+	$("#contentToShowAfterSignIn").hide()
+	$("#contentToShowBeforeSignIn").show()	
+	incaseSubtabsArePresentThenActivateFirstSubtab($("#contentToShowBeforeSignIn")[0])
+}
+
+ function openTab(evt, idOfTab) 
+ {
     // Declare all variables
     var i, tabcontent, tablinks;
+	
+	var containerOfAllTabs = evt.currentTarget.parentNode.parentNode
 
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent = containerOfAllTabs.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) 
+	{
         tabcontent[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
+    tablinks = containerOfAllTabs.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) 
+	{
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+	var currentTab = el(idOfTab)
+    currentTab.style.display = "block";
     evt.currentTarget.className += " active";
+	//alert("Current tab is element having id '"+idOfTab+"'")
+	
+	//Activate the first tab of the subtabs if present
+	incaseSubtabsArePresentThenActivateFirstSubtab(currentTab)
+}
+
+function incaseSubtabsArePresentThenActivateFirstSubtab(currentTab)
+{
+	var tablinks = currentTab.getElementsByClassName("tablinks")
+	if(tablinks.length != 0)
+	{
+		eventFire(leftMost(tablinks), 'click')
+	}
+}
+
+function eventFire(el, etype)
+{
+	if (el.fireEvent) 
+	{
+		el.fireEvent('on' + etype);
+	} 
+	else 
+	{
+		var evObj = document.createEvent('Events');
+		evObj.initEvent(etype, true, false);
+		el.dispatchEvent(evObj);
+	}
+}
+
+function leftMost(els)
+{
+	//alert("leftMost(): els.length="+els.length)
+	var smallest = {left: 000000000, item: null};
+	var left = 0;
+	$(els).each
+	(
+		function()
+		{
+			//alert("leftMost(): Now considering element '" + ($(this)[0]).outerHTML+"'...");
+			left = $(this).offset().left;
+			if (smallest.item == null || left < smallest.left)
+			{
+				smallest.left = left;
+				smallest.item = this;
+			}
+		}
+	);
+	return smallest.item
 }
 </script>
+</head>
+<body>
+<div id="contentToShowAfterSignIn" style="display:none">
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+	<button class="tablinks" onclick="openTab(event, 'Tasklist')" >Tasklist</button>  
+	<button class="tablinks" onclick="openTab(event, 'Customer')" >Customer</button>  
+	<button class="tablinks" onclick="openTab(event, 'ITServicesCompany')" >IT Services Company</button>  
+	<button class="tablinks" onclick="openTab(event, 'CrowdMember')" >Crowd Member</button>  
+	<button class="tablinks" onclick="signOut()" id="signoutTabButton">Sign out</button>  
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
+<div id="Tasklist" class="tabcontent">
+Shows the tasks, ordered by role and if applicable, sub-role
+</div>
+
+<div id="Customer" class="tabcontent">
+
+<div class="tab">
+	<button class="tablinks" onclick="openTab(event, 'Projects')" >Projects</button>  
+	<button class="tablinks" onclick="openTab(event, 'NewProject')" >New Project</button>	
+</div>
+
+<div id="Projects" class="tabcontent">
+<h3>List of Projects</h3>
+
+<table>
+<tr><th>Project Name</th><th>Status</th></tr>
+<tr><td>Project 1</td><td>In Progress</td></tr>
+</table>
+
+</div>
+
+<div id="NewProject" class="tabcontent">
+<h3>New Project</h3>
+
+Project Name: <input type="text"><br>
+Project Goal: <textarea></textarea><br>
+Project Type: <select>
+<option>Fully Open Source</option>
+<option>Open Source to the Crowd</option>
+<option>Closed Source</option>
+</select><br> 
+Deadline: <input type="text"><br>
+Budget: <input type="text"><br>
+<button>Submit</button>
+
+</div>
+
+</div><!-- Customer -->
+
+<div id="ITServicesCompany" class="tabcontent">
+</div>
+
+<div id="CrowdMember" class="tabcontent">
+</div>
+
+</div><!-- contentToShowAfterSignIn -->
+
+<div id="contentToShowBeforeSignIn">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="homeTabButton">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'SignUp')" id="signupTabButton">Sign up</button>
+  <button class="tablinks" onclick="openTab(event, 'SignIn')" id="signinTabButton">Sign in</button>  
+  
+</div>
+
+<div id="SignUp" class="tabcontent">
+  Email <input type="text"><br>
+  Password <input type="password"><br>
+  Reenter Password <input type="password"><br>  
+  Phone Number <input type="text"><br>
+  <br>
+  Bank account details needed to receive payments and refunds:<br> 
+  Name in Bank Account <input type="text"><br>
+  Bank Account Number <input type="text"><br>
+  IFSC Code <input type="text"><br>
+ <br>
+ I want to register as a:<br>
+ <input type="checkbox">Crowd Member<br>
+ <input type="checkbox">SPOC<br>
+ <input type="checkbox">Customer<br>
   <pre>
-  Please enter details of your company, and the project that you want to develop:
+  Please enter details of your company:
 	
-Company Name
-Email Address
-Phone Number
+Company Name <input type="text"><br>
+
+
+Please enter details of the project that you want to develop;
+
 Project Name
 Technologies Required
 Requirements (Please ensure that each requirement does not reference any other requirement and is less than 2000 characters)
 
-Terms and Conditions:
+I agree to the Terms and Conditions.
   </pre>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+<div id="SignIn" class="tabcontent">  
+  Email <input type="text"><br>
+  Password <input type="password"><br>
+  <button type="button" onclick="signIn()">Sign In</button>
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Home" class="tabcontent">
+  <h3>Welcome to the CollaboRate Crowdsourcing Platform!</h3>
+  <p>Advertize benefits to IT Services Companies, their customers, and to the crowd on this tab.</p>
 </div>
+</div><!-- contentToShowBeforeSignIn -->
 <pre>
-Login - will select the project.
-Register
+
+Post login (admin)
 Admin
  - project maint
  - worklist
  
 Post login (nonadmin)
-- Crowd Member 
-- Customer
 - Crowd Interaction
 - Library Reuse
 - Programming
 - Financial Model
 </pre>
+<script>
+	//$("#homeTabButton").click()	
+	eventFire(el("homeTabButton"), 'click')
+</script>
+</body>
+</html>
