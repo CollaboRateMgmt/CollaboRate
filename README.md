@@ -270,7 +270,7 @@ Note that for maintenance projects whose source code is not already in XD (Extre
 Some activities are not crowdsourced under the CollaboRate process. This is because they may need a lot of knowledge, coordination or trust. It is difficult to find a way to make the crowd reliably perform these activities. Moreover some of these activities may be difficult to measure accurately. So it is difficult to reward the crowd with accuracy for these activities.   
 
 The following activities are not crowdsourced under the CollaboRate process:
-- requirements conversion to text
+- pictorial requirements conversion to text
 - initial work breakdown needed to start the crowdsourcing process
 - design sanity review of work breakdown
 - validation that the use cases created by the crowd, cover the requirements
