@@ -11,6 +11,8 @@
 	License type: MIT	
 	-->
 	<link rel="stylesheet" type="text/css" href="3rdPartyLibs/css/jquery-ui_1.12.0.css">
+	<link type="text/css" rel="stylesheet" href="3rdPartyLibs/css/codemirror.css">
+	<link type="text/css" rel="stylesheet" href="3rdPartyLibs/css/mergely.css">
 	<style>
 		* {font-family: Sans-Serif;}
 		pre 
@@ -55,7 +57,9 @@
 	<script src="3rdPartyLibs/js/jquery-3.2.1.min.js"></script>	
 	<script src="3rdPartyLibs/js/jquery-ui.min.1.12.0.js"></script>
 	<script src="3rdPartyLibs/js/jquery.fix.clone.js"></script>
-	<src src="CollaboRate.js"></script>
+	<script src="3rdPartyLibs/js/codemirror.min.js"></script>
+	<script src="3rdPartyLibs/js/mergely.min.js"></script>
+	<script src="CollaboRate.js"></script>
 	<script>
 	
 var pageDisabledCtr = 0;
@@ -107,6 +111,7 @@ function custom_alert(output_msg, title_msg, fnToCallOnClose)
         "resizable": true,
         "modal": true,
 		"width": "70%",
+		position: { my: "top", at: "top+20"},
 		/** /height:h,/ **/
         "buttons": {
             "Ok": function()
@@ -135,19 +140,19 @@ function lcsset(a,b)
 {
 	//p("sdfsdf")
 	lcssetcache = {}	
-	inituniquestr(a,b)
-	return lcsset2(a,b)
+	initStrThatIsNeitherInANorB(a,b)
+	return lcsset_postinit(a,b)
 }
 
-function inituniquestr(a,b)
+function initStrThatIsNeitherInANorB(a,b)
 {
 	uniquectr = 0
-	inituniquestr2(a)
-	inituniquestr2(b)
+	initStrThatIsNeitherInANorB2(a)
+	initStrThatIsNeitherInANorB2(b)
 	//p("uniquestr='"+uniquestr+"'")
 }
 
-function inituniquestr2(a)
+function initStrThatIsNeitherInANorB2(a)
 {
 	while(1)
 	{
@@ -157,51 +162,67 @@ function inituniquestr2(a)
 	}
 }
 
-function lcsset2(a, b)
+function lcsset_postinit(a, b)
 {
-	var r = lcsset2_1(a, b)
-	//p("lcsset2(): a='"+a+"', b='"+b+"', r="+JSON.stringify(r))
+	var r = lcsset_postinit_1(a, b)
+	//p("lcsset_postinit(): a='"+a+"', b='"+b+"', r="+JSON.stringify(r))
 	return r
 }
 
-function lcsset2_1(a, b)
+function lcsset_postinit_1(a, b)
 {	
 	var k = a + uniquestr + b
 	if(k in lcssetcache){return lcssetcache[k]}
-	var r = lcsset3(a,b)
+	var r = lcsset_postinit_uncached(a,b)
 	lcssetcache[k] = r
 	return r
 }
 
-function lcsset3(a, b)
+function someKeyOf(o)
+{
+	for (var key in o) {return key}    
+}
+
+function len(o)
+{
+	return Object.keys(o).length
+}
+
+function lcsset_postinit_uncached(a, b)
 {
 	//var dbg = (a=="c" && b == "cd")
-	if(a.length == 0 || b.length == 0){return [""]}
+	if(a == b)
+	{
+		var r={};r[a]=0;return r		
+	}
+	if(a.length == 0 || b.length == 0){return {"":0}}
 	if(a.charAt(0) == b.charAt(0))
-	{	
-		if(a.length == 1 && b.length == 1)
-		{
-			return [a]
-		}
+	{		
 		var firstChr = a.charAt(0)		
-		var r2 = []
-		var r = lcsset2(a.substring(1),b.substring(1))
-		assert(r.length > 0)
-		r.forEach(function(s){r2.push(firstChr+s)})				
+		var r2 = {}
+		var r = lcsset_postinit(a.substring(1),b.substring(1))
+		assert(len(r) > 0)
+		for(var s in r)
+		{r2[firstChr+s]=0}
 		return r2
 	}
-	var r1 = lcsset2(a,b.substring(1))
-	assert(r1.length > 0)
-	var r2 = lcsset2(a.substring(1),b)
-	assert(r2.length > 0)
-	if(r1[0].length == 0){return r2}
-	if(r2[0].length == 0){return r1}
-	if(r1[0].length == r2[0].length)
+	var r1 = lcsset_postinit(a,b.substring(1))
+	assert(len(r1) > 0)
+	var r2 = lcsset_postinit(a.substring(1),b)
+	assert(len(r2) > 0)
+	var r1Key = someKeyOf(r1)
+	if(r1Key.length == 0){return r2}
+	var r2Key = someKeyOf(r2)
+	if(r2Key.length == 0){return r1}
+	if(r1Key.length == r2Key.length)
 	{
-		r2.forEach(function(r2ele){if(r1.indexOf(r2ele) == -1){r1.push(r2ele)}})	
+		for(var r2ele in r2)
+		{			
+			r1[r2ele] = 0
+		}	
 		return r1
 	}
-	if(r1[0].length > r2[0].length){return r1}	
+	if(r1Key.length > r2Key.length){return r1}	
 	return r2
 }
 //lcsset end
@@ -213,11 +234,61 @@ function diff(old,neww)
 {
 	bestdiffs=[]
 	var setoflcses = lcsset(old,neww)
-	//console.log("diff(): setoflcses.length="+setoflcses.length)
-	setoflcses.forEach(function(lcs){		
-		findandaccumbestdiffsfor(lcs,old,neww)})
+	console.log("diff(): len(setoflcses)="+len(setoflcses))
+	var bestDiff
+	for(var lcs in setoflcses)
+	{	
+		var fd = fastestDiff(lcs,old,neww)
+		if(bestDiff == null || bestDiff.length > fd.length){bestDiff = fd}
+		continue
+	
+		findandaccumbestdiffsfor(lcs,old,neww)
+	}
+	return bestDiff
+	
 	assert(bestdiffs.length>0)
 	return bestdiffs[0]
+}
+
+function fastestDiff(lcs,old,neww)
+{	
+	var lcslen = lcs.length
+	var sameStr = ""
+	for(var i = 0; i < lcslen; i++)
+	{
+		if(i >= old.length){break}
+		if(i >= neww.length){break}
+		var lcsChr = lcs.substr(i,1)
+		if(lcsChr != old.substr(i,1)){break}
+		if(lcsChr != neww.substr(i,1)){break}
+		sameStr += lcsChr
+	}
+	if(sameStr != "")
+	{
+		var r = [{str:sameStr,changetype:"same"}]
+		var idx = sameStr.length
+		return r.concat(fastestDiff(lcs.substr(idx),old.substr(idx),neww.substr(idx)))
+	}
+	if(lcslen != 0)
+	{		
+		var lcsChr = lcs.substring(0,1)		
+		var remainingOld = lcsChr + rightOf(old,lcsChr)
+		old = leftOf(old,lcsChr)
+		var remainingNew = lcsChr + rightOf(neww,lcsChr)
+		neww = leftOf(neww,lcsChr)
+	}	
+	var r = []		
+	if(old.length != 0)
+	{
+		r.push({str:old,changetype:"deleted"})
+	}
+	if(neww.length != 0)
+	{
+		r.push({str:neww,changetype:"added"})
+	}
+	if(lcslen==0){return r}
+	var r2 = fastestDiff(lcs,remainingOld,remainingNew)
+	return r.concat(r2)
 }
 
 function findandaccumbestdiffsfor(lcs, old, neww)
@@ -266,7 +337,7 @@ function isxbetterdiffthany(diffx, diffy)
 	return (firstdiffofx.str.length < firstdiffofy.str.length)
 }
 
-function findbestdiffsfor2(lcs, old, neww)
+function findbestdiffsfor2_dbg(lcs, old, neww)
 {	
 	//console.log("findbestdiffsfor2(): Entry: lcs='"+lcs+"',old='"+old+"',neww='"+neww+"'...")
 	var r = findbestdiffsfor3(lcs, old, neww)
@@ -274,7 +345,7 @@ function findbestdiffsfor2(lcs, old, neww)
 	return r
 }
 	
-function findbestdiffsfor3(lcs, old, neww)
+function findbestdiffsfor2(lcs, old, neww)
 {
 	var dbg = false//(lcs==" saran" && old == "ajiv saran" && neww == "oz saran") || (lcs=="n" && old == "n" && neww == "n")
 	if(lcs.length == 0)
@@ -373,18 +444,18 @@ function findbestdiffsfor3(lcs, old, neww)
 	return r
 }
 
-function allpossibleprefixesbeforelcs(s,lcs)
+function allpossibleprefixesbeforelcs_dbg(s,lcs)//allpossibleprefixesbeforelcs
 {
 	var r = allpossibleprefixesbeforelcs2(s, lcs)
 	//console.log("allpossibleprefixesbeforelcs(): s='"+s+"', lcs='"+lcs+"', return value="+JSON.stringify(r))
 	return r
 }
 
-function allpossibleprefixesbeforelcs2(s,lcs)
+function allpossibleprefixesbeforelcs(s,lcs)//allpossibleprefixesbeforelcs2
 {
 	assert(lcs.length > 0)
 	assert(s.length >= lcs.length)
-	assert(containslcs(s,lcs))	
+	assert(containslcs(s,lcs))
 	var lens = s.length
 	var r = []
 	var firstcharoflcs = lcs.substring(0,1)
@@ -856,10 +927,11 @@ function markAsWizardDropdown(drpdn)
 	//Initially hide all options
 	$(drpdn).find("option").each(function() {if(this.value!="")$("#"+this.value).hide()})
 	
-	drpdn.onchange=function(){
-	showDivForCurrentlySelectedOption(drpdn);
-	window.scrollTo(0,document.body.scrollHeight);
-	($(":focus")[0]).scrollIntoView();
+	drpdn.onchange=function()
+	{
+		showDivForCurrentlySelectedOption(drpdn);
+		window.scrollTo(0,document.body.scrollHeight);
+		if($(":focus").length!=0){($(":focus")[0]).scrollIntoView();}
 	}
 }
 
@@ -897,7 +969,34 @@ function htmlfordiffwithparenttaskdesc(newdesctextarea)
 
 function showdiff(textarea)
 {
-	custom_alert(htmlfordiffwithparenttaskdesc(textarea),"Comparison with parent task's description");
+	/*custom_alert
+	(
+		htmlfordiffwithparenttaskdesc(textarea),
+		"Comparison with parent task's description"
+	);
+	return*/
+	
+	var neww = textarea.value
+	var old = ($("#taskDesc")[0]).value
+	
+	custom_alert
+	(
+		"<div style=\"width:1500;overflow:scroll\"><div id=\"compare\"></div></div>",
+		"Comparison with parent task's description"
+	);
+	$('#compare').mergely({
+		cmsettings: { readOnly: true, lineWrapping: true, lineNumbers: false },
+		lhs: function(setValue) {
+			setValue(old)
+		},
+		rhs: function(setValue) {
+			setValue(neww)
+		},
+		line_numbers: false,
+		wrap_lines: true
+	});
+	$("#compare-editor-lhs").css('width','45%')
+	$("#compare-editor-rhs").css('width','45%')
 }
 
 var origAlert = alert

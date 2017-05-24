@@ -181,11 +181,11 @@ Shows the tasks, ordered by role and if applicable, sub-role
 <div id="Customer" class="tabcontent">
 
 <div class="tab">
-	<button class="tablinks" onclick="openTab(event, 'Projects')" >Projects</button>  
+	<button class="tablinks" onclick="openTab(event, 'ProjectsOfThisCustomer')" >Projects</button>  
 	<button class="tablinks" onclick="openTab(event, 'NewProject')" >New Project</button>	
 </div>
 
-<div id="Projects" class="tabcontent">
+<div id="ProjectsOfThisCustomer" class="tabcontent">
 <h3>List of Projects</h3>
 
 <table>
@@ -214,7 +214,16 @@ Budget: <input type="text"><br>
 </div><!-- Customer -->
 
 <div id="ITServicesCompany" class="tabcontent">
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Projects')" >Projects</button>
+  <button class="tablinks" onclick="openTab(event, 'CrowdInteraction')" >Crowd Interaction</button>
+  <button class="tablinks" onclick="openTab(event, 'LibraryReuse')" >Library Reuse</button>  
+  <button class="tablinks" onclick="openTab(event, 'Programming')" >Programming</button>  
+  <button class="tablinks" onclick="openTab(event, 'Troubleshooting')" >Troubleshooting</button>  
 </div>
+
+</div><!-- ITServicesCompany-->
 
 <div id="CrowdMember" class="tabcontent">
 </div>
@@ -226,7 +235,6 @@ Budget: <input type="text"><br>
   <button class="tablinks" onclick="openTab(event, 'Home')" id="homeTabButton">Home</button>
   <button class="tablinks" onclick="openTab(event, 'SignUp')" id="signupTabButton">Sign up</button>
   <button class="tablinks" onclick="openTab(event, 'SignIn')" id="signinTabButton">Sign in</button>  
-  
 </div>
 
 <div id="SignUp" class="tabcontent">
@@ -270,20 +278,7 @@ I agree to the Terms and Conditions.
   <h3>Welcome to the CollaboRate Crowdsourcing Platform!</h3>
   <p>Advertize benefits to IT Services Companies, their customers, and to the crowd on this tab.</p>
 </div>
-</div><!-- contentToShowBeforeSignIn -->
-<pre>
-
-Post login (admin)
-Admin
- - project maint
- - worklist
- 
-Post login (nonadmin)
-- Crowd Interaction
-- Library Reuse
-- Programming
-- Financial Model
-</pre>
+</div><!-- contentToShowBeforeSignIn -->	
 <script>
 	//$("#homeTabButton").click()	
 	eventFire(el("homeTabButton"), 'click')
