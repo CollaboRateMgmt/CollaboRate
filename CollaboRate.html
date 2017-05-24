@@ -1024,25 +1024,33 @@ placeholder="Copy the task summary and paste it here."><!--style="background:#ee
 Note: Before you break down this task, check that its description is clear and complete. It must not refer to any other task.<br> 
 Otherwise, bring this to the notice of the task sender, and ensure that you receive a clear and complete task description.<br>
 <br>
-<b style="color:red">Note that you do not need to fully solve this task. Child tasks must be context-free. They must differ by logic rather than by data.</b> <button type="button" 
+<b style="color:red">Important Instructions:<br> 
+<ul>
+<li>You will not solve this task. You will just break it into 2 child tasks, that fully cover this task. </li>
+<li>Create child tasks such that to understand them, we do not need to read the parent or sibling task.</li> 
+<li>Child tasks that have same logic but operate on different data, are not allowed.</li>
+</ul>
+</b> <button type="button" 
 onclick="alert(($('#divForExplanationForWhyYouDoNotNeedToFullySolveThisTask')[0]).innerText)">?</button>
 <br>
 <div id="divForExplanationForWhyYouDoNotNeedToFullySolveThisTask" style="display:none !important">
-As per the CollaboRate process, you do not need to fully solve an assigned task.<br>
-Your microtask is just to break down this task into 2 parts.<br> 
-Both parts usually yield subtasks. <br>
-Sometimes the task assigned is so small that it may yield 1 subtask or even no subtask.<br>
+You do not need to fully solve an assigned task.<br>
+Your microtask is just to break down this task into 2 parts. This allows for accurate work measurement and mass participation.<br> 
+These two parts must completely cover this task. Use the diff feature provided, to do a self-review of the differences between the parent and the child task.<br>
+<br>
+Note: sometimes the task assigned is so small that it may yield 1 subtask or even no subtask.<br>
 Other crowd members will break down the subtasks you create.<br> 
 <br>
 To do more work, you break down other tasks.<br><br>
-In this way we enable many people to work together, and can accurately measure the work done by each person.<br>
 <br>												 
-Child tasks should be self-contained.<br>
+Child tasks should be 'self-contained' or 'context-free'.<br>
 A child task's summary and description must be enough to clearly and completely describe the task.<br> 
-There should be no need to refer to the parent task's details, sibling task's details, or any other task.<br>
-Unwanted details that should be part of the other child task, must not be present in the summary and description of this child task.<br>
+There should be no need to refer to the parent or to the sibling task, or any other task.<br>
+The summary and description of a child task, must not contain details that are relevant only to the other child task.<br>
 <br>												 
-Tasks must be split, such that the child tasks differ from each other via logic, rather than just different data being passed to same logic.<br>																		 
+Tasks must be split, such that the child tasks differ from each other via logic, rather than just different data being passed to same logic.<br>
+Otherwise, the crowd members would do duplicate work.
+<br>
 </div>
 <br>
 <input type="checkbox" onchange="imFamiliarToggled(this)">I'm familiar with software programming terms and concepts.
