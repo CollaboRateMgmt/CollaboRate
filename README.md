@@ -19,7 +19,7 @@ There is increasing job loss due to AI and Automation, and it is going to get wo
 
 # Investment Opportunity
 
-We would like to urgently speed up the development of additional modules of this project. These modules will automate the process as much as possible. We would also like to publish success stories of customers and crowd members who benefited from CollaboRate. In order to do both the above, we need investors. The Investor Pitch page may be found [here](https://github.com/CollaboRateMgmt/CollaboRate/wiki/InvestorPitch).
+We would like to urgently speed up the development of additional modules of this project. These modules will automate the process as much as possible. We would also like to publish success stories of customers and crowd members who benefited from CollaboRate. In order to do both the above, we need investors. The Investor Pitch page may be found [here](https://github.com/CollaboRateMgmt/CollaboRate/wiki/Investor-Pitch).
 
 # Process Specifications
 
