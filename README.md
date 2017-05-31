@@ -15,6 +15,12 @@ The CollaboRate process benefits IT service companies, their customers and their
 
 This process is useful in open source projects as well. It is especially useful along with open source business models. See [this page](https://github.com/CollaboRateMgmt/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
+There is increasing job loss due to AI and Automation, and it is going to get worse. A project management model such as CollaboRate is able to provide a smooth and reliable earning potential for millions of IT workers. It has become the need of the hour.
+
+# Investment Opportunity
+
+We would like to urgently speed up the development of additional modules of this project. These modules will automate the process as much as possible. We would also like to publish success stories of customers and crowd members who benefited from CollaboRate. In order to do both the above, we need investors. The Investor Pitch page may be found [here](https://github.com/CollaboRateMgmt/CollaboRate/wiki/InvestorPitch).
+
 # Process Specifications
 
 The following links specify the process (or rather, the set of processes) as directly as possible:
