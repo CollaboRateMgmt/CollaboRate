@@ -2,7 +2,9 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://CollaboRateMgmt.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It enables many software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), even in commercial (closed-source) projects. This results in extremely fast project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
+CollaboRate is a process and a [simple software tool](https://CollaboRateMgmt.github.io/CollaboRate/CollaboRate.html). It is the best IT project management process known so far. It answers certain hard questions on accurate work measurement and maximum possible parallization of work. The latest methodologies in vogue (for example, Agile and Scrum) are either silent on these questions or do not cover them.   
+
+CollaboRate defines several activities that comprise the software lifecycle. It further enables many software project activities to be [crowdsourced](https://en.m.wikipedia.org/wiki/Crowdsourcing), even in commercial (closed-source) projects. This results in extremely fast project completion time. CollaboRate enables crowdsourcing more effectively than any other known crowdsourcing method. 
 
 In the context of CollaboRate, we define 'crowdsourcing' as follows:  
 "Enable a very large number of people (the crowd), to work on the same project at the same time".  
@@ -11,7 +13,9 @@ Another related goal of CollaboRate is to measure work done by people, in a way 
 
 For even a one-person project, CollaboRate is useful. It will eventually have negligible process overhead for even this scenario. But where it really stands out, is when it is used by a very large team of people.
 
-The CollaboRate process benefits IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It gives rise to a new kind of economy where individuals have more freedom and opportunities to earn.
+The CollaboRate process benefits IT service companies, their customers and their employees alike. It may transform the way we do all desk jobs. It gives rise to a new kind of economy where individuals have more freedom and opportunities to earn. 
+
+(Note that the term 'IT Service Company' should not be taken literally and is representative. For example, this can be represented by a project team within a 'Product Development' company, that provides the software development services part of the overall work needed. In this case, the first level customer may be the Investors and/or Top Management of the Product company).
 
 This process is useful in open source projects as well. It is especially useful along with open source business models. See [this page](https://github.com/CollaboRateMgmt/CollaboRate/wiki/Using-CollaboRate-for-Open-Source-Projects) for more information.
 
