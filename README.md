@@ -346,7 +346,7 @@ This process and tool allows the most number of people possible, to work on the 
 
 # Project Creator's Disclaimer
 This work does not represent views of my past and present organizations.  
-It is under discussion with my present organization.
+It was under discussion with the organization where this started, but remains Open Source.
        
 [Back To Contents](#contents)
 
