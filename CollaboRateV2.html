@@ -66,28 +66,30 @@ License type: MIT
 		For each of these three nodes, the problem statement that was broken down using this tool is the parent node.
 		<br><br>
 		
-		What kind of problem statement is this?
+		What kind of problem statement is this task?
         <div id="main-body" class="container-fluid">
             <ul class="nav nav-pills" id="pills-tablist" role="tablist">
                 <li class="nav-item" id="navitem-appinteractions">
                     <a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Interactions</a>
 				</li>
                 <li class="nav-item" id="navitem-step">
-                    <a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Action</a>
+                    <a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Input Processing Step</a>
 				</li>
 			</ul>
             <hr>
             <div class="tab-content" id="pills-tabContent">
 				<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
 					<h2>Application Interactions</h2>
-					The problem statement describes information provided to the application and what the application does after it receives this information.
+					The problem statement describes inputs provided to the application that is being developed for this task. 
+					It also describes how the application responds to these inputs.
 					<br><br>
-					Does the problem statement statement describe more than one type of information provided to the application?<br>
+					Does the problem statement statement describe more than one type of input provided to the application?<br>
 					TODO: Create tabs for 'more than one type of information' and 'only one type of information'. Latter is a 'unit use case'.
 				</div><!-- tabpane-appinteractions  -->
 				<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-					<h2>Action taken by the application</h2>
-					The problem statement describes an action done by the application. This action is part of a list of actions done by the application once some type of information is given to it.
+					<h2>Input Processing Step</h2>
+					The problem statement describes an step done by the application as a result of some input given to it. 
+					This step may be just a part of the overall response of the application to the given input.
 					<br>
 					<br>
 					TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
