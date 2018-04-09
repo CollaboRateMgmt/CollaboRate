@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- 
-This is part of the CollaboRate project at https://github.com/CollaboRateMgmt/CollaboRate
-Author: Crowdian Technologies Pvt. Ltd 2017-18.
-License type: MIT
+	This is part of the CollaboRate project at https://github.com/CollaboRateMgmt/CollaboRate
+	Author: Crowdian Technologies Pvt. Ltd 2017-18.
+	License type: MIT
 -->
 <html lang="en">
     <head>
@@ -38,75 +38,79 @@ License type: MIT
 			width: 100%;
 			height: 100%;
 			display: none;
-            }
+			}
 		</style>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		　　<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
-    <body style="padding:4px">
+	<body style="padding:4px">		
 		
-		
-		What kind of problem statement is this task?
         <div id="main-body" class="container-fluid">
-            <ul class="nav nav-pills" id="pills-tablist" role="tablist">
-		<li class="nav-item" id="navitem-overview">
-                    <a class="nav-link" id="tab-overview" data-toggle="pill" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
-		</li>
-		<li class="nav-item" id="navitem-wbswizard">
-                    <a class="nav-link" id="tab-wbswizard" data-toggle="pill" href="#tabpane-wbswizard" role="tab" aria-controls="tabpane-wbswizard">Work Breakdown Wizard</a>	
-		</li>
-                <li class="nav-item" id="navitem-appinteractions">
-                    <a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Interactions</a>
-		</li>
-                <li class="nav-item" id="navitem-step">
-                    <a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Input Processing Step</a>
-		</li>
-            </ul>
-            <hr>
-            <div class="tab-content" id="pills-tabContent">
-		<div id="tabpane-overview" class="tab-pane fade" role="tabpanel">
-			Welcome to the next version of the CollaboRate work breakdown wizard<br><br>
-	  This tool will guide you to break down your assigned task into a maximum of two subtasks.
-	   You must not solve the assigned task completely. 
-	  All you must do is create subtasks such that these subtasks when taken together, exactly cover the scope and information present 
-	  in the assigned task (nothing less or more, except that the subtasks might elaborate details that were implied by the parent task. 
-	    
-	    <br><br>
-	 	<b>Instructions for Crowdsourcing Vendors</b><br>
-		Once the following are identified:
-		<ul>
-			<li>Sub-part 1 of the problem statement</li>
-			<li>Sub-part 2 of the problem statement</li>
-			<li>Logic that connects the 2 sub-parts</li>
-		</ul>
-		...you need to create 3 nodes for each of the above in the db via calling the appropriate js functions from the client side. 
-		For each of these three nodes, the problem statement that was broken down using this tool is the parent node.
-		<br><br>
-		</div>
-		    
-		    
-		
-				<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-					<h2>Application Interactions</h2>
-					The problem statement describes inputs provided to the application that is being developed for this task. 
-					It also describes how the application responds to these inputs.
+			<ul class="nav nav-pills" id="pills-tablist" role="tablist">
+				<li class="nav-item" id="navitem-overview">
+					<a class="nav-link" id="tab-overview" data-toggle="pill" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
+				</li>
+				<li class="nav-item active" id="navitem-wbswizard">
+					<a class="nav-link" id="tab-wbswizard" data-toggle="pill" href="#tabpane-wbswizard" role="tab" aria-controls="tabpane-wbswizard">Work Breakdown Wizard</a>	
+				</li>		
+			</ul>
+			<hr>
+			<div class="tab-content" id="pills-tabContent">
+				<div id="tabpane-overview" class="tab-pane fade" role="tabpanel">
+					Welcome to the next version of the CollaboRate work breakdown wizard<br><br>
+					This tool will guide you to break down your assigned task into a maximum of two subtasks.
+					You must not solve the assigned task completely. 
+					All you must do is create subtasks such that these subtasks when taken together, exactly cover the scope and information present 
+					in the assigned task (nothing less or more, except that the subtasks might elaborate details that were implied by the parent task. 
+					
 					<br><br>
-					Does the problem statement statement describe more than one type of input provided to the application?<br>
-					TODO: Create tabs for 'more than one type of information' and 'only one type of information'. Latter is a 'unit use case'.
-				</div><!-- tabpane-appinteractions  -->
-				<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-					<h2>Input Processing Step</h2>
-					The problem statement describes a step done by the application as a result of some input given to it. 
-					This step may be just a part of the overall response of the application to the given input.
-					<br>
-					<br>
-					TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
-				</div><!-- tabpane-step  -->
+					<b>Instructions for Crowdsourcing Vendors</b><br>
+					Once the following are identified:
+					<ul>
+						<li>Sub-part 1 of the problem statement</li>
+						<li>Sub-part 2 of the problem statement</li>
+						<li>Logic that connects the 2 sub-parts</li>
+					</ul>
+					...you need to create 3 nodes for each of the above in the db via calling the appropriate js functions from the client side. 
+					For each of these three nodes, the problem statement that was broken down using this tool is the parent node.
+					<br><br>
+				</div>
+				
+				<div id="tabpane-wbswizard" class="tab-pane fade show active">
+					What kind of problem statement is this task?
+					<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
+						<li class="nav-item" id="navitem-appinteractions">
+							<a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Interactions</a>
+						</li>
+						<li class="nav-item" id="navitem-step">
+							<a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Input Processing Step</a>
+						</li>
+					</ul>
+					<hr>
+					<div class="tab-content" id="pills-tab2Content">
+						<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
+							<h2>Application Interactions</h2>
+							The problem statement describes inputs provided to the application that is being developed for this task. 
+							It also describes how the application responds to these inputs.
+							<br><br>
+							Does the problem statement statement describe more than one type of input provided to the application?<br>
+							TODO: Create tabs for 'more than one type of information' and 'only one type of information'. Latter is a 'unit use case'.
+						</div><!-- tabpane-appinteractions  -->
+						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
+							<h2>Input Processing Step</h2>
+							The problem statement describes a step done by the application as a result of some input given to it. 
+							This step may be just a part of the overall response of the application to the given input.
+							<br>
+							<br>
+							TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
+						</div><!-- tabpane-step  -->
+					</div>
+				</div>
+				
+				
 			</div><!-- pills-tabContent -->
 		</div><!-- main-body -->		
 	</body>
-</html>					
+</html>							
