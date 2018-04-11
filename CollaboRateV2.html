@@ -50,7 +50,7 @@
         <div id="main-body" class="container-fluid">
 			<ul class="nav nav-pills" id="pills-tablist" role="tablist">
 				<li class="nav-item" id="navitem-overview">
-					<a class="nav-link" id="tab-overview" data-toggle="pill" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
+					<a class="nav-link" id="tab-overview" data-toggle="pill" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Help</a>	
 				</li>
 				<li class="nav-item" id="navitem-wbswizard">
 					<a class="nav-link active" id="tab-wbswizard" data-toggle="pill" href="#tabpane-wbswizard" role="tab" aria-controls="tabpane-wbswizard">Work Breakdown Wizard</a>	
@@ -60,25 +60,48 @@
 			<div class="tab-content" id="pills-tabContent">
 				<div id="tabpane-overview" class="tab-pane fade" role="tabpanel">
 					Welcome to the next version of the CollaboRate work breakdown wizard<br><br>
-					This tool will guide you to break down your assigned task into a maximum of two subtasks.
-					You must not solve the assigned task completely. 
-					All you must do is create subtasks such that these subtasks when taken together, exactly cover the scope and information present 
-					in the assigned task (nothing less or more, except that the subtasks might elaborate details that were implied by the parent task. 
+					
+					<b>Instructions for Crowd Members</b><br>
+					A crowdsourcing vendor or an open source project has assigned you a task. The task can either be the description of an entire software 
+					app, or may describe part of the app. You have been asked to use this tool to break down the assigned task.<br>
+					This tool will guide you to break down (divide) your assigned task into a maximum of two subtasks. 
+					This tool is mainly a 'wizard' or guidance program. It presents you a series of questions and also presents you some answers to choose from in order
+					to reply to some of the questions. Based on the choices you make and information you provide, the tool then allows you to submit this work that you 
+					have done, back to the team that gave your this task.<br>
+					These subtasks will if needed, be further broken down by the crowd members.<br><br> 
+					Please note that you must not solve the assigned task completely!<br>
+					All you must do is create its subtasks. These subtasks when considered together, must contain neither any more or less scope 
+					and information than the assigned task, except that these subtasks might further elaborate design or processing details that were 
+					implied by the parent task. The logic that connects the subtasks to each other is specified by you with the help of this tool. This
+					logic is used to create the processing steps done by the app on the input provided to it, to produce the expected output. In this way,
+					crowd members help to create all the processing steps (source code) of the app!
+					<br>
+					The 'binary' work breakdown way of working allows us to more accurately measure work done by the crowd members. 
+					The work that you are doing to break down the assigned task is called 'doing a microtask'. Your contribution to the project is 
+					rated as being proportional to the number of microtasks you perform. It is assumed that the average effort needed to break down a task
+					is almost the same, especially given that there is a limit imposed on the maximum number of characters that a task can contain.
+					Creating multiple subtasks also helps to allow multiple crowd members to work on the same project in parallel, so that the project gets over quickly when a large number of crowd members are available.
 					
 					<br><br>
 					<b>Instructions for Crowdsourcing Vendors</b><br>
 					Once the following are identified:
 					<ul>
-						<li>Sub-part 1 of the problem statement</li>
-						<li>Sub-part 2 of the problem statement</li>
-						<li>Logic that connects the 2 sub-parts</li>
+						<li>Subtask 1 of the task</li>
+						<li>Subtask 2 of the task</li>
+						<li>Logic that connects the 2 subtask</li>
 					</ul>
-					...you need to create 3 nodes for each of the above in the db via calling the appropriate js functions from the client side. 
-					For each of these three nodes, the problem statement that was broken down using this tool is the parent node.
+					...you need to create 3 data nodes for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
+					For each of these three nodes, the problem statement that was broken down using this tool is the parent node. You will further validate
+					the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
+					generate the documentation and source code of the app.
 					<br><br>
 				</div>
 				
 				<div id="tabpane-wbswizard" class="tab-pane fade show active">
+				An app accepts various inputs (information). Inputs may be provided by a human (user) or some timer or even by some other app.
+				The application produces some outputs after processing (doing some mathematical or logical steps on) these inputs. 
+				A particular type of input-process-output is called an 'interaction'.<br>
+				<br>
 					What kind of problem statement is this task?
 					<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
 						<li class="nav-item" id="navitem-appinteractions">
@@ -91,17 +114,15 @@
 					<hr>
 					<div class="tab-content" id="pills-tab2Content">
 						<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-							<h2>Application Interactions</h2>
-							The problem statement describes inputs provided to the application that is being developed for this task. 
-							It also describes how the application responds to these inputs.
-							<br><br>
-							Does the problem statement statement describe more than one type of input provided to the application?<br>
-							TODO: Create tabs for 'more than one type of information' and 'only one type of information'. Latter is a 'unit use case'.
+							<h2>App Interactions</h2>
+							The assigned task describes one or more types of application interactions.<br><br>
+							Does the assigned task describe more than one type of application interaction?<br>
+							TODO: Create tabs for 'more than one type of interaction' and 'only one type of interaction'. Latter is a 'unit use case'.
 						</div><!-- tabpane-appinteractions  -->
 						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-							<h2>Input Processing Step</h2>
-							The problem statement describes a step done by the application as a result of some input given to it. 
-							This step may be just a part of the overall response of the application to the given input.
+							<h2>Processing Step</h2>
+							The assigned task describes a step done by the application to process some input given to it. This step may be the entire
+							processing involved for the specified input, or it may be a sub-step.
 							<br>
 							<br>
 							TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
