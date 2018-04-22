@@ -86,28 +86,22 @@
 							Welcome to the the CollaboRate
 							<a target="_blank" href="https://en.wikipedia.org/wiki/Work_breakdown_structure">work breakdown</a> 
 							<a target="_blank" href="https://en.wikipedia.org/wiki/Wizard_(software)">wizard</a> v2.0.
-							This tool is part of the Open Source CollaboRate project.<br>
+							This tool is part of an open source project named '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.<br>
 							One of the main goals of this project is to create opportunities to earn online by doing small, easy, fun, and 
 							socially useful intellectual tasks.<br>
-							This intellectual work done is used to develop, maintain and test software apps.<br>
-							The information below should be enough to get you started with the tool and process.<br> 
-							For more information, visit the <a target="_blank" href="https://github.com/CollaboRateMgmt/CollaboRate">project website</a>.<br><br>
+							This intellectual work done is used to develop, maintain and test software apps.
 						</div>
 						<div id="tabpane-benefits" class="tab-pane fade">
 							<b>Benefits</b><br><br>
 							This tool is part of a new way of software development, that has the following benefits:
 							<ul>
-								<li>It allows for greater employment opportunities in the field of software development. This is because it 
-									allows people to develop software even if they do not have the skills and knowledge usually associated with
-									software development jobs.
-								</li>
-								<li>Allows people to earn good amounts of income online, in an enjoyable, flexible and socially useful way.</li>
+								<li>Allows people to earn money by doing online work, in an enjoyable, flexible and socially useful way.</li>
 								<li>
-									It provides a very accurate way to decide that who has contributed how much to the project. 
-									This in turn allows the people who worked on the project to be paid in a very fair manner.									
+									It provides a very accurate way to measure people's work.  
+									This in turn allows people to be paid in a very fair manner.
 								</li>
 								<li>								
-									Much better quality code is created.
+									 Better quality code is created that is very simple and very well documented.
 								</li>
 								<li>
 									This way of software development allows a very large number of people to work on the same project at the 
@@ -115,48 +109,44 @@
 								</li>								
 								<li>
 									It reduces financial risks for those who need software to be developed. 
-									This is done by sharing the risk in a fair and small way with all stakeholders. The risk per person becomes 
-									smaller when the number of people working on the project are very large in number.
+									This is done by sharing the risk in a fair and small way with all people, including those working on the project. The risk per person becomes 
+									smaller, when there are more workers on the project.
 								</li>
 							</ul>
 							<br><br>
 						</div>
 						<div id="tabpane-skillsneeded" class="tab-pane fade">
 							
-							As a crowd member, you must have the following skills:
+							As a 'crowd member' (one of the online workers) you must have the following skills:
 							<ul>								
 								<li>Able to read and write English clearly and correctly. As of now, this tool is limited to the English language.</li>
 								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. </li>
 								<li>
 									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school. 
-									This can be summarized as follows:
+									This is specified as follows:
 									<ul>
 										<li>
-											An app is set of instructions written by people, that tell the computer how to do a particular task. 
+											An app is a set of instructions written by people, that tell a computer how to do a particular task. 
 											Examples of apps are Microsoft Word, Excel, Powerpoint, apps installed on smartphones, etc.
 										</li>
 										<li>
-											An app accepts various inputs (information) for example: text, video, pictures or sound. 
-											Inputs may be provided by:
+											An app accepts various types of inputs (information). Inputs may be provided by:
 											<ul>
-												<li>a person (user of the app)</li> 
-												<li>an alarm set on the computer's internal clock</li>
+												<li>a person (user of the app) via electronic machines called 'input devices'. Examples of such input devices are keyboard, mouse, touchscreen etc.</li> 
+												<li>an alarm set on the computer's clock</li>
 												<li>some other app</li>
+												<li>other input devices that can automatically provide input whether the user is present or not. For example, microphone, camera etc.</li>
 											</ul>
 										</li>
 										<li>
-											The app then does processing (a list of logic and/or maths steps) on these inputs. 
+											The app then 'processes' these inputs. This means that it does some things called 'steps' based on these inputs. 
 										</li>
-										<li>Some processing steps create part of the output.</li>
-										<li>Some processing steps update to the data stored by the app. 
-											The app may store data on hard disks or in case of mobile apps, 
-											on the 'permanent memory' of the smartphone.
-										</li>											
+										<li>Some of these steps may create part of the results that we expect to see or hear from the computer (the output).</li>
+										<li>Other steps may update the data stored by the app in its 'database' ('db', permanent memory of the computer whose data is not lost even if the computer is switched off and back on again).
+										</li>
 										<li>
-											Like the input to an app, the output produced by an app is also information that may be in various forms.
+											Yet some other steps may cause a message to be sent to another computer.
 										</li>
-										<li>A particular type of input-process-output is called an 'interaction'.</li>
-									</li>										
 								</ul>
 							</ul>
 						</div>
@@ -222,17 +212,20 @@
 						
 						<div id="tabpane-helpforvendors" class="tab-pane fade">
 							<b>Instructions for Crowdsourcing Vendors</b><br>
-							This tool is part of the open source (MIT licensed) CollaboRate project. This tool is open sourced to serve as a standard
+							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
 							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
 							hosts this tool.<br>
 							Once the following are identified:
 							<ul>
 								<li>Subtask 1 of the task</li>
 								<li>Subtask 2 of the task</li>
-								<li>Logic that connects the 2 subtask</li>
+								<li>Logic that connects the 2 subtasks</li>
 							</ul>
-							...you need to create 3 data nodes for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
-							For each of these three nodes, the problem statement that was broken down using this tool is the parent node. You will further validate
+							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
+							For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
+<br>TODO
+<br>
+ You will further validate
 							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
 							generate the documentation and source code of the app.						
 						</div>
@@ -275,4 +268,4 @@
 				</div><!-- pills-tabContent -->
 			</div><!-- main-body -->		
 		</body>
-	</html>																																														
+	</html>																																											
