@@ -9,8 +9,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <title>CollaboRate - v2</title>
+		
+        <!-- Let's mention the release version in the title, and only in the title -->
+        <title>CollaboRate - v2.0</title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
@@ -54,7 +55,7 @@
 				</li>
 				<li class="nav-item" id="navitem-wbswizard">
 					<a class="nav-link active" id="tab-wbswizard" data-toggle="pill" href="#tabpane-wbswizard" role="tab" 
-					aria-controls="tabpane-wbswizard">Work Breakdown Wizard</a>	
+					aria-controls="tabpane-wbswizard">Main</a>	
 				</li>		
 			</ul>
 			<hr>
@@ -83,25 +84,27 @@
 					<hr>	
 					<div class="tab-content" id="pills-tabContent-help">
 						<div id="tabpane-overview" class="tab-pane fade show active">
-							Welcome to the the CollaboRate
-							<a target="_blank" href="https://en.wikipedia.org/wiki/Work_breakdown_structure">work breakdown</a> 
-							<a target="_blank" href="https://en.wikipedia.org/wiki/Wizard_(software)">wizard</a> v2.0.
-							This tool is part of an open source project named '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.<br>
-							One of the main goals of this project is to create opportunities to earn online by doing small, easy, fun, and 
+						<b>Overview</b><br>
+							This tool is named the 'CollaboRate 
+							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a> 
+							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. 
+							It is part of an open source project named '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.<br>
+							One of the main goals of this project is to create opportunities for anyone to earn online by doing small, easy, fun, and 
 							socially useful intellectual tasks.<br>
-							This intellectual work done is used to develop, maintain and test software apps.
+							The work done is used to develop, maintain and test software apps.
 						</div>
 						<div id="tabpane-benefits" class="tab-pane fade">
-							<b>Benefits</b><br><br>
+							<b>Benefits</b><br>
 							This tool is part of a new way of software development, that has the following benefits:
 							<ul>
 								<li>Allows people to earn money by doing online work, in an enjoyable, flexible and socially useful way.</li>
+								<li>Provides people ample time to learn the skills and industry knowledge needed to do the work.</li>
 								<li>
 									It provides a very accurate way to measure people's work.  
 									This in turn allows people to be paid in a very fair manner.
 								</li>
 								<li>								
-									 Better quality code is created that is very simple and very well documented.
+									Better quality code is created that is very simple and very well documented.
 								</li>
 								<li>
 									This way of software development allows a very large number of people to work on the same project at the 
@@ -109,18 +112,19 @@
 								</li>								
 								<li>
 									It reduces financial risks for those who need software to be developed. 
-									This is done by sharing the risk in a fair and small way with all people, including those working on the project. The risk per person becomes 
-									smaller, when there are more workers on the project.
+									This is done by sharing the risk in a fair and small way with all people, including those working on the project. 
+									The risk per person becomes smaller, when there are more workers on the project.
 								</li>
 							</ul>
 							<br><br>
 						</div>
 						<div id="tabpane-skillsneeded" class="tab-pane fade">
-							
+							<b>Skills Needed by the Online Workers</b><br>
 							As a 'crowd member' (one of the online workers) you must have the following skills:
 							<ul>								
 								<li>Able to read and write English clearly and correctly. As of now, this tool is limited to the English language.</li>
-								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. </li>
+								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. 
+									You will have ample time to learn and complete the task.</li>
 								<li>
 									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school. 
 									This is specified as follows:
@@ -139,7 +143,7 @@
 											</ul>
 										</li>
 										<li>
-											The app then 'processes' these inputs. This means that it does some things called 'steps' based on these inputs. 
+											The app then 'processes' these inputs. This means that it does a list of things called 'steps' on these inputs. 
 										</li>
 										<li>Some of these steps may create part of the results that we expect to see or hear from the computer (the output).</li>
 										<li>Other steps may update the data stored by the app in its 'database' ('db', permanent memory of the computer whose data is not lost even if the computer is switched off and back on again).
@@ -147,125 +151,196 @@
 										<li>
 											Yet some other steps may cause a message to be sent to another computer.
 										</li>
+									</ul>
 								</ul>
+							</div>
+							<div id="tabpane-theprocess" class="tab-pane fade">
+								<b>The Process</b><br><br>
+								<ul>
+									<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertize online work opportunities to the public.
+										We term these potential workers as 'crowd members'.
+									</li>
+									<li>The crowd members respond to these ads by requesting for work.
+									</li>
+									<li>Descriptions of parts of the software app being developed will be shared with the crowd members, along with a link to
+										this tool. The description given to the user is also known as a task or microtask. 
+									</li>
+									<li>Users will click on the link provided and this tool will open up in their web browsers.</li> 
+									<li>This tool asks the user a series of questions about the description that was given to the user. 
+										For most of these questions, the user has to choose the right answer from a list of possible answers. 
+										Based on your previous choice, the tool will decide the next question to ask.
+									</li> 
+									<li>The tool captures the answers provided by the user and submits them online to the website of the crowdsourcing vendor.</li>
+									<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
+										paid based on the number of micro-tasks done correctly and in time. The crowdsourcing vendor may also ask for a tiny 
+										amount of money as a security deposit from the crowd member. 										 
+										If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the 
+										payment amount per microtask, a part of this deposit may be used up.
+									</li>
+								</ul>
+							</div>		
+							<div id="tabpane-howitworks" class="tab-pane fade">
+								<b>How It Works</b><br>
+								Note: It is not necessary for the crowd members to understand the below in order for them to do their work.<br>
+								<ul>
+									<li>
+										By answering the series of questions asked by the tool, you break down (divide) the partial description of the app, 
+										into one or two more such partial descriptions of the app. Let's call the broken-down descriptions 'sub-descriptions'.
+									</li>
+									<li>
+										Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
+										these sub-descriptions along with the answers to the objective-type questions, 
+										will usually contain neither more nor less scope and information than the original description.<br> 
+										But in some cases, the descriptions will become more detailed.
+										In some other cases, a small amount of new information might need to be introduced, based on publicly available 
+										information about the industry area of the application that is being developed.<br>
+										Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
+										must contain all the needed information, such that it is not needed to refer to the parent description in order to
+										understand the sub-description. Each sub-description must also remove that part of the parent description that is 
+										not of relevance to it.<br>
+										The sub-descriptions can then be further provided to crowd members to break down, and so on.
+									</li>
+									<li>
+										The answers to some of the objective-type questions determine one of the processing steps done by the app. 
+										In this way, crowd members help to create all the processing steps (source code) of the app!
+									</li>
+									<li>
+										The 'binary' work breakdown way of working allows us to very accurately measure work done by the crowd members.
+										The current assumption is that the average effort needed to break down a task is almost the same, 
+										especially given that there is a limit imposed on the maximum number of characters of task's text.
+										So we can simply measure of the contributions of the crowd members by counting the number of microtasks that each
+										crowd member has broken down.<br>
+										Even if it is found that different tasks need different amounts of effort later on, we can refine this system of 
+										work measurement slightly. The basic system of work measurement seems likely to remain the same. 
+									</li>
+									<li>
+										Creating multiple subtasks helps to allow multiple crowd members to work on the same project in parallel, 
+										so that the project gets over quickly when a large number of crowd members are available. 
+									</li>
+									<li>
+										Creating multiple subtasks provides security for those projects that need it. 
+										Crowdsourcing vendors can ensure that each crowd member gets to work on only a small part of the project.
+										This way, no single crowd member knows the entire project design. If the project requirements are themselves 
+										confidential, then the crowdsourcing vendor can itself do the work breakdown up to some level and then 
+										crowdsource the rest of the work.
+									</li>							
+									<li>
+										To ensure the quality of the work being done by the crowd and to troubleshoot (find the cause of errors), 
+										a number of techniques can be used by the crowdsourcing vendor. These must include:
+										<ul>
+											<li>manual <a href="https://en.wikipedia.org/wiki/Acceptance_testing">acceptance testing</a> - performed by the crowdsourcing vendor and/or the end customer</li>							
+											<li><a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a> - used to troubleshoot that which work breakdown done by the crowd, is incorrect.</li>
+											<li>automation of <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> - used to reduce the manual testing efforts and errors. Both acceptance testing and unit testing can be automated.</li> 
+										</ul>
+										In additional to the above mandatory testing, crowdsourcing vendors may also ensure quality by the asking the crowd 
+										members to review each others' work (at the cost of some small loss of security). Finally the crowdsourcing vendors may use a 
+										variety of Natural Langauge Processing and other AI techniques to check the the crowd members have done the work correctly. 
+										Some such validations may be offered for free as a part of this tool.
+									</li>
+								</div>
+								
+								<div id="tabpane-helpforvendors" class="tab-pane fade">
+									<b>Instructions for Crowdsourcing Vendors</b><br>
+									This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
+									interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
+									hosts this tool.<br>
+									Once the following are identified:
+									<ul>
+										<li>Subtask 1 of the task</li>
+										<li>Subtask 2 of the task</li>
+										<li>Logic that connects the 2 subtasks</li>
+									</ul>
+									...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
+									For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
+									<br>TODO
+									<br>
+									You will further validate
+									the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
+									generate the documentation and source code of the app.
+								</div>
+							</div><!-- pills-tabContent-help -->
+						</div><!-- tabpane-help -->
+						<div id="tabpane-wbswizard" class="tab-pane fade show active">					
+							What kind of problem statement is this task?
+							<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
+								<li class="nav-item" id="navitem-appinteractions">									
+									<a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Inputs</a>
+								</li>
+								<li class="nav-item" id="navitem-step">
+									<a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Step</a>
+								</li>
 							</ul>
-						</div>
-						<div id="tabpane-theprocess" class="tab-pane fade">
-							<b>The Process</b><br><br>
-							<ul>
-								<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertize online work opportunities to the public.
-									We term these potential workers as 'crowd members'.
-								</li>
-								<li>The crowd members respond to these ads by requesting for work.
-								</li>
-								<li>Descriptions of parts of the software app being developed will be shared with the crowd members, along with a link to this tool.
-								The description given to the user is also known as a task or microtask. 
-								</li>
-								<li>Users will click on the link provided and this tool will open up in their web browsers.</li> 
-								<li>This tool asks the user a series of questions about the description that was given to the user. 
-								For most of these questions, the user has to choose the right answer from a list of possible answers. 
-								Based on your previous choice, the tool will decide the next question to ask.
-								</li> 
-								<li>The tool captures the answers provided by the user and submits them online to the website of the crowdsourcing vendor.</li>
-								<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
-								paid based on the number of micro-tasks done correctly and in time.</li>
-							</ul>
-						</div>		
-						<div id="tabpane-howitworks" class="tab-pane fade">
-							<b>How It Works</b><br>
-							<ul>
-							<li>
-							By answering the series of questions asked by the tool, you break down (divide) the partial description of the app, 
-							into one or two more such partial descriptions of the app. Let's call the broken-down descriptions 'sub-descriptions'.
-							</li>
-							<li>
-							Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
-							these sub-descriptions along with the answers to the objective-type questions, 
-							will contain neither any more or less scope and information than the original description.<br> 
-							In some cases the descriptions might need to be slighly more elaborated.
-							Or a small amount of new information might need to be introduced, based on publicly available information about the 
-							industry area of the application that is being developed.<br>
-							Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
-							must contain all the needed information, such that it is not needed to refer to the parent description in order to
-							understand the sub-description. Each sub-description must also remove that part of the parent description that is 
-							not of relevance to it.<br>
-							The sub-descriptions can then be further provided to crowd members to break down, and so on.
-							</li>
-							<li>
-							The answers to some of the objective-type questions determine one of the processing steps done by the app. 
-							In this way, crowd members help to create all the processing steps (source code) of the app!
-							</li>
-							<li>
-							The 'binary' work breakdown way of working allows us to very accurately measure work done by the crowd members.
-							The current assumption is that the average effort needed to break down a task is almost the same, 
-							especially given that there is a limit imposed on the maximum number of characters of task's text.
-							So we can simply measure of the contributions of the crowd members by counting the number of microtasks that each
-							crowd member has broken down.<br>
-							Even if it is found that different tasks need different amounts of effort later on, we can refine this system of 
-							work measurement slightly. The basic system of work measurement seems likely to remain the same. 
-							</li>
-							<li>
-							Creating multiple subtasks also helps to allow multiple crowd members to work on the same project in parallel, 
-							so that the project gets over quickly when a large number of crowd members are available.
-							</li>
-						</div>
+							<hr>
+							<div class="tab-content" id="pills-tab2Content">
+								<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
+									<h2>Inputs</h2>
+									The assigned task describes one or more types of inputs given to the app and how the app responds to those inputs.<br><br>
+									Does the assigned task describe more than one type of input?<br>
+									TODO: Create tabs for 'more than one type of input' and 'only one type of input'.
+									
+									<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
+										<li class="nav-item" id="navitem-multipleinputs">
+											<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">Multiple Types of Inputs</a>
+										</li>
+										<li class="nav-item" id="navitem-singleinput">
+											<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">Only One Type of Input</a>
+										</li>
+									</ul>
+									<hr>
+									<div class="tab-content" id="inputs-tabContent">
+										<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">
+											<b>Multiple Types of Inputs</b><br>
+										</div>
+										<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
+											<b>Only One Type of Input</b><br>
+											
+											Who provides the input: 
+											<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
+												<li class="nav-item">
+													<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+													Person, via an input device like mouse, keyboard, touchscreen
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+													An alarm set on the computer's clock
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+													Another app
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+													Devices that provide input even in absence of a person. For example, microphone, camera etc.
+													</a>
+												</li>
+											</ul>
+											<hr>
+											<div id="whoprovidestheinput-tabContent" class="tab-content">
+											
+											</div>											
+										</div>
+									</div>
+								</div><!-- tabpane-appinteractions  -->
+								<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
+									<h2>Step</h2>
+									The assigned task describes a step done by the application to process a type of input given to it. 
+									This step may be the entire processing involved for the specified input. Or, it may be a sub-step in the 
+									processing of one or more types of inputs.
+									<br>
+									<br>
+									TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
+								</div><!-- tabpane-step  -->
+							</div>
+						</div><!-- tabpane-wbswizard -->
 						
-						<div id="tabpane-helpforvendors" class="tab-pane fade">
-							<b>Instructions for Crowdsourcing Vendors</b><br>
-							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
-							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
-							hosts this tool.<br>
-							Once the following are identified:
-							<ul>
-								<li>Subtask 1 of the task</li>
-								<li>Subtask 2 of the task</li>
-								<li>Logic that connects the 2 subtasks</li>
-							</ul>
-							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
-							For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
-<br>TODO
-<br>
- You will further validate
-							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
-							generate the documentation and source code of the app.						
-						</div>
-					</div><!-- pills-tabContent-help -->
-				</div><!-- tabpane-help -->
-				<div id="tabpane-wbswizard" class="tab-pane fade show active">					
-					What kind of problem statement is this task?
-					<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
-						<li class="nav-item" id="navitem-appinteractions">
-							
-							
-							
-							<a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Interactions</a>
-						</li>
-						<li class="nav-item" id="navitem-step">
-							<a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Processing Step</a>
-						</li>
-						</ul>
-						<hr>
-						<div class="tab-content" id="pills-tab2Content">
-							<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-								<h2>App Interactions</h2>
-								The assigned task describes one or more types of application interactions.<br><br>
-								Does the assigned task describe more than one type of application interaction?<br>
-								TODO: Create tabs for 'more than one type of interaction' and 'only one type of interaction'. Latter is a 'unit use case'.
-							</div><!-- tabpane-appinteractions  -->
-							<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-								<h2>Processing Step</h2>
-								The assigned task describes a step done by the application to process a type of input given to it. 
-								This step may be the entire processing involved for the specified input. Or, it may be a sub-step in the 
-								processing of one or more types of inputs.
-								<br>
-								<br>
-								TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
-							</div><!-- tabpane-step  -->
-						</div>
-					</div><!-- tabpane-wbswizard -->
-					
-					
-				</div><!-- pills-tabContent -->
-			</div><!-- main-body -->		
-		</body>
-	</html>																																											
+						
+						</div><!-- pills-tabContent -->
+					</div><!-- main-body -->
+					<script>
+					</script>
+				</body>
+			</html>																																														
+				
