@@ -85,13 +85,13 @@
 					<div class="tab-content" id="pills-tabContent-help">
 						<div id="tabpane-overview" class="tab-pane fade show active">
 						<b>Overview</b><br>
-							This tool is named the 'CollaboRate 
+							This tool is the 'CollaboRate 
 							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a> 
-							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. 
-							It is part of an open source project named '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.<br>
+							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. It is used by online workers to do their work.
+							<br><br>
+							This tool is part of the open source project '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.
 							One of the main goals of this project is to create opportunities for anyone to earn online by doing small, easy, fun, and 
-							socially useful intellectual tasks.<br>
-							The work done is used to develop, maintain and test software apps.
+							socially useful intellectual tasks.	The work done is used to develop, maintain and test software apps.
 						</div>
 						<div id="tabpane-benefits" class="tab-pane fade">
 							<b>Benefits</b><br>
@@ -157,23 +157,28 @@
 							<div id="tabpane-theprocess" class="tab-pane fade">
 								<b>The Process</b><br><br>
 								<ul>
-									<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertize online work opportunities to the public.
+									<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertise online work opportunities to the public.
 										We term these potential workers as 'crowd members'.
 									</li>
-									<li>The crowd members respond to these ads by requesting for work.
+									<li>The crowd members register on the website of the crowdsourding vendor and then submit a request for work.
 									</li>
-									<li>Descriptions of parts of the software app being developed will be shared with the crowd members, along with a link to
-										this tool. The description given to the user is also known as a task or microtask. 
+									<li>The crowdsourcing vendor assigns some text to the crowd member that does not exceed 2000 characters. 
+										This text is a description of a part of the software app being developed . 
+										It is also known as a task or microtask. Once this text is assigned, the crowd member will receive a link to this
+										text via email, or in the appropriate section of the vendor's website that is visible once the member has logged in.
 									</li>
-									<li>Users will click on the link provided and this tool will open up in their web browsers.</li> 
-									<li>This tool asks the user a series of questions about the description that was given to the user. 
-										For most of these questions, the user has to choose the right answer from a list of possible answers. 
-										Based on your previous choice, the tool will decide the next question to ask.
+									<li>The crowd member will click on the link. 
+										This tool will then open up in the web browser of the crowd member, with the assigned description also loaded.</li> 
+									<li>This tool asks the member a series of questions about the description that was given to the member. 
+										For most of these questions, the member has to choose the right answer from a list of possible answers. 
+										Based on the previous choice made by the member, the tool will decide the next question to ask.
 									</li> 
-									<li>The tool captures the answers provided by the user and submits them online to the website of the crowdsourcing vendor.</li>
+									<li>The tool captures the answers provided by the member and submits them to the website of the crowdsourcing vendor.</li>
 									<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
-										paid based on the number of micro-tasks done correctly and in time. The crowdsourcing vendor may also ask for a tiny 
-										amount of money as a security deposit from the crowd member. 										 
+										paid based on the number of micro-tasks done correctly and in time. 
+									</li>
+									<li>
+										The crowdsourcing vendor may also ask for a tiny amount of money as a security deposit from the crowd member. 										 
 										If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the 
 										payment amount per microtask, a part of this deposit may be used up.
 									</li>
@@ -190,15 +195,22 @@
 									<li>
 										Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
 										these sub-descriptions along with the answers to the objective-type questions, 
-										will usually contain neither more nor less scope and information than the original description.<br> 
-										But in some cases, the descriptions will become more detailed.
+										will usually contain neither more nor less scope and information than the original description.
+									</li>
+									<li>
+										In some cases, the descriptions will become more detailed.
 										In some other cases, a small amount of new information might need to be introduced, based on publicly available 
-										information about the industry area of the application that is being developed.<br>
+										information about the industry area of the application that is being developed.
+									</li>
+									<li>
 										Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
 										must contain all the needed information, such that it is not needed to refer to the parent description in order to
 										understand the sub-description. Each sub-description must also remove that part of the parent description that is 
-										not of relevance to it.<br>
-										The sub-descriptions can then be further provided to crowd members to break down, and so on.
+										not of relevance to it.
+									</li>
+									<li>
+										Due to the above rules for the sub-descriptions, these sub-descriptions can be further provided to any other crowd 
+										members to break down, and so on, until it is not possible to break the sub-descriptions down any further.
 									</li>
 									<li>
 										The answers to some of the objective-type questions determine one of the processing steps done by the app. 
@@ -273,10 +285,9 @@
 							<hr>
 							<div class="tab-content" id="pills-tab2Content">
 								<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-									<h2>Inputs</h2>
+									<b>Inputs</b><br>
 									The assigned task describes one or more types of inputs given to the app and how the app responds to those inputs.<br><br>
 									Does the assigned task describe more than one type of input?<br>
-									TODO: Create tabs for 'more than one type of input' and 'only one type of input'.
 									
 									<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 										<li class="nav-item" id="navitem-multipleinputs">
@@ -319,10 +330,30 @@
 											</ul>
 											<hr>
 											<div id="whoprovidestheinput-tabContent" class="tab-content">
-											
+												<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
+													In general, the person (user of the app) interacts with a screen of the app. He/she may provide input in some 
+													input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
+													button or perform some other action to inform the computer to start processing this input.<br><br>
+													
+													Description/name of the screen on which the person provides the input:<br>
+													<input type="text"><br><br>
+													Input fields on the screen:<br>
+													<input type="text"><br><br>
+												</div>
+												<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
+												todo
+												</div>
+												<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
+												todo
+												</div>
+												<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
+													todo
+												</div>
 											</div>											
+											How does the application process this input?<br>
+												<textarea style="width:100%;padding:5px"></textarea>
 										</div>
-									</div>
+									</div>									
 								</div><!-- tabpane-appinteractions  -->
 								<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
 									<h2>Step</h2>
