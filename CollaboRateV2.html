@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/t2demo.css">
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
         
         <!-- Local css section -->
         <style type="text/css">
@@ -47,7 +48,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body style="padding:4px">		
-		
         <div id="main-body" class="container-fluid">
 			<ul class="nav nav-pills" id="pills-tablist" role="tablist">
 				<li class="nav-item" id="navitem-help">
@@ -82,9 +82,9 @@
 						</li>
 					</ul>
 					<hr>	
-					<div class="tab-content" id="pills-tabContent-help">
+					<div class="tab-content" id="tabContent-help">
 						<div id="tabpane-overview" class="tab-pane fade show active">
-						<b>Overview</b><br>
+							<b>Overview</b><br>
 							This tool is the 'CollaboRate 
 							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a> 
 							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. It is used by online workers to do their work.
@@ -124,7 +124,7 @@
 							<ul>								
 								<li>Able to read and write English clearly and correctly. As of now, this tool is limited to the English language.</li>
 								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. 
-									You will have ample time to learn and complete the task.</li>
+								You will have ample time to learn and complete the task.</li>
 								<li>
 									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school. 
 									This is specified as follows:
@@ -152,226 +152,273 @@
 											Yet some other steps may cause a message to be sent to another computer.
 										</li>
 									</ul>
-								</ul>
-							</div>
-							<div id="tabpane-theprocess" class="tab-pane fade">
-								<b>The Process</b><br><br>
-								<ul>
-									<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertise online work opportunities to the public.
-										We term these potential workers as 'crowd members'.
-									</li>
-									<li>The crowd members register on the website of the crowdsourding vendor and then submit a request for work.
-									</li>
-									<li>The crowdsourcing vendor assigns some text to the crowd member that does not exceed 2000 characters. 
-										This text is a description of a part of the software app being developed . 
-										It is also known as a task or microtask. Once this text is assigned, the crowd member will receive a link to this
-										text via email, or in the appropriate section of the vendor's website that is visible once the member has logged in.
-									</li>
-									<li>The crowd member will click on the link. 
-										This tool will then open up in the web browser of the crowd member, with the assigned description also loaded.</li> 
-									<li>This tool asks the member a series of questions about the description that was given to the member. 
-										For most of these questions, the member has to choose the right answer from a list of possible answers. 
-										Based on the previous choice made by the member, the tool will decide the next question to ask.
-									</li> 
-									<li>The tool captures the answers provided by the member and submits them to the website of the crowdsourcing vendor.</li>
-									<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
-										paid based on the number of micro-tasks done correctly and in time. 
-									</li>
-									<li>
-										The crowdsourcing vendor may also ask for a tiny amount of money as a security deposit from the crowd member. 										 
-										If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the 
-										payment amount per microtask, a part of this deposit may be used up.
-									</li>
-								</ul>
-							</div>		
-							<div id="tabpane-howitworks" class="tab-pane fade">
-								<b>How It Works</b><br>
-								Note: It is not necessary for the crowd members to understand the below in order for them to do their work.<br>
-								<ul>
-									<li>
-										By answering the series of questions asked by the tool, you break down (divide) the partial description of the app, 
-										into one or two more such partial descriptions of the app. Let's call the broken-down descriptions 'sub-descriptions'.
-									</li>
-									<li>
-										Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
-										these sub-descriptions along with the answers to the objective-type questions, 
-										will usually contain neither more nor less scope and information than the original description.
-									</li>
-									<li>
-										In some cases, the descriptions will become more detailed.
-										In some other cases, a small amount of new information might need to be introduced, based on publicly available 
-										information about the industry area of the application that is being developed.
-									</li>
-									<li>
-										Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
-										must contain all the needed information, such that it is not needed to refer to the parent description in order to
-										understand the sub-description. Each sub-description must also remove that part of the parent description that is 
-										not of relevance to it.
-									</li>
-									<li>
-										Due to the above rules for the sub-descriptions, these sub-descriptions can be further provided to any other crowd 
-										members to break down, and so on, until it is not possible to break the sub-descriptions down any further.
-									</li>
-									<li>
-										The answers to some of the objective-type questions determine one of the processing steps done by the app. 
-										In this way, crowd members help to create all the processing steps (source code) of the app!
-									</li>
-									<li>
-										The 'binary' work breakdown way of working allows us to very accurately measure work done by the crowd members.
-										The current assumption is that the average effort needed to break down a task is almost the same, 
-										especially given that there is a limit imposed on the maximum number of characters of task's text.
-										So we can simply measure of the contributions of the crowd members by counting the number of microtasks that each
-										crowd member has broken down.<br>
-										Even if it is found that different tasks need different amounts of effort later on, we can refine this system of 
-										work measurement slightly. The basic system of work measurement seems likely to remain the same. 
-									</li>
-									<li>
-										Creating multiple subtasks helps to allow multiple crowd members to work on the same project in parallel, 
-										so that the project gets over quickly when a large number of crowd members are available. 
-									</li>
-									<li>
-										Creating multiple subtasks provides security for those projects that need it. 
-										Crowdsourcing vendors can ensure that each crowd member gets to work on only a small part of the project.
-										This way, no single crowd member knows the entire project design. If the project requirements are themselves 
-										confidential, then the crowdsourcing vendor can itself do the work breakdown up to some level and then 
-										crowdsource the rest of the work.
-									</li>							
-									<li>
-										To ensure the quality of the work being done by the crowd and to troubleshoot (find the cause of errors), 
-										a number of techniques can be used by the crowdsourcing vendor. These must include:
-										<ul>
-											<li>manual <a href="https://en.wikipedia.org/wiki/Acceptance_testing">acceptance testing</a> - performed by the crowdsourcing vendor and/or the end customer</li>							
-											<li><a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a> - used to troubleshoot that which work breakdown done by the crowd, is incorrect.</li>
-											<li>automation of <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> - used to reduce the manual testing efforts and errors. Both acceptance testing and unit testing can be automated.</li> 
-										</ul>
-										In additional to the above mandatory testing, crowdsourcing vendors may also ensure quality by the asking the crowd 
-										members to review each others' work (at the cost of some small loss of security). Finally the crowdsourcing vendors may use a 
-										variety of Natural Langauge Processing and other AI techniques to check the the crowd members have done the work correctly. 
-										Some such validations may be offered for free as a part of this tool.
-									</li>
-								</div>
-								
-								<div id="tabpane-helpforvendors" class="tab-pane fade">
-									<b>Instructions for Crowdsourcing Vendors</b><br>
-									This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
-									interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
-									hosts this tool.<br>
-									Once the following are identified:
-									<ul>
-										<li>Subtask 1 of the task</li>
-										<li>Subtask 2 of the task</li>
-										<li>Logic that connects the 2 subtasks</li>
-									</ul>
-									...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
-									For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
-									<br>TODO
-									<br>
-									You will further validate
-									the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
-									generate the documentation and source code of the app.
-								</div>
-							</div><!-- pills-tabContent-help -->
-						</div><!-- tabpane-help -->
-						<div id="tabpane-wbswizard" class="tab-pane fade show active">					
-							What kind of problem statement is this task?
-							<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
-								<li class="nav-item" id="navitem-appinteractions">									
-									<a class="nav-link" id="tab3" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Inputs</a>
-								</li>
-								<li class="nav-item" id="navitem-step">
-									<a class="nav-link" id="tab2" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Step</a>
 								</li>
 							</ul>
-							<hr>
-							<div class="tab-content" id="pills-tab2Content">
-								<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-									<b>Inputs</b><br>
-									The assigned task describes one or more types of inputs given to the app and how the app responds to those inputs.<br><br>
-									Does the assigned task describe more than one type of input?<br>
-									
-									<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
-										<li class="nav-item" id="navitem-multipleinputs">
-											<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">Multiple Types of Inputs</a>
-										</li>
-										<li class="nav-item" id="navitem-singleinput">
-											<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">Only One Type of Input</a>
-										</li>
+						</div>
+						<div id="tabpane-theprocess" class="tab-pane fade">
+							<b>The Process</b><br><br>
+							<ul>
+								<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertise online work opportunities to the public.
+									We term these potential workers as 'crowd members'.
+								</li>
+								<li>The crowd members register on the website of the crowdsourding vendor and then submit a request for work.
+								</li>
+								<li>The crowdsourcing vendor assigns some text to the crowd member that does not exceed 2000 characters. 
+									This text is a description of a part of the software app being developed . 
+									It is also known as a task or microtask. Once this text is assigned, the crowd member will receive a link to this
+									text via email, or in the appropriate section of the vendor's website that is visible once the member has logged in.
+								</li>
+								<li>The crowd member will click on the link. 
+								This tool will then open up in the web browser of the crowd member, with the assigned description also loaded.</li> 
+								<li>This tool asks the member a series of questions about the description that was given to the member. 
+									For most of these questions, the member has to choose the right answer from a list of possible answers. 
+									Based on the previous choice made by the member, the tool will decide the next question to ask.
+								</li> 
+								<li>The tool captures the answers provided by the member and submits them to the website of the crowdsourcing vendor.</li>
+								<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
+									paid based on the number of micro-tasks done correctly and in time. 
+								</li>
+								<li>
+									The crowdsourcing vendor may also ask for a tiny amount of money as a security deposit from the crowd member. 										 
+									If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the 
+									payment amount per microtask, a part of this deposit may be used up.
+								</li>
+							</ul>
+						</div>		
+						<div id="tabpane-howitworks" class="tab-pane fade">
+							<b>How It Works</b><br>
+							Note: It is not necessary for the crowd members to understand the below in order for them to do their work.<br>
+							<ul>
+								<li>
+									By answering the series of questions asked by the tool, you break down (divide) the partial description of the app, 
+									into one or two more such partial descriptions of the app. Let's call the broken-down descriptions 'sub-descriptions'.
+								</li>
+								<li>
+									Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
+									these sub-descriptions along with the answers to the objective-type questions, 
+									will usually contain neither more nor less scope and information than the original description.
+								</li>
+								<li>
+									In some cases, the descriptions will become more detailed.
+									In some other cases, a small amount of new information might need to be introduced, based on publicly available 
+									information about the industry area of the application that is being developed.
+								</li>
+								<li>
+									Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
+									must contain all the needed information, such that it is not needed to refer to the parent description in order to
+									understand the sub-description. Each sub-description must also remove that part of the parent description that is 
+									not of relevance to it.
+								</li>
+								<li>
+									Due to the above rules for the sub-descriptions, these sub-descriptions can be further provided to any other crowd 
+									members to break down, and so on, until it is not possible to break the sub-descriptions down any further.
+								</li>
+								<li>
+									The answers to some of the objective-type questions determine one of the processing steps done by the app. 
+									In this way, crowd members help to create all the processing steps (source code) of the app!
+								</li>
+								<li>
+									The 'binary' work breakdown way of working allows us to very accurately measure work done by the crowd members.
+									The current assumption is that the average effort needed to break down a task is almost the same, 
+									especially given that there is a limit imposed on the maximum number of characters of task's text.
+									So we can simply measure of the contributions of the crowd members by counting the number of microtasks that each
+									crowd member has broken down.<br>
+									Even if it is found that different tasks need different amounts of effort later on, we can refine this system of 
+									work measurement slightly. The basic system of work measurement seems likely to remain the same. 
+								</li>
+								<li>
+									Creating multiple subtasks helps to allow multiple crowd members to work on the same project in parallel, 
+									so that the project gets over quickly when a large number of crowd members are available. 
+								</li>
+								<li>
+									Creating multiple subtasks provides security for those projects that need it. 
+									Crowdsourcing vendors can ensure that each crowd member gets to work on only a small part of the project.
+									This way, no single crowd member knows the entire project design. If the project requirements are themselves 
+									confidential, then the crowdsourcing vendor can itself do the work breakdown up to some level and then 
+									crowdsource the rest of the work.
+								</li>							
+								<li>
+									To ensure the quality of the work being done by the crowd and to troubleshoot (find the cause of errors), 
+									a number of techniques can be used by the crowdsourcing vendor. These must include:
+									<ul>
+										<li>manual <a href="https://en.wikipedia.org/wiki/Acceptance_testing">acceptance testing</a> - performed by the crowdsourcing vendor and/or the end customer</li>							
+										<li><a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a> - used to troubleshoot that which work breakdown done by the crowd, is incorrect.</li>
+										<li>automation of <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> - used to reduce the manual testing efforts and errors. Both acceptance testing and unit testing can be automated.</li> 
 									</ul>
-									<hr>
-									<div class="tab-content" id="inputs-tabContent">
-										<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">
-											<b>Multiple Types of Inputs</b><br>
-										</div>
-										<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
-											<b>Only One Type of Input</b><br>
-											
-											Who provides the input: 
-											<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
-												<li class="nav-item">
-													<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
-													Person, via an input device like mouse, keyboard, touchscreen
-													</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
-													An alarm set on the computer's clock
-													</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
-													Another app
-													</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
-													Devices that provide input even in absence of a person. For example, microphone, camera etc.
-													</a>
-												</li>
-											</ul>
-											<hr>
-											<div id="whoprovidestheinput-tabContent" class="tab-content">
-												<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
-													In general, the person (user of the app) interacts with a screen of the app. He/she may provide input in some 
-													input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
-													button or perform some other action to inform the computer to start processing this input.<br><br>
-													
-													Description/name of the screen on which the person provides the input:<br>
-													<input type="text"><br><br>
-													Input fields on the screen:<br>
-													<input type="text"><br><br>
-												</div>
-												<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
-												todo
-												</div>
-												<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
-												todo
-												</div>
-												<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
-													todo
-												</div>
-											</div>											
-											How does the application process this input?<br>
-												<textarea style="width:100%;padding:5px"></textarea>
-										</div>
-									</div>									
-								</div><!-- tabpane-appinteractions  -->
-								<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-									<h2>Step</h2>
-									The assigned task describes a step done by the application to process a type of input given to it. 
-									This step may be the entire processing involved for the specified input. Or, it may be a sub-step in the 
-									processing of one or more types of inputs.
-									<br>
-									<br>
-									TODO: This is nothing but a function definition. Ask the questions over here related to breakdown of the function.
-								</div><!-- tabpane-step  -->
+									In additional to the above mandatory testing, crowdsourcing vendors may also ensure quality by the asking the crowd 
+									members to review each others' work (at the cost of some small loss of security). Finally the crowdsourcing vendors may use a 
+									variety of Natural Langauge Processing and other AI techniques to check the the crowd members have done the work correctly. 
+									Some such validations may be offered for free as a part of this tool.
+								</li>
+							</ul>
+						</div>
+						
+						<div id="tabpane-helpforvendors" class="tab-pane fade">
+							<b>Instructions for Crowdsourcing Vendors</b><br>
+							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
+							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
+							hosts this tool.<br>
+							Once the following are identified:
+							<ul>
+								<li>Subtask 1 of the task</li>
+								<li>Subtask 2 of the task</li>
+								<li>Logic that connects the 2 subtasks</li>
+							</ul>
+							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
+							For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
+							<br>TODO
+							<br>
+							You will further validate
+							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
+							generate the documentation and source code of the app.
+						</div><!-- tabpane-helpforvendors -->
+					</div><!-- tabContent-help -->
+				</div><!-- tabpane-help -->
+				<div id="tabpane-wbswizard" class="tab-pane fade show active">					
+					What kind of problem statement is this text?
+					<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
+						<li class="nav-item" id="navitem-appinteractions">									
+							<a class="nav-link" id="tab-appinteractions" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Inputs</a>
+						</li>
+						<li class="nav-item" id="navitem-step">
+							<a class="nav-link" id="tab-step" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Step</a>
+						</li>
+					</ul>
+					<hr>
+					<div class="tab-content" id="wbswizard-tabContent">
+						<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
+							<b>The text describes one or more types of inputs given to the app, and how the app responds to those inputs.</b><br><br>
+							Does the assigned task describe more than one type of input?<br>
+							
+							<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
+								<li class="nav-item" id="navitem-multipleinputs">
+								<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">Multiple Types of Inputs</a>
+							</li>
+							<li class="nav-item" id="navitem-singleinput">
+								<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">Only One Type of Input</a>
+							</li>
+						</ul>
+						<hr>
+						<div class="tab-content" id="inputs-tabContent">
+							<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">
+								<b>The text describes more than one type of input given to the app, and how the app responds to those inputs.</b><br><br>
+								Since the text describes more than one type of input, this text can be broken down into two 
+								independent texts. One of the texts will describe some of the input(s) and how the app responds to them.
+								The other text will describe the remaining input(s) and how the app responds to them.<br><br>
+								
+								Text1:<br>
+								<textarea style="width:100%;padding:5px"></textarea><br><br>
+								
+								Text2:<br>
+								<textarea  style="width:100%;padding:5px"></textarea><br><br>
+								
+								<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
 							</div>
-						</div><!-- tabpane-wbswizard -->
+							<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
+								<b>The text describes only one type of input given to the app, and how the app responds to this input.</b><br><br>
+								
+								Who provides the input? 
+								<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
+									<li class="nav-item">
+										<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+											Person, via an input device like mouse, keyboard, touchscreen
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+											An alarm set on the computer's clock
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+											Another app
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+											Devices that provide input even in absence of a person. For example, microphone, camera etc.
+										</a>
+									</li>
+								</ul>
+								<hr>
+								<div id="whoprovidestheinput-tabContent" class="tab-content">
+									<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
+										<b>The text describes only one type of input to the application, provided by a person. It also
+										describes how the application processes this input.</b><br><br>
+										The person (user of the app) interacts with a screen of the app. He/she may provide input in some 
+										input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
+										button or perform some other action to inform the computer to start processing this input.<br><br>
+										
+										Description/name of the screen on which the person provides the input:<br>
+										<input type="text" style="width:100%"><br><br>
+										Input fields on the screen that must be considered as a part of this overall input:<br>
+										<input type="text" style="width:100%"><br><br>
+									</div>
+									<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
+										todo
+									</div>
+									<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
+										todo
+									</div>
+									<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
+										todo
+									</div>
+								</div>											
+								How does the application process this input?<br>
+								<textarea style="width:100%;padding:5px"></textarea><br><br>
+								
+								<button type="button" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+							</div>
+						</div>									
+					</div><!-- tabpane-appinteractions  -->
+					<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
+						<b>
+						The text to break down, describes a step done by the application to process a type of input given to it.</b><br><br>
 						
-						
-						</div><!-- pills-tabContent -->
-					</div><!-- main-body -->
-					<script>
-					</script>
-				</body>
-			</html>																																														
-				
+						This step may be the entire processing involved for the specified input. Or, it may be a sub-step in the 
+						processing of one or more types of inputs.
+						<br>
+						<br>
+						How best can this processing step be broken down?
+						<ul id="step-tablist" class="nav nav-pills" role="tablist" >
+							<li class="nav-item" id="navitem-seq">
+								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">A Sequence of Smaller Steps</a>
+							</li>
+							<li class="nav-item" id="navitem-if">
+								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">Conditional Step(s)
+								</a>
+							</li>
+							<li class="nav-item" id="navitem-loop">
+								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">Repeated Step
+								</a>
+							</li>
+							<li class="nav-item" id="navitem-builtin">
+								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">A basic computer step, that cannot be broken down
+								</a>
+							</li>
+						</ul>
+						<hr>
+					</div><!-- tabpane-step  -->
+				</div><!-- wbswizard-tabcontent -->
+			</div><!-- tabpane-wbswizard -->	
+		</div><!-- pills-tabContent -->
+	</div><!-- main-body -->					
+	<script>					
+		
+		let wfc = location.search.slice(1) //without first character									
+		let params = new URLSearchParams(wfc);					
+		if(params.has("isstep"))
+		{
+			if(params.get("isstep")=="true")
+			{							
+				$("#tab-step").click()				
+			}
+			else
+			{
+				$("#tab-appinteractions").click()				
+			}
+		}
+		
+	</script>
+</body>
+</html>																																														
