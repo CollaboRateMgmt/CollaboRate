@@ -121,12 +121,12 @@
 							<br><br>
 						</div>
 						<div id="tabpane-skillsneeded" class="tab-pane fade">
-							<b>Skills Needed by the Online Workers</b><br>
+							<b>Skills Needed by Online Workers</b><br>
 							As a 'crowd member' (one of the online workers) you must have the following skills:
 							<ul>								
-								<li>Able to read and write English clearly and correctly. As of now, this tool is limited to the English language.</li>
+								<li>Able to read and write English. As of now, this tool is limited to the English language.</li>
 								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. 
-								You will have ample time to learn and complete the task.</li>
+								(You will be given ample time to learn and complete the task.)</li>
 								<li>
 									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school. 
 									This is specified as follows:
@@ -136,7 +136,8 @@
 											Examples of apps are Microsoft Word, Excel, Powerpoint, apps installed on smartphones, etc.
 										</li>
 										<li>
-											An app accepts various types of inputs (information). Inputs may be provided by:
+											An app accepts various types of inputs (information).
+											Inputs may be provided by:
 											<ul>
 												<li>a person (user of the app) via electronic machines called 'input devices'. Examples of such input devices are keyboard, mouse, touchscreen etc.</li> 
 												<li>an alarm set on the computer's clock</li>
@@ -145,13 +146,19 @@
 											</ul>
 										</li>
 										<li>
-											The app then 'processes' these inputs. This means that it does a list of things called 'steps' on these inputs. 
+											The app then 'processes' these inputs. 
+											This means that the app does a list of things called 'steps' on these inputs. 
+											The app may behave differently, based on different types of inputs provided to it.
 										</li>
 										<li>Some of these steps may create part of the results that we expect to see or hear from the computer (the output).</li>
-										<li>Other steps may update the data stored by the app in its 'database' ('db', permanent memory of the computer whose data is not lost even if the computer is switched off and back on again).
+										<li>Other steps may update the data (information) remembered by the app.
+										</li>
+										<li>Some other steps may check the information remembered by the app, or the inputs given 
+										to the app and then do further steps differently depending on the information/inputs.
 										</li>
 										<li>
-											Yet some other steps may cause a message to be sent to another computer.
+											Yet some other steps may cause a message to be sent to another app. 
+											The two apps may be connected together over the internet.
 										</li>
 									</ul>
 								</li>
@@ -277,36 +284,40 @@
 					</div><!-- tabContent-help -->
 				</div><!-- tabpane-help -->
 				<div id="tabpane-wbswizard" class="tab-pane fade show active">					
-					What kind of problem statement is this text?
+					What kind of problem statement is this text? Select one of the following choices:
 					<ul class="nav nav-pills" id="pills-tablist2" role="tablist">
 						<li class="nav-item" id="navitem-appinteractions">									
-							<a class="nav-link" id="tab-appinteractions" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">Inputs</a>
+							<a class="nav-link" id="tab-appinteractions" data-toggle="pill" href="#tabpane-appinteractions" role="tab" aria-controls="tabpane-appinteractions">
+							The text describes one or more types of information given to the app, and what the app does when it gets this information.</a>
 						</li>
 						<li class="nav-item" id="navitem-step">
-							<a class="nav-link" id="tab-step" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">Step</a>
+							<a class="nav-link" id="tab-step" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">
+							The text describes something that the app does, by using information that is either in its memory or is  from previously given inputs.
+							</a>
 						</li>
 					</ul>
 					<hr>
 					<div class="tab-content" id="wbswizard-tabContent">
 						<div id="tabpane-appinteractions" class="tab-pane fade" role="tabpanel">
-							<b>The text describes one or more types of inputs given to the app, and how the app responds to those inputs.</b><br><br>
-							Does the assigned task describe more than one type of input?<br>
-							
+							Does the text describe more than one type of information? Select from one of the following 
+							choices:<br>							
 							<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 								<li class="nav-item" id="navitem-multipleinputs">
-								<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">Multiple Types of Inputs</a>
+								<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The text describes more than one type of information 
+								given to the app, and what the app does after each different type of information is given to it.</a>
 							</li>
 							<li class="nav-item" id="navitem-singleinput">
-								<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">Only One Type of Input</a>
+								<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
+								The text describes only one type of information 
+								given to the app, and what the app does after this information is given to it.</a>
 							</li>
 						</ul>
 						<hr>
 						<div class="tab-content" id="inputs-tabContent">
-							<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">
-								<b>The text describes more than one type of input given to the app, and how the app responds to those inputs.</b><br><br>
-								Since the text describes more than one type of input, this text can be broken down into two 
-								independent texts. One of the texts will describe some of the input(s) and how the app responds to them.
-								The other text will describe the remaining input(s) and how the app responds to them.<br><br>
+							<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
+								Since the text describes more than one type of info, this text can be broken down into two 
+								independent texts. One of the texts will describe some of the information type(s) and how the app responds to them.
+								The other text will describe the remaining information types(s) and how the app responds to them.<br><br>
 								
 								Text1:<br>
 								<textarea style="width:100%;padding:5px"></textarea><br><br>
@@ -317,9 +328,7 @@
 								<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
 							</div>
 							<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
-								<b>The text describes only one type of input given to the app, and how the app responds to this input.</b><br><br>
-								
-								Who provides the input? 
+								Who provides the information? 
 								<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
 									<li class="nav-item">
 										<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
@@ -338,14 +347,14 @@
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
-											Devices that provide input even in absence of a person. For example, microphone, camera etc.
+											Devices that provide info even in absence of a person. For example, microphone, camera etc.
 										</a>
 									</li>
 								</ul>
 								<hr>
 								<div id="whoprovidestheinput-tabContent" class="tab-content">
 									<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
-										<b>The text describes only one type of input to the application, provided by a person. It also
+										<b>The text describes only one type of info given to the application, provided by a person. It also
 										describes how the application processes this input.</b><br><br>
 										The person (user of the app) interacts with a screen of the app. He/she may provide input in some 
 										input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
@@ -366,40 +375,98 @@
 										todo
 									</div>
 								</div>											
-								How does the application process this input?<br>
+								What does the application do once this type of input has been given?<br>
 								<textarea style="width:100%;padding:5px"></textarea><br><br>
 								
 								<button type="button" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
 							</div>
 						</div>									
 					</div><!-- tabpane-appinteractions  -->
-					<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
-						<b>
-						The text to break down, describes a step done by the application to process a type of input given to it.</b><br><br>
-						
-						This step may be the entire processing involved for the specified input. Or, it may be a sub-step in the 
-						processing of one or more types of inputs.
-						<br>
-						<br>
-						How best can this processing step be broken down?
+					<div id="tabpane-step" class="tab-pane fade" role="tabpanel">						
+						How best can the text be broken down into 2 texts (named 'Text1' and 'Text2')? Select one of the choices below:
 						<ul id="step-tablist" class="nav nav-pills" role="tablist" >
+							<li class="nav-item" id="navitem-precondition">
+								<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+								Assume something was done earlier and describe that in 'Text1'. 
+								Based on that, provide more details of what the app does now, in 'Text2'.
+								</a>
+							</li>
 							<li class="nav-item" id="navitem-seq">
-								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">A Sequence of Smaller Steps</a>
+								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">Do something (Text1), then do something else (Text2). 
+								</a>
 							</li>
 							<li class="nav-item" id="navitem-if">
-								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">Conditional Step(s)
+								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">Check some text memory or input whose value can either be 'yes' or 'no' 
+								(Describe that memory or input in Text1). 
+								If the text memory or input has value 'yes', then do the actions specified by Text2.
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-loop">
-								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">Repeated Step
+								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">Describe some text memory or input that can either be 'yes' or 'no' in Text1. 
+								While this memory or input has value 'yes', keep doing the things described in Text2.
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-builtin">
-								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">A basic computer step, that cannot be broken down
+								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">The text describes that the app does something basic, that cannot be broken down.
 								</a>
 							</li>
 						</ul>
 						<hr>
+						<div id="step-tabcontent" class="tab-content">
+						<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
+													
+								Text1:<br>
+							<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+							Text2:<br>
+											
+							<textarea  style="width:100%;padding:5px"></textarea><br><br>
+
+							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+							
+						</div>
+						<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
+																			
+														Text1:<br>
+							<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+							Text2:<br>
+											
+							<textarea  style="width:100%;padding:5px"></textarea><br><br>
+
+							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+							
+						</div>
+						<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
+																			
+														Text1:<br>
+							<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+							Text2:<br>
+											
+							<textarea  style="width:100%;padding:5px"></textarea><br><br>
+
+							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+							
+						</div>
+						<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">								
+																			
+														Text1:<br>
+							<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+							Text2:<br>
+											
+							<textarea  style="width:100%;padding:5px"></textarea><br><br>
+
+							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+							
+						</div>
+						<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">								
+																			
+														Text1:<br>
+							Aha! The end is in sight...
+						</div>
+						</div>
 					</div><!-- tabpane-step  -->
 				</div><!-- wbswizard-tabcontent -->
 			</div><!-- tabpane-wbswizard -->	
@@ -423,4 +490,4 @@
 		
 	</script>
 </body>
-</html>																																														
+</html>
