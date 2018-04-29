@@ -387,27 +387,27 @@
 						<ul id="step-tablist" class="nav nav-pills" role="tablist" >
 							<li class="nav-item" id="navitem-precondition">
 								<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
-								Assume something was done earlier and describe that in 'Text1'. 
-								Based on that, provide more details of what the app does now, in 'Text2'.
+								<b>TEXT1=BACKGROUND, TEXT2=DETAIL:</b> Describe something that should have been done earlier, in Text1. 
+								Based on that, provide more details of what the app does now, in Text2.
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-seq">
-								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">Do something (Text1), then do something else (Text2). 
+								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq"><b>FIRST DO TEXT1, THEN DO TEXT2:</b> Do something described in Text1, then do something else that is described in Text2. 
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-if">
-								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">Check some text memory or input whose value can either be 'yes' or 'no' 
-								(Describe that memory or input in Text1). 
-								If the text memory or input has value 'yes', then do the actions specified by Text2.
+								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if"><b>IF TEXT1 IS 'yes', THEN DO TEXT2:</b> Check some text memory or information given, whose value can either be 'yes' or 'no'. 
+								Describe what that text means and how it gets its value, in Text1. 
+								If that text has value 'yes', then do the things described in Text2.
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-loop">
-								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">Describe some text memory or input that can either be 'yes' or 'no' in Text1. 
-								While this memory or input has value 'yes', keep doing the things described in Text2.
+								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop"><b>WHILE TEXT1 is 'yes', KEEP DOING TEXT2:</b> There is some text memory or information given, whose value can either be 'yes' or 'no'. Describe what that text means and how it gets its value, in Text1. 
+								While this text has value 'yes', keep doing the things described in Text2.
 								</a>
 							</li>
 							<li class="nav-item" id="navitem-builtin">
-								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">The text describes that the app does something basic, that cannot be broken down.
+								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin"><b>VERY SMALL ACTION</b>: The text describes that the app does something basic, that cannot be broken down.
 								</a>
 							</li>
 						</ul>
