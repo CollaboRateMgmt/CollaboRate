@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		        
+		
         <title>CollaboRate - widget page for the 'CollaboRate Work Breakdown Wizard Tool'HTML widget</title>
 	</head>
 	<body style="padding:4px">
@@ -154,7 +154,7 @@
 										<li>Other steps may update the data (information) remembered by the app.
 										</li>
 										<li>Some other steps may check the information remembered by the app, or the inputs given 
-										to the app and then do further steps differently depending on the information/inputs.
+											to the app and then do further steps differently depending on the information/inputs.
 										</li>
 										<li>
 											Yet some other steps may cause a message to be sent to another app. 
@@ -264,9 +264,18 @@
 						
 						<div id="tabpane-helpforvendors" class="tab-pane fade">
 							<b>Instructions for Crowdsourcing Vendors</b><br>
-							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. This tool is open sourced to serve as a standard
+							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. 
+							This tool is open sourced to serve as a standard
 							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
-							hosts this tool.<br>
+							hosts this tool. You can include this tool like an html widget into your html page as follows:<br><br>
+							Put the following in the &lt;head&gt; section of your html page:<br>							
+							&lt;script src=&quot;https://collaboratemgmt.github.io/CollaboRate/collaborate_single_widget.js&quot;&gt;&lt;/script&gt;
+							<br><br>
+							Put the following in the &lt;body&gt; section of your html page:<br><br>							
+							&lt;script&gt;
+							loadwidget(&quot;https://collaboratemgmt.github.io/CollaboRate/CollaboRateV2.html&quot;)
+							&lt;/script&gt;
+							<br><br>
 							Once the following are identified:
 							<ul>
 								<li>Subtask 1 of the task</li>
@@ -274,8 +283,9 @@
 								<li>Logic that connects the 2 subtasks</li>
 							</ul>
 							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
-							For each of these three data values, the problem statement that was broken down using this tool is the parent. The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
-							<br>TODO
+							For each of these three data values, the problem statement that was broken down using this tool is called the 'parent. 
+							The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
+							<br>
 							<br>
 							You will further validate
 							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
@@ -292,7 +302,7 @@
 						</li>
 						<li class="nav-item" id="navitem-step">
 							<a class="nav-link" id="tab-step" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">
-							The text describes something that the app does, by using information that is either in its memory or is  from previously given inputs.
+								The text describes something that the app does using information in its memory or inputs.
 							</a>
 						</li>
 					</ul>
@@ -303,192 +313,290 @@
 							choices:<br>							
 							<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 								<li class="nav-item" id="navitem-multipleinputs">
-								<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The text describes more than one type of information 
-								given to the app, and what the app does after each different type of information is given to it.</a>
-							</li>
-							<li class="nav-item" id="navitem-singleinput">
-								<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
-								The text describes only one type of information 
-								given to the app, and what the app does after this information is given to it.</a>
-							</li>
-						</ul>
-						<hr>
-						<div class="tab-content" id="inputs-tabContent">
-							<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
-								Since the text describes more than one type of info, this text can be broken down into two 
-								independent texts. One of the texts will describe some of the information type(s) and how the app responds to them.
-								The other text will describe the remaining information types(s) and how the app responds to them.<br><br>
-								
-								Text1:<br>
-								<textarea style="width:100%;padding:5px"></textarea><br><br>
-								
-								Text2:<br>
-								<textarea  style="width:100%;padding:5px"></textarea><br><br>
-								
-								<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The text describes more than one type of information 
+									given to the app, and what the app does after each different type of information is given to it.</a>
+								</li>
+								<li class="nav-item" id="navitem-singleinput">
+									<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
+										The text describes only one type of information 
+									given to the app, and what the app does after this information is given to it.</a>
+								</li>
+							</ul>
+							<hr>
+							<div class="tab-content" id="inputs-tabContent">
+								<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
+									Since the text describes more than one type of info, this text can be broken down into two 
+									independent texts. One of the texts will describe some of the information type(s) and how the app responds to them.
+									The other text will describe the remaining information types(s) and how the app responds to them.<br><br>
+									
+									Text1:<br>
+									<textarea id="interactions1" style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									<textarea id="interactions2" style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button id="submitbreakdowninto2setsofinteractions" type="button"  class="btn btn-dark btn-lg btn-block">
+										Submit Work Breakdown
+									</button>
+								</div>
+								<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
+									Who provides the information? 
+									<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
+										<li class="nav-item">
+											<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+												Person, via an input device like mouse, keyboard, touchscreen
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+												An alarm set on the computer's clock
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+												Another app
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+												Devices that provide info even in absence of a person. For example, microphone, camera etc.
+											</a>
+										</li>
+									</ul>
+									<hr>
+									<div id="whoprovidestheinput-tabContent" class="tab-content">
+										<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
+											<b>The text describes only one type of info given to the application, provided by a person. It also
+											describes how the application processes this input.</b><br><br>
+											The person (user of the app) interacts with a screen of the app. He/she may provide input in some 
+											input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
+											button or perform some other action to inform the computer to start processing this input.<br><br>
+											
+											Description/name of the screen on which the person provides the input:<br>
+											<input type="text" style="width:100%"><br><br>
+											Input fields on the screen that must be considered as a part of this overall input:<br>
+											<input type="text" style="width:100%"><br><br>
+										</div>
+										<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
+											todo
+										</div>
+										<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
+											todo
+										</div>
+										<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
+											todo
+										</div>
+									</div>											
+									What does the application do once this type of input has been given?<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button id="submitbreakdownintoinputANDprocessing" type="button" class="btn btn-dark btn-lg btn-block">
+										Submit Work Breakdown
+									</button>
+								</div>
+							</div>									
+						</div><!-- tabpane-appinteractions  -->
+						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">						
+							How best can the text be broken down into 2 texts (named 'Text1' and 'Text2')? Select one of the choices below:
+							<ul id="step-tablist" class="nav nav-pills" role="tablist" >
+								<li class="nav-item" id="navitem-precondition">
+									<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+										<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier. 
+										Based on that, in Text2, provide more details of what the app does now.
+									</a>
+								</li>
+								<li class="nav-item" id="navitem-seq">
+									<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq"><b>FIRST DO TEXT1, THEN DO TEXT2:</b> Describe in Text1 some things to do, then  describe in Text2 the remaining things to do. 
+									</a>
+								</li>
+								<li class="nav-item" id="navitem-if">
+									<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if"><b>IF TEXT1 IS 'yes', THEN DO TEXT2:</b> Check some text memory or information given, whose value can either be 'yes' or 'no'. 
+										In Text1, describe what that text memory/info given means and how it gets its value.
+										In Text2, describe what to do if that text memory/info given has value 'yes'.
+									</a>
+								</li>
+								<li class="nav-item" id="navitem-loop">
+									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop"><b>WHILE TEXT1 is 'yes', KEEP DOING TEXT2:</b> There is some text memory, whose value can either be 'yes' or 'no'. In Text1, describe what 
+										that text memory means and how it gets its value. 
+										In Text2, describe what to keep doing repeatedly while Text1 has value 'yes' at the start of a repetition.
+									</a>
+								</li>
+								<li class="nav-item" id="navitem-iterateoverlist">
+									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist"><b>FOR EACH INFO IN LIST TEXT1, KEEP DOING TEXT2:</b> 
+									There is some memory, that is a list of information. In Text1, describe what 
+										that list means and how it gets its value. 
+										In Text2, describe what to keep doing repeatedly for each piece of information in the list.
+									</a>
+								</li>
+								<li class="nav-item" id="navitem-builtin">
+									<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin"><b>VERY SMALL ACTION</b>: 
+									The text describes that the app does something basic, that cannot be broken down into multiple things to do. 
+									Or, you have used this tool before and you know that though the thing to do is not basic, this tool 
+									allows you to directly choose this thing to do.
+									</a>
+								</li>
+							</ul>
+							<hr>
+							<div id="step-tabcontent" class="tab-content">
+								<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
+									
+									Text1:<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									
+									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									
+								</div>
+								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
+									
+									Text1:<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									
+									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
+										Submit Work Breakdown
+									</button>
+									
+								</div>
+								<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
+									
+									Text1:<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									
+									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
+										Submit Work Breakdown
+									</button>
+									
+								</div>
+								<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">								
+									
+									Text1:<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									
+									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button type="button" id="submitbreakdownintorepeatconditionANDactiontorepeat" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									
+								</div>
+								<div id="tabpane-iterateoverlist" class="tab-pane fade" role="tabpanel">								
+									
+									Text1:<br>
+									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									
+									Text2:<br>
+									
+									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									
+									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									
+								</div>
+								<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
+									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
+									<ul id="basicstep-tablist" class="nav nav-pills" role="tablist" >
+										<li class="nav-item" id="navitem-precondition">
+											<a class="nav-link" id="tab-calc" data-toggle="pill" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+												Calculates something (can be mathematical, text, yes/no-logic-based or list-based), and makes a note of the result.
+											</a>
+										</li>
+										<li class="nav-item" id="navitem-output">
+											<a class="nav-link" id="tab-output" data-toggle="pill" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
+												Sends information to a place outside the app.
+											</a>
+										</li>
+									</ul>
+									<hr>					
+									<div id="builtin-tabcontent" class="tab-content">
+										<div id="tabpane-calc" class="tab-pane fade" role="tabpanel">
+											Describe what is being calculated and why?<br>
+											<textarea style="width:100%"></textarea><br><br>
+											What is the type of the calculated information? Select from the choices below:
+											<ul id="typeofinfocalculated-tablist" class="nav nav-pills" role="tablist">
+												<li class="nav-item" id="navitem-calculatedtypeistext">
+													<a id="tab-calculatedtypeistext" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeistext" 
+													aria-controls="tabpane-calculatedtypeistext">
+														Text
+													</a>
+												</li>
+												<li class="nav-item" id="navitem-calculatedtypeisbool">
+													<a id="tab-calculatedtypeisbool" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeisbool" 
+													aria-controls="tabpane-calculatedtypeisbool">
+														Text that can only be 'yes' or 'no'
+													</a>
+												</li>
+												<li class="nav-item" id="navitem-calculatedtypeisnum">
+													<a id="tab-calculatedtypeisnum" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeisnum"
+													aria-controls="tabpane-calculatedtypeisnum">
+														Number
+													</a>
+												</li>
+												<li class="nav-item" id="navitem-calculatedtypeislist">
+													<a id="tab-calculatedtypeislist" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeislist"
+													aria-controls="tabpane-calculatetypeislist">
+														List
+													</a>
+												</li>
+											</ul>
+											<hr>
+											<div id="builtin-caculatedtabcontent" class="tab-content">
+												<div id="tabpane-calculatedtypeistext" class="tab-pane fade" role="tabpanel">
+													TODO: Show user options in non-tech language, for string functions like concatenation, search, replace, leftof, rightof,
+													uppercase, lowercase, substring, etc. etc. MAYBE we will provide regex also!!!! 
+												</div>
+												<div id="tabpane-calculatedtypeisbool" class="tab-pane fade" role="tabpanel">
+													TODO: Show user options in non-tech language, for boolean functions like and, or, not etc. 
+												</div>
+												<div id="tabpane-calculatedtypeisnum" class="tab-pane fade" role="tabpanel">
+													TODO: Show user options in non-tech language, for numeric functions like string length, mathematical functions 
+													(add, multiply, subtract, divide, log, exponent, trigonometric, modulo, round etc.)
+												</div>
+												<div id="tabpane-calculatedtypeislist" class="tab-pane fade" role="tabpanel">
+													TODO: Show user options in non-tech language, for list functions such as insert, delete, append, sort, search, replace,
+													duplicate removal etc.
+													Note that map is basically also a type of list. So we will have some options to insert, 
+													search and delete list elements by specifying the key.
+												</div>
+											</div>
+										</div>
+										<div id="tabpane-output" class="tab-pane fade" role="tabpanel">
+											To do: Allow the user to choose the specific type of output - video, audio, spoken text, written text,
+											information sent to another app etc.
+										</div>
+									</div>
+								</div><!-- tabpane-builtin -->
 							</div>
-							<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
-								Who provides the information? 
-								<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
-									<li class="nav-item">
-										<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
-											Person, via an input device like mouse, keyboard, touchscreen
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
-											An alarm set on the computer's clock
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
-											Another app
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
-											Devices that provide info even in absence of a person. For example, microphone, camera etc.
-										</a>
-									</li>
-								</ul>
-								<hr>
-								<div id="whoprovidestheinput-tabContent" class="tab-content">
-									<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
-										<b>The text describes only one type of info given to the application, provided by a person. It also
-										describes how the application processes this input.</b><br><br>
-										The person (user of the app) interacts with a screen of the app. He/she may provide input in some 
-										input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
-										button or perform some other action to inform the computer to start processing this input.<br><br>
-										
-										Description/name of the screen on which the person provides the input:<br>
-										<input type="text" style="width:100%"><br><br>
-										Input fields on the screen that must be considered as a part of this overall input:<br>
-										<input type="text" style="width:100%"><br><br>
-									</div>
-									<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
-										todo
-									</div>
-									<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
-										todo
-									</div>
-									<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
-										todo
-									</div>
-								</div>											
-								What does the application do once this type of input has been given?<br>
-								<textarea style="width:100%;padding:5px"></textarea><br><br>
-								
-								<button type="button" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-							</div>
-						</div>									
-					</div><!-- tabpane-appinteractions  -->
-					<div id="tabpane-step" class="tab-pane fade" role="tabpanel">						
-						How best can the text be broken down into 2 texts (named 'Text1' and 'Text2')? Select one of the choices below:
-						<ul id="step-tablist" class="nav nav-pills" role="tablist" >
-							<li class="nav-item" id="navitem-precondition">
-								<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
-								<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier. 
-								Based on that, in Text2, provide more details of what the app does now.
-								</a>
-							</li>
-							<li class="nav-item" id="navitem-seq">
-								<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq"><b>FIRST DO TEXT1, THEN DO TEXT2:</b> Described in Text1 something to do, then  describe in Text2 something else to do. 
-								</a>
-							</li>
-							<li class="nav-item" id="navitem-if">
-								<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if"><b>IF TEXT1 IS 'yes', THEN DO TEXT2:</b> Check some text memory or information given, whose value can either be 'yes' or 'no'. 
-								In Text1, describe what that text memory/info given means and how it gets its value.
-								In Text2, describe what to do if that text memory/info given has value 'yes'.
-								</a>
-							</li>
-							<li class="nav-item" id="navitem-loop">
-								<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop"><b>WHILE TEXT1 is 'yes', KEEP DOING TEXT2:</b> There is some text memory, whose value can either be 'yes' or 'no'. In Text1, describe what 
-								that text memory/info given means and how it gets its value. 
-								In Text2, describe what to keep doing repeatedly while the text memory has value 'yes'.
-								</a>
-							</li>
-							<li class="nav-item" id="navitem-builtin">
-								<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin"><b>VERY SMALL ACTION</b>: The text describes that the app does something basic, that cannot be broken down.
-								</a>
-							</li>
-						</ul>
-						<hr>
-						<div id="step-tabcontent" class="tab-content">
-						<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
-													
-								Text1:<br>
-							<textarea style="width:100%;padding:5px"></textarea><br><br>
-
-							Text2:<br>
-											
-							<textarea  style="width:100%;padding:5px"></textarea><br><br>
-
-							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-							
-						</div>
-						<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
-																			
-														Text1:<br>
-							<textarea style="width:100%;padding:5px"></textarea><br><br>
-
-							Text2:<br>
-											
-							<textarea  style="width:100%;padding:5px"></textarea><br><br>
-
-							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-							
-						</div>
-						<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
-																			
-														Text1:<br>
-							<textarea style="width:100%;padding:5px"></textarea><br><br>
-
-							Text2:<br>
-											
-							<textarea  style="width:100%;padding:5px"></textarea><br><br>
-
-							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-							
-						</div>
-						<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">								
-																			
-														Text1:<br>
-							<textarea style="width:100%;padding:5px"></textarea><br><br>
-
-							Text2:<br>
-											
-							<textarea  style="width:100%;padding:5px"></textarea><br><br>
-
-							<button type="button"  class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-							
-						</div>
-						<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">								
-																			
-														Text1:<br>
-							Aha! The end is in sight...
-						</div>
-						</div>
-					</div><!-- tabpane-step  -->
-				</div><!-- wbswizard-tabcontent -->
-			</div><!-- tabpane-wbswizard -->	
-		</div><!-- pills-tabContent -->
-	</div><!-- main-body -->					
-	<script>					
-		
-		let wfc = location.search.slice(1) //without first character									
-		let params = new URLSearchParams(wfc);					
-		if(params.has("isstep"))
-		{
-			if(params.get("isstep")=="true")
-			{							
-				$("#tab-step").click()				
-			}
-			else
+						</div><!-- tabpane-step  -->
+					</div><!-- wbswizard-tabcontent -->
+				</div><!-- tabpane-wbswizard -->	
+			</div><!-- pills-tabContent -->
+		</div><!-- main-body -->					
+		<script>					
+			
+			let wfc = location.search.slice(1) //without first character									
+			let params = new URLSearchParams(wfc);					
+			if(params.has("isstep"))
 			{
-				$("#tab-appinteractions").click()				
+				if(params.get("isstep")=="true")
+				{							
+					$("#tab-step").click()				
+				}
+				else
+				{
+					$("#tab-appinteractions").click()				
+				}
 			}
-		}
-		
-	</script>
-</body>
-</html>
+			
+		</script>
+	</body>
+</html>						
