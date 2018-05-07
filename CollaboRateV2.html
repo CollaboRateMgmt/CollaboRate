@@ -302,7 +302,7 @@
 						</li>
 						<li class="nav-item" id="navitem-step">
 							<a class="nav-link" id="tab-step" data-toggle="pill" href="#tabpane-step" role="tab" aria-controls="tabpane-step">
-								The text describes something that the app does using information in its memory or inputs.
+								The text describes something that the app does using information given to it, or that is in its memory.
 							</a>
 						</li>
 					</ul>
@@ -397,50 +397,49 @@
 							</div>									
 						</div><!-- tabpane-appinteractions  -->
 						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">						
-							How best can the text be broken down into 2 texts (named 'Text1' and 'Text2')? Select one of the choices below:
+							How best can the text be broken down into 2 or more texts? Select one of the choices below:
 							<ul id="step-tablist" class="nav nav-pills" role="tablist" >
+								<!--
 								<li class="nav-item" id="navitem-precondition">
 									<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
 										<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier. 
 										Based on that, in Text2, provide more details of what the app does now.
 									</a>
 								</li>
+								-->
 								<li class="nav-item" id="navitem-seq">
-									<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq"><b>FIRST DO TEXT1, THEN DO TEXT2:</b> Describe in Text1 some things to do, then  describe in Text2 the remaining things to do. 
+									<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
+										Do some things <b>first</b>, others <b>later</b>
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-if">
-									<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if"><b>IF TEXT1 IS 'yes', THEN DO TEXT2:</b> Check some text memory or information given, whose value can either be 'yes' or 'no'. 
-										In Text1, describe what that text memory/info given means and how it gets its value.
-										In Text2, describe what to do if that text memory/info given has value 'yes'.
+									<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
+									<b>Check</b> some memory or information given and do things accordingly 										
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-loop">
-									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop"><b>WHILE TEXT1 is 'yes', KEEP DOING TEXT2:</b> There is some text memory, whose value can either be 'yes' or 'no'. In Text1, describe what 
-										that text memory means and how it gets its value. 
-										In Text2, describe what to keep doing repeatedly while Text1 has value 'yes' at the start of a repetition.
+									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
+									<b>While</b> some memory is 'yes', <b>repeat</b> something
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-iterateoverlist">
-									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist"><b>FOR EACH INFO IN LIST TEXT1, KEEP DOING TEXT2:</b> 
-									There is some memory, that is a list of information. In Text1, describe what 
-										that list means and how it gets its value. 
-										In Text2, describe what to keep doing repeatedly for each piece of information in the list.
+									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">									
+									<b>For each item in a list</b>, do something
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-builtin">
-									<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin"><b>VERY SMALL ACTION</b>: 
-									The text describes that the app does something basic, that cannot be broken down into multiple things to do. 
-									Or, you have used this tool before and you know that though the thing to do is not basic, this tool 
-									allows you to directly choose this thing to do.
+									<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
+									The text describes a <b>basic action</b> that cannot be broken down into multiple things to do, or something that you know this tool 
+									allows you to <b>directly choose</b>.
 									</a>
 								</li>
 							</ul>
 							<hr>
 							<div id="step-tabcontent" class="tab-content">
+								<!--
 								<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
 									
-									Text1:<br>
+									Describe something that should have been done earlier, so that :<br>
 									<textarea style="width:100%;padding:5px"></textarea><br><br>
 									
 									Text2:<br>
@@ -450,14 +449,14 @@
 									<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
 									
 								</div>
+								-->
 								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
 									
-									Text1:<br>
-									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									Describe the things that should be done first:<br>
+									<textarea id="thingsthatsholdbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Text2:<br>
-									
-									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									Describe the things that should be done later:<br>									
+									<textarea id="thingsthatsholdbedonelater" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown
@@ -466,12 +465,14 @@
 								</div>
 								<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
 									
-									Text1:<br>
-									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									Describe the memory or information given, whose value can only be either 'yes' or 'no' and that the app has to check:<br>
+									<textarea id="ifcond" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Text2:<br>
+									Describe what to do if the above-mentioned memory/info given has value 'yes':<br>										
+									<textarea id="thenpart" style="width:100%;padding:5px"></textarea><br><br>
 									
-									<textarea  style="width:100%;padding:5px"></textarea><br><br>
+									Describe what to do if the above-mentioned memore/info given has value 'no'. If nothing needs to be done, leave this textbox blank:<br>
+									<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown
@@ -480,36 +481,40 @@
 								</div>
 								<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">								
 									
-									Text1:<br>
-									<textarea style="width:100%;padding:5px"></textarea><br><br>
+									Describe the information to check, that can have value only either 'yes' or 'no':<br>
+									<textarea id="whilecond" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Text2:<br>
+									Describe what to do repeatedly, until the above information when checked after a repetition, has value 'no':<br>
+									<textarea id="parttodoinsidewhileloop"  style="width:100%;padding:5px"></textarea><br><br>
 									
-									<textarea  style="width:100%;padding:5px"></textarea><br><br>
-									
-									<button type="button" id="submitbreakdownintorepeatconditionANDactiontorepeat" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									<button type="button" id="submitbreakdownintowhileloop" class="btn btn-dark btn-lg btn-block">
+										Submit Work Breakdown
+									</button>
 									
 								</div>
 								<div id="tabpane-iterateoverlist" class="tab-pane fade" role="tabpanel">								
 									
-									Text1:<br>
+									Describe the list of information that is in memory or is part of the information given to the app:<br>
 									<textarea style="width:100%;padding:5px"></textarea><br><br>
 									
-									Text2:<br>
-									
+									Describe what to do for each item in the list:<br>									
 									<textarea  style="width:100%;padding:5px"></textarea><br><br>
 									
-									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
-									
+									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>									
 								</div>
 								<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
 									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
 									<ul id="basicstep-tablist" class="nav nav-pills" role="tablist" >
-										<li class="nav-item" id="navitem-precondition">
-											<a class="nav-link" id="tab-calc" data-toggle="pill" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
-												Calculates something (can be mathematical, text, yes/no-logic-based or list-based), and makes a note of the result.
+										<li class="nav-item" id="navitem-readwriteattr">
+											<a class="nav-link" id="tab-readwriteattr" data-toggle="pill" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
+											Reads, adds or changes part of some information in memory.
 											</a>
 										</li>
+										<li class="nav-item" id="navitem-precondition">
+											<a class="nav-link" id="tab-calc" data-toggle="pill" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+												Calculates something and stores the result in memory.
+											</a>
+										</li>										
 										<li class="nav-item" id="navitem-output">
 											<a class="nav-link" id="tab-output" data-toggle="pill" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
 												Sends information to a place outside the app.
@@ -532,7 +537,7 @@
 												<li class="nav-item" id="navitem-calculatedtypeisbool">
 													<a id="tab-calculatedtypeisbool" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeisbool" 
 													aria-controls="tabpane-calculatedtypeisbool">
-														Text that can only be 'yes' or 'no'
+														Information whose value can only be either 'yes' or 'no'
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisnum">
@@ -566,6 +571,52 @@
 													duplicate removal etc.
 													Note that map is basically also a type of list. So we will have some options to insert, 
 													search and delete list elements by specifying the key.
+												</div>
+											</div>
+										</div>
+										<div id="tabpane-readwriteattr" class="tab-pane fade" role="tabpanel">											
+											Select one of the two options below:
+											<ul id="readwriteattr-tablist" class="nav nav-pills" role="tablist">
+												<li class="nav-item" id="navitem-writeattr">
+													<a class="nav-link" id="tab-readattr" data-toggle="pill" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
+														The given text adds a new part or changes an existing part, of some information in memory.
+													</a>												
+												</li>
+												<li class="nav-item" id="navitem-readattr">
+													<a class="nav-link" id="tab-writeattr" data-toggle="pill" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
+														The given text reads part of some information in memory, and makes a new copy in memory of this information.
+													</a>												
+												</li>
+											</ul>
+											<hr>
+											<div id="readwriteattr-tabcontent" class="tab-content">
+												<div id="tabpane-readattr" class="tab-pane fade" role="tabpanel">
+													Describe the information in memory, whose part is being read:<br>
+													<textarea style="width:100%"></textarea><br><br>
+											
+													Describe the part that is being read:<br>
+													<textarea style="width:100%"></textarea><br><br>
+													
+													Describe the new piece of information in memory, that will store the copy:<br>
+													<textarea style="width:100%"></textarea><br><br>
+													
+													<button id="submitbreakdownintoreadattr" type="button"  class="btn btn-dark btn-lg btn-block">
+													Submit Work Breakdown
+													</button>
+												</div>
+												<div id="tabpane-writeattr" class="tab-pane fade" role="tabpanel">												
+													Describe the information in memory, whose part is being added or changed:<br>
+													<textarea style="width:100%"></textarea><br><br>
+											
+													Describe the part that is being added or changed:<br>
+													<textarea style="width:100%"></textarea><br><br>
+											
+													Describe the new information being stored in the part:<br>
+													<textarea style="width:100%"></textarea><br><br>
+													
+													<button id="submitbreakdownintowriteattr" type="button"  class="btn btn-dark btn-lg btn-block">
+													Submit Work Breakdown
+													</button>													
 												</div>
 											</div>
 										</div>
