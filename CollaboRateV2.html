@@ -324,7 +324,7 @@
 							Text2:<br>
 							<textarea id="interactions2" style="width:100%;padding:5px"></textarea><br><br>
 							
-							<button id="submitbreakdowninto2setsofinteractions" type="button"  class="btn btn-dark btn-lg btn-block">
+							<button id="submitbreakdowninto2setsofinteractions" type="button"  class="btn btn-dark btn-lg btn-block" onclick="onWbsToolUsageCompleted(this)">
 								Submit Work Breakdown
 							</button>
 						</div>
@@ -640,6 +640,11 @@
 				{
 					$("#tab-appinteractions").click()				
 				}
+			}
+			
+			function onWbsToolUsageCompleted(button)
+			{
+				alert("onWbsToolUsageCompleted: button text='"+button.text+"'")
 			}
 			
 		</script>
