@@ -26,6 +26,7 @@
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
+		<script src="https://sohrabsaran.github.io/jsutil/util.js"></script>
         
         <!-- Local css section -->
         <style type="text/css">
@@ -644,8 +645,36 @@
 			
 			function onWbsToolUsageCompleted(button)
 			{
-				alert("onWbsToolUsageCompleted: button text='"+button.text+"'")
+				//Find the path to this button and the input elements if any.
+				//Compose the SML string based on the above-mentioned
+				var el=button
+				//alert(tagPath(el))
+				runWithAlertOnException
+				(
+					{
+						fn:	function()
+							{
+								a(smlPath(el,""))
+							},
+						exceptionMsgPrefix: ''
+					}
+				)				
 			}
+			
+			function smlPath(el,textSoFar)
+			{
+				let s = textSoFar
+				var tabEl = tabTextEleForTabThatContains(el)
+				if(tabEl != null)
+				{
+					s= "BEGIN "+tabEl.innerText+"\n" + s + 
+					 "\nEND "+tabEl.innerText+"\n"				
+					s+=	smlPath(tabEl,s)
+				}
+				return s
+			}
+						
+			
 			
 		</script>
 	</body>
