@@ -303,8 +303,9 @@
 					Select from one of the following choices:<br>							
 					<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 						<li class="nav-item" id="navitem-multipleinputs">
-							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The text describes more than one type of information 
-							given to the app. Each type of information is given at a different time. The app does something different for each different type of information is given to it.</a>
+							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The app description describes more than one type of information
+							or command given to the app, that can be given in any order.
+							</a>
 						</li>
 						<li class="nav-item" id="navitem-singleinput">
 							<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
@@ -667,8 +668,11 @@
 				var tabEl = tabTextEleForTabThatContains(el)
 				if(tabEl != null)
 				{
-					s= "BEGIN "+tabEl.innerText+"\n" + s + 
-					 "\nEND "+tabEl.innerText+"\n"				
+					var tabText = tabEl.innerText
+					if(tabText == 'Main'){tabText = "App Description Breakdown"}
+					s= "BEGIN "+tabText+"\n" + 
+						s + 
+					 "\nEND "+tabText+"\n"				
 					s=	smlPath(tabEl,s)
 				}
 				return s
