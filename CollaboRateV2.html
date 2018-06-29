@@ -27,7 +27,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
 		<script src="https://sohrabsaran.github.io/jsutil/util.js"></script>
-        
+		<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
         <!-- Local css section -->
         <style>
             
@@ -304,7 +304,7 @@
 					<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 						<li class="nav-item" id="navitem-multipleinputs">
 							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The app description describes more than one type of information
-							or command given to the app, that can be given in any order.
+							or command given to the app, that are independent of each other.
 							</a>
 						</li>
 						<li class="nav-item" id="navitem-singleinput">
@@ -316,18 +316,23 @@
 					<hr>
 					<div class="tab-content" id="inputs-tabContent">
 						<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
-							Since the text describes more than one type of info, this text can be broken down into two 
-							independent texts. One of the texts will describe some of the information type(s) and how the app responds to them.
-							The other text will describe the remaining information types(s) and how the app responds to them.<br><br>
+							Since the app description describes more than one type of independent info or commands accepted by the app, it can be broken down into the descriptions of two independent sub-apps. 
+							Each sub-app will handle different halves of the info/commands accepted by the original app.
+														
+							<br><br>
 							
-							Text1:<br>
+							<div id="interactions1desc">
+							Description of the first sub-app, describing the first half of the info/commands accepted by the original app:
+							</div>
 							<textarea id="interactions1" style="width:100%;padding:5px"></textarea><br><br>
 							
-							Text2:<br>
+							<div id="interactions2desc">
+							Description of the second sub-app, describing the second half of the info/commands accepted by the original app:
+							</div>
 							<textarea id="interactions2" style="width:100%;padding:5px"></textarea><br><br>
 							
 							<button id="submitbreakdowninto2setsofinteractions" type="button"  class="btn btn-dark btn-lg btn-block" onclick="onWbsToolUsageCompleted(this)">
-								Submit Work Breakdown
+								Submit Work Breakdown (Copy SML to clipboard)
 							</button>
 						</div>
 						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
@@ -380,7 +385,7 @@
 									
 									<textarea  style="width:100%;padding:5px"></textarea><br><br>
 									
-									<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>
+									<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown (Copy SML to clipboard)</button>
 									
 									</div>
 								-->
@@ -393,7 +398,7 @@
 									<textarea id="thingsthatsholdbedonelater" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
-										Submit Work Breakdown
+										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
 									
 								</div>
@@ -409,7 +414,7 @@
 									<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
-										Submit Work Breakdown
+										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
 									
 								</div>
@@ -422,7 +427,7 @@
 									<textarea id="parttodoinsidewhileloop"  style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintowhileloop" class="btn btn-dark btn-lg btn-block">
-										Submit Work Breakdown
+										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
 									
 								</div>
@@ -434,7 +439,7 @@
 									Describe what to do for each item in the list:<br>									
 									<textarea  style="width:100%;padding:5px"></textarea><br><br>
 									
-									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown</button>									
+									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown (Copy SML to clipboard)</button>									
 								</div>
 								<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
 									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
@@ -535,7 +540,7 @@
 													<textarea style="width:100%"></textarea><br><br>
 													
 													<button id="submitbreakdownintoreadattr" type="button"  class="btn btn-dark btn-lg btn-block">
-														Submit Work Breakdown
+														Submit Work Breakdown (Copy SML to clipboard)
 													</button>
 												</div>
 												<div id="tabpane-writeattr" class="tab-pane fade" role="tabpanel">												
@@ -549,7 +554,7 @@
 													<textarea style="width:100%"></textarea><br><br>
 													
 													<button id="submitbreakdownintowriteattr" type="button"  class="btn btn-dark btn-lg btn-block">
-														Submit Work Breakdown
+														Submit Work Breakdown (Copy SML to clipboard)
 													</button>													
 												</div>
 											</div>
@@ -655,11 +660,25 @@
 					{
 						fn:	function()
 							{
-								a(smlPath(el,""))
+								let interactions1desc = getel('interactions1desc').innerText								
+								let interactions2desc = getel('interactions2desc').innerText								
+								let s2 = createSmlTagString(interactions1desc, getel('interactions1').value) + "\n" +
+								createSmlTagString(interactions2desc, getel('interactions2').value)
+								//swal(smlPath(el, s2))//swal = sweetalert
+								copyToClipboard(smlPath(el, s2))
+								alert('check your clipboard!!!')
 							},
 						exceptionMsgPrefix: ''
 					}
 				)				
+			}
+			
+			function createSmlTagString(tagname, tagvalue)
+			{
+				tagname = "'"+tagname.replaceAll('\n',' ').trim()+"'"
+				return "BEGIN "+tagname+"\n" + 
+					tagvalue + 
+				 "\nEND "+tagname+"\n"				
 			}
 			
 			function smlPath(el,textSoFar)
@@ -669,15 +688,17 @@
 				if(tabEl != null)
 				{
 					var tabText = tabEl.innerText
-					if(tabText == 'Main'){tabText = "App Description Breakdown"}
-					s= "BEGIN "+tabText+"\n" + 
-						s + 
-					 "\nEND "+tabText+"\n"				
+					if(tabText == 'Main')
+					{
+						tabText = "App Description Breakdown"
+						let appdesc = createSmlTagString('App Description', getel('appdesc').value)						
+						s=appdesc+s
+					}					
+					s= createSmlTagString(tabText, s)				
 					s=	smlPath(tabEl,s)
 				}
 				return s
 			}
-						
 			
 			
 		</script>
