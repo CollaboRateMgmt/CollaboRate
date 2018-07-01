@@ -659,18 +659,34 @@
 				(
 					{
 						fn:	function()
-							{
-								let interactions1desc = getel('interactions1desc').innerText								
-								let interactions2desc = getel('interactions2desc').innerText								
-								let s2 = createSmlTagString(interactions1desc, getel('interactions1').value) + "\n" +
-								createSmlTagString(interactions2desc, getel('interactions2').value)
-								//swal(smlPath(el, s2))//swal = sweetalert
+							{						
+								let s2 = createSmlTagStringFromTextareas(['interactions1','interactions2'])							
 								copyToClipboard(smlPath(el, s2))
 								alert('check your clipboard!!!')
 							},
 						exceptionMsgPrefix: ''
 					}
 				)				
+			}
+			
+			function createSmlTagStringFromTextarea(textareaId)
+			{
+				var textareaDescId = textareaId+"desc"
+				var textareaDesc = getel(textareaDescId).innerText
+				return createSmlTagString(textareaDesc, getel(textareaId).value)
+			}
+			
+			function createSmlTagStringFromTextareas(textareaIds)
+			{
+				var s = ""
+				textareaIds.forEach
+				(
+					function(textareaId)
+					{
+						s+= createSmlTagStringFromTextarea(textareaId) + "\n"
+					}
+				)
+				return s
 			}
 			
 			function createSmlTagString(tagname, tagvalue)
