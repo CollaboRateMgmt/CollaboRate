@@ -16,6 +16,8 @@
         <title>CollaboRate - widget page for the 'CollaboRate Work Breakdown Wizard Tool'HTML widget</title>
 	</head>
 	<body style="padding:4px">
+		<!--<button type="button" onclick="alert('pass')">basic js test</button>
+		<br>-->
 		<!--widget start-->
 		<!--widget release version: 2.0 -->
 		
@@ -298,45 +300,42 @@
 					</div><!-- tabContent-help -->
 				</div><!-- tabpane-help -->
 				<div id="tabpane-wbswizardmain" class="tab-pane fade show active">
-					Description of the App:<br>
+					<div id="appdescdesc">Description of the app, that has to be broken into 2 or more parts:</div>
 					<textarea id="appdesc" style="width:100%;padding:5px"></textarea><br><br>
 					Select from one of the following choices:<br>							
 					<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
 						<li class="nav-item" id="navitem-multipleinputs">
-							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">The app description describes more than one type of information
-							or command given to the app, that are independent of each other.
+							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">
+							The app's description shows that more than one type of command is accepted by the app.
 							</a>
 						</li>
 						<li class="nav-item" id="navitem-singleinput">
 							<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
-								The text describes only one type of information 
-							given to the app, and what the app does after this information is given to it.</a>
+								The app's description shows that only one type of command is accepted by the app. (The information accepted along with the
+								command can be different each time the command is given.)
+							</a>
 						</li>
 					</ul>
 					<hr>
 					<div class="tab-content" id="inputs-tabContent">
 						<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
-							Since the app description describes more than one type of independent info or commands accepted by the app, it can be broken down into the descriptions of two independent sub-apps. 
-							Each sub-app will handle different halves of the info/commands accepted by the original app.
-														
+							Since the app description shows that more than one type of command is accepted by the app, it can be broken into two different halves of these sets of commands.
+							The number of commands in each half need not be equal.
+							
 							<br><br>
 							
-							<div id="interactions1desc">
-							Description of the first sub-app, describing the first half of the info/commands accepted by the original app:
-							</div>
+							Describe <span id="interactions1desc">the first half of the set of commands accepted by the app:</span>
 							<textarea id="interactions1" style="width:100%;padding:5px"></textarea><br><br>
 							
-							<div id="interactions2desc">
-							Description of the second sub-app, describing the second half of the info/commands accepted by the original app:
-							</div>
-							<textarea id="interactions2" style="width:100%;padding:5px"></textarea><br><br>
+							Describe <span id="interactions2desc">the second half of the set of commands accepted by the app:</span>
+							<textarea id="interactions2" style="width:100%;pa4dding:5px"></textarea><br><br>
 							
-							<button id="submitbreakdowninto2setsofinteractions" type="button"  class="btn btn-dark btn-lg btn-block" onclick="onWbsToolUsageCompleted(this)">
+							<button id="submitbreakdowninto2setsofinteractions" type="button" class="btn btn-dark btn-lg btn-block">
 								Submit Work Breakdown (Copy SML to clipboard)
 							</button>
 						</div>
 						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
-							How best can the text be broken down into 2 or more texts? Select one of the choices below:
+							How can the description of this command be broken into 2-3 sub-commands? Select one of the following choices:
 							<ul id="step-tablist" class="nav nav-pills" role="tablist" >
 								<!--
 									<li class="nav-item" id="navitem-precondition">
@@ -368,7 +367,7 @@
 								</li>
 								<li class="nav-item" id="navitem-builtin">
 									<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
-										The text describes a <b>basic action</b> that cannot be broken down into multiple things to do, or something that you know this tool 
+										The text describes a <b>basic command</b> that cannot be further broken down, or is something that this tool 
 										allows you to <b>directly choose</b>.
 									</a>
 								</li>
@@ -391,11 +390,11 @@
 								-->
 								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
 									
-									Describe the things that should be done first:<br>
-									<textarea id="thingsthatsholdbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
+									Describe the <span id="thingsthatshouldbedonefirstdesc">things that should be done first:</span>
+									<textarea id="thingsthatshouldbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Describe the things that should be done later:<br>									
-									<textarea id="thingsthatsholdbedonelater" style="width:100%;padding:5px"></textarea><br><br>
+									Describe the <span id="thingsthatshouldbedonelaterdesc">things that should be done later:</span>									
+									<textarea id="thingsthatshouldbedonelater" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown (Copy SML to clipboard)
@@ -404,13 +403,13 @@
 								</div>
 								<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
 									
-									Describe the memory or information given, whose value can only be either 'yes' or 'no' and that the app has to check:<br>
+									Describe the <span id="ifconddesc">memory or information given, whose value can only be either 'yes' or 'no' and that the app has to check:</span>
 									<textarea id="ifcond" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Describe what to do if the above-mentioned memory/info given has value 'yes':<br>										
+									Describe <span id="thenpartdesc">what to do if the above-mentioned memory/info given has value 'yes':</span>
 									<textarea id="thenpart" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Describe what to do if the above-mentioned memore/info given has value 'no'. If nothing needs to be done, leave this textbox blank:<br>
+									(Optional) Describe <span id="elsepartdesc">what to do if the above-mentioned memory/info given has value 'no':</span>
 									<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
@@ -633,8 +632,7 @@
 				</div><!-- tabpane-wbswizardmain -->	
 			</div><!-- pills-tabContent -->
 		</div><!-- main-body -->					
-		<script>					
-			
+		<script>			
 			let wfc = location.search.slice(1) //without first character									
 			let params = new URLSearchParams(wfc);					
 			if(params.has("isstep"))
@@ -657,58 +655,94 @@
 				//alert(tagPath(el))
 				runWithAlertOnException
 				(
-					{
-						fn:	function()
-							{						
-								let s2 = createSmlTagStringFromTextareas(['interactions1','interactions2'])							
-								copyToClipboard(smlPath(el, s2))
-								alert('check your clipboard!!!')
-							},
-						exceptionMsgPrefix: ''
-					}
-				)				
+				{
+					fn:	function()
+					{							
+						copyToClipboard(smlPath(el, ''))
+						alert('check your clipboard!!!')
+					},
+					exceptionMsgPrefix: ''
+				}
+				)
+			}
+			
+			function getContainerTabPane(o)
+			{
+				return getNearestAncestorWhoseTagNameAndClassNameIs
+				({el:o,tagName:'div',className:'tab-pane'})
 			}
 			
 			function createSmlTagStringFromTextarea(textareaId)
 			{
 				var textareaDescId = textareaId+"desc"
-				var textareaDesc = getel(textareaDescId).innerText
+				let textareaDescEl = getel(textareaDescId)				
+				var textareaDesc = textareaDescEl.innerText
 				return createSmlTagString(textareaDesc, getel(textareaId).value)
 			}
-			
+						
 			function createSmlTagStringFromTextareas(textareaIds)
 			{
 				var s = ""
 				textareaIds.forEach
 				(
-					function(textareaId)
-					{
-						s+= createSmlTagStringFromTextarea(textareaId) + "\n"
-					}
+				function(textareaId)
+				{
+					s+= createSmlTagStringFromTextarea(textareaId) + "\n"
+				}
 				)
 				return s
 			}
 			
-			function createSmlTagString(tagname, tagvalue)
+			//To go into util.js
+			function capitalizeFirstLetter(string) 
 			{
-				tagname = "'"+tagname.replaceAll('\n',' ').trim()+"'"
-				return "BEGIN "+tagname+"\n" + 
-					tagvalue + 
-				 "\nEND "+tagname+"\n"				
+				return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+			
+			//To go into sml.js
+			function createSmlTagString(tagName, tagValue)
+			{
+				tagName = capitalizeFirstLetter(tagName)
+				tagName = "'"+tagName.replaceAll('\n',' ').trim()
+				if(tagName.endsWith(":") || tagName.endsWith(".")){tagName = tagName.substr(0,tagName.length-1)}
+				tagName+="'"
+				return "BEGIN "+tagName+"\n" + 
+				tagValue + 
+				"\nEND "+tagName+"\n"				
 			}
 			
 			function smlPath(el,textSoFar)
 			{
+				//a('el.id='+el.id)
 				let s = textSoFar
+				let tabPane=getContainerTabPane(el)
+				if(tabPane != null)
+				{
+					a('tabPane.id='+tabPane.id)
+					let textareas=tabPane.getElementsByTagName('textarea')
+					textareas=Array.from(textareas)
+					a('textareas.length='+textareas.length)
+				
+					//filter out those textareas that don't have the tab pane as their parent node
+					let textareas2 = []
+					textareas.forEach(function(el){if(el.parentNode === tabPane){textareas2.push(el)}})
+					textareas = textareas2
+				
+					let textareaIds=textareas.map(function(el){return el.id})
+					a("textareaIds='"+str(textareaIds)+"'")
+					let s2 = createSmlTagStringFromTextareas(textareaIds)//['interactions1','interactions2'])
+					s=s2+'\n'+s
+				}
+				
 				var tabEl = tabTextEleForTabThatContains(el)
 				if(tabEl != null)
 				{
 					var tabText = tabEl.innerText
 					if(tabText == 'Main')
 					{
-						tabText = "App Description Breakdown"
-						let appdesc = createSmlTagString('App Description', getel('appdesc').value)						
-						s=appdesc+s
+						tabText = "Breakdown of an App's Description"
+						//let appdesc = createSmlTagString('App Description', getel('appdesc').value)						
+						//s=appdesc+s
 					}					
 					s= createSmlTagString(tabText, s)				
 					s=	smlPath(tabEl,s)
@@ -716,7 +750,18 @@
 				return s
 			}
 			
+			let buttons = document.getElementsByTagName('button')
+			buttons = Array.from(buttons)			
+			buttons.forEach
+			(
+				function(button)
+				{
+					if(button.innerHTML.trim() != 'Submit Work Breakdown (Copy SML to clipboard)')
+					{return}					
+					button.addEventListener("click",function(){onWbsToolUsageCompleted(button)})
+				}
+			)
 			
 		</script>
 	</body>
-</html>						
+</html>
