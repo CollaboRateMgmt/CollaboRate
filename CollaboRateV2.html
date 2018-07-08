@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
         <!-- TODO: push the css into this or else reference a common CollaboRate css file  -->
-        <link rel="stylesheet" href="css/t2demo.css">
+        <!-- <link rel="stylesheet" href="css/t2demo.css"> -->
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
@@ -50,52 +50,92 @@
 			height: 100%;
 			display: none;
 			}
+			
+			#CollaboRateWbsWizard .nav-tabs {
+				position: relative;
+				border:none;
+			}
+			
+			#CollaboRateWbsWizard .nav-link {
+				position: relative;
+				/*background: #00ff00;*/
+				border-width: 1px 1px 0px 1px;
+				border-color: rgb(242,246,250);
+			}
+			
+			#CollaboRateWbsWizard .nav-link.active {
+				position: relative;
+				/*background: #00ff00;*/
+				border-width: 2px 2px 0px 2px;
+				border-color: rgb(222,226,230);				
+			}
+			
+			#CollaboRateWbsWizard .nav-item {			
+				max-width:90%;
+			}
+			
+			#CollaboRateWbsWizard .nav-link.active::after {
+				content: '';
+				display: block;
+				height: 2px;		
+				width: 100%;
+				position: absolute;
+				left: 0px;
+				bottom: -2px;/*down by the same height as the width of the line that represents the bottom of all the tabs*/
+				background-color: inherit;
+				padding: 0px;
+			}
+			
+			#CollaboRateWbsWizard .tab-pane {
+				border: 2px solid #dee2e6;
+				border-top-right-radius: 4px;
+				padding: 4px;
+				padding-top: 1em;
+			}
 		</style>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		
-        <div id="main-body" class="container-fluid">
-			<ul class="nav nav-pills" id="pills-tablist" role="tablist">
+        <div id="CollaboRateWbsWizard" class="container-fluid">
+			<ul class="nav nav-tabs" id="CollaboRateWbsWizard-tablist" role="tablist">
 				<li class="nav-item" id="navitem-help">
-					<a class="nav-link" id="tab-help" data-toggle="pill" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>	
+					<a class="nav-link" id="tab-help" data-toggle="tab" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>	
 				</li>
 				<li class="nav-item" id="navitem-wbswizard">
-					<a class="nav-link active" id="tab-wbswizardmain" data-toggle="pill" href="#tabpane-wbswizardmain" role="tab" 
+					<a class="nav-link active" id="tab-wbswizardmain" data-toggle="tab" href="#tabpane-wbswizardmain" role="tab" 
 					aria-controls="tabpane-wbswizardmain">Main</a>	
 				</li>		
 			</ul>
-			<hr>
-			<div class="tab-content" id="pills-tabContent">
+			<div class="tab-content" id="pills-tabContent">				
 				<div id="tabpane-help" class="tab-pane fade" role="tabpanel">					
-					<ul class="nav nav-pills" id="pills-tablist-help" role="tablist">
+					<ul class="nav nav-tabs" id="CollaboRateWbsWizard-help" role="tablist">
 						<li class="nav-item" id="navitem-overview">
-							<a class="nav-link active" id="tab-overview" data-toggle="pill" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
+							<a class="nav-link active" id="tab-overview" data-toggle="tab" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
 						</li>
 						<li class="nav-item" id="navitem-benefits">
-							<a class="nav-link" id="tab-benefits" data-toggle="pill" href="#tabpane-benefits" role="tab" aria-controls="tabpane-benefits">Benefits</a>	
+							<a class="nav-link" id="tab-benefits" data-toggle="tab" href="#tabpane-benefits" role="tab" aria-controls="tabpane-benefits">Benefits</a>	
 						</li>
 						<li class="nav-item" id="navitem-skillsneeded">
-							<a class="nav-link" id="tab-skillsneeded" data-toggle="pill" href="#tabpane-skillsneeded" role="tab" aria-controls="tabpane-skillsneeded">Skills Needed</a>	
+							<a class="nav-link" id="tab-skillsneeded" data-toggle="tab" href="#tabpane-skillsneeded" role="tab" aria-controls="tabpane-skillsneeded">Skills Needed</a>	
 						</li>
 						<li class="nav-item" id="navitem-theprocess">
-							<a class="nav-link" id="tab-theprocess" data-toggle="pill" href="#tabpane-theprocess" role="tab" aria-controls="tabpane-theprocess">The Process</a>	
+							<a class="nav-link" id="tab-theprocess" data-toggle="tab" href="#tabpane-theprocess" role="tab" aria-controls="tabpane-theprocess">The Process</a>	
 						</li>					
 						<li class="nav-item" id="navitem-howitworks">
-							<a class="nav-link" id="tab-howitworks" data-toggle="pill" href="#tabpane-howitworks" role="tab" aria-controls="tabpane-howitworks">How It Works</a>	
+							<a class="nav-link" id="tab-howitworks" data-toggle="tab" href="#tabpane-howitworks" role="tab" aria-controls="tabpane-howitworks">How It Works</a>	
 						</li>
 						<li class="nav-item" id="navitem-helpforvendors">
-							<a class="nav-link" id="tab-helpforvendors" data-toggle="pill" href="#tabpane-helpforvendors" role="tab" aria-controls="tabpane-helpforvendors">Help for Crowdsourcing Vendors</a>	
+							<a class="nav-link" id="tab-helpforvendors" data-toggle="tab" href="#tabpane-helpforvendors" role="tab" aria-controls="tabpane-helpforvendors">Help for Crowdsourcing Vendors</a>	
 						</li>
-					</ul>
-					<hr>	
-					<div class="tab-content" id="tabContent-help">
+					</ul>					
+					<div class="tab-content" id="tabContent-help">						
 						<div id="tabpane-overview" class="tab-pane fade show active">
 							<b>Overview</b><br>
 							This tool is the 'CollaboRate 
 							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a> 
-							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. It is used by online workers to do their work.
+							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. You will use this tool to do online work.
 							<br><br>
 							This tool is part of the open source project '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.
 							One of the main goals of this project is to create opportunities for anyone to earn online by doing small, easy, fun, and 
@@ -299,81 +339,97 @@
 						</div><!-- tabpane-helpforvendors -->
 					</div><!-- tabContent-help -->
 				</div><!-- tabpane-help -->
-				<div id="tabpane-wbswizardmain" class="tab-pane fade show active">
-					<div id="appdescdesc">Description of the app, that has to be broken into 2 or more parts:</div>
+				<div id="tabpane-wbswizardmain" class="tab-pane fade show active" style="background:#eeeeff">
+					<span id="appdescdesc">Description of the app (the information given to you as a part of your assigned task): </span> 						
 					<textarea id="appdesc" style="width:100%;padding:5px"></textarea><br><br>
+					You don't need to provide the implementation of the app described. 
+					Instead, your task is just to describe a few new apps that are used by the old app. 
+					The old app just uses (or is replaced by) the new apps. 
+					The old app hardly does anything other than using the new apps.
+					Ensure that the new apps have different logic and are not just different from each other because they are given different information.
+					<br><br>
 					Select from one of the following choices:<br>							
-					<ul id="inputs-tablist" class="nav nav-pills" role="tablist" >
-						<li class="nav-item" id="navitem-multipleinputs">
-							<a class="nav-link" id="tab-multipleinputs" data-toggle="pill" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs">
-							The app's description shows that more than one type of command is accepted by the app.
+					<ul id="inputs-tablist" class="nav nav-tabs" role="tablist" >
+						<li class="nav-item" id="navitem-multipleinputs" style="background:#ffffcc">
+							<a class="nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs" style="">
+							The app's description shows that <b>more than one type of command</b> is accepted by the app.
 							</a>
 						</li>
-						<li class="nav-item" id="navitem-singleinput">
-							<a class="nav-link" id="tab-singleinput" data-toggle="pill" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
-								The app's description shows that only one type of command is accepted by the app. (The information accepted along with the
-								command can be different each time the command is given.)
+						<li class="nav-item" id="navitem-singleinput" style="background:#ffeeff">
+							<a class="nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
+								The app's description shows that <b>only one type of command</b> is accepted by the app. 
+								(Though the information accepted along with the command can change each time the command is given, 
+								all the commands given belong to the same command type).
 							</a>
 						</li>
 					</ul>
-					<hr>
-					<div class="tab-content" id="inputs-tabContent">
-						<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel">								
-							Since the app description shows that more than one type of command is accepted by the app, it can be broken into two different halves of these sets of commands.
-							The number of commands in each half need not be equal.
-							
+					<div class="tab-content" id="inputs-tabContent">						
+						<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel" style="background:rgb(240, 221, 255)">
+							Since the app's description shows that more than one type of command is accepted by the app, it can be replaced by two new apps. 
+							Each new app accepts different halves of the sets of commands accepted by the old app. Each new app can remember the information
+							and commands given to the other new app.
+							The number of commands in each half need not be equal.							
 							<br><br>
 							
-							Describe <span id="interactions1desc">the first half of the set of commands accepted by the app:</span>
+							<span id="interactions1desc">Description of the first new app, that accepts the first half of the set of commands accepted by the old app:</span>
 							<textarea id="interactions1" style="width:100%;padding:5px"></textarea><br><br>
 							
-							Describe <span id="interactions2desc">the second half of the set of commands accepted by the app:</span>
+							<span id="interactions2desc">Description of the second new app, that accepts the second half of the set of commands accepted by the old app:</span>
 							<textarea id="interactions2" style="width:100%;pa4dding:5px"></textarea><br><br>
 							
 							<button id="submitbreakdowninto2setsofinteractions" type="button" class="btn btn-dark btn-lg btn-block">
 								Submit Work Breakdown (Copy SML to clipboard)
 							</button>
 						</div>
-						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel">
-							How can the description of this command be broken into 2-3 sub-commands? Select one of the following choices:
-							<ul id="step-tablist" class="nav nav-pills" role="tablist" >
+						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel" style="background:rgb(179, 255, 255)">
+							How can this command be made to work, by itself doing as little work as possble and instead using a few new apps?
+							These all new apps may accept information on startup and will automatically close themselves after giving out some information or changing the computer's memory.
+							All new apps mentioned in the choices below (and their sub-choices, and so on) are as described above.
+							Select one of the following choices:
+							<ul id="step-tablist" class="nav nav-tabs" role="tablist" >
 								<!--
 									<li class="nav-item" id="navitem-precondition">
-									<a class="nav-link" id="tab-precondition" data-toggle="pill" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+									<a class="nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
 									<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier. 
 									Based on that, in Text2, provide more details of what the app does now.
 									</a>
 									</li>
 								-->
 								<li class="nav-item" id="navitem-seq">
-									<a class="nav-link" id="tab-seq" data-toggle="pill" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
-										Do some things <b>first</b>, others <b>later</b>
+									<a class="nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
+										Use 2 new apps, <b>one after the other</b>.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-if">
-									<a class="nav-link" id="tab-if" data-toggle="pill" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
-										<b>Check</b> some memory or information given and do things accordingly 										
+									<a class="nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
+										Use a new app. 										
+										<b>If</b> the information given out by this app is 'yes', <b>then</b> run another new app.
+										<b>Else</b>, run yet another new app. (So, there are a total of 3 new apps in this option.)
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-loop">
-									<a class="nav-link" id="tab-loop" data-toggle="pill" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
-										<b>While</b> some memory is 'yes', <b>repeat</b> something
+									<a class="nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
+										<b>Repeatedly</b> use two new apps one after the other, as long as the first new app gives out information 'yes'. 
+										If the first new app does not give out information 'yes', then do not use any of the new apps further, and so the 
+										command of the old app is complete.										
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-iterateoverlist">
-									<a class="nav-link" id="tab-iterateoverlist" data-toggle="pill" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">									
-										<b>For each item in a list</b>, do something
+									<a class="nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">									
+										This option uses just a single new app.
+										<b>For each item in a list</b> of information that is part of the information given to the app or is already present in the memory of the app, 
+										use the new app. On start up, the new app accepts the item as information given to it. 
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-builtin">
-									<a class="nav-link" id="tab-builtin" data-toggle="pill" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
-										The text describes a <b>basic command</b> that cannot be further broken down, or is something that this tool 
-										allows you to <b>directly choose</b>.
+									<a class="nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
+										The app's description describes a <b>basic command</b> that cannot be further broken down, 
+										or is a command that this tool allows you to <b>choose directly</b>. (Select this option to see the list of 
+										available commands that can be chosen directly.)
 									</a>
 								</li>
 							</ul>
-							<hr>
-							<div id="step-tabcontent" class="tab-content">
+							<div id="step-tabcontent" class="tab-content">								
 								<!--
 									<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
 									
@@ -388,12 +444,12 @@
 									
 									</div>
 								-->
-								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel">								
+								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel" style="background: #99ccff">								
 									
 									Describe the <span id="thingsthatshouldbedonefirstdesc">things that should be done first:</span>
 									<textarea id="thingsthatshouldbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Describe the <span id="thingsthatshouldbedonelaterdesc">things that should be done later:</span>									
+									Describe the <span id="thingsthatshouldbedonelaterdesc">things that should be done next:</span>									
 									<textarea id="thingsthatshouldbedonelater" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
@@ -401,15 +457,18 @@
 									</button>
 									
 								</div>
-								<div id="tabpane-if" class="tab-pane fade" role="tabpanel">								
+								<div id="tabpane-if" class="tab-pane fade" role="tabpanel" style="background:#ffdb89">
 									
-									Describe the <span id="ifconddesc">memory or information given, whose value can only be either 'yes' or 'no' and that the app has to check:</span>
+									<span id="ifconddesc">Description of the new app, that when finished must give out either 'yes' or 'no'.
+										The old app checks the information given out and accordingly decides which new app to call:</span>
 									<textarea id="ifcond" style="width:100%;padding:5px"></textarea><br><br>
 									
-									Describe <span id="thenpartdesc">what to do if the above-mentioned memory/info given has value 'yes':</span>
+									<span id="thenpartdesc">Description of the new app, that is started by the old app in case the 
+										first new app has given out information 'yes':</span>
 									<textarea id="thenpart" style="width:100%;padding:5px"></textarea><br><br>
-									
-									(Optional) Describe <span id="elsepartdesc">what to do if the above-mentioned memory/info given has value 'no':</span>
+																		
+									<span id="elsepartdesc">Description of the new app, that is started by the old app in case the 
+										first new app has given out information 'no':</span>
 									<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
 									
 									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
@@ -442,56 +501,54 @@
 								</div>
 								<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
 									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
-									<ul id="basicstep-tablist" class="nav nav-pills" role="tablist" >
+									<ul id="basicstep-tablist" class="nav nav-tabs" role="tablist" >
 										<li class="nav-item" id="navitem-readwriteattr">
-											<a class="nav-link" id="tab-readwriteattr" data-toggle="pill" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
+											<a class="nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
 												Reads, adds or changes part of some information in memory.
 											</a>
 										</li>
 										<li class="nav-item" id="navitem-precondition">
-											<a class="nav-link" id="tab-calc" data-toggle="pill" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+											<a class="nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
 												Calculates something and stores the result in memory.
 											</a>
 										</li>										
 										<li class="nav-item" id="navitem-output">
-											<a class="nav-link" id="tab-output" data-toggle="pill" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
+											<a class="nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
 												Sends information to a place outside the app.
 											</a>
 										</li>
 									</ul>
-									<hr>					
 									<div id="builtin-tabcontent" class="tab-content">
 										<div id="tabpane-calc" class="tab-pane fade" role="tabpanel">
 											Describe what is being calculated and why?<br>
 											<textarea style="width:100%"></textarea><br><br>
 											What is the type of the calculated information? Select from the choices below:
-											<ul id="typeofinfocalculated-tablist" class="nav nav-pills" role="tablist">
+											<ul id="typeofinfocalculated-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-calculatedtypeistext">
-													<a id="tab-calculatedtypeistext" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeistext" 
+													<a id="tab-calculatedtypeistext" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext" 
 													aria-controls="tabpane-calculatedtypeistext">
 														Text
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisbool">
-													<a id="tab-calculatedtypeisbool" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeisbool" 
+													<a id="tab-calculatedtypeisbool" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool" 
 													aria-controls="tabpane-calculatedtypeisbool">
 														Information whose value can only be either 'yes' or 'no'
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisnum">
-													<a id="tab-calculatedtypeisnum" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeisnum"
+													<a id="tab-calculatedtypeisnum" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
 													aria-controls="tabpane-calculatedtypeisnum">
 														Number
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeislist">
-													<a id="tab-calculatedtypeislist" class="nav-link" data-toggle="pill" role="tab" href="#tabpane-calculatedtypeislist"
+													<a id="tab-calculatedtypeislist" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
 													aria-controls="tabpane-calculatedtypeislist">
 														List
 													</a>
 												</li>
-											</ul>
-											<hr>
+											</ul>											
 											<div id="builtin-caculatedtabcontent" class="tab-content">
 												<div id="tabpane-calculatedtypeistext" class="tab-pane fade" role="tabpanel">
 													TODO: Show user options in non-tech language, for string functions like concatenation, search, replace, leftof, rightof,
@@ -514,19 +571,18 @@
 										</div>
 										<div id="tabpane-readwriteattr" class="tab-pane fade" role="tabpanel">											
 											Select one of the two options below:
-											<ul id="readwriteattr-tablist" class="nav nav-pills" role="tablist">
+											<ul id="readwriteattr-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-writeattr">
-													<a class="nav-link" id="tab-readattr" data-toggle="pill" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
+													<a class="nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
 														The given text adds a new part or changes an existing part, of some information in memory.
 													</a>												
 												</li>
 												<li class="nav-item" id="navitem-readattr">
-													<a class="nav-link" id="tab-writeattr" data-toggle="pill" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
+													<a class="nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
 														The given text reads part of some information in memory, and makes a new copy in memory of this information.
 													</a>												
 												</li>
-											</ul>
-											<hr>
+											</ul>											
 											<div id="readwriteattr-tabcontent" class="tab-content">
 												<div id="tabpane-readattr" class="tab-pane fade" role="tabpanel">
 													Describe the information in memory, whose part is being read:<br>
@@ -567,30 +623,30 @@
 							</div>								
 							<!--
 								Who provides the information? 
-								<ul id="whoprovidestheinput" class="nav nav-pills" role="tablist">																		
+								<ul id="whoprovidestheinput" class="nav nav-tabs" role="tablist">																		
 								<li class="nav-item">
-								<a class="nav-link" id="tab-personprovidestheinput" data-toggle="pill" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+								<a class="nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
 								Person, via an input device like mouse, keyboard, touchscreen
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-alarmoncompclock" data-toggle="pill" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+								<a class="nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
 								An alarm set on the computer's clock
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-anotherapp" data-toggle="pill" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+								<a class="nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
 								Another app
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-streamdevs" data-toggle="pill" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+								<a class="nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
 								Devices that provide info even in absence of a person. For example, microphone, camera etc.
 								</a>
 								</li>
-								</ul>
-								<hr>
+								</ul>								
 								<div id="whoprovidestheinput-tabContent" class="tab-content">
+								<br>
 								<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
 								<b>The text describes only one type of info given to the application, provided by a person. It also
 								describes how the application processes this input.</b><br><br>
@@ -631,8 +687,25 @@
 					<!--</div>--><!-- wbswizard-tabcontent -->
 				</div><!-- tabpane-wbswizardmain -->	
 			</div><!-- pills-tabContent -->
-		</div><!-- main-body -->					
+		</div><!-- CollaboRateWbsWizard -->					
 		<script>			
+			
+			function colorTabsToTheColorOfTheirTabPanes()
+			{
+				let tabpanes = Array.from(document.querySelectorAll('#CollaboRateWbsWizard .tab-pane'))
+				tabpanes.forEach
+				(
+					function(tabPane)
+					{
+						//Get the tab of the tab pane						
+						var tabEle = tabTextEleForTabThatContains(tabPane)						
+						tabEle.style.backgroundColor = tabPane.style.backgroundColor						
+					}
+				)
+			}
+			
+			colorTabsToTheColorOfTheirTabPanes()
+			
 			let wfc = location.search.slice(1) //without first character									
 			let params = new URLSearchParams(wfc);					
 			if(params.has("isstep"))
@@ -718,10 +791,10 @@
 				let tabPane=getContainerTabPane(el)
 				if(tabPane != null)
 				{
-					a('tabPane.id='+tabPane.id)
+					//a('tabPane.id='+tabPane.id)
 					let textareas=tabPane.getElementsByTagName('textarea')
 					textareas=Array.from(textareas)
-					a('textareas.length='+textareas.length)
+					//a('textareas.length='+textareas.length)
 				
 					//filter out those textareas that don't have the tab pane as their parent node
 					let textareas2 = []
@@ -729,7 +802,7 @@
 					textareas = textareas2
 				
 					let textareaIds=textareas.map(function(el){return el.id})
-					a("textareaIds='"+str(textareaIds)+"'")
+					//a("textareaIds='"+str(textareaIds)+"'")
 					let s2 = createSmlTagStringFromTextareas(textareaIds)//['interactions1','interactions2'])
 					s=s2+'\n'+s
 				}
@@ -750,18 +823,35 @@
 				return s
 			}
 			
-			let buttons = document.getElementsByTagName('button')
-			buttons = Array.from(buttons)			
+			let buttons = Array.from(document.getElementsByTagName('button'))			
+			buttons = buttons.filter(function(button){return (button.innerHTML.trim() == 'Submit Work Breakdown (Copy SML to clipboard)')})
 			buttons.forEach
 			(
 				function(button)
 				{
-					if(button.innerHTML.trim() != 'Submit Work Breakdown (Copy SML to clipboard)')
-					{return}					
 					button.addEventListener("click",function(){onWbsToolUsageCompleted(button)})
 				}
 			)
 			
+			$(document).ready
+			(
+				function()
+				{
+					 $('#CollaboRateWbsWizard .nav-tabs a').on
+					 (
+						'shown.bs.tab', 
+						function(evt)
+						{
+							//alert('The new tab is now fully shown.')
+							let tab = evt.target
+							let li = tab.parentNode
+							let ul = li.parentNode
+							ul.removeChild(li)
+							ul.appendChild(li)							
+						}
+					)
+				}
+			)
 		</script>
 	</body>
 </html>
