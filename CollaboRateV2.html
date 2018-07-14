@@ -19,7 +19,7 @@
 		<!--<button type="button" onclick="alert('pass')">basic js test</button>
 		<br>-->
 		<!--widget start-->
-		<!--widget release version: 2.0 -->
+		<div id="CollaboRateWbsWizard" class="container-fluid widget">
         
         <!-- TODO: push the css into this or else reference a common CollaboRate css file  -->
         <!-- <link rel="stylesheet" href="css/t2demo.css"> -->
@@ -27,6 +27,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
 		<script src="https://sohrabsaran.github.io/jsutil/util.js"></script>
+		<!--<script src="util.js"></script>-->
 		<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
         <!-- Local css section -->
         <style>
@@ -93,8 +94,7 @@
 		</style>
 		
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		
-        <div id="CollaboRateWbsWizard" class="container-fluid">
+		        
 			<ul class="nav nav-tabs" id="CollaboRateWbsWizard-tablist" role="tablist">
 				<li class="nav-item" id="navitem-help">
 					<a class="nav-link" id="tab-help" data-toggle="tab" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>	
@@ -700,7 +700,7 @@
 					function(tabPane)
 					{
 						//Get the tab of the tab pane						
-						var tabEle = tabTextEleForTabThatContains(tabPane)						
+						var tabEle = tabEleForTabPaneThatContains(tabPane)						
 						tabEle.style.backgroundColor = tabPane.style.backgroundColor						
 					}
 				)
@@ -743,8 +743,8 @@
 			
 			function getContainerTabPane(o)
 			{
-				return getNearestAncestorWhoseTagNameAndClassNameIs
-				({el:o,tagName:'div',className:'tab-pane'})
+				return getNearestAncestorWhoseClassNameIs
+				({el:o,className:'tab-pane'})
 			}
 			
 			function createSmlTagStringFromTextarea(textareaId)
@@ -794,7 +794,7 @@
 			
 			function isMyTabTheMainTab(el)
 			{
-				var tabEl = tabTextEleForTabThatContains(el)
+				var tabEl = tabEleForTabPaneThatContains(el)
 				if(tabEl != null)
 				{
 					var tabText = tabEl.innerText
@@ -829,7 +829,7 @@
 					s=s2+'\n'+s
 				}
 				
-				var tabEl = tabTextEleForTabThatContains(el)
+				var tabEl = tabEleForTabPaneThatContains(el)
 				if(tabEl != null)
 				{
 					var tabText = tabEl.innerText
@@ -873,7 +873,9 @@
 							let li = tab.parentNode
 							let ul = li.parentNode
 							ul.removeChild(li)
-							ul.appendChild(li)							
+							ul.appendChild(li)
+							$([document.documentElement, document.body]).animate({
+								scrollTop: $(li).offset().top}, 500);
 						}
 					)
 				}
