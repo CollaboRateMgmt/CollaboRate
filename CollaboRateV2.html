@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 	CollaboRate Work Breakdown Wizard V2
 	This HTML widget is hosted online at https://collaboratemgmt.github.io/CollaboRate/CollaboRateV2.html
-	
+
 	This is part of the CollaboRate project at https://github.com/CollaboRateMgmt/CollaboRate
 	Author: Crowdian Technologies Pvt. Ltd 2017-18.
 	License type: MIT
@@ -11,8 +11,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
         <title>CollaboRate - widget page for the 'CollaboRate Work Breakdown Wizard Tool'HTML widget</title>
 	</head>
 	<body style="padding:4px">
@@ -20,10 +20,10 @@
 		<br>-->
 		<!--widget start-->
 		<div id="CollaboRateWbsWizard" class="container-fluid widget">
-        
+
         <!-- TODO: push the css into this or else reference a common CollaboRate css file  -->
         <!-- <link rel="stylesheet" href="css/t2demo.css"> -->
-        
+
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
 		<script src="https://sohrabsaran.github.io/jsutil/util.js"></script>
@@ -31,52 +31,61 @@
 		<!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
         <!-- Local css section -->
         <style>
-            
+
             .form-control:focus {
 			color: #495057;
 			background-color: #fff;
 			border-color: #ABABAB;
 			outline: none;
             }
-            
-            #overlayfordisablingthepage {
-			background-color: rgba(0, 0, 0, 0.8);
-			z-index: 999;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			display: none;
-			}
-			
+
 			#CollaboRateWbsWizard .nav-tabs {
 				position: relative;
 				border:none;
 			}
-			
+
 			#CollaboRateWbsWizard .nav-link {
 				position: relative;
 				/*background: #00ff00;*/
 				border-width: 1px 1px 0px 1px;
 				border-color: rgb(242,246,250);
+
 			}
-			
+
+			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled {
+				background-image: url('choice_ss.png');
+				background-size: 50px;
+				min-height: 50px;
+				background-repeat: no-repeat;
+				background-position: 0px 2px;
+				padding-left: 60px;
+			}
+
 			#CollaboRateWbsWizard .nav-link.active {
 				position: relative;
 				/*background: #00ff00;*/
 				border-width: 2px 2px 0px 2px;
-				border-color: rgb(222,226,230);				
+				border-color: rgb(222,226,230);
+				font-weight: bold;
 			}
-			
-			#CollaboRateWbsWizard .nav-item {			
+
+			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled.active {
+				background-image: url('choice_ss_selected.png');
+				background-size: 50px;
+				min-height: 50px;
+				background-repeat: no-repeat;
+				background-position: 0px 2px;
+				padding-left: 60px;
+			}
+
+			#CollaboRateWbsWizard .nav-item {
 				max-width:90%;
 			}
-			
+
 			#CollaboRateWbsWizard .nav-link.active::after {
 				content: '';
 				display: block;
-				height: 2px;		
+				height: 2px;
 				width: 100%;
 				position: absolute;
 				left: 0px;
@@ -84,122 +93,122 @@
 				background-color: inherit;
 				padding: 0px;
 			}
-			
+
 			#CollaboRateWbsWizard .tab-pane {
 				border: 2px solid #dee2e6;
 				border-top-right-radius: 4px;
 				padding: 4px;
 				padding-top: 1em;
+				/*min-height: 100vh;*/
 			}
-		</style>
-		
+		</style>		
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		        
+
 			<ul class="nav nav-tabs" id="CollaboRateWbsWizard-tablist" role="tablist">
 				<li class="nav-item" id="navitem-help">
-					<a class="nav-link" id="tab-help" data-toggle="tab" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>	
+					<a class="nav-link" id="tab-help" data-toggle="tab" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>
 				</li>
 				<li class="nav-item" id="navitem-wbswizard">
-					<a class="nav-link active" id="tab-wbswizardmain" data-toggle="tab" href="#tabpane-wbswizardmain" role="tab" 
-					aria-controls="tabpane-wbswizardmain">Main</a>	
-				</li>		
+					<a class="nav-link active" id="tab-wbswizardmain" data-toggle="tab" href="#tabpane-wbswizardmain" role="tab"
+					aria-controls="tabpane-wbswizardmain">Main</a>
+				</li>
 			</ul>
-			<div class="tab-content" id="pills-tabContent">				
-				<div id="tabpane-help" class="tab-pane fade" role="tabpanel">					
+			<div class="tab-content" id="pills-tabContent">
+				<div id="tabpane-help" class="tab-pane fade" role="tabpanel">
 					<ul class="nav nav-tabs" id="CollaboRateWbsWizard-help" role="tablist">
 						<li class="nav-item" id="navitem-overview">
-							<a class="nav-link active" id="tab-overview" data-toggle="tab" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>	
+							<a class="nav-link active" id="tab-overview" data-toggle="tab" href="#tabpane-overview" role="tab" aria-controls="tabpane-overview">Overview</a>
 						</li>
 						<li class="nav-item" id="navitem-benefits">
-							<a class="nav-link" id="tab-benefits" data-toggle="tab" href="#tabpane-benefits" role="tab" aria-controls="tabpane-benefits">Benefits</a>	
+							<a class="nav-link" id="tab-benefits" data-toggle="tab" href="#tabpane-benefits" role="tab" aria-controls="tabpane-benefits">Benefits</a>
 						</li>
 						<li class="nav-item" id="navitem-skillsneeded">
-							<a class="nav-link" id="tab-skillsneeded" data-toggle="tab" href="#tabpane-skillsneeded" role="tab" aria-controls="tabpane-skillsneeded">Skills Needed</a>	
+							<a class="nav-link" id="tab-skillsneeded" data-toggle="tab" href="#tabpane-skillsneeded" role="tab" aria-controls="tabpane-skillsneeded">Skills Needed</a>
 						</li>
 						<li class="nav-item" id="navitem-theprocess">
-							<a class="nav-link" id="tab-theprocess" data-toggle="tab" href="#tabpane-theprocess" role="tab" aria-controls="tabpane-theprocess">The Process</a>	
-						</li>					
+							<a class="nav-link" id="tab-theprocess" data-toggle="tab" href="#tabpane-theprocess" role="tab" aria-controls="tabpane-theprocess">The Process</a>
+						</li>
 						<li class="nav-item" id="navitem-howitworks">
-							<a class="nav-link" id="tab-howitworks" data-toggle="tab" href="#tabpane-howitworks" role="tab" aria-controls="tabpane-howitworks">How It Works</a>	
+							<a class="nav-link" id="tab-howitworks" data-toggle="tab" href="#tabpane-howitworks" role="tab" aria-controls="tabpane-howitworks">How It Works</a>
 						</li>
 						<li class="nav-item" id="navitem-helpforvendors">
-							<a class="nav-link" id="tab-helpforvendors" data-toggle="tab" href="#tabpane-helpforvendors" role="tab" aria-controls="tabpane-helpforvendors">Help for Crowdsourcing Vendors</a>	
+							<a class="nav-link" id="tab-helpforvendors" data-toggle="tab" href="#tabpane-helpforvendors" role="tab" aria-controls="tabpane-helpforvendors">Help for Crowdsourcing Vendors</a>
 						</li>
-					</ul>					
-					<div class="tab-content" id="tabContent-help">						
+					</ul>
+					<div class="tab-content" id="tabContent-help">
 						<div id="tabpane-overview" class="tab-pane fade show active">
-							<b>Overview</b><br>
-							This tool is the 'CollaboRate 
-							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a> 
-							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'. You will use this tool to do online work.
+							<!--<b>Overview</b><br>-->
+							This tool is the 'CollaboRate
+							<a href="https://en.wikipedia.org/wiki/Work_breakdown_structure">Work Breakdown</a>
+							<a href="https://en.wikipedia.org/wiki/Wizard_(software)">Wizard</a>'.
+							You use this tool to do online work that involves the skills of English, Logic, and a small study of information available online.
 							<br><br>
 							This tool is part of the open source project '<a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a>'.
-							One of the main goals of this project is to create opportunities for anyone to earn online by doing small, easy, fun, and 
+							One of the main goals of this project is to create opportunities for anyone to earn online by doing small, easy, fun, and
 							socially useful intellectual tasks.	The work done is used to develop, maintain and test software apps.
 						</div>
 						<div id="tabpane-benefits" class="tab-pane fade">
-							<b>Benefits</b><br>
-							This tool is part of a new way of software development, that has the following benefits:
+							<!--<b>Benefits</b><br>-->
+							This is a new way of software development, that has the following benefits:
 							<ul>
-								<li>Allows people to earn money by doing online work, in an enjoyable, flexible and socially useful way.</li>
-								<li>Provides people ample time to learn the skills and industry knowledge needed to do the work.</li>
+								<li>Enables earning by doing socially useful online work, in an enjoyable, flexible way.</li>
+								<li>Provides time to learn the skills and industry knowledge needed to do the work.</li>
 								<li>
-									It provides a very accurate way to measure people's work.  
-									This in turn allows people to be paid in a very fair manner.
-								</li>
-								<li>								
-									Better quality code is created that is very simple and very well documented.
+									Measures people's work accurately, and gives fair pay.
 								</li>
 								<li>
-									This way of software development allows a very large number of people to work on the same project at the 
-									same time. So it is very fast when the number of people working on the project are very large in number.
-								</li>								
+									Creates quality code.
+								</li>
 								<li>
-									It reduces financial risks for those who need software to be developed. 
-									This is done by sharing the risk in a fair and small way with all people, including those working on the project. 
+									Allows a very large number of people to work on the same project at the
+									same time. This allows fast project completion.
+								</li>
+								<li>
+									It reduces financial risks for those who need software to be developed.
+									Risk is shared in a fair and small way with all people, including those working on the project.
 									The risk per person becomes smaller, when there are more workers on the project.
 								</li>
 							</ul>
 							<br><br>
 						</div>
 						<div id="tabpane-skillsneeded" class="tab-pane fade">
-							<b>Skills Needed by Online Workers</b><br>
+							<!--<b>Skills Needed by Online Workers</b><br>-->
 							As a 'crowd member' (one of the online workers) you must have the following skills:
-							<ul>								
+							<ul>
 								<li>Able to read and write English. As of now, this tool is limited to the English language.</li>
-								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task. 
+								<li>Willing to learn a small amount of any additional publicly available information needed to work on the small task.
 								(You will be given ample time to learn and complete the task.)</li>
 								<li>
-									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school. 
+									A basic understanding of how a software app works and some related terms, at the level taught to 8-year-olds in school.
 									This is specified as follows:
 									<ul>
 										<li>
-											An app is a set of instructions written by people, that tell a computer how to do a particular task. 
+											An app is a set of instructions written by people, that tell a computer how to do a particular task.
 											Examples of apps are Microsoft Word, Excel, Powerpoint, apps installed on smartphones, etc.
 										</li>
 										<li>
 											An app accepts various types of inputs (information).
 											Inputs may be provided by:
 											<ul>
-												<li>a person (user of the app) via electronic machines called 'input devices'. Examples of such input devices are keyboard, mouse, touchscreen etc.</li> 
+												<li>a person (user of the app) via electronic machines called 'input devices'. Examples of such input devices are keyboard, mouse, touchscreen etc.</li>
 												<li>an alarm set on the computer's clock</li>
 												<li>some other app</li>
 												<li>other input devices that can automatically provide input whether the user is present or not. For example, microphone, camera etc.</li>
 											</ul>
 										</li>
 										<li>
-											The app then 'processes' these inputs. 
-											This means that the app does a list of things called 'steps' on these inputs. 
+											The app then 'processes' these inputs.
+											This means that the app does a list of things called 'steps' on these inputs.
 											The app may behave differently, based on different types of inputs provided to it.
 										</li>
 										<li>Some of these steps may create part of the results that we expect to see or hear from the computer (the output).</li>
 										<li>Other steps may update the data (information) remembered by the app.
 										</li>
-										<li>Some other steps may check the information remembered by the app, or the inputs given 
+										<li>Some other steps may check the information remembered by the app, or the inputs given
 											to the app and then do further steps differently depending on the information/inputs.
 										</li>
 										<li>
-											Yet some other steps may cause a message to be sent to another app. 
+											Yet some other steps may cause a message to be sent to another app.
 											The two apps may be connected together over the internet.
 										</li>
 									</ul>
@@ -207,113 +216,123 @@
 							</ul>
 						</div>
 						<div id="tabpane-theprocess" class="tab-pane fade">
-							<b>The Process</b><br><br>
+							<!--<b>The Process</b><br><br>-->
 							<ul>
 								<li>Open source projects or commercial groups called 'Crowdsourcing vendors' advertise online work opportunities to the public.
 									We term these potential workers as 'crowd members'.
 								</li>
 								<li>The crowd members register on the website of the crowdsourding vendor and then submit a request for work.
 								</li>
-								<li>The crowdsourcing vendor assigns some text to the crowd member that does not exceed 2000 characters. 
-									This text is a description of a part of the software app being developed . 
+								<li>The crowdsourcing vendor assigns some text to the crowd member that does not exceed 2000 characters.
+									This text is a description of a part of the software app being developed .
 									It is also known as a task or microtask. Once this text is assigned, the crowd member will receive a link to this
 									text via email, or in the appropriate section of the vendor's website that is visible once the member has logged in.
 								</li>
-								<li>The crowd member will click on the link. 
-								This tool will then open up in the web browser of the crowd member, with the assigned description also loaded.</li> 
-								<li>This tool asks the member a series of questions about the description that was given to the member. 
-									For most of these questions, the member has to choose the right answer from a list of possible answers. 
+								<li>The crowd member will click on the link.
+								This tool will then open up in the web browser of the crowd member, with the assigned description also loaded.</li>
+								<li>This tool asks the member a series of questions about the description that was given to the member.
+									For most of these questions, the member has to choose the right answer from a list of possible answers.
 									Based on the previous choice made by the member, the tool will decide the next question to ask.
-								</li> 
+								</li>
 								<li>The tool captures the answers provided by the member and submits them to the website of the crowdsourcing vendor.</li>
-								<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get 
-									paid based on the number of micro-tasks done correctly and in time. 
+								<li>Depending on the agreements between the crowdsourcing vendor and the crowd members, the crowd members will get
+									paid based on the number of micro-tasks done correctly and in time.
 								</li>
 								<li>
-									The crowdsourcing vendor may also ask for a tiny amount of money as a security deposit from the crowd member. 										 
-									If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the 
+									The crowdsourcing vendor may also ask for a tiny amount of money as a security deposit from the crowd member.
+									If delays or errors caused by the crowd member cause a loss that is more than what can be deducted from the
 									payment amount per microtask, a part of this deposit may be used up.
 								</li>
 							</ul>
-						</div>		
+						</div>
 						<div id="tabpane-howitworks" class="tab-pane fade">
 							<b>How It Works</b><br>
 							Note: It is not necessary for the crowd members to understand the below in order for them to do their work.<br>
 							<ul>
 								<li>
-									By answering the series of questions asked by the tool, you break down (divide) the partial description of the app, 
-									into one or two more such partial descriptions of the app. Let's call the broken-down descriptions 'sub-descriptions'.
+									How is Simplicity Achieved:<br>
+									By answering the series of questions asked by the tool, you break down (divide) the description of the old app,
+									into descriptions of new apps. This is a <b>small task</b> compared to writing the entire code of the old app.
+									You are also <b>not doing any coding</b>; you are just solving problems in English Comprehension and Logic and
+									may be reading up a small amount of information on the Internet.
 								</li>
 								<li>
-									Assume that the crowd member answers the questions asked by this tool correctly and as instructed. In that case,  
-									these sub-descriptions along with the answers to the objective-type questions, 
-									will usually contain neither more nor less scope and information than the original description.
+									How can a large number of people work on the same app:<br>
+									As per the instructions given, the description of the new apps must contain all the needed information, such that it is not
+									needed to refer to the description of the old app in order to understand the new app.
+									The description of the new app must also remove that part of the description of the old app that is not of relevance
+									to the new app.
+									So <b>crowd members do not need to read the description of the old app</b> in order to understand the description of the new apps.
 								</li>
 								<li>
-									In some cases, the descriptions will become more detailed.
-									In some other cases, a small amount of new information might need to be introduced, based on publicly available 
-									information about the industry area of the application that is being developed.
+									How are lines of code generated:<br>
+									Let's for the moment assume that the crowd member answers the questfions asked by this tool correctly and as instructed.
+									In that case,
+									the information represented by the combined descriptions of the new apps and the answers to the objective-type questions,
+									should contain the same scope as the description of the old app. The answers to the objective-type questions are used to
+									<b>create a line of the code</b> of the old app, that uses the new apps.
 								</li>
 								<li>
-									Whether or not more elaboration of the problem has happened or more information has been added, each sub-description
-									must contain all the needed information, such that it is not needed to refer to the parent description in order to
-									understand the sub-description. Each sub-description must also remove that part of the parent description that is 
-									not of relevance to it.
+									How are thousands of lines of code and large amounts of needed knowledge captured:<br>
+									As the app description breakdown continues, the descriptions of the new apps will talk about <b>details</b> that were
+									implied in the scope of the old apps.
+									Also, a small amount of <b>new information</b> might need to be introduced in the descriptions of the new apps,
+									based on <b>publicly available information</b> about the industry area of the app.
 								</li>
 								<li>
-									Due to the above rules for the sub-descriptions, these sub-descriptions can be further provided to any other crowd 
-									members to break down, and so on, until it is not possible to break the sub-descriptions down any further.
-								</li>
-								<li>
-									The answers to some of the objective-type questions determine one of the processing steps done by the app. 
-									In this way, crowd members help to create all the processing steps (source code) of the app!
-								</li>
-								<li>
-									The 'binary' work breakdown way of working allows us to very accurately measure work done by the crowd members.
-									The current assumption is that the average effort needed to break down a task is almost the same, 
-									especially given that there is a limit imposed on the maximum number of characters of task's text.
-									So we can simply measure of the contributions of the crowd members by counting the number of microtasks that each
+									How are project costs and payments to the crowd members accurately determined:<br>
+									The technique of breaking the description of an old app into descriptions of least possible number of new apps,
+									<b>allows accurate measurement of work. As opposed to counting lines of code, this technique
+									counts the number of logic steps. The crowdsourcing vendor is also responsible to reduce repetition in logic steps.</b>
+									The current assumption is that the average effort needed to break down an app is almost the same,
+									especially given that there is a limit imposed on the maximum number of characters of the app's description.
+									So we can simply measure of the contributions of the crowd members by counting the number of app descriptions that each
 									crowd member has broken down.<br>
-									Even if it is found that different tasks need different amounts of effort later on, we can refine this system of 
-									work measurement slightly. The basic system of work measurement seems likely to remain the same. 
+									Even if it is found that different app descriptions need different amounts of effort later on, we can refine this system of
+									work measurement, to (say) also consider the number of characters in the description of the old app, as well the number of
+									new apps created during the breakdown of the old app.
+									The basic system of work measurement seems likely to remain the same.
 								</li>
 								<li>
-									Creating multiple subtasks helps to allow multiple crowd members to work on the same project in parallel, 
-									so that the project gets over quickly when a large number of crowd members are available. 
+									How is this process faster:<br>
+									Creating multiple new apps helps to allow multiple crowd members to work on the same project in parallel,
+									so that the <b>project gets over quickly</b>.
 								</li>
 								<li>
-									Creating multiple subtasks provides security for those projects that need it. 
+									How is this process more secure and can allow no offices and permanent work-from-home:<br>
+									Creating multiple new apps provides <b>security</b> for those projects that need it.
 									Crowdsourcing vendors can ensure that each crowd member gets to work on only a small part of the project.
-									This way, no single crowd member knows the entire project design. If the project requirements are themselves 
-									confidential, then the crowdsourcing vendor can itself do the work breakdown up to some level and then 
+									This way, no single crowd member knows the entire project design. If the project requirements are themselves
+									confidential, then the crowdsourcing vendor can itself do the work breakdown up to some level and then
 									crowdsource the rest of the work.
-								</li>							
+								</li>
 								<li>
-									To ensure the quality of the work being done by the crowd and to troubleshoot (find the cause of errors), 
+									How is the app tested:<br>
+									To ensure the quality of the work being done by the crowd and to troubleshoot (find the cause of errors),
 									a number of techniques can be used by the crowdsourcing vendor. These must include:
 									<ul>
-										<li>manual <a href="https://en.wikipedia.org/wiki/Acceptance_testing">acceptance testing</a> - performed by the crowdsourcing vendor and/or the end customer</li>							
+										<li>manual <a href="https://en.wikipedia.org/wiki/Acceptance_testing">acceptance testing</a> - performed by the crowdsourcing vendor and/or the end customer</li>
 										<li><a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a> - used to troubleshoot that which work breakdown done by the crowd, is incorrect.</li>
-										<li>automation of <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> - used to reduce the manual testing efforts and errors. Both acceptance testing and unit testing can be automated.</li> 
+										<li>automation of <a href="https://en.wikipedia.org/wiki/Regression_testing">regression testing</a> - used to reduce the manual testing efforts and errors. Both acceptance testing and unit testing can be automated.</li>
 									</ul>
-									In additional to the above mandatory testing, crowdsourcing vendors may also ensure quality by the asking the crowd 
-									members to review each others' work (at the cost of some small loss of security). Finally the crowdsourcing vendors may use a 
-									variety of Natural Langauge Processing and other AI techniques to check the the crowd members have done the work correctly. 
+									In additional to the above mandatory testing, crowdsourcing vendors may also ensure quality by the asking the crowd
+									members to review each others' work (at the cost of some small loss of security). Finally the crowdsourcing vendors may use a
+									variety of Natural Langauge Processing and other AI techniques to check the the crowd members have done the work correctly.
 									Some such validations may be offered for free as a part of this tool.
 								</li>
 							</ul>
 						</div>
-						
+
 						<div id="tabpane-helpforvendors" class="tab-pane fade">
 							<b>Instructions for Crowdsourcing Vendors</b><br>
-							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project. 
+							This tool is part of the open source (MIT licensed) <a href="https://github.com/CollaboRateMgmt/CollaboRate">CollaboRate</a> project.
 							This tool is open sourced to serve as a standard
-							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that 
+							interface for Crowd Members to use to perform the binary work breakdown, irrespective of the crowdsourcing vendor that
 							hosts this tool. You can include this tool like an html widget into your html page as follows:<br><br>
-							Put the following in the &lt;head&gt; section of your html page:<br>							
+							Put the following in the &lt;head&gt; section of your html page:<br>
 							&lt;script src=&quot;https://collaboratemgmt.github.io/CollaboRate/collaborate_single_widget.js&quot;&gt;&lt;/script&gt;
 							<br><br>
-							Put the following in the &lt;body&gt; section of your html page:<br><br>							
+							Put the following in the &lt;body&gt; section of your html page:<br><br>
 							&lt;script&gt;
 							loadwidget(&quot;https://collaboratemgmt.github.io/CollaboRate/CollaboRateV2.html&quot;)
 							&lt;/script&gt;
@@ -324,198 +343,202 @@
 								<li>Subtask 2 of the task</li>
 								<li>Logic that connects the 2 subtasks</li>
 							</ul>
-							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool. 
-							For each of these three data values, the problem statement that was broken down using this tool is called the 'parent. 
+							...you need to create entries for each of the above in your db, via calling the appropriate js functions from your copy of this tool.
+							For each of these three data values, the problem statement that was broken down using this tool is called the 'parent.
 							The relation to the parent id is also stored with each new data value. Here's sample json that will be sent to your url:
 							<br>
 							<br>
 							You will further validate
-							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to 
+							the input provided by the crowd member either manually or programmatically. You will use the inputs provided by the crowd members  to
 							generate the documentation and source code of the app.
 						</div><!-- tabpane-helpforvendors -->
 					</div><!-- tabContent-help -->
 				</div><!-- tabpane-help -->
 				<div id="tabpane-wbswizardmain" class="tab-pane fade show active" style="background:#eeeeff">
-					<span id="appdescdesc">Description of the app (the information given to you as a part of your assigned task): </span> 						
+					<span id="appdescdesc">Description of the app (the information given to you as a part of your assigned task): </span>
 					<textarea id="appdesc" style="width:100%;padding:5px"></textarea><br><br>
-					You don't need to provide the implementation of the app described. 
-					Instead, your task is just to describe a few new apps that are used by the old app. 
-					The old app just uses (or is replaced by) the new apps. 
+					You don't need to provide the implementation of the app described.
+					Instead, your task is just to describe a few new apps that are used by the old app.
+					The old app just uses (or is replaced by) the new apps.
 					The old app hardly does anything other than using the new apps.
 					Ensure that the new apps have different logic and are not just different from each other because they are given different information.
 					<br><br>
-					Select from one of the following choices:<br>							
+					<img src="choices_ss.png">Select from one of the following choices:<br>
 					<ul id="inputs-tablist" class="nav nav-tabs" role="tablist" >
 						<li class="nav-item" id="navitem-multipleinputs" style="background:#ffffcc">
-							<a class="nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab" aria-controls="tabpane-multipleinputs" style="">
+							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab"
+							aria-controls="tabpane-multipleinputs" style="">
+							<!--<img src="choice2.png" width="40px" height="40px">-->
 							The app's description shows that <b>more than one type of command</b> is accepted by the app.
 							</a>
 						</li>
 						<li class="nav-item" id="navitem-singleinput" style="background:#ffeeff">
-							<a class="nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
-								The app's description shows that <b>only one type of command</b> is accepted by the app. 
-								(Though the information accepted along with the command can change each time the command is given, 
+							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">
+								<!--<img src="choice2.png" width="40px" height="40px">-->
+								The app's description shows that <b>only one type of command</b> is accepted by the app.
+								<b>OR</b> the app does not wait to receive any commands, and instead <b>stops automatically</b>.
+								(Though the information accepted along with the command can change each time the command is given,
 								all the commands given belong to the same command type).
 							</a>
 						</li>
 					</ul>
-					<div class="tab-content" id="inputs-tabContent">						
+					<div class="tab-content" id="inputs-tabContent">
 						<div id="tabpane-multipleinputs" class="tab-pane fade" role="tabpanel" style="background:rgb(240, 221, 255)">
-							Since the app's description shows that more than one type of command is accepted by the app, it can be replaced by two new apps. 
+							Since the app's description shows that more than one type of command is accepted by the app, it can be replaced by two new apps.
 							Each new app accepts different halves of the sets of commands accepted by the old app. Each new app can remember the information
 							and commands given to the other new app.
-							The number of commands in each half need not be equal.							
+							The number of commands in each half need not be equal.
 							<br><br>
-							
+
 							<span id="interactions1desc">Description of the first new app, that accepts the first half of the set of commands accepted by the old app:</span>
 							<textarea id="interactions1" style="width:100%;padding:5px"></textarea><br><br>
-							
+
 							<span id="interactions2desc">Description of the second new app, that accepts the second half of the set of commands accepted by the old app:</span>
 							<textarea id="interactions2" style="width:100%;pa4dding:5px"></textarea><br><br>
-							
+
 							<button id="submitbreakdowninto2setsofinteractions" type="button" class="btn btn-dark btn-lg btn-block">
 								Submit Work Breakdown (Copy SML to clipboard)
 							</button>
 						</div>
 						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel" style="background:rgb(179, 255, 255)">
-							How can this command be made to work, by itself doing as little work as possble and instead using a few new apps?
+							<img src="choices_ss.png"> How can this command be made to work, by itself doing as little work as possble and instead using a few new apps?
 							These all new apps may accept information on startup and will automatically stop themselves after giving out some information or changing the computer's memory.
 							Let's call such apps 'self-stopping apps'.
 							Select one of the following choices:
 							<ul id="step-tablist" class="nav nav-tabs" role="tablist" >
 								<!--
 									<li class="nav-item" id="navitem-precondition">
-									<a class="nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
-									<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier. 
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+									<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier.
 									Based on that, in Text2, provide more details of what the app does now.
 									</a>
 									</li>
 								-->
 								<li class="nav-item" id="navitem-seq">
-									<a class="nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
 										Use 2 new self-stopping apps, <b>one after the other</b>.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-if">
-									<a class="nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
-										Use a new self-stopping app. 										
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
+										Use a new self-stopping app.
 										<b>If</b> the information given out by this app is 'yes', <b>then</b> run another new self-stopping app.
 										<b>Else</b>, run yet another new self-stopping app. (So, there are a total of 3 new apps in this option.)
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-loop">
-									<a class="nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
-										<b>Repeatedly</b> use two new self-stopping apps one after the other, as long as the first new app gives out information 'yes'. 
-										If the first new app does not give out information 'yes', then do not use any of the new apps further, and so the 
-										command of the old app is complete.										
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
+										<b>Repeatedly</b> use two new self-stopping apps one after the other, as long as the first new app gives out information 'yes'.
+										If the first new app does not give out information 'yes', then do not use any of the new apps further, and so the
+										command of the old app is complete.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-iterateoverlist">
-									<a class="nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">									
-										This option uses just a single new self-stopping app, and a list of information. 
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">
+										This option uses just a single new self-stopping app, and a list of information.
 										The list is part of the information given to the app or is already present in the memory of the app.
-										<b>For each item in the list</b> of information, use the new app. 
-										On start up, the new app accepts the item as information given to it. 
+										<b>For each item in the list</b> of information, use the new app.
+										On start up, the new app accepts the item as information given to it.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-builtin">
-									<a class="nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
-										The app's description describes a <b>basic command</b> that cannot be further broken down, 
-										or is a command that this tool allows you to <b>choose directly</b>. (Select this option to see the list of 
+									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
+										The app's description describes a <b>basic command</b> that cannot be further broken down,
+										or is a command that this tool allows you to <b>choose directly</b>. (Select this option to see the list of
 										available commands that can be chosen directly.)
 									</a>
 								</li>
 							</ul>
-							<div id="step-tabcontent" class="tab-content">								
+							<div id="step-tabcontent" class="tab-content">
 								<!--
-									<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">								
-									
+									<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">
+
 									Describe something that should have been done earlier, so that :<br>
 									<textarea style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									Text2:<br>
-									
+
 									<textarea  style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown (Copy SML to clipboard)</button>
-									
+
 									</div>
 								-->
-								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel" style="background: #99ccff">								
-									
+								<div id="tabpane-seq" class="tab-pane fade" role="tabpanel" style="background: #99ccff">
+
 									Describe the <span id="thingsthatshouldbedonefirstdesc">things that should be done first:</span>
 									<textarea id="thingsthatshouldbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
-									
-									Describe the <span id="thingsthatshouldbedonelaterdesc">things that should be done next:</span>									
+
+									Describe the <span id="thingsthatshouldbedonelaterdesc">things that should be done next:</span>
 									<textarea id="thingsthatshouldbedonelater" style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
-									
+
 								</div>
 								<div id="tabpane-if" class="tab-pane fade" role="tabpanel" style="background:#ffdb89">
-									
+
 									<span id="ifconddesc">Description of the new self-stopping app, that when finished must give out either 'yes' or 'no'.
 										The old app checks the information given out and accordingly decides which new app to call:</span>
 									<textarea id="ifcond" style="width:100%;padding:5px"></textarea><br><br>
-									
-									<span id="thenpartdesc">Description of the new self-stopping app, that is started by the old app in case the 
+
+									<span id="thenpartdesc">Description of the new self-stopping app, that is started by the old app in case the
 										first new app has given out information 'yes':</span>
 									<textarea id="thenpart" style="width:100%;padding:5px"></textarea><br><br>
-																		
-									<span id="elsepartdesc">Description of the new self-stopping app, that is started by the old app in case the 
+
+									<span id="elsepartdesc">Description of the new self-stopping app, that is started by the old app in case the
 										first new app has given out information 'no':</span>
 									<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
-									
+
 								</div>
-								<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">								
-									
-									Describe the new self-stopping app that can give out a value only either 'yes' or 'no'. 
+								<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">
+
+									Describe the new self-stopping app that can give out a value only either 'yes' or 'no'.
 									The old app will repeatedly check this new app and will stop running in case this new app gives out information 'no':<br>
 									<textarea id="whilecond" style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									Describe the new self-stopping app to run whenever the other new self-stopping app gives out information 'yes':<br>
 									<textarea id="parttodoinsidewhileloop"  style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									<button type="button" id="submitbreakdownintowhileloop" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown (Copy SML to clipboard)
 									</button>
-									
+
 								</div>
-								<div id="tabpane-iterateoverlist" class="tab-pane fade" role="tabpanel">								
-									
+								<div id="tabpane-iterateoverlist" class="tab-pane fade" role="tabpanel">
+
 									Describe the list of information that is in memory or is part of the information given to the app:<br>
 									<textarea style="width:100%;padding:5px"></textarea><br><br>
-									
-									Description of the new self-stopping app that is called repeatedly for each item in the list of information.									
+
+									Description of the new self-stopping app that is called repeatedly for each item in the list of information.
 									Every time this new app is called, it is given information about the next item in the list.
-									If this new app gives out information 'false', then the old app stops running.<br>									
+									If this new app gives out information 'false', then the old app stops running.<br>
 									<textarea  style="width:100%;padding:5px"></textarea><br><br>
-									
+
 									<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">
 										Submit Work Breakdown (Copy SML to clipboard)
-									</button>									
+									</button>
 								</div>
 								<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
 									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
 									<ul id="basicstep-tablist" class="nav nav-tabs" role="tablist" >
 										<li class="nav-item" id="navitem-readwriteattr">
-											<a class="nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
+											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
 												Reads, adds or changes part of some information in memory.
 											</a>
 										</li>
 										<li class="nav-item" id="navitem-precondition">
-											<a class="nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
 												Calculates something and stores the result in memory.
 											</a>
-										</li>										
+										</li>
 										<li class="nav-item" id="navitem-output">
-											<a class="nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
+											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
 												Sends information to a place outside the app.
 											</a>
 										</li>
@@ -527,92 +550,92 @@
 											What is the type of the calculated information? Select from the choices below:
 											<ul id="typeofinfocalculated-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-calculatedtypeistext">
-													<a id="tab-calculatedtypeistext" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext" 
+													<a id="tab-calculatedtypeistext" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext"
 													aria-controls="tabpane-calculatedtypeistext">
 														Text
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisbool">
-													<a id="tab-calculatedtypeisbool" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool" 
+													<a id="tab-calculatedtypeisbool" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool"
 													aria-controls="tabpane-calculatedtypeisbool">
 														Information whose value can only be either 'yes' or 'no'
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisnum">
-													<a id="tab-calculatedtypeisnum" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
+													<a id="tab-calculatedtypeisnum" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
 													aria-controls="tabpane-calculatedtypeisnum">
 														Number
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeislist">
-													<a id="tab-calculatedtypeislist" class="nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
+													<a id="tab-calculatedtypeislist" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
 													aria-controls="tabpane-calculatedtypeislist">
 														List
 													</a>
 												</li>
-											</ul>											
+											</ul>
 											<div id="builtin-caculatedtabcontent" class="tab-content">
 												<div id="tabpane-calculatedtypeistext" class="tab-pane fade" role="tabpanel">
 													TODO: Show user options in non-tech language, for string functions like concatenation, search, replace, leftof, rightof,
-													uppercase, lowercase, substring, etc. etc. MAYBE we will provide regex also!!!! 
+													uppercase, lowercase, substring, etc. etc. MAYBE we will provide regex also!!!!
 												</div>
 												<div id="tabpane-calculatedtypeisbool" class="tab-pane fade" role="tabpanel">
-													TODO: Show user options in non-tech language, for boolean functions like and, or, not etc. 
+													TODO: Show user options in non-tech language, for boolean functions like and, or, not etc.
 												</div>
 												<div id="tabpane-calculatedtypeisnum" class="tab-pane fade" role="tabpanel">
-													TODO: Show user options in non-tech language, for numeric functions like string length, mathematical functions 
+													TODO: Show user options in non-tech language, for numeric functions like string length, mathematical functions
 													(add, multiply, subtract, divide, log, exponent, trigonometric, modulo, round etc.)
 												</div>
 												<div id="tabpane-calculatedtypeislist" class="tab-pane fade" role="tabpanel">
 													TODO: Show user options in non-tech language, for list functions such as insert, delete, append, sort, search, replace,
 													duplicate removal etc.
-													Note that map is basically also a type of list. So we will have some options to insert, 
+													Note that map is basically also a type of list. So we will have some options to insert,
 													search and delete list elements by specifying the key.
 												</div>
 											</div>
 										</div>
-										<div id="tabpane-readwriteattr" class="tab-pane fade" role="tabpanel">											
+										<div id="tabpane-readwriteattr" class="tab-pane fade" role="tabpanel">
 											Select one of the two options below:
 											<ul id="readwriteattr-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-writeattr">
-													<a class="nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
+													<a class="icon icon-hand-o-right-disabled nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
 														The given text adds a new part or changes an existing part, of some information in memory.
-													</a>												
+													</a>
 												</li>
 												<li class="nav-item" id="navitem-readattr">
-													<a class="nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
+													<a class="icon icon-hand-o-right-disabled nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
 														The given text reads part of some information in memory, and makes a new copy in memory of this information.
-													</a>												
+													</a>
 												</li>
-											</ul>											
+											</ul>
 											<div id="readwriteattr-tabcontent" class="tab-content">
 												<div id="tabpane-readattr" class="tab-pane fade" role="tabpanel">
 													Describe the information in memory, whose part is being read:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													Describe the part that is being read:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													Describe the new piece of information in memory, that will store the copy:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													<button id="submitbreakdownintoreadattr" type="button"  class="btn btn-dark btn-lg btn-block">
 														Submit Work Breakdown (Copy SML to clipboard)
 													</button>
 												</div>
-												<div id="tabpane-writeattr" class="tab-pane fade" role="tabpanel">												
+												<div id="tabpane-writeattr" class="tab-pane fade" role="tabpanel">
 													Describe the information in memory, whose part is being added or changed:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													Describe the part that is being added or changed:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													Describe the new information being stored in the part:<br>
 													<textarea style="width:100%"></textarea><br><br>
-													
+
 													<button id="submitbreakdownintowriteattr" type="button"  class="btn btn-dark btn-lg btn-block">
 														Submit Work Breakdown (Copy SML to clipboard)
-													</button>													
+													</button>
 												</div>
 											</div>
 										</div>
@@ -622,40 +645,40 @@
 										</div>
 									</div>
 								</div><!-- tabpane-builtin -->
-							</div>								
+							</div>
 							<!--
-								Who provides the information? 
-								<ul id="whoprovidestheinput" class="nav nav-tabs" role="tablist">																		
+								Who provides the information?
+								<ul id="whoprovidestheinput" class="nav nav-tabs" role="tablist">
 								<li class="nav-item">
-								<a class="nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
 								Person, via an input device like mouse, keyboard, touchscreen
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
 								An alarm set on the computer's clock
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
 								Another app
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
 								Devices that provide info even in absence of a person. For example, microphone, camera etc.
 								</a>
 								</li>
-								</ul>								
+								</ul>
 								<div id="whoprovidestheinput-tabContent" class="tab-content">
 								<br>
 								<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
 								<b>The text describes only one type of info given to the application, provided by a person. It also
 								describes how the application processes this input.</b><br><br>
-								The person (user of the app) interacts with a screen of the app. He/she may provide input in some 
-								input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a 
+								The person (user of the app) interacts with a screen of the app. He/she may provide input in some
+								input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a
 								button or perform some other action to inform the computer to start processing this input.<br><br>
-								
+
 								Description/name of the screen on which the person provides the input:<br>
 								<input type="text" style="width:100%"><br><br>
 								Input fields on the screen that must be considered as a part of this overall input:<br>
@@ -670,7 +693,7 @@
 								<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
 								todo
 								</div>
-								</div>											
+								</div>
 							-->
 							<!--
 								What does the application do once this type of input has been given?<br>
@@ -681,17 +704,17 @@
 								</button>
 							-->
 						</div>
-					</div>									
+					</div>
 					<!--</div>--><!-- tabpane-appinteractions  -->
 					<!--
-						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">													
+						<div id="tabpane-step" class="tab-pane fade" role="tabpanel">
 					</div>--><!-- tabpane-step  -->
 					<!--</div>--><!-- wbswizard-tabcontent -->
-				</div><!-- tabpane-wbswizardmain -->	
+				</div><!-- tabpane-wbswizardmain -->
 			</div><!-- pills-tabContent -->
-		</div><!-- CollaboRateWbsWizard -->					
-		<script>			
-			
+		</div><!-- CollaboRateWbsWizard -->
+		<script>
+
 			function colorTabsToTheColorOfTheirTabPanes()
 			{
 				let tabpanes = Array.from(document.querySelectorAll('#CollaboRateWbsWizard .tab-pane'))
@@ -699,29 +722,29 @@
 				(
 					function(tabPane)
 					{
-						//Get the tab of the tab pane						
-						var tabEle = tabEleForTabPaneThatContains(tabPane)						
-						tabEle.style.backgroundColor = tabPane.style.backgroundColor						
+						//Get the tab of the tab pane
+						var tabEle = tabEleForTabPaneThatContains(tabPane)
+						tabEle.style.backgroundColor = tabPane.style.backgroundColor
 					}
 				)
 			}
-			
+
 			colorTabsToTheColorOfTheirTabPanes()
-			
-			let wfc = location.search.slice(1) //without first character									
-			let params = new URLSearchParams(wfc);					
+
+			let wfc = location.search.slice(1) //without first character
+			let params = new URLSearchParams(wfc);
 			if(params.has("isstep"))
 			{
 				if(params.get("isstep")=="true")
-				{							
-					$("#tab-step").click()				
+				{
+					$("#tab-step").click()
 				}
 				else
 				{
-					$("#tab-appinteractions").click()				
+					$("#tab-appinteractions").click()
 				}
 			}
-			
+
 			function onWbsToolUsageCompleted(button)
 			{
 				//Find the path to this button and the input elements if any.
@@ -732,7 +755,7 @@
 				(
 				{
 					fn:	function()
-					{							
+					{
 						copyToClipboard(smlPath(el, ''))
 						alert('check your clipboard!!!')
 					},
@@ -740,27 +763,27 @@
 				}
 				)
 			}
-			
+
 			function getContainerTabPane(o)
 			{
 				return getNearestAncestorWhoseClassNameIs
 				({el:o,className:'tab-pane'})
 			}
-			
+
 			function createSmlTagStringFromTextarea(textareaId)
 			{
 				var textareaDescId = textareaId+"desc"
-				let textareaDescEl = getel(textareaDescId)				
-				var textareaDesc = textareaDescEl.innerText				
+				let textareaDescEl = getel(textareaDescId)
+				var textareaDesc = textareaDescEl.innerText
 				var rv = createSmlTagString(textareaDesc, getel(textareaId).value)
 				if(!isMyTabTheMainTab(textareaDescEl))
-				{		
+				{
 					rv += createSmlTagString('Github Task ID','#TODO')
 					rv = createSmlTagString('New App Created by Single-Level Breakdown of Old App into Fewest Possible New Apps', rv)
 				}
 				return rv
 			}
-						
+
 			function createSmlTagStringFromTextareas(textareaIds)
 			{
 				var s = ""
@@ -773,13 +796,13 @@
 				)
 				return s
 			}
-			
+
 			//To go into util.js
-			function capitalizeFirstLetter(string) 
+			function capitalizeFirstLetter(string)
 			{
 				return string.charAt(0).toUpperCase() + string.slice(1);
 			}
-			
+
 			//To go into sml.js
 			function createSmlTagString(tagName, tagValue)
 			{
@@ -787,11 +810,11 @@
 				tagName = "'"+tagName.replaceAll('\n',' ').trim()
 				if(tagName.endsWith(":") || tagName.endsWith(".")){tagName = tagName.substr(0,tagName.length-1)}
 				tagName+="'"
-				return "BEGIN "+tagName+"\n" + 
-				tagValue + 
-				"\nEND "+tagName+"\n"				
+				return "BEGIN "+tagName+"\n" +
+				tagValue +
+				"\nEND "+tagName+"\n"
 			}
-			
+
 			function isMyTabTheMainTab(el)
 			{
 				var tabEl = tabEleForTabPaneThatContains(el)
@@ -805,7 +828,7 @@
 				}
 				return false
 			}
-			
+
 			function smlPath(el,textSoFar)
 			{
 				//a('el.id='+el.id)
@@ -817,18 +840,18 @@
 					let textareas=tabPane.getElementsByTagName('textarea')
 					textareas=Array.from(textareas)
 					//a('textareas.length='+textareas.length)
-				
+
 					//filter out those textareas that don't have the tab pane as their parent node
 					let textareas2 = []
 					textareas.forEach(function(el){if(el.parentNode === tabPane){textareas2.push(el)}})
 					textareas = textareas2
-				
+
 					let textareaIds=textareas.map(function(el){return el.id})
 					//a("textareaIds='"+str(textareaIds)+"'")
 					let s2 = createSmlTagStringFromTextareas(textareaIds)//['interactions1','interactions2'])
 					s=s2+'\n'+s
 				}
-				
+
 				var tabEl = tabEleForTabPaneThatContains(el)
 				if(tabEl != null)
 				{
@@ -843,13 +866,13 @@
 					{
 						tabText = "Method Chosen for Single-Level Breakdown of an App's Description into the Descriptions of Fewest Possible New Apps: "+ tabText
 					}
-					s= createSmlTagString(tabText, s)				
+					s= createSmlTagString(tabText, s)
 					s=	smlPath(tabEl,s)
 				}
 				return s
 			}
-			
-			let buttons = Array.from(document.getElementsByTagName('button'))			
+
+			let buttons = Array.from(document.getElementsByTagName('button'))
 			buttons = buttons.filter(function(button){return (button.innerHTML.trim() == 'Submit Work Breakdown (Copy SML to clipboard)')})
 			buttons.forEach
 			(
@@ -858,22 +881,27 @@
 					button.addEventListener("click",function(){onWbsToolUsageCompleted(button)})
 				}
 			)
-			
+
 			$(document).ready
 			(
 				function()
 				{
 					 $('#CollaboRateWbsWizard .nav-tabs a').on
 					 (
-						'shown.bs.tab', 
+						'shown.bs.tab',
 						function(evt)
 						{
 							//alert('The new tab is now fully shown.')
 							let tab = evt.target
 							let li = tab.parentNode
-							let ul = li.parentNode
-							ul.removeChild(li)
-							ul.appendChild(li)
+							let nextLi = li.nextElementSibling
+							if(nextLi != null && li.getBoundingClientRect().top < nextLi.getBoundingClientRect().top)
+							{
+								let ul = li.parentNode
+								ul.removeChild(li)
+								ul.appendChild(li)
+							}
+							//alert('$(li).offset().top='+$(li).offset().top)
 							$([document.documentElement, document.body]).animate({
 								scrollTop: $(li).offset().top}, 500);
 						}
