@@ -38,6 +38,30 @@
 			border-color: #ABABAB;
 			outline: none;
             }
+			
+			#CollaboRateWbsWizard .choicesetDesc::before {
+				content: '';
+				background-image: url('images/choices_ss.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				display:inline-block;
+				
+				width:60px;				
+				/*			
+				choices_ss.png original dimensions are 150 pixels wide by 100 pixels high
+				150 pixel width = 100 px height
+				So 60 pixel width = 60 * 100/150 px height = 40				
+				*/				
+				height:40px;
+				
+				float:left !important;
+			}
+			
+			#CollaboRateWbsWizard .choicesetDesc::after {
+				display:block;
+				content:'';
+				clear:left;
+			}
 
 			#CollaboRateWbsWizard .nav-tabs {
 				position: relative;
@@ -49,16 +73,15 @@
 				/*background: #00ff00;*/
 				border-width: 1px 1px 0px 1px;
 				border-color: rgb(242,246,250);
-
 			}
 
 			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled {
 				background-image: url('images/choice_ss.png');
-				background-size: 50px;
-				min-height: 50px;
+				background-size: 30px;
+				min-height: 30px;
 				background-repeat: no-repeat;
-				background-position: 0px 2px;
-				padding-left: 60px;
+				background-position: 2px 2px;
+				padding-left: 40px;
 			}
 
 			#CollaboRateWbsWizard .nav-link.active {
@@ -71,11 +94,11 @@
 
 			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled.active {
 				background-image: url('images/choice_ss_selected.png');
-				background-size: 50px;
-				min-height: 50px;
+				background-size: 30px;
+				min-height: 30px;
 				background-repeat: no-repeat;
-				background-position: 0px 2px;
-				padding-left: 60px;
+				background-position: 2px 2px;
+				padding-left: 40px;
 			}
 
 			#CollaboRateWbsWizard .nav-item {
@@ -363,8 +386,11 @@
 					The old app hardly does anything other than using the new apps.
 					Ensure that the new apps have different logic and are not just different from each other because they are given different information.
 					<br><br>
-					<img src="images/choices_ss.png">Select from one of the following choices:<br>
-					<ul id="inputs-tablist" class="nav nav-tabs" role="tablist" >
+					<div class="choicesetDesc">
+					Select from one of the following choices:
+					</div>
+					
+					<ul id="inputs-tablist" class="nav nav-tabs" role="tablist">
 						<li class="nav-item" id="navitem-multipleinputs" style="background:#ffffcc">
 							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab"
 							aria-controls="tabpane-multipleinputs" style="">							
@@ -374,9 +400,9 @@
 						<li class="nav-item" id="navitem-singleinput" style="background:#ffeeff">
 							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">								
 								The app's description shows that <b>only one type of command</b> is accepted by the app.
-								<b>OR</b> the app does not wait to receive any commands, and instead <b>stops automatically</b>.
 								(Though the information accepted along with the command can change each time the command is given,
-								all the commands given belong to the same command type).
+								all the commands given belong to the same command type).<br>
+								<b>OR, </b> the app does not wait to receive any commands, and instead <b>stops automatically</b>.
 							</a>
 						</li>
 					</ul>
@@ -399,11 +425,14 @@
 							</button>
 						</div>
 						<div id="tabpane-singleinput" class="tab-pane fade" role="tabpanel" style="background:rgb(179, 255, 255)">
-							<img src="images/choices_ss.png"> How can this command be made to work, by itself doing as little work as possble and instead using a few new apps?
-							These all new apps may accept information on startup and will automatically stop themselves after giving out some information or changing the computer's memory.
-							Let's call such apps 'self-stopping apps'.
+							<div class="choicesetDesc"> 
+							How can this app use a few new apps to do as much of its work as possible?
+							All these new apps can accept information on startup. 
+							They stop themselves after they give out some information or change the computer's memory.
+							Let's call such apps 'self-stopping apps'.<br>
 							Select one of the following choices:
-							<ul id="step-tablist" class="nav nav-tabs" role="tablist" >
+							</div>
+							<ul id="step-tablist" class="nav nav-tabs" role="tablist">
 								<!--
 									<li class="nav-item" id="navitem-precondition">
 									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
@@ -793,12 +822,6 @@
 				}
 				)
 				return s
-			}
-
-			//To go into util.js
-			function capitalizeFirstLetter(string)
-			{
-				return string.charAt(0).toUpperCase() + string.slice(1);
 			}
 
 			//To go into sml.js
