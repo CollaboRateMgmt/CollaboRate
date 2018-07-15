@@ -75,7 +75,7 @@
 				border-color: rgb(242,246,250);
 			}
 
-			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled {
+			#CollaboRateWbsWizard .nav-link.choiceLink {
 				background-image: url('https://collaboratemgmt.github.io/CollaboRate/images/choice_ss.png');
 				background-size: 30px;
 				min-height: 30px;
@@ -92,7 +92,7 @@
 				font-weight: bold;
 			}
 
-			#CollaboRateWbsWizard .nav-link.icon-hand-o-right-disabled.active {
+			#CollaboRateWbsWizard .nav-link.choiceLink.active {
 				background-image: url('https://collaboratemgmt.github.io/CollaboRate/images/choice_ss_selected.png');
 				background-size: 30px;
 				min-height: 30px;
@@ -392,13 +392,13 @@
 					
 					<ul id="inputs-tablist" class="nav nav-tabs" role="tablist">
 						<li class="nav-item" id="navitem-multipleinputs" style="background:#ffffcc">
-							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab"
+							<a class="choiceLink nav-link" id="tab-multipleinputs" data-toggle="tab" href="#tabpane-multipleinputs" role="tab"
 							aria-controls="tabpane-multipleinputs" style="">							
 							The app's description shows that <b>more than one type of command</b> is accepted by the app.
 							</a>
 						</li>
 						<li class="nav-item" id="navitem-singleinput" style="background:#ffeeff">
-							<a class="icon icon-hand-o-right-disabled nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">								
+							<a class="choiceLink nav-link" id="tab-singleinput" data-toggle="tab" href="#tabpane-singleinput" role="tab" aria-controls="tabpane-singleinput">								
 								The app's description shows that <b>only one type of command</b> is accepted by the app.
 								(Though the information accepted along with the command can change each time the command is given,
 								all the commands given belong to the same command type).<br>
@@ -435,33 +435,33 @@
 							<ul id="step-tablist" class="nav nav-tabs" role="tablist">
 								<!--
 									<li class="nav-item" id="navitem-precondition">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+									<a class="choiceLink nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
 									<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier.
 									Based on that, in Text2, provide more details of what the app does now.
 									</a>
 									</li>
 								-->
 								<li class="nav-item" id="navitem-seq">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
+									<a class="choiceLink nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
 										Use 2 new self-stopping apps, <b>one after the other</b>.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-if">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
+									<a class="choiceLink nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
 										Use a new self-stopping app.
 										<b>If</b> the information given out by this app is 'yes', <b>then</b> run another new self-stopping app.
 										<b>Else</b>, run yet another new self-stopping app. (So, there are a total of 3 new apps in this option.)
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-loop">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
+									<a class="choiceLink nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
 										<b>Repeatedly</b> use two new self-stopping apps one after the other, as long as the first new app gives out information 'yes'.
 										If the first new app does not give out information 'yes', then do not use any of the new apps further, and so the
 										command of the old app is complete.
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-iterateoverlist">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">
+									<a class="choiceLink nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab" aria-controls="tabpane-iterateoverlist">
 										This option uses just a single new self-stopping app, and a list of information.
 										The list is part of the information given to the app or is already present in the memory of the app.
 										<b>For each item in the list</b> of information, use the new app.
@@ -469,7 +469,7 @@
 									</a>
 								</li>
 								<li class="nav-item" id="navitem-builtin">
-									<a class="icon icon-hand-o-right-disabled nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
+									<a class="choiceLink nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab" aria-controls="tabpane-builtin">
 										The app's description describes a <b>basic command</b> that cannot be further broken down,
 										or is a command that this tool allows you to <b>choose directly</b>. (Select this option to see the list of
 										available commands that can be chosen directly.)
@@ -555,17 +555,17 @@
 									Based on the given text, what kind of basic thing does the app  do? Select from one of the two choices below:
 									<ul id="basicstep-tablist" class="nav nav-tabs" role="tablist" >
 										<li class="nav-item" id="navitem-readwriteattr">
-											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
+											<a class="choiceLink nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab" aria-controls="tabpane-readwriteattr">
 												Reads, adds or changes part of some information in memory.
 											</a>
 										</li>
 										<li class="nav-item" id="navitem-precondition">
-											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+											<a class="choiceLink nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
 												Calculates something and stores the result in memory.
 											</a>
 										</li>
 										<li class="nav-item" id="navitem-output">
-											<a class="icon icon-hand-o-right-disabled nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
+											<a class="choiceLink nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab" aria-controls="tabpane-output">
 												Sends information to a place outside the app.
 											</a>
 										</li>
@@ -577,25 +577,25 @@
 											What is the type of the calculated information? Select from the choices below:
 											<ul id="typeofinfocalculated-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-calculatedtypeistext">
-													<a id="tab-calculatedtypeistext" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext"
+													<a id="tab-calculatedtypeistext" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext"
 													aria-controls="tabpane-calculatedtypeistext">
 														Text
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisbool">
-													<a id="tab-calculatedtypeisbool" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool"
+													<a id="tab-calculatedtypeisbool" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool"
 													aria-controls="tabpane-calculatedtypeisbool">
 														Information whose value can only be either 'yes' or 'no'
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeisnum">
-													<a id="tab-calculatedtypeisnum" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
+													<a id="tab-calculatedtypeisnum" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
 													aria-controls="tabpane-calculatedtypeisnum">
 														Number
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-calculatedtypeislist">
-													<a id="tab-calculatedtypeislist" class="icon icon-hand-o-right-disabled nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
+													<a id="tab-calculatedtypeislist" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
 													aria-controls="tabpane-calculatedtypeislist">
 														List
 													</a>
@@ -625,12 +625,12 @@
 											Select one of the two options below:
 											<ul id="readwriteattr-tablist" class="nav nav-tabs" role="tablist">
 												<li class="nav-item" id="navitem-writeattr">
-													<a class="icon icon-hand-o-right-disabled nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
+													<a class="choiceLink nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab" aria-controls="tabpane-readattr">
 														The given text adds a new part or changes an existing part, of some information in memory.
 													</a>
 												</li>
 												<li class="nav-item" id="navitem-readattr">
-													<a class="icon icon-hand-o-right-disabled nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
+													<a class="choiceLink nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab" aria-controls="tabpane-writeattr">
 														The given text reads part of some information in memory, and makes a new copy in memory of this information.
 													</a>
 												</li>
@@ -677,22 +677,22 @@
 								Who provides the information?
 								<ul id="whoprovidestheinput" class="nav nav-tabs" role="tablist">
 								<li class="nav-item">
-								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+								<a class="choiceLink nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
 								Person, via an input device like mouse, keyboard, touchscreen
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+								<a class="choiceLink nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
 								An alarm set on the computer's clock
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+								<a class="choiceLink nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
 								Another app
 								</a>
 								</li>
 								<li class="nav-item">
-								<a class="icon icon-hand-o-right-disabled nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+								<a class="choiceLink nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
 								Devices that provide info even in absence of a person. For example, microphone, camera etc.
 								</a>
 								</li>
