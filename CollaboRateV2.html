@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!--
 	CollaboRate Work Breakdown Wizard V2
 	This HTML widget is hosted online at https://collaboratemgmt.github.io/CollaboRate/CollaboRateV2.html
@@ -7,19 +7,11 @@
 	Author: Crowdian Technologies Pvt. Ltd 2017-18.
 	License type: MIT
 -->
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>CollaboRate - widget page for the 'CollaboRate Work Breakdown Wizard Tool'HTML widget</title>
-	</head>
-	<body style="padding:4px">
+        
 		<!--<button type="button" onclick="alert('pass')">basic js test</button>
 		<br>-->
 		<!--widget start-->
-		<div id="CollaboRateWbsWizard" class="container-fluid widget">
+		<template class="CollaboRateWbsWizard">
 
         <!-- TODO: push the css into this or else reference a common CollaboRate css file  -->
         <!-- <link rel="stylesheet" href="css/t2demo.css"> -->
@@ -39,7 +31,7 @@
 			outline: none;
             }
 			
-			#CollaboRateWbsWizard .choicesetDesc::before {
+			.CollaboRateWbsWizard .choicesetDesc::before {
 				content: '';
 				background-image: url('https://collaboratemgmt.github.io/CollaboRate/images/choices_ss.png');
 				background-repeat: no-repeat;
@@ -739,7 +731,7 @@
 					<!--</div>--><!-- wbswizard-tabcontent -->
 				</div><!-- tabpane-wbswizardmain -->
 			</div><!-- pills-tabContent -->
-		</div><!-- CollaboRateWbsWizard -->
+		</template><!-- CollaboRateWbsWizard -->
 		<script>
 
 			function colorTabsToTheColorOfTheirTabPanes()
@@ -930,5 +922,3 @@
 				}
 			)
 		</script>
-	</body>
-</html>
