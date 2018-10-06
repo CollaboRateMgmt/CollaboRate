@@ -8,11 +8,7 @@
 	License type: MIT
 -->
         
-		<!--<button type="button" onclick="alert('pass')">basic js test</button>
-		<br>-->
-		<!--widget start-->
-		<template class="CollaboRateWbsWizard">
-
+	
         <!-- TODO: push the css into this or else reference a common CollaboRate css file  -->
         <!-- <link rel="stylesheet" href="css/t2demo.css"> -->
 
@@ -118,7 +114,11 @@
 			}
 		</style>		
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
+	<!--<button type="button" onclick="alert('pass')">basic js test</button>
+		<br>-->
+		<!--widget start-->
+		<template class="CollaboRateWbsWizardTemplate">
+<div class="CollaboRateWbsWizard">
 			<ul class="nav nav-tabs" id="CollaboRateWbsWizard-tablist" role="tablist">
 				<li class="nav-item" id="navitem-help">
 					<a class="nav-link" id="tab-help" data-toggle="tab" href="#tabpane-help" role="tab" aria-controls="tabpane-help">Help</a>
@@ -731,7 +731,8 @@
 					<!--</div>--><!-- wbswizard-tabcontent -->
 				</div><!-- tabpane-wbswizardmain -->
 			</div><!-- pills-tabContent -->
-		</template><!-- CollaboRateWbsWizard -->
+	</div><!-- CollaboRateWbsWizard -->
+		</template><!-- CollaboRateWbsWizardTemplate -->
 		<script>
 
 			function colorTabsToTheColorOfTheirTabPanes()
