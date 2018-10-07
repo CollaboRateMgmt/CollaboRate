@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>CollaboRate Work Breakdown Wizard</title></head>
+<body>
+<script type="module">
+		import "https://jsutil37.github.io/jsutil/util.js"
+    
+		async function buttonToStartWidgetLoading_onclick()
+		{
+			let url = 'CollaboRateV2.html'
+			await loadHTML(url)
+			let templateId = 'CollaboRateWbsWizardTemplate'
+			let container = el("divIntoWhichToLoadTheWidget")
+			container.innerHTML = ''
+			loadWidget(templateId,container)
+		}
+    buttonToStartWidgetLoading_onclick()
+
+		/**/
+	</script>		
+	<script nomodule>	
+		document.body.innerText = 'Sorry, this web page needs a browser such as the latest version of Chrome, that supports ES6 modules!'
+	</script>
+  <div id="divIntoWhichToLoadTheWidget"></div>
+ </body>
+ </html>
