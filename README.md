@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a process and a [simple software tool](https://collaboratemgmt.github.io/CollaboRate/CollaboRate_standalone.html). 
+CollaboRate is a process and a software tool. You can access the tool [here](https://collaboratemgmt.github.io/CollaboRate/CollaboRate_standalone.html). 
 It is the best IT project management process known so far. It answers certain hard questions on accurate work measurement and maximum possible parallel work execution. The latest methodologies in vogue (for example, Agile and Scrum) are either silent on these questions or simply do not cover them. Solving these questions is essential to provide mass freelancing opportunities for millions of IT workers, as well as improve the productivity of Open Source projects.
 
 CollaboRate aims to provide free tools and processes that combine two powerful ideas - Work Breakdown and Visual Programming - to generate mass employement. It will help make available online intellectual work that involve small 'micro-tasks' of text comprehension (text less than 2000 characters). The online workers (collectively called the 'crowd') will answer questions about the text given to them. The text is the description of an software application. Since most people are familiar with the concept of installing apps on smartphones, we also refer to software applications as 'apps'.
