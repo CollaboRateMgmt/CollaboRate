@@ -2,25 +2,28 @@
 <html lang="en">
 <head><title>CollaboRate Work Breakdown Wizard</title></head>
 <body>
-<script type="module">
-		import "https://jsutil37.github.io/jsutil/util.js"
-    
-		async function buttonToStartWidgetLoading_onclick()
-		{
-			let url = 'CollaboRateV2.html'
-			await loadHTML(url)
-			let templateId = 'CollaboRateWbsWizardTemplate'
-			let container = el("divIntoWhichToLoadTheWidget")
-			container.innerHTML = ''
-			loadWidget(templateId,container)
-		}
-    buttonToStartWidgetLoading_onclick()
+<script type="module" src="https://jsutil37.github.io/jsutil/util.js"></script>
+<script>
 
-		/**/
-	</script>		
+  function waitForSymbol()
+
+	function onCollaboRateStandaloneDivLoad(img)
+	{
+		if(typeof loadWidgetContent == "undefined")
+		{
+			setTimeout(()=>{onCollaboRateStandaloneDivLoad(img)},300)
+			return
+		}
+		loadWidgetContent(img, null, 'CollaboRateWbsWizardTemplate',
+			'CollaboRateV2.html')
+	}
+</script>
+    
 	<script nomodule>	
 		document.body.innerText = 'Sorry, this web page needs a browser such as the latest version of Chrome, that supports ES6 modules!'
 	</script>
-  <div id="divIntoWhichToLoadTheWidget"></div>
+  <div id="divIntoWhichToLoadTheWidget">
+		<img src onerror="onCollaboRateStandaloneDivLoad(this)">
+	</div>
  </body>
  </html>
