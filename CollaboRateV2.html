@@ -130,7 +130,7 @@
 		</ul>
 		<div class="tab-content" id="pills-tabContent">
 			<div id="tabpane-help" class="tab-pane fade" role="tabpanel">
-				<img src onerror="loadHelpWidgetContent(this)"">
+				<img src onerror="loadHelpWidgetContent(this)">
 			</div>
 			<div id="tabpane-wbswizardmain" class="tab-pane fade show active" style="background:#eeeeff">
 				<img src onerror="loadMainWidgetContent(this)">
@@ -142,8 +142,7 @@
 
 	function loadHelpWidgetContent(widgetChildEle)
 	{
-		loadWidgetContent(widgetChildEle,onCollaboRateWidgetSubpartLoad,'help',
-			/*begin relpath*/'help/help.html'/*end relpath*/)
+		loadWidgetContent(widgetChildEle, onCollaboRateWidgetSubpartLoad, 'help', /*begin relpath*/'help/help.html'/*end relpath*/)
 	}
 
 	function loadMainWidgetContent(widgetChildEle)
@@ -193,6 +192,7 @@
 	}
 
 	function colorTabsToTheColorOfTheirTabPanes(widget) {
+		console.log('Coloring tabs...')
 		let tabpanes = Array.from(
 			widget.querySelectorAll('.CollaboRateWbsWizard .tab-pane'))
 		tabpanes.forEach
@@ -200,6 +200,7 @@
 			function (tabPane) {
 				//Get the tab of the tab pane
 				var tabEle = tabEleForTabPaneThatContains(tabPane)
+				console.log('Coloring tab \''+tabEle.innerText+'\'...')
 				tabEle.style.backgroundColor = tabPane.style.backgroundColor
 			}
 			)
@@ -376,6 +377,7 @@
 
 	async function onCollaboRateWidgetSubpartLoad(widget)
 	{
+		console.log('overall CollaboRate widget\'s subpart loaded, widget=\''+widget.outerHTML.substr(0,50)+'\'...')
 		//Find collaborateWidget
 		//In this case, both the subparts are at the same level. This may not 
 		//always be the case:
@@ -383,8 +385,10 @@
 		let n = collaborateWidget.numOfPartsLoaded
 		
 		collaborateWidget.numOfPartsLoaded = n?n+1:1
-
+		console.log('collaborateWidget.numOfPartsLoaded='+
+			collaborateWidget.numOfPartsLoaded)
 		if(collaborateWidget.numOfPartsLoaded == 2) {
+			console.log('all widget subparts were loaded!')
 			onLoadOfAllCollaboRateWbsWizardParts(collaborateWidget)
 		}
 	}

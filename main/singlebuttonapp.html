@@ -1,0 +1,308 @@
+<!-- singlebuttonapp.html -->
+<template class="templateForSingleButtonAppWizard">
+<div class="choicesetDesc">
+	How can this single-button app use a few new single-button apps to do as much of its work as possible? The screens of the new apps are hidden. The old app will fill up the fields on these hidden screens and then press the buttons on these screens, and read the information sent out by the new apps.
+	<br>
+	Select one of the following choices:
+</div>
+<ul id="step-tablist" class="nav nav-tabs" role="tablist">
+	<!--
+			<li class="nav-item" id="navitem-precondition">
+			<a class="choiceLink nav-link" id="tab-precondition" data-toggle="tab" href="#tabpane-precondition" role="tab" aria-controls="tabpane-precondition">
+			<b>TEXT1=ADDITIONAL BACKGROUND, TEXT2=WITH MORE DETAILS:</b> In Text1, describe something that should have been done earlier.
+			Based on that, in Text2, provide more details of what the app does now.
+			</a>
+			</li>
+		-->
+	<li class="nav-item" id="navitem-seq">
+		<a class="choiceLink nav-link" id="tab-seq" data-toggle="tab" href="#tabpane-seq" role="tab" aria-controls="tabpane-seq">
+			Use 2 new single-button apps, <b>one after the other</b>.
+		</a>
+	</li>
+	<li class="nav-item" id="navitem-if">
+		<a class="choiceLink nav-link" id="tab-if" data-toggle="tab" href="#tabpane-if" role="tab" aria-controls="tabpane-if">
+			Use a new single-button app that gives out either 'yes' or 'no'. <b>If 'yes'</b>, use a second new single-button app.
+			<b>If 'no'</b>, use a third new single-button app (or optionally, do nothing)
+		</a>
+	</li>
+	<li class="nav-item" id="navitem-loop">
+		<a class="choiceLink nav-link" id="tab-loop" data-toggle="tab" href="#tabpane-loop" role="tab" aria-controls="tabpane-loop">
+			<b>Repeatedly</b> use two new single-button apps one after the other, as long as the first new app gives out information 'yes'.
+		</a>
+	</li>
+	<li class="nav-item" id="navitem-iterateoverlist">
+		<a class="choiceLink nav-link" id="tab-iterateoverlist" data-toggle="tab" href="#tabpane-iterateoverlist" role="tab"
+			aria-controls="tabpane-iterateoverlist">
+			<b>For some items in a list</b> of information, give the item to a new single-button app and then use this new app.
+		</a>
+	</li>
+	<li class="nav-item" id="navitem-builtin">
+		<a class="choiceLink nav-link" id="tab-builtin" data-toggle="tab" href="#tabpane-builtin" role="tab"
+			aria-controls="tabpane-builtin">
+			The app's description describes some <b>basic change of information</b> that may not be possible to split into separate new apps.
+		</a>
+	</li>
+</ul>
+<div id="step-tabcontent" class="tab-content">
+	<!--
+			<div id="tabpane-precondition" class="tab-pane fade" role="tabpanel">
+
+			Describe something that should have been done earlier, so that :<br>
+			<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+			Text2:<br>
+
+			<textarea  style="width:100%;padding:5px"></textarea><br><br>
+
+			<button type="button" id="submitbreakdownintopreconditionANDmoredetaileddesc" class="btn btn-dark btn-lg btn-block">Submit Work Breakdown (Copy SML to clipboard)</button>
+
+			</div>
+		-->
+	<div id="tabpane-seq" class="tab-pane fade" role="tabpanel" style="background: #99ccff">
+
+		Describe the <span id="thingsthatshouldbedonefirstdesc">single-button app that is run first:</span>
+		<textarea id="thingsthatshouldbedonefirst" style="width:100%;padding:5px"></textarea><br><br>
+
+		Describe the <span id="thingsthatshouldbedonelaterdesc">single-button app that is run next:</span>
+		<textarea id="thingsthatshouldbedonelater" style="width:100%;padding:5px"></textarea><br><br>
+
+		<button type="button" id="submitbreakdownintofirstANDsecond" class="btn btn-dark btn-lg btn-block">
+			Submit Work Breakdown (Copy SML to clipboard)
+		</button>
+
+	</div>
+	<div id="tabpane-if" class="tab-pane fade" role="tabpanel" style="background:#ffdb89">
+
+		<span id="ifconddesc">Description of the new single-button app, that gives out either 'yes'
+			or 'no'.
+			The old app checks the information given out and accordingly decides which new app to call:</span>
+		<textarea id="ifcond" style="width:100%;padding:5px"></textarea><br><br>
+
+		<span id="thenpartdesc">Description of the new single-button app, that is used by the old app in case the
+			first new app has given out information 'yes':</span>
+		<textarea id="thenpart" style="width:100%;padding:5px"></textarea><br><br>
+
+		<span id="elsepartdesc">If needed, description of the new single-button app, that is started by the old app in case the first new app has given out information 'no':</span>
+		<textarea id="elsepart" style="width:100%;padding:5px"></textarea><br><br>
+
+		<button type="button" id="submitbreakdownintoifconditionANDaction" class="btn btn-dark btn-lg btn-block">
+			Submit Work Breakdown (Copy SML to clipboard)
+		</button>
+
+	</div>
+	<div id="tabpane-loop" class="tab-pane fade" role="tabpanel">
+
+		Describe the new single-button app that can give out a value only either 'yes' or 'no':<br>
+		<textarea id="whilecond" style="width:100%;padding:5px"></textarea><br><br>
+
+		Describe the new single-button app to run whenever the other new single-button app gives out information 'yes':<br>
+		<textarea id="parttodoinsidewhileloop" style="width:100%;padding:5px"></textarea><br><br>
+
+		<button type="button" id="submitbreakdownintowhileloop" class="btn btn-dark btn-lg btn-block">
+			Submit Work Breakdown (Copy SML to clipboard)
+		</button>
+
+	</div>
+	<div id="tabpane-iterateoverlist" class="tab-pane fade" role="tabpanel">
+
+		Describe the list of information that is in memory or is information given to the old app:<br>
+		<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+		Description of the new single-button app that is called repeatedly for each item in the list of information.
+		Every time this new app is called, it is given information about the next item in the list.
+		If this new app gives out information 'false', then the old app stops running.<br>
+		<textarea style="width:100%;padding:5px"></textarea><br><br>
+
+		<button type="button" id="submitbreakdownintolistANDactiontorepeatforeachele" class="btn btn-dark btn-lg btn-block">
+			Submit Work Breakdown (Copy SML to clipboard)
+		</button>
+	</div>
+	<div id="tabpane-builtin" class="tab-pane fade" role="tabpanel">
+		Based on the given text, what kind of basic information change does the app do? Select from one of the choices below:
+		<ul id="basicstep-tablist" class="nav nav-tabs" role="tablist">
+			<li class="nav-item" id="navitem-readwriteattr">
+				<a class="choiceLink nav-link" id="tab-readwriteattr" data-toggle="tab" href="#tabpane-readwriteattr" role="tab"
+					aria-controls="tabpane-readwriteattr">
+					Make memory connections.
+				</a>
+			</li>
+			<li class="nav-item" id="navitem-precondition">
+				<a class="choiceLink nav-link" id="tab-calc" data-toggle="tab" href="#tabpane-calc" role="tab" aria-controls="tabpane-calc">
+					Calculates something and stores the result in memory.
+				</a>
+			</li>
+			<li class="nav-item" id="navitem-output">
+				<a class="choiceLink nav-link" id="tab-output" data-toggle="tab" href="#tabpane-output" role="tab"
+					aria-controls="tabpane-output">
+					Gives out information.
+				</a>
+			</li>
+		</ul>
+		<div id="builtin-tabcontent" class="tab-content">
+			<div id="tabpane-calc" class="tab-pane fade" role="tabpanel">
+				Describe what is being calculated and why?<br>
+				<textarea style="width:100%"></textarea><br><br>
+				What is the type of the calculated information? Select from the choices below:
+				<ul id="typeofinfocalculated-tablist" class="nav nav-tabs" role="tablist">
+					<li class="nav-item" id="navitem-calculatedtypeistext">
+						<a id="tab-calculatedtypeistext" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeistext"
+							aria-controls="tabpane-calculatedtypeistext">
+							Text
+						</a>
+					</li>
+					<li class="nav-item" id="navitem-calculatedtypeisbool">
+						<a id="tab-calculatedtypeisbool" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisbool"
+							aria-controls="tabpane-calculatedtypeisbool">
+							Information whose value can only be either 'yes' or 'no'
+						</a>
+					</li>
+					<li class="nav-item" id="navitem-calculatedtypeisnum">
+						<a id="tab-calculatedtypeisnum" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeisnum"
+							aria-controls="tabpane-calculatedtypeisnum">
+							Number
+						</a>
+					</li>
+					<li class="nav-item" id="navitem-calculatedtypeislist">
+						<a id="tab-calculatedtypeislist" class="choiceLink nav-link" data-toggle="tab" role="tab" href="#tabpane-calculatedtypeislist"
+							aria-controls="tabpane-calculatedtypeislist">
+							List
+						</a>
+					</li>
+				</ul>
+				<div id="builtin-caculatedtabcontent" class="tab-content">
+					<div id="tabpane-calculatedtypeistext" class="tab-pane fade" role="tabpanel">
+						TODO: Show user options in non-tech language, for string functions like concatenation, search, replace,
+						leftof, rightof,
+						uppercase, lowercase, substring, etc. etc. MAYBE we will provide regex also!!!!
+					</div>
+					<div id="tabpane-calculatedtypeisbool" class="tab-pane fade" role="tabpanel">
+						TODO: Show user options in non-tech language, for boolean functions like and, or, not etc.
+					</div>
+					<div id="tabpane-calculatedtypeisnum" class="tab-pane fade" role="tabpanel">
+						TODO: Show user options in non-tech language, for numeric functions like string length, mathematical
+						functions
+						(add, multiply, subtract, divide, log, exponent, trigonometric, modulo, round etc.)
+					</div>
+					<div id="tabpane-calculatedtypeislist" class="tab-pane fade" role="tabpanel">
+						TODO: Show user options in non-tech language, for list functions such as insert, delete, append, sort,
+						search, replace,
+						duplicate removal etc.
+						Note that map is basically also a type of list. So we will have some options to insert,
+						search and delete list elements by specifying the key.
+					</div>
+				</div>
+			</div>
+			<div id="tabpane-readwriteattr" class="tab-pane fade" role="tabpanel">
+				Memory is made up of a list of memory notes. Each note has a unique description that can be used to find the note. <br>
+				Each note is also connected to a piece of information. The piece of information may sometimes be a 'tree' of information. We can read and change information trees using memory notes connected to their parts. Select one of the two options below:
+				<ul id="readwriteattr-tablist" class="nav nav-tabs" role="tablist">
+					<li class="nav-item" id="navitem-writeattr">
+						<a class="choiceLink nav-link" id="tab-readattr" data-toggle="tab" href="#tabpane-readattr" role="tab"
+							aria-controls="tabpane-readattr">
+							The app description talks about changing part of a tree of information.
+						</a>
+					</li>
+					<li class="nav-item" id="navitem-readattr">
+						<a class="choiceLink nav-link" id="tab-writeattr" data-toggle="tab" href="#tabpane-writeattr" role="tab"
+							aria-controls="tabpane-writeattr">
+							The app description talks about connecting part of a tree of information to a memory note (or reading part of a tree of information using a connected memory note).
+						</a>
+					</li>
+				</ul>
+				<div id="readwriteattr-tabcontent" class="tab-content">
+					<div id="tabpane-readattr" class="tab-pane fade" role="tabpanel">
+						Describe the memory note that is connected to the information tree:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						Describe the information tree part that is being connected or created:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						Describe the memory note that is connected (or being connected) to the tree part:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						<button id="submitbreakdownintoreadattr" type="button" class="btn btn-dark btn-lg btn-block">
+							Submit Work Breakdown (Copy SML to clipboard)
+						</button>
+					</div>
+					<div id="tabpane-writeattr" class="tab-pane fade" role="tabpanel">
+						Describe the memory note that is connected to the tree of information:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						Describe the tree part that is being created, or whose value is being changed:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						Describe the memory note that is connected to the tree part:<br>
+						<textarea style="width:100%"></textarea><br><br>
+
+						<button id="submitbreakdownintowriteattr" type="button" class="btn btn-dark btn-lg btn-block">
+							Submit Work Breakdown (Copy SML to clipboard)
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="tabpane-output" class="tab-pane fade" role="tabpanel">
+				To do: Allow the user to choose the specific type of output - video, audio, spoken text, written text,
+				information sent to another app etc.
+			</div>
+		</div>
+	</div><!-- tabpane-builtin -->
+</div>
+<!--
+		Who provides the information?
+		<ul id="whoprovidestheinput" class="nav nav-tabs" role="tablist">
+		<li class="nav-item">
+		<a class="choiceLink nav-link" id="tab-personprovidestheinput" data-toggle="tab" href="#tabpane-personprovidestheinput" role="tab" aria-controls="tabpane-personprovidestheinput">
+		Person, via an input device like mouse, keyboard, touchscreen
+		</a>
+		</li>
+		<li class="nav-item">
+		<a class="choiceLink nav-link" id="tab-alarmoncompclock" data-toggle="tab" href="#tabpane-alarmoncompclock" role="tab" aria-controls="tabpane-alarmoncompclock">
+		An alarm set on the computer's clock
+		</a>
+		</li>
+		<li class="nav-item">
+		<a class="choiceLink nav-link" id="tab-anotherapp" data-toggle="tab" href="#tabpane-anotherapp" role="tab" aria-controls="tabpane-anotherapp">
+		Another app
+		</a>
+		</li>
+		<li class="nav-item">
+		<a class="choiceLink nav-link" id="tab-streamdevs" data-toggle="tab" href="#tabpane-streamdevs" role="tab" aria-controls="tabpane-streamdevs">
+		Devices that provide info even in absence of a person. For example, microphone, camera etc.
+		</a>
+		</li>
+		</ul>
+		<div id="whoprovidestheinput-tabContent" class="tab-content">
+		<br>
+		<div id="tabpane-personprovidestheinput" class="tab-pane fade" role="tabpanel">
+		<b>The text describes only one type of info given to the application, provided by a person. It also
+		describes how the application processes this input.</b><br><br>
+		The person (user of the app) interacts with a screen of the app. He/she may provide input in some
+		input controls on the screen such as text boxes, dropdowns etc. Then he/she will click a
+		button or perform some other action to inform the computer to start processing this input.<br><br>
+
+		Description/name of the screen on which the person provides the input:<br>
+		<input type="text" style="width:100%"><br><br>
+		Input fields on the screen that must be considered as a part of this overall input:<br>
+		<input type="text" style="width:100%"><br><br>
+		</div>
+		<div id="tabpane-alarmoncompclock" class="tab-pane fade" role="tabpanel">
+		todo
+		</div>
+		<div id="tabpane-anotherapp" class="tab-pane fade" role="tabpanel">
+		todo
+		</div>
+		<div id="tabpane-streamdevs" class="tab-pane fade" role="tabpanel">
+		todo
+		</div>
+		</div>
+	-->
+<!--
+		What does the application do once this type of input has been given?<br>
+	<textarea style="width:100%;padding:5px"></textarea><br><br>-->
+<!--
+		<button id="submitSpecificationOfTypeOfSingleInput" type="button" class="btn btn-dark btn-lg btn-block">
+		Submit Specification of Type Of Input
+		</button>
+-->
+<img src onerror="raiseWidgetOnload(this)">
+</template>
