@@ -2,29 +2,20 @@
 <html lang="en">
 <head><title>CollaboRate Work Breakdown Wizard</title></head>
 <body>
-<script type="module" src="https://jsutil37.github.io/jsutil/util.js"></script>
-<script>
-
-  	//function waitForSymbol() - TODO: take in very small basic sync util js
-	//non-es6-module file without worrying about multiple loads of that file
-
-	function onCollaboRateStandaloneDivLoad(img)
-	{
-		if(typeof loadWidgetContent == "undefined")
-		{
-			setTimeout(()=>{onCollaboRateStandaloneDivLoad(img)},300)
-			return
-		}
-		loadWidgetContent(img, null, 'CollaboRateWbsWizardTemplate',
-			'CollaboRateV2.html')
-	}
-</script>
-    
+<!-- TODO: can we eliminate all non-module scripts???-->
+<script src="https://jsutil37.github.io/jsutil/basicSyncUtil.js"></script>	
+<script type="module" src="https://jsutil37.github.io/jsutil/util.js"></script>    
 	<script nomodule>	
 		document.body.innerText = 'Sorry, this web page needs a browser such as the latest version of Chrome, that supports ES6 modules!'
 	</script>
-  <div id="divIntoWhichToLoadTheWidget">
-		<img src onerror="onCollaboRateStandaloneDivLoad(this)">
+	<div id="divIntoWhichToLoadTheWidget">
+		<script>
+			waitForSymbol
+			(
+				()->{loadWidgetContent(document.currentScript, null, 'CollaboRateWbsWizardTemplate','CollaboRateV2.html')},
+				"loadWidgetContent"
+			)
+		</script>
 	</div>
  </body>
  </html>
