@@ -10,9 +10,11 @@
 	</script>
 	<div id="divIntoWhichToLoadTheWidget">
 		<script>
+			console.log('(document.currentScript==null)', (document.currentScript==null))
+			let s = document.currentScript
 			waitForSymbol
 			(
-				()=>{loadWidgetContent(document.currentScript, null, 'CollaboRateWbsWizardTemplate','CollaboRateV2.html')},
+				()=>{loadWidgetContent(s, null, 'CollaboRateWbsWizardTemplate','CollaboRateV2.html')},
 				"loadWidgetContent"
 			)
 		</script>
