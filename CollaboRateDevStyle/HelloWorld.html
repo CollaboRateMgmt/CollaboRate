@@ -1,0 +1,38 @@
+Code is at (TODO)
+<script type="module">
+//Run at https://CollaboRateMgmt.github.io/CollaboRate/CollaboRateDevStyle/HelloWorld.html
+
+////////////////////////////////////////////////////////
+//TODO: Shift into library file
+function f(o){window.fns = window.fns ? window.fns : {};window.fns[o.desc] = o}
+
+function run(desc) {
+  let obj = fns[desc]
+  if(obj.splitType=='builtin') {
+    if(obj.builtinFnName=='show a message box') {
+      let msgToShow = obj['message to show']
+      alert(msgToShow)
+    } else {
+      alert('TODO: obj.builtinFnName==\''+obj.builtinFnName+'\'')
+    }
+  }else {
+    alert('TODO: obj.splitType==\''+obj.splitType+'\'')
+  }
+}
+
+///////////////////////////////////////////////////////
+
+f({
+desc:'This function shows a \'hello world\' message box',
+splitType:'builtin',
+builtinFnName:'show a message box',
+'message to show':'hello world',
+})
+
+run('This function shows a \'hello world\' message box')
+//////////////////////////////////////////////////////////
+
+
+
+alert('Code compiled fine...')
+</script>
