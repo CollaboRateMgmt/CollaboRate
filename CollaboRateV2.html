@@ -14,7 +14,9 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/0.10.0/url-search-params.js"></script>
 <script type="module" src="https://jsutil37.github.io/jsutil/util.js"></script>
-<!--<script src="util.js"></script>-->
+<!--
+<script type="module" src="/github/jsutil/util.js"></script>
+-->
 <!--<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
 <!-- Local css section -->
 <style>
@@ -377,7 +379,8 @@
 
 	async function onCollaboRateWidgetSubpartLoad(widget)
 	{
-		console.log('overall CollaboRate widget\'s subpart loaded, widget=\''+widget.outerHTML.substr(0,50)+'\'...')
+		let dbg = false
+		dbg && console.log('overall CollaboRate widget\'s subpart loaded, widget=\''+widget.outerHTML.substr(0,50)+'\'...')
 		//Find collaborateWidget
 		//In this case, both the subparts are at the same level. This may not 
 		//always be the case:

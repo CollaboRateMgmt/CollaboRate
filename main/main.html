@@ -102,7 +102,7 @@
 		if(widget.selfLoaded && widget.numOfSubpartsLoaded == 1)
 		{
 			console.log('subparts and main part of main widget is loaded')
-			raiseWidgetOnload(widget.children[0])
+			raiseWidgetOnload({widget:this,widgetChildToRemove:null})
 			/*waitUntilSymbolAppearsAndThenRun
 			(
 				()=>{raiseWidgetOnload(widget.children[0])},//fn
