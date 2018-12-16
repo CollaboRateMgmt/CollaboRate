@@ -56,11 +56,7 @@
 	<!-- wbswizard-tabcontent -->
 	<img src onerror="mainWidgetOnload(this)">
 </template>
-<!--
-<script src="https://jsutil37.github.io/jsutil/basicSyncUtil.js"></script>
--->
 <script>
-	//import 'https://jsutil37.github.io/jsutil/util.js'
 
 	function loadWidgetContentOf_C_SingleButtonApp_C_BreakdownWizard_J_J(widgetChildEle)
 	{
@@ -99,15 +95,15 @@
 	function onSelfOrSubpartsOfMainWidgetLoaded(widget)
 	{
 		console.log('onSelfOrSubpartsOfMainWidgetLoaded(): here...')
-		if(widget.selfLoaded && widget.numOfSubpartsLoaded == 1)
-		{
-			console.log('subparts and main part of main widget is loaded')
-			raiseWidgetOnload({widget:this,widgetChildToRemove:null})
-			/*waitUntilSymbolAppearsAndThenRun
-			(
-				()=>{raiseWidgetOnload(widget.children[0])},//fn
-				"raiseWidgetOnload"//symName
-			)*/
-		}
+		if(!widget.selfLoaded){return;}
+		if(widget.numOfSubpartsLoaded != 1){return;}	
+		console.log('subparts and main part of main widget is loaded')
+		console.log('typeof(widget.onload)='+typeof(widget.onload))
+		raiseWidgetOnload({widget:widget,widgetChildToRemove:null})//todo: change to widget:widget
+		/*waitUntilSymbolAppearsAndThenRun
+		(
+			()=>{raiseWidgetOnload(widget.children[0])},//fn
+			"raiseWidgetOnload"//symName
+		)*/
 	}
 </script>

@@ -4,4 +4,4 @@
 	License type: MIT
 */
 
-document.write('<script src="https://sohrabsaran.github.io/jsutil/util.js" type="text/javascript"><'+'/script>');
+document.write('<script src="https://jsutil37.github.io/jsutil/util.js" type="text/javascript"><'+'/script>');

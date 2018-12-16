@@ -330,7 +330,7 @@ A roadmap for the project is available [here](https://github.com/CollaboRateMgmt
 [Back To Contents](#contents)
 
 # Project Contact Details
-sohrabsaran@gmail.com (project creator)
+contactus@crowdiantech.com (project creator)
        
 [Back To Contents](#contents)
 
