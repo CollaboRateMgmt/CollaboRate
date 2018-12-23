@@ -2,12 +2,16 @@
 
 # What is CollaboRate?
 
-CollaboRate is a software engineering and management process that provides the following benefits:
-- It defines a system for accurate work and mistake measurement (the 'Rate' part of CollaboRate :smile:  )
-- It allows the maximum possible number of people to work at the same time on the same project. This in turn will allow the project to complete quickly. For many Closed Source software projects, time-to-market is critical. This will also allow for rapid completion of Open Source projects.
-- In case of Closed Source projects, it provides code security when a large number of people are working on the same project 
+CollaboRate is a software engineering and management process that provides the following solutions to the corresponding issues:
 
-As far as we are aware, the latest IT project management methodologies in vogue (for example, Agile and Scrum) are either silent on these questions or simply do not cover them. Solving these questions is essential to provide mass freelancing and work-from-home opportunities for IT workers, as well as improve the productivity of Open Source projects. This in turn will improve the work-life balance of IT workers and eliminate the issue of human error/unfairness in software job appraisals and software project contracts.
+|Problem|Solution|
+|-------|-------------------| 
+|Not accurate enough work and mistake measurement|CollaboRate defines a system for accurate work and mistake measurement (the 'Rate' part of CollaboRate :smile:  )| 
+|For many Closed Source software projects, time-to-market is critical.|CollaboRate allows the maximum possible number of people to work at the same time on the same project. This in turn will allow the project to complete quickly.  This will also allow for rapid completion of Open Source projects.| 
+|In case of Closed Source projects, code security is a concern when a large number of people are working on the same project|It provides adequate code security such that a large number of people can work on the same project from any location| 
+|Huge and growing amount of technology choice creates delays and risks due to the learning curve|CollaboRate will offer a simplified language/technology that will cover most use cases|  
+
+As far as we are aware, the latest IT project management methodologies in vogue (for example, Agile and Scrum) are either silent on these problems or simply do not cover them. Solving these problems is essential to provide mass freelancing and work-from-home opportunities for IT workers, as well as improve the productivity of Open Source projects. This in turn will improve the work-life balance of IT workers and eliminate the issue of human error/unfairness in software job appraisals and software project contracts.
 
 CollaboRate aims to provide free tools and processes that combine the following ideas:
 - **Visual Programming**: remove the barriers of knowing a particular programming language, or even knowing the details and terms traditionally taught about software programs. An online [software tool]. (https://collaboratemgmt.github.io/CollaboRate/CollaboRate_standalone.html) called the 'CollaboRate Work Breakdown Wizard' is under development for this purpose. This tool will (among other things) generate lines of code in a high-level programming language that is also under development as part of the CollaboRate project. 
