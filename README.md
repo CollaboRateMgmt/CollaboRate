@@ -9,7 +9,7 @@ CollaboRate is a software engineering and management process that provides the f
 |Not accurate enough work and mistake measurement|CollaboRate defines a system for accurate work and mistake measurement (the 'Rate' part of CollaboRate :smile:  )| 
 |For many Closed Source software projects, time-to-market is critical.|CollaboRate allows the maximum possible number of people to work at the same time on the same project. This in turn will allow the project to complete quickly.  This will also allow for rapid completion of Open Source projects.| 
 |In case of Closed Source projects, code security is a concern when a large number of people are working on the same project|It provides adequate code security such that a large number of people can work on the same project from any location| 
-|Huge and growing amount of technology choice creates delays and risks due to the learning curve|CollaboRate will offer a simplified language/technology that will cover most use cases|  
+|Huge amounts of technology choices available create delays and risks due to the learning curve|CollaboRate will offer a simplified language/technology that will cover most use cases|  
 
 As far as we are aware, the latest IT project management methodologies in vogue (for example, Agile and Scrum) are either silent on these problems or simply do not cover them. Solving these problems is essential to provide mass freelancing and work-from-home opportunities for IT workers, as well as improve the productivity of Open Source projects. This in turn will improve the work-life balance of IT workers and eliminate the issue of human error/unfairness in software job appraisals and software project contracts.
 
