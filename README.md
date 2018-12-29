@@ -2,7 +2,7 @@
 
 # What is CollaboRate?
 
-CollaboRate is a software engineering and management process that provides the following solutions to the corresponding issues:
+CollaboRate is a software engineering and management process that aims to solve the following problems:
 
 |Problem|Solution|
 |-------|-------------------| 
