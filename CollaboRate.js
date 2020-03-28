@@ -1,6 +1,6 @@
 /*
 Project website: https://github.com/CollaboRateMgmt/CollaboRate	
-Copyright Sohrab Saran (sohrabsaran@gmail.com) and additional contributors listed at https://github.com/CollaboRateMgmt/CollaboRate/wiki/Contributors
+Copyright collaboratemgmt@gmail.com and additional contributors listed at https://github.com/CollaboRateMgmt/CollaboRate/wiki/Contributors
 License type: MIT	
 */
 
